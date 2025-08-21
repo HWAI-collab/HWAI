@@ -625,9 +625,9 @@
     },
     {
       "name": "kidmaps-dashboard",
-      "title": "KidMaps Dashboard: Local Business Discovery Platform",
+      "title": "KidMaps Dashboard: Business Event & Location Management",
       "category": "infrastructure",
-      "description": "A comprehensive platform for local business discovery and community mapping. Features advanced geospatial analytics, business directory management, and community engagement tools for connecting consumers with local services.",
+      "description": "A comprehensive business management platform enabling local businesses to manage their events, locations, and customer engagement. Features event scheduling, location management, customer communications, and analytics dashboard for business optimization.",
       "topics": [
         "family-activities",
         "event-management",
@@ -653,13 +653,13 @@
         "Event Planning Module",
         "Analytics Dashboard"
       ],
-      "abstract": "KidMaps Dashboard provides comprehensive local business discovery and community mapping services. Built with Vue.js 3 and Supabase, it features geospatial analytics for location-based business discovery, directory management tools, and community engagement features for supporting local commerce and service providers.",
+      "abstract": "KidMaps Dashboard provides businesses with comprehensive tools for managing events and locations. Built with Vue.js 3 and Supabase, it features event scheduling systems, location management tools, customer engagement features, and analytics dashboards specifically designed for local businesses to optimize their operations and community presence.",
       "highlights": [
-        "Geospatial activity mapping",
-        "Family calendar coordination",
-        "Community event management",
-        "Real-time collaboration features",
-        "Mobile-responsive PWA design"
+        "Event scheduling and management system",
+        "Location and venue management tools",
+        "Customer communication and engagement",
+        "Business analytics and reporting dashboard",
+        "Multi-location business support"
       ]
     }
   ],
