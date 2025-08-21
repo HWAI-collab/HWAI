@@ -43,83 +43,6 @@
       "readme_content": "# SLNQ: Comprehensive Youth Support Services Management Platform\n\n[![Nuxt](https://img.shields.io/badge/Nuxt-3.11%2B-00DC82.svg)](https://nuxt.com/)\n[![Vue.js](https://img.shields.io/badge/Vue.js-3.4%2B-4FC08D.svg)](https://vuejs.org/)\n[![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E.svg)](https://supabase.com/)\n[![Flutter](https://img.shields.io/badge/Flutter-3.10%2B-02569B.svg)](https://flutter.dev/)\n[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license--legal)\n\n## Abstract\n\nSafe Living NQ (SLNQ) represents a sophisticated, AI-enhanced youth support services management platform engineered to revolutionise residential care operations for vulnerable young people in Queensland, Australia. Built upon Nuxt 3's server-side architecture and powered by Supabase's real-time infrastructure, the platform delivers comprehensive case management, staff coordination, facility oversight, and compliance monitoring capabilities specifically designed for youth residential care environments.\n\nThe system integrates advanced artificial intelligence capabilities including voice-to-text transcription, intelligent document generation, pattern recognition for risk assessment, and automated compliance monitoring. Through its modular architecture combining comprehensive client management, staff development frameworks, facility management systems, and real-time communication platforms, SLNQ establishes itself as an essential solution for youth support organisations seeking to enhance care quality, operational efficiency, and regulatory compliance whilst maintaining the highest standards of privacy and security for vulnerable populations.\n\n## Table of Contents\n\n- [Abstract](#abstract)\n- [Executive Summary](#executive-summary)\n  - [Strategic Vision and Care Objectives](#strategic-vision-and-care-objectives)\n  - [Key Stakeholders](#key-stakeholders)\n  - [Value Proposition and Care Impact](#value-proposition-and-care-impact)\n- [System Architecture](#system-architecture)\n  - [Comprehensive Platform Architecture](#comprehensive-platform-architecture)\n  - [AI-Enhanced Care Management Framework](#ai-enhanced-care-management-framework)\n  - [Multi-Platform Integration Design](#multi-platform-integration-design)\n- [Core Technologies](#core-technologies)\n- [Care Management Modules](#care-management-modules)\n  - [Young Person Management System](#young-person-management-system)\n  - [Staff Development and Management Platform](#staff-development-and-management-platform)\n  - [Facility and Asset Management Framework](#facility-and-asset-management-framework)\n  - [Documentation and Communication Hub](#documentation-and-communication-hub)\n  - [Compliance and Reporting Analytics](#compliance-and-reporting-analytics)\n- [Installation & Deployment](#installation--deployment)\n- [API Documentation](#api-documentation)\n- [Database Architecture](#database-architecture)\n- [AI Integration Framework](#ai-integration-framework)\n- [Security & Compliance](#security--compliance)\n- [Performance Optimisation](#performance-optimisation)\n- [Testing & Quality Assurance](#testing--quality-assurance)\n- [Development Guidelines](#development-guidelines)\n- [Contributing Guidelines](#contributing-guidelines)\n- [License & Legal](#license--legal)\n\n## Executive Summary\n\n### Strategic Vision and Care Objectives\n\nSLNQ addresses critical challenges in youth residential care delivery through comprehensive digital transformation and intelligent automation. The platform's strategic care objectives encompass:\n\n- **Holistic Client Care**: Enhancement of support planning, risk assessment, and progress monitoring for young people in residential care environments\n- **Staff Excellence**: Development of comprehensive training, qualification tracking, and performance optimisation systems for youth support workers\n- **Operational Excellence**: Streamlined facility management, asset tracking, and maintenance workflows ensuring safe, compliant residential environments\n- **Evidence-Based Practice**: AI-powered analytics enabling data-driven decision making and continuous improvement in care delivery\n- **Regulatory Compliance**: Automated compliance monitoring and reporting systems ensuring adherence to Queensland care standards and federal regulations\n\n### Key Stakeholders\n\n**Primary Care Stakeholders:**\n- Young people receiving residential care services and their families\n- Youth Support Workers (YSW) providing direct care and supervision\n- Team Leaders coordinating care delivery and staff supervision\n- Case Managers developing and implementing individualised support plans\n- Clinical staff providing therapeutic and medical support\n\n**Secondary Stakeholders:**\n- Management teams overseeing operational performance and compliance\n- Regulatory bodies monitoring care standards and compliance outcomes\n- Government departments funding and overseeing youth residential care services\n- Community partners providing ancillary support services\n- Emergency services and crisis response teams\n\n### Value Proposition and Care Impact\n\nSLNQ delivers measurable care and operational value through:\n\n- **Care Quality Enhancement**: Systematic improvement in support planning accuracy, risk assessment effectiveness, and intervention outcomes through AI-assisted documentation and pattern recognition\n- **Operational Efficiency**: Reduction in administrative burden enabling increased focus on direct care delivery and client engagement\n- **Compliance Assurance**: Automated monitoring and reporting systems ensuring continuous adherence to regulatory requirements and care standards\n- **Staff Development**: Comprehensive training tracking and competency development frameworks supporting professional growth and care quality improvement\n- **Data-Driven Insights**: Advanced analytics enabling evidence-based care planning, resource allocation, and strategic planning decisions\n\n## System Architecture\n\n### Comprehensive Platform Architecture\n\nThe SLNQ platform implements a sophisticated multi-tier architecture optimised for youth residential care environments, combining web-based management systems with mobile companion applications.\n\n### AI-Enhanced Care Management Framework\n\n**Intelligent Care Support System:**\nThe platform employs advanced AI capabilities for:\n- Risk assessment and pattern recognition\n- Automated document generation\n- Voice-to-text transcription for reports\n- Compliance monitoring and alerting\n- Training needs identification\n\n### Multi-Platform Integration Design\n\n**Cross-Platform Service Integration:**\nSLNQ provides seamless integration across:\n- Web-based management dashboard\n- Mobile applications for field work\n- Real-time synchronisation services\n- External system integrations\n\n## Core Technologies\n\n| Technology | Version | Justification | License |\n|------------|---------|---------------|----------|\n| **Nuxt 3** | 3.11+ | Full-stack Vue framework optimised for server-side rendering and static generation | MIT License |\n| **Vue.js** | 3.4+ | Progressive JavaScript framework with composition API for reactive user interfaces | MIT License |\n| **Supabase** | 2.38+ | Backend-as-a-Service providing PostgreSQL database, authentication, and real-time features | Apache 2.0 |\n| **PostgreSQL** | 14+ | Advanced relational database with JSON support and real-time capabilities | PostgreSQL License |\n| **Tailwind CSS** | 3.4+ | Utility-first CSS framework optimised for responsive design and component development | MIT License |\n| **Pinia** | 2.1+ | Official Vue state management library with TypeScript support | MIT License |\n| **VueUse** | 10.9+ | Collection of essential Vue composition utilities | MIT License |\n| **Flutter** | 3.10+ | Cross-platform mobile framework for Warringu companion application | BSD 3-Clause |\n| **Dart** | 3.0+ | Programming language for Flutter mobile application development | BSD 3-Clause |\n| **TypeScript** | 5.0+ | Typed JavaScript providing enhanced development experience and code quality | Apache 2.0 |\n\n## Care Management Modules\n\n### Young Person Management System\n\n**Comprehensive Client Care Framework:**\nThe Young Person (YP) Management System provides holistic care coordination for young people in residential care environments:\n\n**Care Planning and Risk Assessment:**\n- **Comprehensive Assessment Tools**: Multi-dimensional assessment frameworks incorporating mental health, behavioral, educational, and social factors\n- **AI-Assisted Risk Analysis**: Pattern recognition algorithms identifying potential risk factors and protective factors\n- **Individualised Support Planning**: Tailored intervention strategies based on strengths-based approaches and evidence-based practices\n- **Crisis Management Protocols**: Automated crisis plan generation with therapeutic crisis intervention (TCI) integration\n- **Progress Monitoring**: Real-time tracking of goal achievement and intervention effectiveness\n\n### Staff Development and Management Platform\n\n**Comprehensive Workforce Management Framework:**\n\n**Staff Development Features:**\n- **Qualification Management**: Automated tracking of Certificate IV in Youth Work, First Aid, and specialised qualifications with expiry alerts\n- **Competency Assessment**: AI-powered analysis of staff performance and identification of professional development opportunities\n- **Training Coordination**: Integrated training scheduling and progress tracking aligned with organisational and regulatory requirements\n- **Performance Monitoring**: Comprehensive performance analytics supporting supervision and professional development planning\n- **Wellness Support**: Early identification of staff requiring additional support through pattern analysis and workload monitoring\n\n### Facility and Asset Management Framework\n\n**Comprehensive Property and Asset Management:**\n\n**Facility Management Capabilities:**\n- **Location Management**: Comprehensive house profiles with capacity management, occupancy tracking, and environmental monitoring\n- **Asset Tracking**: Digital asset registers with maintenance schedules, warranty tracking, and replacement planning\n- **Maintenance Workflows**: Automated maintenance request processing, contractor management, and compliance monitoring\n- **Safety Compliance**: WHS documentation systems, safety inspection scheduling, and regulatory compliance tracking\n- **Cleaning Protocols**: Structured cleaning checklists and hygiene monitoring systems ensuring safe residential environments\n\n### Documentation and Communication Hub\n\n**Comprehensive Documentation and Communication Platform:**\n\n**Documentation Features:**\n- **Shift Reporting**: Multiple shift report types (daily, night, awake shifts) with AI-assisted generation and quality assessment\n- **Incident Documentation**: Comprehensive incident reporting with automated debriefing protocols and compliance validation\n- **Meeting Management**: Voice-to-text meeting transcription with action item extraction and follow-up scheduling\n- **Secure Messaging**: Role-based communication systems with audit trails and message encryption\n- **File Management**: Centralised document storage with version control and access permissions\n\n### Compliance and Reporting Analytics\n\n**Advanced Compliance Monitoring and Analytics Framework:**\n\n## Installation & Deployment\n\n### Prerequisites and Environment Setup\n\n**System Requirements:**\n```bash\n# Node.js and Package Manager Requirements\nnode --version    # Requires Node.js 20.18.0+\nnpm --version     # Requires npm 8+\n\n# Platform-specific Requirements\n# Web Application: Modern browser with ES2020+ support\n# Mobile Application: Flutter 3.10+ with Dart 3.0+\n# Database: PostgreSQL 14+ with Supabase configuration\n```\n\n**Development Environment Configuration:**\n```bash\n# Clone repository and setup development environment\ngit clone https://github.com/safelivingnq/slnq-platform.git\ncd slnq-platform\n\n# Make installation scripts executable\nchmod +x install-fix.sh\nchmod +x complete-install.sh\n\n# Install dependencies and configure environment\n./install-fix.sh\n\n# Alternative manual installation\nnpm install\n\n# Install Flutter dependencies for mobile companion app\ncd warringu-app\nflutter pub get\ncd ..\n```\n\n**Environment Configuration:**\n```bash\n# Create environment configuration file\ncp .env.example .env\n\n# Configure Supabase connection\necho \"NUXT_PUBLIC_SUPABASE_URL=your_supabase_project_url\" >> .env\necho \"NUXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key\" >> .env\necho \"SUPABASE_SERVICE_ROLE_KEY=your_service_role_key\" >> .env\n\n# Configure AI services integration\necho \"OPENAI_API_KEY=your_openai_api_key\" >> .env\necho \"ANTHROPIC_API_KEY=your_anthropic_api_key\" >> .env\n\n# Configure notification services\necho \"NOTIFICATION_SERVICE_URL=your_notification_service\" >> .env\necho \"SMS_SERVICE_API_KEY=your_sms_service_key\" >> .env\n```\n\n### Database Setup and Configuration\n\n**Supabase Database Initialisation:**\n```sql\n-- Execute complete database schema\n-- Run in Supabase SQL Editor\n\n-- Enable required extensions\nCREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";\nCREATE EXTENSION IF NOT EXISTS \"pg_trgm\";\nCREATE EXTENSION IF NOT EXISTS \"unaccent\";\n\n-- Create enum types for data consistency\nCREATE TYPE user_role AS ENUM ('support_worker', 'team_leader', 'management', 'admin');\nCREATE TYPE young_person_status AS ENUM ('active', 'discharged', 'inactive');\nCREATE TYPE incident_severity AS ENUM ('low', 'medium', 'high', 'critical');\nCREATE TYPE task_priority AS ENUM ('low', 'medium', 'high', 'urgent');\n\n-- Execute complete schema from database/schema.sql\n\\i database/schema.sql\n\n-- Insert sample data for development\n\\i database/sample-data.sql\n\n-- Configure Row Level Security policies\n\\i database/rls-policies.sql\n```\n\n### Development Commands and Workflows\n\n**Development Server Management:**\n```bash\n# Start development server\nnpm run dev              # Web application on http://localhost:3000\n\n# Database management\nnode scripts/setup-database.js     # Initialize database schema\nnode scripts/check-env.js          # Validate environment configuration\n\n# Flutter mobile app development\ncd warringu-app\nflutter run -d chrome              # Web version of mobile app\nflutter run -d ios                 # iOS simulator\nflutter run -d android             # Android emulator\n\n# Troubleshooting and diagnostics\n./diagnostic-fix.sh                # Comprehensive system diagnostics\n./fix-auth-completely.sh           # Authentication system reset\n./minimal-fix.sh                   # Minimal working configuration\n```\n\n**Production Deployment:**\n```bash\n# Web application production build\nnpm run build                      # Generate production build\nnpm run generate                   # Static site generation\nnpm run preview                    # Preview production build\n\n# Mobile application deployment\ncd warringu-app\nflutter build web --release        # Web deployment\nflutter build ios --release        # iOS App Store\nflutter build apk --release        # Android APK\nflutter build appbundle --release  # Google Play Store\n\n# Database migration and backup\nnode scripts/export-production-data.js    # Export production data\nnode scripts/backup-database.js           # Automated backup\n```\n\n## Security & Compliance\n\n### Multi-Layered Security Architecture\n\nSLNQ implements comprehensive security measures specifically designed for youth services environments:\n\n**Youth Data Protection:**\n- Enhanced consent processes for different age groups\n- Granular control over information sharing\n- Regular review and update of privacy preferences\n- Role-based access to youth information\n- Comprehensive audit logging\n\n**Australian Care Standards Compliance:**\nSLNQ is designed to support compliance with:\n- Australian Aged Care Quality Standards (adapted for youth residential care)\n- Queensland Community Services Industry Standards\n- National Disability Insurance Scheme (NDIS) requirements where applicable\n- Australian Privacy Principles (Privacy Act 1988)\n- Children and Young Persons (Care and Protection) Act frameworks\n\n## Development Guidelines\n\n### Youth Services Development Standards\n\n**Trauma-Informed Development Principles:**\nDevelopment guidelines specific to youth residential care environments following core principles:\n1. Safety First - All features must prioritize physical and emotional safety\n2. Trustworthiness - Transparent processes and clear communication\n3. Peer Support - Facilitate positive peer relationships and support\n4. Collaboration - Involve young people in decisions affecting them\n5. Empowerment - Build on strengths and resilience\n6. Cultural Responsiveness - Respect cultural backgrounds and needs\n\n## License & Legal\n\n### Proprietary Software License\n\n**Copyright Notice:**\n```\nCopyright (c) 2024 Safe Living NQ PTY LTD\nAll rights reserved.\n\nSLNQ Youth Support Services Management Platform and associated components \nare proprietary software developed for youth residential care services. \nUnauthorised reproduction, distribution, or modification is strictly prohibited.\n```\n\n**Commercial Licensing:**\nSLNQ is available under commercial licensing terms specifically designed for youth support services organisations, government agencies, and approved technology partners.\n\n### Youth Protection and Safety\n\n**Child Protection Compliance:**\nThis software is designed to support child protection requirements and includes:\n- Mandatory reporting integration and workflow systems\n- Working with Children Check validation and monitoring\n- Incident reporting aligned with child protection protocols\n- Information sharing frameworks compliant with child protection legislation\n\n**Safety and Wellbeing Priority:**\nAll development, implementation, and use of SLNQ prioritises the safety, wellbeing, and rights of young people in care. The system includes safeguards, monitoring, and reporting features designed to protect vulnerable young people and support their development and transition to independence.\n\n---\n\n**Document Control:**\n- Version: 1.0.0\n- Last Updated: 2024-08-19\n- Authors: SLNQ Development Team\n- Review Status: Approved for Youth Services Implementation\n\n**Important Notice:** This platform handles sensitive information about vulnerable young people. All users, developers, and stakeholders must prioritise the safety, privacy, and wellbeing of young people in all interactions with this system."
     },
     {
-      "name": "parent-pilot",
-      "title": "Parent Pilot: AI-Enhanced Parenting Support Platform",
-      "category": "healthcare",
-      "description": "An innovative AI-enhanced mobile application providing comprehensive parenting support through intelligent assistance, community connection, and evidence-based guidance. Integrates GPT-4 for personalized parenting advice.",
-      "topics": [
-        "parenting",
-        "ai-assistant",
-        "mobile-app",
-        "community",
-        "child-development"
-      ],
-      "url": "https://github.com/HWAI-collab/parent-pilot",
-      "stars": 28,
-      "forks": 7,
-      "language": "Dart",
-      "technologies": [
-        "Flutter",
-        "OpenAI GPT-4",
-        "Supabase",
-        "PostgreSQL",
-        "PostGIS"
-      ],
-      "sections": [
-        "AI-Powered Parenting Assistant",
-        "Community Connection Platform",
-        "Personalised Development Tracking",
-        "Emergency Support System",
-        "Educational Resource Library"
-      ],
-      "abstract": "Parent Pilot integrates advanced artificial intelligence capabilities with evidence-based parenting methodologies to deliver personalised support for modern families. Built upon Flutter's cross-platform framework and enhanced by OpenAI's GPT-4, it addresses critical gaps in parenting support by providing instant access to expert guidance, peer community connections, and personalised recommendations.",
-      "highlights": [
-        "GPT-4 powered parenting advice",
-        "Geolocation-based parent matching",
-        "Child development milestone tracking",
-        "24/7 crisis support integration",
-        "Evidence-based educational resources"
-      ],
-      "readme_content": "# Parent Pilot: AI-Enhanced Parenting Support and Community Platform\n\n[![Flutter](https://img.shields.io/badge/Flutter-3.0%2B-02569B.svg)](https://flutter.dev/)\n[![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E.svg)](https://supabase.com/)\n[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-412991.svg)](https://openai.com/)\n[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license--legal)\n\n## Abstract\n\nParent Pilot represents an innovative AI-enhanced mobile application designed to provide comprehensive parenting support through intelligent assistance, community connection, and evidence-based guidance. The platform integrates advanced artificial intelligence capabilities with evidence-based parenting methodologies to deliver personalised support for modern families navigating the complexities of child-rearing in the digital age.\n\nBuilt upon Flutter's cross-platform framework and enhanced by OpenAI's GPT-4 natural language processing capabilities, Parent Pilot addresses critical gaps in parenting support by providing instant access to expert guidance, peer community connections, and personalised recommendations tailored to individual family circumstances. The platform's innovative approach combines developmental psychology, behavioural science, and machine learning to create a comprehensive ecosystem supporting parental confidence and child development outcomes.\n\nThrough its integration of real-time AI assistance, geolocation-based community features, and comprehensive tracking capabilities, Parent Pilot represents a paradigm shift in digital parenting support, moving beyond generic advice to provide contextualised, actionable guidance that adapts to each family's unique needs and circumstances.\n\n## Table of Contents\n\n- [Abstract](#abstract)\n- [Executive Summary](#executive-summary)\n  - [Strategic Vision and Objectives](#strategic-vision-and-objectives)\n  - [Key Stakeholders](#key-stakeholders)\n  - [Value Proposition](#value-proposition)\n- [System Architecture](#system-architecture)\n  - [Mobile Application Framework](#mobile-application-framework)\n  - [AI Integration Architecture](#ai-integration-architecture)\n  - [Community Platform Architecture](#community-platform-architecture)\n- [Core Technologies](#core-technologies)\n- [Feature Specifications](#feature-specifications)\n  - [AI-Powered Parenting Assistant](#ai-powered-parenting-assistant)\n  - [Community Connection Platform](#community-connection-platform)\n  - [Personalised Development Tracking](#personalised-development-tracking)\n  - [Emergency Support System](#emergency-support-system)\n  - [Educational Resource Library](#educational-resource-library)\n- [Installation & Deployment](#installation--deployment)\n  - [Development Environment Setup](#development-environment-setup)\n  - [Production Deployment](#production-deployment)\n- [API Documentation](#api-documentation)\n- [Database Schema](#database-schema)\n- [AI Integration Framework](#ai-integration-framework)\n- [User Experience Design](#user-experience-design)\n- [Security & Privacy](#security--privacy)\n- [Performance Optimisation](#performance-optimisation)\n- [Testing Strategy](#testing-strategy)\n- [Development Guidelines](#development-guidelines)\n- [Contributing Guidelines](#contributing-guidelines)\n- [License & Legal](#license--legal)\n\n## Executive Summary\n\n### Strategic Vision and Objectives\n\nParent Pilot addresses fundamental challenges in modern parenting through technology-enhanced support systems and community engagement. The platform's strategic objectives encompass:\n\n- **Intelligent Parenting Assistance**: Implementation of AI-powered guidance systems providing evidence-based parenting recommendations and instant support\n- **Community Building**: Creation of geographically-aware community platforms connecting parents with similar circumstances and challenges\n- **Developmental Tracking**: Comprehensive monitoring and analysis of child development milestones with personalised intervention recommendations\n- **Crisis Support**: Emergency response systems connecting parents with professional support during critical situations\n\n### Key Stakeholders\n\n**Primary Stakeholders:**\n- New parents seeking expert guidance and peer support\n- Experienced parents looking to connect with local communities\n- Single parents requiring additional support networks\n- Parents of children with special needs or developmental concerns\n\n**Secondary Stakeholders:**\n- Child development professionals seeking digital engagement tools\n- Paediatricians and healthcare providers supporting family wellness\n- Educational professionals working with parents and families\n- Community organisations focused on family support services\n\n**Tertiary Stakeholders:**\n- Researchers studying parenting behaviours and child development\n- Policy makers developing family support initiatives\n- Technology companies developing family-focused applications\n- Healthcare systems implementing preventive family wellness programs\n\n### Value Proposition\n\nParent Pilot delivers transformative value through:\n\n1. **Instant Expert Access**: AI-powered assistant providing 24/7 access to evidence-based parenting guidance and support\n2. **Community Connection**: Location-based matching connecting parents with local support networks and resources\n3. **Personalised Development**: Tailored tracking and recommendations based on individual child development patterns\n4. **Professional Integration**: Seamless connection with healthcare providers and child development professionals\n\n## System Architecture\n\n### Mobile Application Framework\n\n```mermaid\ngraph TB\n    subgraph \"Presentation Layer\"\n        A[Flutter UI Components]\n        B[Material Design 3]\n        C[Custom Widgets]\n        D[State Management - Provider]\n    end\n    \n    subgraph \"Business Logic Layer\"\n        E[AI Assistant Service]\n        F[Community Service]\n        G[Development Tracking Service]\n        H[Location Service]\n        I[Authentication Service]\n    end\n    \n    subgraph \"Data Layer\"\n        J[Supabase Client]\n        K[Local Storage]\n        L[Image Picker]\n        M[Geolocation Service]\n    end\n    \n    subgraph \"External Services\"\n        N[OpenAI GPT-4 API]\n        O[Supabase Backend]\n        P[Maps Integration]\n        Q[Push Notifications]\n    end\n    \n    A --> E\n    B --> F\n    C --> G\n    D --> H\n    E --> J\n    F --> K\n    G --> L\n    H --> M\n    J --> O\n    E --> N\n    F --> P\n    I --> Q\n```\n\n### AI Integration Architecture\n\nThe platform employs a sophisticated AI integration framework for intelligent parenting assistance:\n\n```python\nclass ParentingAssistant:\n    def __init__(self, api_key: str, model: str = \"gpt-4\"):\n        self.openai_client = OpenAI(api_key=api_key)\n        self.model = model\n        self.context_manager = ConversationContextManager()\n        self.safety_filter = SafetyContentFilter()\n        \n    async def get_parenting_advice(\n        self, \n        query: str, \n        child_profile: ChildProfile,\n        parent_context: ParentContext\n    ) -> ParentingResponse:\n        \n        # Build contextual prompt\n        system_prompt = self.build_system_prompt(child_profile, parent_context)\n        \n        # Apply safety filters\n        if not self.safety_filter.is_safe_query(query):\n            return self.generate_safety_response()\n        \n        # Generate AI response\n        response = await self.openai_client.chat.completions.create(\n            model=self.model,\n            messages=[\n                {\"role\": \"system\", \"content\": system_prompt},\n                {\"role\": \"user\", \"content\": query}\n            ],\n            temperature=0.7,\n            max_tokens=500\n        )\n        \n        # Process and validate response\n        processed_response = self.process_ai_response(response)\n        \n        return ParentingResponse(\n            advice=processed_response.content,\n            confidence=processed_response.confidence,\n            sources=processed_response.evidence_sources,\n            follow_up_questions=processed_response.follow_ups\n        )\n```\n\n### Community Platform Architecture\n\n```mermaid\nsequenceDiagram\n    participant Parent\n    participant App\n    participant Location Service\n    participant Community Service\n    participant Database\n    \n    Parent->>App: Open Community Tab\n    App->>Location Service: Get Current Location\n    Location Service-->>App: Return Coordinates\n    App->>Community Service: Find Nearby Parents\n    Community Service->>Database: Query Geospatial Data\n    Database-->>Community Service: Return Matches\n    Community Service-->>App: Community List\n    App-->>Parent: Display Local Community\n    \n    Parent->>App: Join Community Group\n    App->>Community Service: Join Request\n    Community Service->>Database: Update Membership\n    Database-->>Community Service: Confirmation\n    Community Service-->>App: Join Success\n    App-->>Parent: Welcome to Community\n```\n\n## Core Technologies\n\n### Mobile Framework\n\n| Technology | Version | Purpose | License |\n|------------|---------|---------|----------|\n| Flutter | 3.0+ | Cross-platform framework | BSD-3-Clause |\n| Dart | 2.17+ | Programming language | BSD-3-Clause |\n| Provider | 6.0+ | State management | MIT |\n| Material Design 3 | Latest | Design system | Apache 2.0 |\n\n### Backend & AI Services\n\n| Technology | Version | Purpose | License |\n|------------|---------|---------|----------|\n| Supabase | 0.2.8+ | Backend as a Service | Apache 2.0 |\n| OpenAI API | 1.0+ | AI language model | Proprietary |\n| PostgreSQL | 15+ | Relational database | PostgreSQL |\n| PostGIS | 3.0+ | Geospatial extensions | GPL-2.0 |\n\n### Supporting Libraries\n\n| Technology | Version | Purpose | License |\n|------------|---------|---------|----------|\n| Geolocator | 9.0+ | Location services | MIT |\n| FL Chart | 0.62+ | Data visualisation | MIT |\n| Syncfusion Charts | 21.2+ | Advanced charting | Commercial |\n| Image Picker | 0.8+ | Camera integration | Apache 2.0 |\n| URL Launcher | 6.0+ | External link handling | BSD-3-Clause |\n\n## Feature Specifications\n\n### AI-Powered Parenting Assistant\n\n**Core AI Capabilities:**\n- Natural language understanding for parenting queries\n- Evidence-based response generation with source attribution\n- Contextual advice based on child age, development stage, and family circumstances\n- Crisis detection and appropriate resource referral\n\n**Technical Implementation:**\n```dart\nclass AIAssistantService {\n  final OpenAI openAI;\n  final SafetyFilter safetyFilter;\n  final ConversationHistory history;\n  \n  AIAssistantService({\n    required this.openAI,\n    required this.safetyFilter,\n    required this.history,\n  });\n  \n  Future<AIResponse> getParentingAdvice({\n    required String question,\n    required ChildProfile childProfile,\n    required ParentContext parentContext,\n  }) async {\n    \n    // Validate input and apply safety filters\n    if (!safetyFilter.isAppropriateTopic(question)) {\n      return AIResponse.inappropriate();\n    }\n    \n    // Build context-aware prompt\n    final systemPrompt = _buildSystemPrompt(childProfile, parentContext);\n    final userPrompt = _enhanceUserPrompt(question, history.recent);\n    \n    try {\n      final completion = await openAI.createCompletion(\n        model: 'gpt-4',\n        prompt: userPrompt,\n        systemMessage: systemPrompt,\n        maxTokens: 500,\n        temperature: 0.7,\n      );\n      \n      // Process and validate response\n      final response = _processAIResponse(completion);\n      \n      // Store conversation for context\n      history.addInteraction(question, response);\n      \n      return AIResponse.success(\n        advice: response.content,\n        confidence: response.confidence,\n        sources: response.evidenceSources,\n        followUpQuestions: response.suggestedQuestions,\n      );\n      \n    } catch (e) {\n      return AIResponse.error('Unable to generate advice at this time');\n    }\n  }\n  \n  String _buildSystemPrompt(ChildProfile child, ParentContext parent) {\n    return '''\n    You are a knowledgeable parenting assistant providing evidence-based guidance.\n    \n    Child Information:\n    - Age: ${child.ageMonths} months\n    - Developmental stage: ${child.developmentalStage}\n    - Special considerations: ${child.specialNeeds.join(', ')}\n    \n    Parent Context:\n    - Experience level: ${parent.experienceLevel}\n    - Family structure: ${parent.familyStructure}\n    - Primary concerns: ${parent.primaryConcerns.join(', ')}\n    \n    Guidelines:\n    - Provide evidence-based advice citing credible sources\n    - Consider the child's age and developmental stage\n    - Be supportive and non-judgmental\n    - Suggest professional consultation for serious concerns\n    - Keep responses concise but comprehensive\n    ''';\n  }\n}\n```\n\n### Community Connection Platform\n\n**Community Features:**\n- Geolocation-based parent matching\n- Interest-based group formation\n- Local event creation and discovery\n- Secure messaging and group chat\n- Resource sharing and recommendations\n\n**Location-Based Matching Algorithm:**\n```dart\nclass CommunityMatchingService {\n  final GeolocatorService geolocator;\n  final SupabaseClient supabase;\n  \n  Future<List<ParentMatch>> findNearbyParents({\n    required double latitude,\n    required double longitude,\n    double radiusKm = 10.0,\n    List<String>? interests,\n    AgeRange? childAgeRange,\n  }) async {\n    \n    // Build geospatial query\n    final response = await supabase\n        .from('parent_profiles')\n        .select('''\n          id, name, bio, interests, children_ages,\n          location, profile_image_url, last_active\n        ''')\n        .within('location', latitude, longitude, radiusKm * 1000)\n        .gte('last_active', DateTime.now().subtract(Duration(days: 30)))\n        .order('location', ascending: true);\n    \n    List<ParentMatch> matches = [];\n    \n    for (final profile in response) {\n      final match = ParentMatch.fromJson(profile);\n      \n      // Calculate compatibility score\n      final compatibilityScore = _calculateCompatibility(\n        interests: interests,\n        childAgeRange: childAgeRange,\n        targetProfile: match,\n      );\n      \n      if (compatibilityScore > 0.3) {\n        match.compatibilityScore = compatibilityScore;\n        matches.add(match);\n      }\n    }\n    \n    // Sort by compatibility and distance\n    matches.sort((a, b) {\n      final compatibilityComparison = b.compatibilityScore.compareTo(a.compatibilityScore);\n      if (compatibilityComparison != 0) return compatibilityComparison;\n      return a.distanceKm.compareTo(b.distanceKm);\n    });\n    \n    return matches.take(20).toList();\n  }\n  \n  double _calculateCompatibility({\n    List<String>? interests,\n    AgeRange? childAgeRange,\n    required ParentMatch targetProfile,\n  }) {\n    double score = 0.0;\n    \n    // Interest overlap (40% weight)\n    if (interests != null && interests.isNotEmpty) {\n      final commonInterests = interests\n          .where((interest) => targetProfile.interests.contains(interest))\n          .length;\n      score += (commonInterests / interests.length) * 0.4;\n    }\n    \n    // Child age compatibility (35% weight)\n    if (childAgeRange != null) {\n      final ageCompatibility = _calculateAgeCompatibility(\n        childAgeRange, \n        targetProfile.childrenAges\n      );\n      score += ageCompatibility * 0.35;\n    }\n    \n    // Activity level (25% weight)\n    final activityScore = _calculateActivityScore(targetProfile.lastActive);\n    score += activityScore * 0.25;\n    \n    return score;\n  }\n}\n```\n\n### Personalised Development Tracking\n\n**Development Monitoring Features:**\n- Milestone tracking with age-appropriate assessments\n- Growth chart integration with paediatric standards\n- Behavioural pattern analysis\n- Educational activity recommendations\n- Progress sharing with healthcare providers\n\n**Milestone Tracking System:**\n```dart\nclass DevelopmentTracker {\n  final SupabaseClient supabase;\n  final ChartDataProcessor chartProcessor;\n  \n  Future<DevelopmentReport> generateDevelopmentReport(\n    String childId,\n    DateTime fromDate,\n    DateTime toDate,\n  ) async {\n    \n    // Retrieve milestone data\n    final milestones = await supabase\n        .from('child_milestones')\n        .select('*')\n        .eq('child_id', childId)\n        .gte('recorded_date', fromDate.toIso8601String())\n        .lte('recorded_date', toDate.toIso8601String())\n        .order('recorded_date');\n    \n    // Retrieve growth measurements\n    final growthData = await supabase\n        .from('growth_measurements')\n        .select('*')\n        .eq('child_id', childId)\n        .gte('measurement_date', fromDate.toIso8601String())\n        .lte('measurement_date', toDate.toIso8601String())\n        .order('measurement_date');\n    \n    // Analyse development patterns\n    final developmentAnalysis = _analyseDevelopmentPatterns(milestones);\n    final growthAnalysis = _analyseGrowthPatterns(growthData);\n    \n    // Generate recommendations\n    final recommendations = await _generateRecommendations(\n      developmentAnalysis,\n      growthAnalysis,\n    );\n    \n    return DevelopmentReport(\n      childId: childId,\n      reportPeriod: DateRange(fromDate, toDate),\n      milestonesSummary: developmentAnalysis.summary,\n      growthSummary: growthAnalysis.summary,\n      achievedMilestones: developmentAnalysis.achieved,\n      upcomingMilestones: developmentAnalysis.upcoming,\n      growthPercentiles: growthAnalysis.percentiles,\n      recommendations: recommendations,\n      alertFlags: developmentAnalysis.concerns,\n    );\n  }\n  \n  DevelopmentAnalysis _analyseDevelopmentPatterns(List<Milestone> milestones) {\n    // Categorise milestones by development domain\n    final motorMilestones = milestones\n        .where((m) => m.domain == DevelopmentDomain.motor)\n        .toList();\n    final cognitiveMilestones = milestones\n        .where((m) => m.domain == DevelopmentDomain.cognitive)\n        .toList();\n    final socialMilestones = milestones\n        .where((m) => m.domain == DevelopmentDomain.social)\n        .toList();\n    \n    // Analyse achievement patterns\n    final motorProgress = _calculateDomainProgress(motorMilestones);\n    final cognitiveProgress = _calculateDomainProgress(cognitiveMilestones);\n    final socialProgress = _calculateDomainProgress(socialMilestones);\n    \n    // Identify potential concerns\n    final concerns = <DevelopmentConcern>[];\n    if (motorProgress.percentile < 10) {\n      concerns.add(DevelopmentConcern.motorDelay);\n    }\n    if (cognitiveProgress.percentile < 10) {\n      concerns.add(DevelopmentConcern.cognitiveDelay);\n    }\n    if (socialProgress.percentile < 10) {\n      concerns.add(DevelopmentConcern.socialDelay);\n    }\n    \n    return DevelopmentAnalysis(\n      motorProgress: motorProgress,\n      cognitiveProgress: cognitiveProgress,\n      socialProgress: socialProgress,\n      concerns: concerns,\n    );\n  }\n}\n```\n\n### Emergency Support System\n\n**Crisis Response Features:**\n- 24/7 crisis hotline integration\n- Emergency contact automation\n- Professional referral network\n- Crisis intervention protocols\n- Safety planning tools\n\n**Emergency Response Implementation:**\n```dart\nclass EmergencyResponseService {\n  final LocationService locationService;\n  final ContactService contactService;\n  final ProfessionalNetworkService professionalNetwork;\n  \n  Future<EmergencyResponse> handleEmergencyRequest({\n    required EmergencyType emergencyType,\n    required String description,\n    String? childId,\n  }) async {\n    \n    // Get current location for local resource matching\n    final location = await locationService.getCurrentLocation();\n    \n    switch (emergencyType) {\n      case EmergencyType.medical:\n        return await _handleMedicalEmergency(description, location, childId);\n      \n      case EmergencyType.mentalHealth:\n        return await _handleMentalHealthCrisis(description, location);\n      \n      case EmergencyType.safety:\n        return await _handleSafetyConcern(description, location, childId);\n      \n      case EmergencyType.abuse:\n        return await _handleAbuseReport(description, location, childId);\n      \n      default:\n        return await _handleGeneralEmergency(description, location);\n    }\n  }\n  \n  Future<EmergencyResponse> _handleMedicalEmergency(\n    String description, \n    Location location,\n    String? childId,\n  ) async {\n    \n    // Find nearest emergency services\n    final nearestHospital = await professionalNetwork.findNearestHospital(location);\n    final pediatricianContact = childId != null \n        ? await professionalNetwork.getPediatrician(childId)\n        : null;\n    \n    // Generate emergency action plan\n    final actionPlan = EmergencyActionPlan(\n      immediateActions: [\n        'Call emergency services if life-threatening',\n        'Contact your pediatrician',\n        'Proceed to nearest emergency room if necessary',\n      ],\n      emergencyContacts: [\n        EmergencyContact.emergency911,\n        if (pediatricianContact != null) pediatricianContact,\n        nearestHospital.emergencyContact,\n      ],\n      location: nearestHospital,\n    );\n    \n    // Log emergency for follow-up\n    await _logEmergencyEvent(\n      type: EmergencyType.medical,\n      description: description,\n      actionTaken: actionPlan,\n      location: location,\n    );\n    \n    return EmergencyResponse.medical(actionPlan);\n  }\n}\n```\n\n### Educational Resource Library\n\n**Resource Management Features:**\n- Age-appropriate activity recommendations\n- Evidence-based parenting articles\n- Video tutorials and demonstrations\n- Interactive development assessments\n- Customised learning pathways\n\n**Resource Recommendation Engine:**\n```dart\nclass ResourceRecommendationEngine {\n  final SupabaseClient supabase;\n  final AIAssistantService aiAssistant;\n  \n  Future<List<EducationalResource>> getRecommendedResources({\n    required ChildProfile childProfile,\n    required ParentInterests interests,\n    required List<DevelopmentGoal> currentGoals,\n  }) async {\n    \n    // Get base recommendations by age and development stage\n    final ageAppropriateResources = await supabase\n        .from('educational_resources')\n        .select('*')\n        .gte('min_age_months', childProfile.ageMonths - 3)\n        .lte('max_age_months', childProfile.ageMonths + 6)\n        .contains('development_domains', childProfile.focusAreas)\n        .order('popularity_score', ascending: false);\n    \n    // Filter by parent interests and learning style\n    final filteredResources = ageAppropriateResources\n        .where((resource) => _matchesParentInterests(resource, interests))\n        .toList();\n    \n    // Use AI to personalise recommendations\n    final personalizedRecommendations = await aiAssistant.personalizeResourceList(\n      resources: filteredResources,\n      childProfile: childProfile,\n      parentGoals: currentGoals,\n    );\n    \n    // Score and rank recommendations\n    final scoredResources = personalizedRecommendations\n        .map((resource) => _scoreResource(resource, childProfile, interests))\n        .toList();\n    \n    scoredResources.sort((a, b) => b.relevanceScore.compareTo(a.relevanceScore));\n    \n    return scoredResources.take(10).toList();\n  }\n  \n  EducationalResource _scoreResource(\n    EducationalResource resource,\n    ChildProfile child,\n    ParentInterests interests,\n  ) {\n    double score = 0.0;\n    \n    // Age appropriateness (30% weight)\n    final ageScore = _calculateAgeAppropriatenessScore(resource, child.ageMonths);\n    score += ageScore * 0.3;\n    \n    // Development goal alignment (25% weight)\n    final goalAlignmentScore = _calculateGoalAlignmentScore(resource, child.currentGoals);\n    score += goalAlignmentScore * 0.25;\n    \n    // Interest matching (20% weight)\n    final interestScore = _calculateInterestMatchScore(resource, interests);\n    score += interestScore * 0.2;\n    \n    // Quality indicators (15% weight)\n    final qualityScore = resource.averageRating / 5.0;\n    score += qualityScore * 0.15;\n    \n    // Recency and relevance (10% weight)\n    final recencyScore = _calculateRecencyScore(resource.publishedDate);\n    score += recencyScore * 0.1;\n    \n    return resource.copyWith(relevanceScore: score);\n  }\n}\n```\n\n## Installation & Deployment\n\n### Development Environment Setup\n\n**Prerequisites:**\n```bash\n# Required tools\n- Flutter SDK: 3.0 or higher\n- Dart SDK: 2.17 or higher\n- Android Studio / Xcode for mobile development\n- Git: 2.30 or higher\n```\n\n**Installation Steps:**\n\n1. **Clone Repository:**\n```bash\ngit clone https://github.com/your-org/parent-pilot.git\ncd parent-pilot/parent_pilot_mvp\n```\n\n2. **Install Dependencies:**\n```bash\nflutter pub get\n```\n\n3. **Configure Environment:**\n```bash\ncp .env.example .env\n# Edit .env with your API keys and configuration\n```\n\n4. **Set Up Supabase:**\n```bash\n# Install Supabase CLI\nnpm install -g @supabase/cli\n\n# Initialize Supabase project\nsupabase init\nsupabase start\n```\n\n5. **Configure OpenAI API:**\n```bash\n# Add your OpenAI API key to .env file\nOPENAI_API_KEY=your_openai_api_key_here\n```\n\n6. **Run Application:**\n```bash\nflutter run\n```\n\n### Production Deployment\n\n**Android Deployment:**\n```bash\n# Build release APK\nflutter build apk --release\n\n# Or build App Bundle for Play Store\nflutter build appbundle --release\n```\n\n**iOS Deployment:**\n```bash\n# Build for iOS\nflutter build ios --release\n\n# Archive and upload to App Store Connect\n# Use Xcode for final distribution\n```\n\n**Environment Configuration:**\n```yaml\n# pubspec.yaml production configuration\nname: parent_pilot\ndescription: AI-Enhanced Parenting Support Platform\nversion: 1.0.0+1\n\nenvironment:\n  sdk: \">=2.17.0 <4.0.0\"\n  flutter: \">=3.0.0\"\n\ndependencies:\n  flutter:\n    sdk: flutter\n  \n  # Core dependencies\n  provider: ^6.0.0\n  supabase_flutter: ^1.0.0\n  http: ^0.13.3\n  \n  # AI integration\n  dart_openai: ^2.0.0\n  \n  # Location services\n  geolocator: ^9.0.2\n  \n  # UI components\n  fl_chart: ^0.62.0\n  syncfusion_flutter_charts: ^21.2.4\n  \n  # Media handling\n  image_picker: ^0.8.7\n  \n  # Utilities\n  flutter_dotenv: ^5.0.2\n  url_launcher: ^6.1.0\n  path_provider: ^2.0.11\n```\n\n## License & Legal\n\n### Proprietary License\n\nThis software is proprietary and confidential. All rights reserved.\n\n### Third-Party Licenses\n\n| Package | License | Usage |\n|---------|---------|-------|\n| Flutter | BSD-3-Clause | Mobile framework |\n| Supabase | Apache 2.0 | Backend services |\n| OpenAI | Proprietary | AI language model |\n| Provider | MIT | State management |\n\n### Compliance\n\n- Child Online Privacy Protection Act (COPPA)\n- General Data Protection Regulation (GDPR)\n- Australian Privacy Act 1988\n- Health Insurance Portability and Accountability Act (HIPAA) - where applicable\n\n---\n\n**Contact Information:**\n- Technical Support: support@parentpilot.com\n- Privacy Concerns: privacy@parentpilot.com\n- Business Inquiries: business@parentpilot.com\n\n**Version:** 1.0.0  \n**Last Updated:** August 2025  \n**Copyright \u00a9 2025 Parent Pilot Technologies. All rights reserved.**"
-    },
-    {
-      "name": "adhd-dashboard",
-      "title": "ADHD Dashboard: Task Management for ADHD",
-      "category": "healthcare",
-      "description": "An ADHD-friendly task management dashboard built with Flutter. Features calendar view, swipeable task management, priority system, and quick actions for breathing exercises and focus timers.",
-      "topics": [
-        "adhd",
-        "mental-health",
-        "task-management",
-        "flutter",
-        "accessibility"
-      ],
-      "url": "https://github.com/HWAI-collab/adhd-dashboard",
-      "stars": 12,
-      "forks": 4,
-      "language": "Dart",
-      "technologies": [
-        "Flutter",
-        "Dart"
-      ],
-      "sections": [
-        "Features",
-        "Task Swipe Gestures",
-        "Quick Actions",
-        "Customization",
-        "Future Enhancements"
-      ],
-      "abstract": "A specialized task management dashboard designed specifically for individuals with ADHD. Features include a clean weekly calendar view, intuitive swipe gestures for task management, color-coded priority system, and quick access to calming exercises. The interface is intentionally distraction-free with clear visual feedback.",
-      "highlights": [
-        "Swipeable task management",
-        "ADHD-friendly clean interface",
-        "Priority-based color coding",
-        "Breathing exercise integration",
-        "Focus timer functionality"
-      ],
-      "readme_content": "# ADHD Dashboard\n\nAn ADHD-friendly task management dashboard built with Flutter.\n\n## Features\n\n- **\ud83d\udcc5 Calendar View**: Clean weekly calendar view to see tasks across days\n- **\ud83d\udd04 Swipeable Tasks**: Intuitive gesture controls for task management\n  - Swipe right: Mark as complete\n  - Swipe left: Reschedule for tomorrow  \n  - Swipe up: Cancel/delete task\n- **\u26a1 Quick Actions**: Bottom row with instant access to common actions\n  - Add new tasks\n  - Breathing exercises\n  - Focus timer\n  - Quick notes\n- **\ud83c\udfaf Priority System**: Color-coded task priorities (Low, Medium, High, Urgent)\n- **\ud83d\udcf1 ADHD-Friendly Design**: Clean, distraction-free interface with clear visual feedback\n\n## Getting Started\n\n### Prerequisites\n- Flutter SDK (3.10.0 or higher)\n- Dart SDK (3.0.0 or higher)\n\n### Installation\n\n1. Navigate to the project directory:\n   ```bash\n   cd adhd_dashboard\n   ```\n\n2. Install dependencies:\n   ```bash\n   flutter pub get\n   ```\n\n3. Run the app:\n   ```bash\n   flutter run\n   ```\n\n## Task Swipe Gestures\n\n- **\u27a1\ufe0f Swipe Right**: Complete the task (green background)\n- **\u2b05\ufe0f Swipe Left**: Reschedule task for tomorrow (blue background)  \n- **\u2b06\ufe0f Swipe Up**: Cancel/delete the task\n\n## Quick Actions\n\n- **\u2795 Add Task**: Create new tasks (coming soon)\n- **\ud83e\udec1 Breathe**: Quick breathing exercise dialog\n- **\u23f1\ufe0f Timer**: Focus timer for task work (coming soon)\n- **\ud83d\udcdd Notes**: Quick notes and thoughts (coming soon)\n\n## Customization\n\nThe app includes sample tasks to demonstrate functionality. To customize:\n\n1. Edit the `_initializeSampleTasks()` method in `lib/main.dart`\n2. Modify task priorities, descriptions, and due dates\n3. Add your own quick action buttons in the bottom section\n\n## Project Structure\n\n```\nlib/\n\u251c\u2500\u2500 main.dart                 # Main app and dashboard screen\n\u251c\u2500\u2500 models/\n\u2502   \u2514\u2500\u2500 task.dart            # Task data model and priority enum\n\u2514\u2500\u2500 widgets/\n    \u251c\u2500\u2500 swipeable_task_card.dart  # Swipeable task card widget\n    \u2514\u2500\u2500 quick_action_button.dart  # Quick action button widget\n```\n\n## Dependencies\n\n- `flutter`: Core Flutter framework\n- `table_calendar`: Calendar widget with event support\n- `intl`: Date formatting utilities\n\n## Future Enhancements\n\n- [ ] Persistent data storage\n- [ ] Task creation and editing\n- [ ] Focus timer implementation\n- [ ] Quick notes functionality\n- [ ] Reminder notifications\n- [ ] Task categories and tags\n- [ ] Progress tracking and analytics\n- [ ] Custom themes and accessibility options\n\n## Contributing\n\nThis is a personal ADHD management tool. Feel free to fork and customize for your own needs!\n\n## License\n\nThis project is for personal use and learning purposes."
-    },
-    {
       "name": "warringu-app",
       "title": "Warringu: Specialised Shared Services Hub",
       "category": "youth",
@@ -353,83 +276,6 @@
       ]
     },
     {
-      "name": "pacific-investigations",
-      "title": "Pacific Investigations: Forensic Analysis Platform",
-      "category": "ai",
-      "description": "Advanced forensic investigation platform combining machine learning crime prediction, facial recognition systems, and evidence analysis tools for law enforcement and security applications.",
-      "topics": [
-        "forensics",
-        "crime-prediction",
-        "facial-recognition",
-        "law-enforcement",
-        "machine-learning"
-      ],
-      "url": "https://github.com/HWAI-collab/pacific-investigations",
-      "stars": 20,
-      "forks": 7,
-      "language": "Python",
-      "technologies": [
-        "Python",
-        "TensorFlow",
-        "OpenCV",
-        "scikit-learn",
-        "Django"
-      ],
-      "sections": [
-        "Crime Prediction Models",
-        "Facial Recognition System",
-        "Evidence Analysis Tools",
-        "Case Management Interface",
-        "Security and Privacy Framework"
-      ],
-      "abstract": "Comprehensive forensic investigation platform utilizing machine learning algorithms for crime pattern analysis, facial recognition for suspect identification, and automated evidence processing to support law enforcement investigations.",
-      "highlights": [
-        "Machine learning crime prediction models",
-        "Advanced facial recognition capabilities",
-        "Automated evidence cataloging",
-        "Secure case management system",
-        "Privacy-preserving investigation tools"
-      ]
-    },
-    {
-      "name": "adhd-dashboard-web",
-      "title": "ADHD Dashboard Web: Neuroadaptive Task Management",
-      "category": "healthcare",
-      "description": "A comprehensive web-based ADHD task management system built with Flutter Web and Supabase. Features neuroadaptive interfaces, cognitive load optimization, and evidence-based ADHD support strategies.",
-      "topics": [
-        "adhd",
-        "neurodiversity",
-        "task-management",
-        "cognitive-science",
-        "accessibility"
-      ],
-      "url": "https://github.com/HWAI-collab/adhd-dashboard-web",
-      "stars": 16,
-      "forks": 4,
-      "language": "Dart",
-      "technologies": [
-        "Flutter Web",
-        "Supabase",
-        "PostgreSQL",
-        "PWA"
-      ],
-      "sections": [
-        "Neuroadaptive Interface Design",
-        "Cognitive Load Management",
-        "Evidence-Based ADHD Strategies",
-        "Progressive Web App Features",
-        "Accessibility Optimization"
-      ],
-      "abstract": "Web-based task management platform specifically designed for individuals with ADHD, incorporating neuroadaptive interface principles, cognitive load theory, and evidence-based ADHD management strategies to improve focus, organization, and task completion.",
-      "highlights": [
-        "Neuroadaptive interface elements",
-        "Cognitive load optimization algorithms",
-        "Evidence-based ADHD management strategies",
-        "Progressive Web App functionality",
-        "Comprehensive accessibility features"
-      ]
-    },
-    {
       "name": "mwd-weekly-dashboard",
       "title": "MWD: Advanced Personal Productivity Platform",
       "category": "infrastructure",
@@ -466,44 +312,6 @@
         "Advanced productivity analytics",
         "Heroku deployment pipeline",
         "Comprehensive user management"
-      ]
-    },
-    {
-      "name": "fire-red-agent",
-      "title": "Fire Red Agent: AI Gaming and Entertainment Platform",
-      "category": "ai",
-      "description": "An advanced AI gaming platform featuring automated gameplay agents, strategy optimization, and interactive entertainment systems. Built with Ruby on Rails and modern deployment technologies.",
-      "topics": [
-        "ai-gaming",
-        "automation",
-        "entertainment",
-        "strategy-ai",
-        "ruby-rails"
-      ],
-      "url": "https://github.com/HWAI-collab/fire-red-agent",
-      "stars": 22,
-      "forks": 8,
-      "language": "Ruby",
-      "technologies": [
-        "Ruby on Rails",
-        "Docker",
-        "AI Agents",
-        "Game Automation"
-      ],
-      "sections": [
-        "AI Agent Framework",
-        "Strategy Optimization Engine",
-        "Game State Analysis",
-        "Automated Decision Making",
-        "Performance Analytics"
-      ],
-      "abstract": "Fire Red Agent implements sophisticated AI agents for gaming environments, featuring automated gameplay, strategy optimization, and real-time decision making. Demonstrates advanced AI applications in interactive entertainment systems.",
-      "highlights": [
-        "Intelligent game-playing AI agents",
-        "Real-time strategy optimization",
-        "Automated gameplay mechanics",
-        "Performance analytics and optimization",
-        "Containerized deployment architecture"
       ]
     },
     {
@@ -621,6 +429,133 @@
         "Customer communication and engagement",
         "Business analytics and reporting dashboard",
         "Multi-location business support"
+      ]
+    },
+    {
+      "name": "kidmaps-app",
+      "title": "KidMaps: Geospatial Mobile Application for Family Services",
+      "category": "youth",
+      "description": "A sophisticated cross-platform mobile application that addresses the fragmentation of family activity information systems. KidMaps provides unified mobile experience for families seeking activities and organizations managing events.",
+      "topics": [
+        "flutter",
+        "mobile-app",
+        "geospatial",
+        "family-services",
+        "event-management"
+      ],
+      "url": "https://github.com/HWAI-collab/kidmaps-app",
+      "stars": 0,
+      "forks": 0,
+      "language": "Dart",
+      "technologies": [
+        "Flutter 3.4+",
+        "Dart SDK",
+        "Supabase",
+        "Firebase",
+        "Stripe",
+        "Hive"
+      ],
+      "sections": [
+        "Interactive Geospatial Mapping System",
+        "Event Discovery and Booking Platform",
+        "Community-Driven Content Management",
+        "Offline-First Architecture",
+        "Real-Time Synchronization Framework"
+      ],
+      "abstract": "KidMaps represents a novel approach to family-centric geospatial information systems (GIS), providing comprehensive location-based services for families. Built with Flutter for cross-platform compatibility, it features advanced geospatial algorithms, real-time data synchronization, and comprehensive security with JWT authentication.",
+      "highlights": [
+        "Interactive geospatial mapping with real-time location tracking",
+        "Event discovery and booking with Stripe payment integration",
+        "Community reviews and ratings system",
+        "Offline-first architecture with multi-layered caching",
+        "Push notifications via Firebase Cloud Messaging",
+        "QR code generation for ticket validation",
+        "Calendar integration and social features"
+      ]
+    },
+    {
+      "name": "WAIVI",
+      "title": "WAIVI (OrthoVision): AI-Powered Orthopaedic Diagnostic Platform",
+      "category": "healthcare",
+      "description": "A pioneering artificial intelligence platform revolutionizing orthopaedic diagnostic workflows through advanced computer vision, NLP, and generative ML. Features HorusAI consultation, HarrierX diagnostic analysis, and LammerGAN synthetic image generation.",
+      "topics": [
+        "ai",
+        "healthcare",
+        "computer-vision",
+        "medical-diagnostics",
+        "deep-learning"
+      ],
+      "url": "https://github.com/HWAI-collab/WAIVI",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "technologies": [
+        "Python 3.8+",
+        "TensorFlow 2.0+",
+        "OpenCV 4.5+",
+        "Flask",
+        "YOLOv8",
+        "AdaptLLM"
+      ],
+      "sections": [
+        "HorusAI Clinical Consultation System",
+        "HarrierX Computer Vision Diagnostics",
+        "LammerGAN Synthetic Medical Image Generation",
+        "Automated Measurement and Analysis",
+        "Medical Education Resource Platform"
+      ],
+      "abstract": "WAIVI (OrthoVision) integrates three AI-powered modules to transform orthopaedic diagnostics. HorusAI provides intelligent clinical consultation using AdaptLLM, HarrierX offers computer vision diagnostic analysis with YOLOv8, and LammerGAN generates synthetic medical images. The platform ensures HIPAA compliance with end-to-end encryption and comprehensive medical ethics protocols.",
+      "highlights": [
+        "Intelligent clinical consultation with AdaptLLM medicine-chat model",
+        "Advanced object detection for anatomical feature identification",
+        "Automated bone dimension and angle measurement",
+        "Fracture detection and classification algorithms",
+        "Synthetic medical image generation with GANs",
+        "HIPAA compliant with end-to-end encryption",
+        "GPU acceleration with CUDA optimization",
+        "Microservices architecture with Flask"
+      ]
+    },
+    {
+      "name": "play_leaf_green",
+      "title": "Play Leaf Green: AI-Powered Pokemon Game Agent",
+      "category": "ai",
+      "description": "A Django-based web application using DeepSeek AI to automatically play Pokemon games through emulation. Features intelligent gameplay decisions, real-time action logging, and comprehensive game state analysis.",
+      "topics": [
+        "ai",
+        "gaming",
+        "automation",
+        "deepseek",
+        "pokemon"
+      ],
+      "url": "https://github.com/HWAI-collab/play_leaf_green",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "technologies": [
+        "Python",
+        "Django 4.2.5",
+        "DeepSeek AI",
+        "pymem",
+        "httpx"
+      ],
+      "sections": [
+        "AI Agent Configuration System",
+        "Game Session Management",
+        "Real-Time Action Logging",
+        "DeepSeek AI Integration",
+        "Memory Reading Framework"
+      ],
+      "abstract": "Play Leaf Green demonstrates innovative AI gaming automation using DeepSeek language models to make intelligent gameplay decisions in Pokemon games. The Django-based platform features sophisticated game state analysis, memory reading from DS emulators, and asynchronous AI query processing for real-time gameplay automation.",
+      "highlights": [
+        "AI agent configuration with customizable prompts and parameters",
+        "Game session management with comprehensive status tracking",
+        "Real-time action logging and game state capture",
+        "DeepSeek AI integration for intelligent decision making",
+        "Memory reading from DS emulator using pymem",
+        "Asynchronous AI query processing with httpx",
+        "Action validation for Pokemon game controls",
+        "Temperature and token control for AI responses"
       ]
     }
   ],
