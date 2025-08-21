@@ -37,6 +37,8 @@ async function loadLocalRepositories() {
         const data = await response.json();
         const repos = data.repositories;
         
+        console.log('Loaded repositories from JSON:', repos.length); // Debug log
+        
         // Process each repository
         for (const repo of repos) {
             const repoData = {
@@ -85,6 +87,8 @@ async function loadLocalRepositories() {
 function displayRepos(repos) {
     const repoGrid = document.getElementById('repoGrid');
     repoGrid.innerHTML = '';
+    
+    console.log('Displaying repositories:', repos.length); // Debug log
     
     if (repos.length === 0) {
         repoGrid.innerHTML = '<p class="no-results">No repositories found matching your criteria.</p>';
