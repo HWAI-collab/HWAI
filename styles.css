@@ -3,8 +3,8 @@
 :root {
     --primary-color: #0a0a0a;
     --secondary-color: #1a1a1a;
-    --accent-color: #00ff00;
-    --accent-secondary: #00cc00;
+    --accent-color: #86c403;
+    --accent-secondary: #75a803;
     --text-primary: #ffffff;
     --text-secondary: #cccccc;
     --text-muted: #888888;
@@ -12,11 +12,11 @@
     --card-background: #111111;
     --card-hover: #1a1a1a;
     --border-color: #333333;
-    --success-color: #00ff00;
-    --ai-color: #00ff00;
-    --healthcare-color: #00ff88;
-    --youth-color: #88ff00;
-    --infrastructure-color: #00ffcc;
+    --success-color: #86c403;
+    --ai-color: #86c403;
+    --healthcare-color: #86c403;
+    --youth-color: #86c403;
+    --infrastructure-color: #86c403;
 }
 
 * {
@@ -45,8 +45,8 @@ body::before {
     right: 0;
     bottom: 0;
     background-image: 
-        linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px),
-        linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(134, 196, 3, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(134, 196, 3, 0.03) 1px, transparent 1px);
     background-size: 20px 20px;
     pointer-events: none;
     z-index: -1;
@@ -143,7 +143,7 @@ nav .container {
 #searchInput:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(0, 255, 0, 0.2);
+    box-shadow: 0 0 0 2px rgba(134, 196, 3, 0.2);
 }
 
 #searchInput::placeholder {
@@ -225,7 +225,7 @@ main {
 .repo-card:hover {
     background: var(--card-hover);
     border-left-color: var(--accent-color);
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+    box-shadow: 0 0 20px rgba(134, 196, 3, 0.1);
     transform: translateY(-2px);
 }
 
@@ -402,7 +402,7 @@ main {
 
 .btn-primary:hover {
     background: var(--accent-secondary);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 15px rgba(134, 196, 3, 0.3);
     transform: translateY(-1px);
 }
 
@@ -415,7 +415,7 @@ main {
 .btn-secondary:hover {
     background: var(--accent-color);
     color: var(--background);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 15px rgba(134, 196, 3, 0.3);
 }
 
 /* Modal */
@@ -675,7 +675,7 @@ footer p {
 
 .btn-download-all:hover {
     background: var(--accent-secondary);
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 15px rgba(134, 196, 3, 0.3);
     transform: translateY(-1px);
 }
 
