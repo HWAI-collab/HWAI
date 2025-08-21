@@ -128,7 +128,7 @@
     {
       "name": "OrthoVision",
       "title": "OrthoVision: AI-Powered Orthopaedic Diagnostics",
-      "category": "ai-platforms",
+      "category": "mobile-applications",
       "description": "A comprehensive AI platform for orthopaedic diagnostics featuring HorusAI (clinical consultation), HarrierX (computer vision diagnostics), and LammerGAN (synthetic medical image generation).",
       "topics": [
         "medical-ai",
@@ -422,7 +422,7 @@
     {
       "name": "kidmaps-app",
       "title": "KidMaps: Geospatial Mobile Application for Family Services",
-      "category": "mobile-applications",
+      "category": "ai-platforms",
       "description": "A sophisticated cross-platform mobile application that addresses the fragmentation of family activity information systems. KidMaps provides unified mobile experience for families seeking activities and organizations managing events.",
       "topics": [
         "flutter",
