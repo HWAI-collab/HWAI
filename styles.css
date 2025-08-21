@@ -282,8 +282,8 @@ main {
 }
 
 .category-badge {
-    background: var(--card-hover);
-    color: #9CCC65;
+    background: #9CCC65;
+    color: #000000;
     padding: 0.25rem 0.75rem;
     border-radius: 3px;
     font-size: 0.7rem;
@@ -293,20 +293,13 @@ main {
     letter-spacing: 1px;
 }
 
-.repo-card.category-ai .category-badge {
-    background: var(--ai-color);
-}
-
-.repo-card.category-healthcare .category-badge {
-    background: var(--healthcare-color);
-}
-
-.repo-card.category-youth .category-badge {
-    background: var(--youth-color);
-}
-
+/* All category badges use consistent Android green background with black text */
+.repo-card.category-ai .category-badge,
+.repo-card.category-healthcare .category-badge,
+.repo-card.category-youth .category-badge,
 .repo-card.category-infrastructure .category-badge {
-    background: var(--infrastructure-color);
+    background: #9CCC65;
+    color: #000000;
 }
 
 .card-abstract {
