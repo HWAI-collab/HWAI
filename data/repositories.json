@@ -437,14 +437,15 @@
     },
     {
       "name": "WAIVI",
-      "title": "WAIVI (OrthoVision): AI-Powered Orthopaedic Diagnostic Platform",
+      "title": "WAIVI: Weighted Adaptive Intelligence for Vegetable and Fruit Identification",
       "category": "ai-platforms",
-      "description": "A pioneering artificial intelligence platform revolutionizing orthopaedic diagnostic workflows through advanced computer vision, NLP, and generative ML. Features HorusAI consultation, HarrierX diagnostic analysis, and LammerGAN synthetic image generation.",
+      "description": "A comprehensive computer vision framework for real-time produce classification and detection using state-of-the-art YOLO architectures. Optimized for multi-class fruit and vegetable recognition across 32 distinct categories.",
       "topics": [
-        "ai",
-        "healthcare",
         "computer-vision",
-        "medical-diagnostics",
+        "object-detection",
+        "agricultural-technology",
+        "yolov8",
+        "food-recognition",
         "deep-learning"
       ],
       "url": "https://github.com/HWAI-collab/WAIVI",
@@ -453,11 +454,11 @@
       "language": "Python",
       "technologies": [
         "Python 3.8+",
-        "TensorFlow 2.0+",
-        "OpenCV 4.5+",
-        "Flask",
+        "PyTorch 2.0+",
         "YOLOv8",
-        "AdaptLLM"
+        "OpenCV 4.8+",
+        "ONNX",
+        "Ultralytics"
       ],
       "sections": [
         "HorusAI Clinical Consultation System",
@@ -466,16 +467,16 @@
         "Automated Measurement and Analysis",
         "Medical Education Resource Platform"
       ],
-      "abstract": "WAIVI (OrthoVision) integrates three AI-powered modules to transform orthopaedic diagnostics. HorusAI provides intelligent clinical consultation using AdaptLLM, HarrierX offers computer vision diagnostic analysis with YOLOv8, and LammerGAN generates synthetic medical images. The platform ensures HIPAA compliance with end-to-end encryption and comprehensive medical ethics protocols.",
+      "abstract": "WAIVI presents a comprehensive computer vision framework for real-time produce classification and detection, employing YOLOv8 architectures optimized for multi-class fruit and vegetable recognition. The system demonstrates superior performance in challenging conditions including variable lighting, occlusion, and scale variations commonly encountered in agricultural and retail environments.",
       "highlights": [
-        "Intelligent clinical consultation with AdaptLLM medicine-chat model",
-        "Advanced object detection for anatomical feature identification",
-        "Automated bone dimension and angle measurement",
-        "Fracture detection and classification algorithms",
-        "Synthetic medical image generation with GANs",
-        "HIPAA compliant with end-to-end encryption",
-        "GPU acceleration with CUDA optimization",
-        "Microservices architecture with Flask"
+        "Real-time produce classification across 32 categories",
+        "YOLOv8 architecture optimization for agricultural applications",
+        "Edge computing deployment with ONNX and HEF formats",
+        "Comprehensive evaluation with mAP@0.5 of 0.789",
+        "Multi-scale training and curriculum learning strategies",
+        "Commercial and academic licensing options",
+        "Extensive benchmarking and ablation studies",
+        "Mobile integration for iOS and Android platforms"
       ]
     },
     {
