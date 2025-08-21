@@ -275,18 +275,316 @@
         "Ethical AI frameworks",
         "Real-world case studies"
       ]
+    },
+    {
+      "name": "kidmaps",
+      "title": "KidMaps: Child-Friendly Location Discovery Platform",
+      "category": "youth",
+      "description": "A comprehensive geospatial platform for discovering child-friendly locations and family services across Australia. Features advanced mapping, location filtering, and community-driven content for parents and caregivers.",
+      "topics": ["child-services", "geospatial", "family-resources", "mapping", "community"],
+      "url": "https://github.com/HWAI-collab/kidmaps",
+      "stars": 25,
+      "forks": 8,
+      "language": "Python",
+      "technologies": ["Python", "Flask", "GeoPandas", "Leaflet", "Scrapy"],
+      "sections": [
+        "Geospatial Mapping Interface",
+        "Location Data Processing",
+        "Community Content Management",
+        "Mobile-Responsive Design",
+        "Accessibility Features"
+      ],
+      "abstract": "KidMaps provides comprehensive location discovery for child-friendly venues including parks, playgrounds, educational facilities, and family services. Built with advanced geospatial technologies and community-driven content validation to support families in finding appropriate services and recreational opportunities.",
+      "highlights": [
+        "Interactive mapping with location filtering",
+        "Community-driven content validation",
+        "Accessibility-focused design principles",
+        "Mobile-optimized responsive interface",
+        "Integration with Australian service directories"
+      ],
+      "readme_content": "# KidMaps: Child-Friendly Location Discovery Platform\n\n## Abstract\n\nKidMaps is a comprehensive geospatial platform designed to help families discover child-friendly locations and services across Australia. The platform integrates advanced mapping technologies with community-driven content to provide accurate, up-to-date information about parks, playgrounds, educational facilities, healthcare services, and family-oriented businesses.\n\n## Features\n\n### Interactive Mapping\n- Advanced filtering by age group, accessibility, and service type\n- Real-time location data with community verification\n- Mobile-responsive design for on-the-go discovery\n- Integration with Australian government service directories\n\n### Community Features\n- User-generated reviews and ratings\n- Photo sharing and location verification\n- Accessibility information and special needs support\n- Safety ratings and community moderation\n\n### Technical Implementation\n- Python-based backend with Flask framework\n- GeoPandas for spatial data processing\n- Leaflet.js for interactive mapping interface\n- Scrapy for automated data collection from official sources\n\n## Installation\n\n```bash\n# Clone repository\ngit clone https://github.com/HWAI-collab/kidmaps.git\ncd kidmaps\n\n# Install dependencies\npip install -r requirements.txt\n\n# Run application\npython app.py\n```\n\n## Contributing\n\nKidMaps welcomes community contributions to help families discover safe, accessible, and engaging locations for children across Australia.\n\n## License\n\nMIT License - Supporting families and communities through open-source technology."
+    },
+    {
+      "name": "brachiosaurus",
+      "title": "Brachiosaurus: Educational Dinosaur Discovery App",
+      "category": "youth",
+      "description": "An interactive Flutter mobile application designed for children to learn about dinosaurs through AR visualization, games, and educational content. Features augmented reality models and gamified learning experiences.",
+      "topics": ["education", "children", "augmented-reality", "mobile-app", "dinosaurs"],
+      "url": "https://github.com/HWAI-collab/brachiosaurus",
+      "stars": 18,
+      "forks": 5,
+      "language": "Dart",
+      "technologies": ["Flutter", "ARCore", "ARKit", "3D Modeling", "Firebase"],
+      "sections": [
+        "Augmented Reality Features",
+        "Educational Content Framework",
+        "Gamification System",
+        "Child-Safe Design",
+        "Cross-Platform Compatibility"
+      ],
+      "abstract": "Brachiosaurus creates an immersive educational experience for children to explore dinosaurs through augmented reality technology. The app combines scientifically accurate content with engaging gameplay mechanics to foster learning about paleontology, natural history, and scientific discovery.",
+      "highlights": [
+        "AR visualization of dinosaur models",
+        "Age-appropriate educational content",
+        "Gamified learning progression system",
+        "Child-safe interface design",
+        "Cross-platform mobile compatibility"
+      ]
+    },
+    {
+      "name": "subject-web-scraper",
+      "title": "Subject Web Scraper: Academic Course Data Harvesting",
+      "category": "infrastructure",
+      "description": "A specialized web scraping tool for extracting university course and subject information from academic websites. Features intelligent parsing, data validation, and structured output for educational analytics.",
+      "topics": ["web-scraping", "education", "data-harvesting", "academic-data", "automation"],
+      "url": "https://github.com/HWAI-collab/subject-web-scraper",
+      "stars": 12,
+      "forks": 4,
+      "language": "Python",
+      "technologies": ["Python", "BeautifulSoup", "Selenium", "Scrapy", "Pandas"],
+      "sections": [
+        "Web Scraping Engine",
+        "Data Validation Framework",
+        "Academic Data Models",
+        "Export and Analysis Tools",
+        "Configuration Management"
+      ],
+      "abstract": "Automated tool for harvesting academic course information from university websites, enabling researchers and students to analyze curriculum trends, course availability, and educational program structures across institutions.",
+      "highlights": [
+        "Intelligent HTML parsing and extraction",
+        "Configurable scraping parameters",
+        "Data validation and cleansing",
+        "Structured JSON and CSV output",
+        "Support for multiple university systems"
+      ]
+    },
+    {
+      "name": "evolutionary-biology-analysis",
+      "title": "Evolutionary Biology Analysis Suite",
+      "category": "infrastructure",
+      "description": "Comprehensive R-based toolkit for evolutionary biology research including genetic drift simulation, phylogenetic analysis, population genetics modeling, and molecular evolution studies.",
+      "topics": ["evolutionary-biology", "genetics", "phylogenetics", "r-analysis", "bioinformatics"],
+      "url": "https://github.com/HWAI-collab/evolutionary-biology-analysis",
+      "stars": 15,
+      "forks": 6,
+      "language": "R",
+      "technologies": ["R", "Bioconductor", "ggplot2", "phyloseq", "ape"],
+      "sections": [
+        "Genetic Drift Simulation",
+        "Phylogenetic Tree Construction",
+        "Population Genetics Models",
+        "Molecular Evolution Analysis",
+        "Statistical Visualization"
+      ],
+      "abstract": "Advanced computational toolkit for evolutionary biology research providing simulation capabilities, statistical analysis, and visualization tools for genetic studies, population dynamics, and phylogenetic reconstruction.",
+      "highlights": [
+        "Hardy-Weinberg equilibrium modeling",
+        "Genetic drift simulation algorithms",
+        "Phylogenetic tree reconstruction",
+        "Molecular diversity analysis",
+        "Publication-ready statistical graphics"
+      ]
+    },
+    {
+      "name": "pacific-investigations",
+      "title": "Pacific Investigations: Forensic Analysis Platform",
+      "category": "ai",
+      "description": "Advanced forensic investigation platform combining machine learning crime prediction, facial recognition systems, and evidence analysis tools for law enforcement and security applications.",
+      "topics": ["forensics", "crime-prediction", "facial-recognition", "law-enforcement", "machine-learning"],
+      "url": "https://github.com/HWAI-collab/pacific-investigations",
+      "stars": 20,
+      "forks": 7,
+      "language": "Python",
+      "technologies": ["Python", "TensorFlow", "OpenCV", "scikit-learn", "Django"],
+      "sections": [
+        "Crime Prediction Models",
+        "Facial Recognition System",
+        "Evidence Analysis Tools",
+        "Case Management Interface",
+        "Security and Privacy Framework"
+      ],
+      "abstract": "Comprehensive forensic investigation platform utilizing machine learning algorithms for crime pattern analysis, facial recognition for suspect identification, and automated evidence processing to support law enforcement investigations.",
+      "highlights": [
+        "Machine learning crime prediction models",
+        "Advanced facial recognition capabilities",
+        "Automated evidence cataloging",
+        "Secure case management system",
+        "Privacy-preserving investigation tools"
+      ]
+    },
+    {
+      "name": "adhd-dashboard-web",
+      "title": "ADHD Dashboard Web: Neuroadaptive Task Management",
+      "category": "healthcare",
+      "description": "A comprehensive web-based ADHD task management system built with Flutter Web and Supabase. Features neuroadaptive interfaces, cognitive load optimization, and evidence-based ADHD support strategies.",
+      "topics": ["adhd", "neurodiversity", "task-management", "cognitive-science", "accessibility"],
+      "url": "https://github.com/HWAI-collab/adhd-dashboard-web",
+      "stars": 16,
+      "forks": 4,
+      "language": "Dart",
+      "technologies": ["Flutter Web", "Supabase", "PostgreSQL", "PWA"],
+      "sections": [
+        "Neuroadaptive Interface Design",
+        "Cognitive Load Management",
+        "Evidence-Based ADHD Strategies",
+        "Progressive Web App Features",
+        "Accessibility Optimization"
+      ],
+      "abstract": "Web-based task management platform specifically designed for individuals with ADHD, incorporating neuroadaptive interface principles, cognitive load theory, and evidence-based ADHD management strategies to improve focus, organization, and task completion.",
+      "highlights": [
+        "Neuroadaptive interface elements",
+        "Cognitive load optimization algorithms",
+        "Evidence-based ADHD management strategies",
+        "Progressive Web App functionality",
+        "Comprehensive accessibility features"
+      ]
+    },
+    {
+      "name": "mwd-weekly-dashboard",
+      "title": "MWD: Advanced Personal Productivity Platform",
+      "category": "infrastructure",
+      "description": "A comprehensive weekly dashboard system for personal productivity management featuring task automation, goal tracking, and advanced analytics. Built with modern web technologies and deployment automation.",
+      "topics": ["productivity", "dashboard", "task-management", "analytics", "automation"],
+      "url": "https://github.com/HWAI-collab/mwd-weekly-dashboard",
+      "stars": 14,
+      "forks": 3,
+      "language": "Python",
+      "technologies": ["Django", "PostgreSQL", "Heroku", "Python", "Bootstrap"],
+      "sections": [
+        "Weekly Planning Interface",
+        "Task Automation System",
+        "Goal Tracking Analytics",
+        "Progress Visualization",
+        "Deployment Pipeline"
+      ],
+      "abstract": "MWD provides comprehensive weekly productivity management through intelligent task organization, automated progress tracking, and advanced analytics. Features deployment-ready architecture with Heroku integration and comprehensive user management systems.",
+      "highlights": [
+        "Intelligent weekly planning algorithms",
+        "Automated task progression tracking",
+        "Advanced productivity analytics",
+        "Heroku deployment pipeline",
+        "Comprehensive user management"
+      ]
+    },
+    {
+      "name": "fire-red-agent",
+      "title": "Fire Red Agent: AI Gaming and Entertainment Platform",
+      "category": "ai",
+      "description": "An advanced AI gaming platform featuring automated gameplay agents, strategy optimization, and interactive entertainment systems. Built with Ruby on Rails and modern deployment technologies.",
+      "topics": ["ai-gaming", "automation", "entertainment", "strategy-ai", "ruby-rails"],
+      "url": "https://github.com/HWAI-collab/fire-red-agent",
+      "stars": 22,
+      "forks": 8,
+      "language": "Ruby",
+      "technologies": ["Ruby on Rails", "Docker", "AI Agents", "Game Automation"],
+      "sections": [
+        "AI Agent Framework",
+        "Strategy Optimization Engine",
+        "Game State Analysis",
+        "Automated Decision Making",
+        "Performance Analytics"
+      ],
+      "abstract": "Fire Red Agent implements sophisticated AI agents for gaming environments, featuring automated gameplay, strategy optimization, and real-time decision making. Demonstrates advanced AI applications in interactive entertainment systems.",
+      "highlights": [
+        "Intelligent game-playing AI agents",
+        "Real-time strategy optimization",
+        "Automated gameplay mechanics",
+        "Performance analytics and optimization",
+        "Containerized deployment architecture"
+      ]
+    },
+    {
+      "name": "kait-conversational-ai",
+      "title": "KaiT: Advanced Conversational AI Platform",
+      "category": "ai",
+      "description": "A sophisticated conversational AI platform built with Vue.js 3 featuring natural language processing, context-aware responses, and advanced chatbot capabilities for various applications.",
+      "topics": ["conversational-ai", "nlp", "chatbot", "vue-js", "ai-assistant"],
+      "url": "https://github.com/HWAI-collab/kait-conversational-ai",
+      "stars": 30,
+      "forks": 12,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Node.js", "NLP", "WebRTC", "AI APIs"],
+      "sections": [
+        "Natural Language Processing",
+        "Context-Aware Responses",
+        "Multi-Modal Interactions",
+        "Real-Time Communication",
+        "AI Integration Framework"
+      ],
+      "abstract": "KaiT provides advanced conversational AI capabilities through sophisticated natural language processing, context awareness, and multi-modal interaction support. Features real-time communication and extensible AI integration frameworks.",
+      "highlights": [
+        "Advanced natural language understanding",
+        "Context-aware conversation management",
+        "Multi-modal interaction support",
+        "Real-time communication capabilities",
+        "Extensible AI integration architecture"
+      ]
+    },
+    {
+      "name": "plaict-community-dashboard",
+      "title": "PLAICT: Community Engagement Analytics Platform",
+      "category": "infrastructure",
+      "description": "A comprehensive community engagement analytics platform featuring data visualization, user interaction tracking, and community health metrics. Built for supporting community organizations and engagement initiatives.",
+      "topics": ["community-analytics", "data-visualization", "engagement-metrics", "dashboard", "community-health"],
+      "url": "https://github.com/HWAI-collab/plaict-community-dashboard",
+      "stars": 11,
+      "forks": 4,
+      "language": "JavaScript",
+      "technologies": ["Vue.js", "Chart.js", "Node.js", "Analytics APIs", "Dashboard"],
+      "sections": [
+        "Community Engagement Metrics",
+        "Data Visualization Framework",
+        "User Interaction Analytics",
+        "Community Health Indicators",
+        "Reporting and Insights"
+      ],
+      "abstract": "PLAICT provides comprehensive analytics for community engagement initiatives, featuring advanced data visualization, user interaction tracking, and community health metrics to support organizational decision-making and community development.",
+      "highlights": [
+        "Comprehensive engagement analytics",
+        "Advanced data visualization tools",
+        "Community health metric tracking",
+        "User interaction pattern analysis",
+        "Actionable insights and reporting"
+      ]
+    },
+    {
+      "name": "analysis-outputs",
+      "title": "Analysis Outputs: Data Science Visualization Suite",
+      "category": "infrastructure",
+      "description": "A comprehensive collection of data science analysis outputs including statistical visualizations, correlation matrices, feature importance plots, and research documentation for various HWAI projects.",
+      "topics": ["data-science", "visualization", "statistical-analysis", "research-outputs", "analytics"],
+      "url": "https://github.com/HWAI-collab/analysis-outputs",
+      "stars": 8,
+      "forks": 3,
+      "language": "Python",
+      "technologies": ["Python", "Matplotlib", "Seaborn", "Pandas", "scikit-learn"],
+      "sections": [
+        "Statistical Visualizations",
+        "Correlation Analysis",
+        "Feature Importance Plots",
+        "Research Documentation",
+        "Reproducible Analytics"
+      ],
+      "abstract": "Comprehensive repository of data science analysis outputs supporting HWAI research projects including statistical visualizations, machine learning model outputs, and reproducible analytical frameworks for research validation.",
+      "highlights": [
+        "Publication-ready statistical visualizations",
+        "Comprehensive correlation analysis outputs",
+        "Machine learning feature importance plots",
+        "Reproducible analytical workflows",
+        "Research documentation and validation"
+      ]
     }
   ],
   "metadata": {
     "organization": "HWAI Collaborative",
     "description": "Healthcare, Wellbeing and AI Research Collaborative",
     "last_updated": "2025-01-21",
-    "total_repositories": 10,
+    "total_repositories": 21,
     "categories": {
-      "ai": 3,
-      "healthcare": 3,
-      "youth": 2,
-      "infrastructure": 2
+      "ai": 6,
+      "healthcare": 4,
+      "youth": 4,
+      "infrastructure": 7
     }
   }
 }
