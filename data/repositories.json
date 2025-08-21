@@ -251,41 +251,47 @@
     },
     {
       "name": "mwd-weekly-dashboard",
-      "title": "MWD: Advanced Personal Productivity Platform",
+      "title": "My Weekly Dash: Comprehensive Goal Achievement and Productivity Platform",
       "category": "business-systems",
-      "description": "A comprehensive weekly dashboard system for personal productivity management featuring task automation, goal tracking, and advanced analytics. Built with modern web technologies and deployment automation.",
+      "description": "A comprehensive goal achievement and productivity platform engineered to transform personal and professional development through structured goal-setting methodologies, accountability systems, and intelligent progress tracking.",
       "topics": [
         "productivity",
-        "dashboard",
-        "task-management",
-        "analytics",
-        "automation"
+        "goal-management",
+        "flutter",
+        "supabase",
+        "cross-platform",
+        "accountability"
       ],
       "url": "https://github.com/HWAI-collab/mwd-weekly-dashboard",
       "stars": 14,
       "forks": 3,
       "language": "Python",
       "technologies": [
-        "Django",
+        "Flutter 3.5.4+",
+        "Dart 3.0+",
+        "Supabase",
         "PostgreSQL",
-        "Heroku",
-        "Python",
-        "Bootstrap"
+        "Google APIs",
+        "Stripe",
+        "FL Chart"
       ],
       "sections": [
-        "Weekly Planning Interface",
-        "Task Automation System",
-        "Goal Tracking Analytics",
-        "Progress Visualization",
-        "Deployment Pipeline"
+        "Goal Management System",
+        "Accountability and Collaboration Platform",
+        "Analytics and Progress Tracking",
+        "Calendar Integration and Scheduling",
+        "Cross-Platform Mobile Applications"
       ],
-      "abstract": "MWD provides comprehensive weekly productivity management through intelligent task organization, automated progress tracking, and advanced analytics. Features deployment-ready architecture with Heroku integration and comprehensive user management systems.",
+      "abstract": "My Weekly Dash represents a comprehensive goal achievement and productivity platform built on Flutter and Supabase, implementing evidence-based productivity principles including SMART goal frameworks, spaced repetition techniques, and social accountability mechanisms. Through integrated daily check-ins, weekly planning sessions, and collaborative sharing features, it bridges the gap between aspiration and achievement.",
       "highlights": [
-        "Intelligent weekly planning algorithms",
-        "Automated task progression tracking",
-        "Advanced productivity analytics",
-        "Heroku deployment pipeline",
-        "Comprehensive user management"
+        "Hierarchical goal structure (Long-term, Weekly, Daily)",
+        "SMART goal framework integration with progress tracking",
+        "Social accountability and collaboration features",
+        "Multi-platform calendar synchronization (Google, Apple, Outlook)",
+        "Cross-platform Flutter applications (iOS, Android, Web, Desktop)",
+        "Real-time collaboration with Supabase backend",
+        "Advanced analytics dashboard with trend analysis",
+        "Intelligent scheduling with AI-powered optimization"
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Production-Apps/MWD/README.md"
