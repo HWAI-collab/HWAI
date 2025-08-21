@@ -314,45 +314,6 @@
       ]
     },
     {
-      "name": "brachiosaurus",
-      "title": "Brachiosaurus: Educational Dinosaur Discovery App",
-      "category": "youth",
-      "description": "An interactive Flutter mobile application designed for children to learn about dinosaurs through AR visualization, games, and educational content. Features augmented reality models and gamified learning experiences.",
-      "topics": [
-        "education",
-        "children",
-        "augmented-reality",
-        "mobile-app",
-        "dinosaurs"
-      ],
-      "url": "https://github.com/HWAI-collab/brachiosaurus",
-      "stars": 18,
-      "forks": 5,
-      "language": "Dart",
-      "technologies": [
-        "Flutter",
-        "ARCore",
-        "ARKit",
-        "3D Modeling",
-        "Firebase"
-      ],
-      "sections": [
-        "Augmented Reality Features",
-        "Educational Content Framework",
-        "Gamification System",
-        "Child-Safe Design",
-        "Cross-Platform Compatibility"
-      ],
-      "abstract": "Brachiosaurus creates an immersive educational experience for children to explore dinosaurs through augmented reality technology. The app combines scientifically accurate content with engaging gameplay mechanics to foster learning about paleontology, natural history, and scientific discovery.",
-      "highlights": [
-        "AR visualization of dinosaur models",
-        "Age-appropriate educational content",
-        "Gamified learning progression system",
-        "Child-safe interface design",
-        "Cross-platform mobile compatibility"
-      ]
-    },
-    {
       "name": "evolutionary-biology-analysis",
       "title": "Evolutionary Biology Analysis Suite",
       "category": "infrastructure",
