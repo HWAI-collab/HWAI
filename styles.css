@@ -614,7 +614,7 @@ footer p {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--text-primary);
 }
 
 .form-group input,
@@ -625,6 +625,8 @@ footer p {
     border: 2px solid var(--border-color);
     border-radius: 8px;
     font-size: 1rem;
+    background: var(--card-background);
+    color: var(--text-primary);
     transition: border-color 0.3s;
 }
 
