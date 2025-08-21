@@ -3,8 +3,8 @@
 :root {
     --primary-color: #0a0a0a;
     --secondary-color: #1a1a1a;
-    --accent-color: #a4c639;
-    --accent-secondary: #92b332;
+    --accent-color: #9CCC65;
+    --accent-secondary: #8BC34A;
     --text-primary: #ffffff;
     --text-secondary: #cccccc;
     --text-muted: #888888;
@@ -45,8 +45,8 @@ body::before {
     right: 0;
     bottom: 0;
     background-image: 
-        linear-gradient(90deg, rgba(164, 198, 57, 0.03) 1px, transparent 1px),
-        linear-gradient(rgba(164, 198, 57, 0.03) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(156, 204, 101, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(156, 204, 101, 0.03) 1px, transparent 1px);
     background-size: 20px 20px;
     pointer-events: none;
     z-index: -1;
@@ -159,7 +159,7 @@ nav .container {
 #searchInput:focus {
     outline: none;
     border-color: var(--accent-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(164, 198, 57, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(156, 204, 101, 0.1);
 }
 
 #searchInput::placeholder {
@@ -241,7 +241,7 @@ main {
 .repo-card:hover {
     background: var(--card-hover);
     border-left-color: var(--accent-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(164, 198, 57, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(156, 204, 101, 0.05);
     transform: translateY(-2px);
 }
 
@@ -419,7 +419,7 @@ main {
 .btn-primary:hover {
     background: var(--accent-color);
     color: var(--background);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(164, 198, 57, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(156, 204, 101, 0.1);
     transform: translateY(-1px);
 }
 
@@ -432,7 +432,7 @@ main {
 .btn-secondary:hover {
     background: var(--accent-color);
     color: var(--background);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(164, 198, 57, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(156, 204, 101, 0.1);
 }
 
 /* Modal */
@@ -692,7 +692,7 @@ footer p {
 .btn-download-all:hover {
     background: var(--accent-color);
     color: var(--background);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(164, 198, 57, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(156, 204, 101, 0.1);
     transform: translateY(-1px);
 }
 
