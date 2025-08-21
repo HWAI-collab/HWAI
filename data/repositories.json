@@ -585,45 +585,6 @@
       ]
     },
     {
-      "name": "analysis-outputs",
-      "title": "Analysis Outputs: Data Science Visualization Suite",
-      "category": "infrastructure",
-      "description": "A comprehensive collection of data science analysis outputs including statistical visualizations, correlation matrices, feature importance plots, and research documentation for various HWAI projects.",
-      "topics": [
-        "data-science",
-        "visualization",
-        "statistical-analysis",
-        "research-outputs",
-        "analytics"
-      ],
-      "url": "https://github.com/HWAI-collab/analysis-outputs",
-      "stars": 8,
-      "forks": 3,
-      "language": "Python",
-      "technologies": [
-        "Python",
-        "Matplotlib",
-        "Seaborn",
-        "Pandas",
-        "scikit-learn"
-      ],
-      "sections": [
-        "Statistical Visualizations",
-        "Correlation Analysis",
-        "Feature Importance Plots",
-        "Research Documentation",
-        "Reproducible Analytics"
-      ],
-      "abstract": "Comprehensive repository of data science analysis outputs supporting HWAI research projects including statistical visualizations, machine learning model outputs, and reproducible analytical frameworks for research validation.",
-      "highlights": [
-        "Publication-ready statistical visualizations",
-        "Comprehensive correlation analysis outputs",
-        "Machine learning feature importance plots",
-        "Reproducible analytical workflows",
-        "Research documentation and validation"
-      ]
-    },
-    {
       "name": "kidmaps-dashboard",
       "title": "KidMaps Dashboard: Business Event & Location Management",
       "category": "infrastructure",
