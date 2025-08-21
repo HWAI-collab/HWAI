@@ -622,6 +622,45 @@
         "Reproducible analytical workflows",
         "Research documentation and validation"
       ]
+    },
+    {
+      "name": "kidmaps-dashboard",
+      "title": "KidMaps Dashboard: Local Business Discovery Platform",
+      "category": "infrastructure",
+      "description": "A comprehensive platform for local business discovery and community mapping. Features advanced geospatial analytics, business directory management, and community engagement tools for connecting consumers with local services.",
+      "topics": [
+        "family-activities",
+        "event-management",
+        "vue-js",
+        "geospatial",
+        "community"
+      ],
+      "url": "https://github.com/HWAI-collab/kidmaps-dashboard",
+      "stars": 14,
+      "forks": 4,
+      "language": "JavaScript",
+      "technologies": [
+        "Vue.js 3",
+        "Supabase",
+        "PostGIS",
+        "Mapbox",
+        "PWA"
+      ],
+      "sections": [
+        "Activity Management System",
+        "Geospatial Features",
+        "Family Coordination Tools",
+        "Event Planning Module",
+        "Analytics Dashboard"
+      ],
+      "abstract": "KidMaps Dashboard provides comprehensive local business discovery and community mapping services. Built with Vue.js 3 and Supabase, it features geospatial analytics for location-based business discovery, directory management tools, and community engagement features for supporting local commerce and service providers.",
+      "highlights": [
+        "Geospatial activity mapping",
+        "Family calendar coordination",
+        "Community event management",
+        "Real-time collaboration features",
+        "Mobile-responsive PWA design"
+      ]
     }
   ],
   "metadata": {
