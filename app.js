@@ -152,8 +152,7 @@ function createRepoCard(repo, readme) {
         
         <div class="card-footer">
             <button class="btn-primary" onclick="requestAccess('${repo.name}')">Request Source Code</button>
-            <button class="btn-secondary" onclick="expandReadme('${repo.name}')">View Details</button>
-            <button class="btn-secondary" onclick="downloadReadme('${repo.name}')">Download README</button>
+            <button class="btn-primary" onclick="downloadReadme('${repo.name}')">Download README</button>
         </div>
     `;
     
