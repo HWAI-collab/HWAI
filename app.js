@@ -53,7 +53,8 @@ async function loadLocalRepositories() {
                 abstract: repo.abstract,
                 sections: repo.sections,
                 highlights: repo.highlights,
-                technologies: repo.technologies
+                technologies: repo.technologies,
+                readme_content: repo.readme_content
             };
             
             allRepos.push(repoData);
@@ -407,65 +408,48 @@ Timestamp: ${requestData.timestamp}
 // Download README as markdown file
 function downloadReadme(repoName) {
     const repo = allRepos.find(r => r.name === repoName);
-    const readme = readmeCache[repoName];
     
-    if (!repo || !readme) {
-        alert('README not available for download');
+    if (!repo) {
+        alert('Repository not found');
         return;
     }
     
-    // Generate markdown content
-    let markdownContent = `# ${readme.title || repo.name}\n\n`;
+    // Use actual README content if available, otherwise generate from metadata
+    let markdownContent;
     
-    // Add metadata
-    markdownContent += `**Category:** ${repo.category}\n`;
-    markdownContent += `**Language:** ${repo.language || 'Multiple'}\n`;
-    markdownContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
-    
-    // Add abstract
-    markdownContent += `## Abstract\n\n${readme.abstract || repo.description}\n\n`;
-    
-    // Add technologies
-    if (readme.technologies && readme.technologies.length > 0) {
-        markdownContent += `## Technologies\n\n`;
-        readme.technologies.forEach(tech => {
-            markdownContent += `- ${tech}\n`;
-        });
-        markdownContent += '\n';
+    if (repo.readme_content) {
+        // Use the actual README content
+        markdownContent = repo.readme_content;
+    } else {
+        // Fallback to generated content from metadata
+        const readme = readmeCache[repoName];
+        if (!readme) {
+            alert('README not available for download');
+            return;
+        }
+        
+        markdownContent = `# ${readme.title || repo.name}\n\n`;
+        markdownContent += `**Category:** ${repo.category}\n`;
+        markdownContent += `**Language:** ${repo.language || 'Multiple'}\n`;
+        markdownContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
+        markdownContent += `## Abstract\n\n${readme.abstract || repo.description}\n\n`;
+        
+        if (readme.technologies && readme.technologies.length > 0) {
+            markdownContent += `## Technologies\n\n`;
+            readme.technologies.forEach(tech => {
+                markdownContent += `- ${tech}\n`;
+            });
+            markdownContent += '\n';
+        }
+        
+        if (readme.highlights && readme.highlights.length > 0) {
+            markdownContent += `## Key Features\n\n`;
+            readme.highlights.forEach(highlight => {
+                markdownContent += `- ${highlight}\n`;
+            });
+            markdownContent += '\n';
+        }
     }
-    
-    // Add key features/highlights
-    if (readme.highlights && readme.highlights.length > 0) {
-        markdownContent += `## Key Features\n\n`;
-        readme.highlights.forEach(highlight => {
-            markdownContent += `- ${highlight}\n`;
-        });
-        markdownContent += '\n';
-    }
-    
-    // Add documentation sections
-    if (readme.sections && readme.sections.length > 0) {
-        markdownContent += `## Documentation Sections\n\n`;
-        readme.sections.forEach(section => {
-            markdownContent += `- ${section}\n`;
-        });
-        markdownContent += '\n';
-    }
-    
-    // Add topics
-    if (repo.topics && repo.topics.length > 0) {
-        markdownContent += `## Topics\n\n`;
-        markdownContent += repo.topics.map(topic => `\`${topic}\``).join(' ');
-        markdownContent += '\n\n';
-    }
-    
-    // Add footer
-    markdownContent += `---\n\n`;
-    markdownContent += `## Access Information\n\n`;
-    markdownContent += `This is a summary of the ${readme.title || repo.name} project from the HWAI Collaborative.\n\n`;
-    markdownContent += `For complete source code access, please contact: info@helloworldai.com.au\n\n`;
-    markdownContent += `**Organization:** HWAI Collaborative - Healthcare, Wellbeing and AI Research\n`;
-    markdownContent += `**Downloaded:** ${new Date().toLocaleDateString()}\n`;
     
     // Create blob and download
     const blob = new Blob([markdownContent], { type: 'text/markdown;charset=utf-8' });
@@ -533,29 +517,36 @@ function downloadCombinedReadme() {
     
     // Add each project
     allRepos.forEach(repo => {
-        const readme = readmeCache[repo.name];
-        if (readme) {
-            combinedContent += `## ${readme.title || repo.name}\n\n`;
-            combinedContent += `**Category:** ${repo.category} | `;
-            combinedContent += `**Language:** ${repo.language || 'Multiple'} | `;
-            combinedContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
-            
-            combinedContent += `### Abstract\n${readme.abstract || repo.description}\n\n`;
-            
-            if (readme.technologies && readme.technologies.length > 0) {
-                combinedContent += `### Technologies\n`;
-                combinedContent += readme.technologies.join(', ') + '\n\n';
-            }
-            
-            if (readme.highlights && readme.highlights.length > 0) {
-                combinedContent += `### Key Features\n`;
-                readme.highlights.forEach(highlight => {
-                    combinedContent += `- ${highlight}\n`;
-                });
-                combinedContent += '\n';
-            }
-            
+        if (repo.readme_content) {
+            // Use actual README content
+            combinedContent += repo.readme_content + '\n\n';
             combinedContent += `---\n\n`;
+        } else {
+            // Fallback to summary format
+            const readme = readmeCache[repo.name];
+            if (readme) {
+                combinedContent += `## ${readme.title || repo.name}\n\n`;
+                combinedContent += `**Category:** ${repo.category} | `;
+                combinedContent += `**Language:** ${repo.language || 'Multiple'} | `;
+                combinedContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
+                
+                combinedContent += `### Abstract\n${readme.abstract || repo.description}\n\n`;
+                
+                if (readme.technologies && readme.technologies.length > 0) {
+                    combinedContent += `### Technologies\n`;
+                    combinedContent += readme.technologies.join(', ') + '\n\n';
+                }
+                
+                if (readme.highlights && readme.highlights.length > 0) {
+                    combinedContent += `### Key Features\n`;
+                    readme.highlights.forEach(highlight => {
+                        combinedContent += `- ${highlight}\n`;
+                    });
+                    combinedContent += '\n';
+                }
+                
+                combinedContent += `---\n\n`;
+            }
         }
     });
     
