@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWAI Academic Research Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>HWAI Collaborative Research</h1>
+            <p class="subtitle">Academic Documentation Portfolio</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="Search projects...">
+            <select id="filterCategory">
+                <option value="all">All Categories</option>
+                <option value="ai">AI/ML</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="youth">Youth Services</option>
+                <option value="infrastructure">Infrastructure</option>
+            </select>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading repositories...</p>
+        </div>
+        
+        <div id="repoGrid" class="repo-grid"></div>
+        
+        <div id="errorMessage" class="error-message" style="display: none;">
+            <p>Unable to load repositories. Please check your connection and try again.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HWAI Collaborative. Academic Research Documentation.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
