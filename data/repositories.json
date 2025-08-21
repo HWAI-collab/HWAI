@@ -250,40 +250,13 @@
       ]
     },
     {
-      "name": "HWAI-research-papers",
-      "title": "HWAI Academic Research Collection",
-      "category": "ai",
-      "description": "Collection of academic research papers and publications from the HWAI collaborative research group, covering AI applications in healthcare, youth services, and community support.",
-      "topics": ["research", "academic", "ai-research", "healthcare-ai", "publications"],
-      "url": "https://github.com/HWAI-collab/research-papers",
-      "stars": 35,
-      "forks": 15,
-      "language": "Documentation",
-      "technologies": ["LaTeX", "Jupyter", "Python", "R"],
-      "sections": [
-        "Published Papers",
-        "Conference Presentations",
-        "Technical Reports",
-        "Research Datasets",
-        "Reproducible Code"
-      ],
-      "abstract": "This repository contains the academic research output from the HWAI collaborative, including peer-reviewed publications, conference presentations, and technical reports. Research focuses on practical AI applications in healthcare, youth services, and community support systems, with emphasis on ethical AI development and real-world impact assessment.",
-      "highlights": [
-        "Peer-reviewed publications",
-        "Open research datasets",
-        "Reproducible experiment code",
-        "Ethical AI frameworks",
-        "Real-world case studies"
-      ]
-    },
-    {
       "name": "kidmaps",
       "title": "KidMaps: Child-Friendly Location Discovery Platform",
       "category": "youth",
       "description": "A comprehensive geospatial platform for discovering child-friendly locations and family services across Australia. Features advanced mapping, location filtering, and community-driven content for parents and caregivers.",
       "topics": ["child-services", "geospatial", "family-resources", "mapping", "community"],
       "url": "https://github.com/HWAI-collab/kidmaps",
-      "stars": 25,
+      "stars": 85,
       "forks": 8,
       "language": "Python",
       "technologies": ["Python", "Flask", "GeoPandas", "Leaflet", "Scrapy"],
@@ -303,6 +276,33 @@
         "Integration with Australian service directories"
       ],
       "readme_content": "# KidMaps: Child-Friendly Location Discovery Platform\n\n## Abstract\n\nKidMaps is a comprehensive geospatial platform designed to help families discover child-friendly locations and services across Australia. The platform integrates advanced mapping technologies with community-driven content to provide accurate, up-to-date information about parks, playgrounds, educational facilities, healthcare services, and family-oriented businesses.\n\n## Features\n\n### Interactive Mapping\n- Advanced filtering by age group, accessibility, and service type\n- Real-time location data with community verification\n- Mobile-responsive design for on-the-go discovery\n- Integration with Australian government service directories\n\n### Community Features\n- User-generated reviews and ratings\n- Photo sharing and location verification\n- Accessibility information and special needs support\n- Safety ratings and community moderation\n\n### Technical Implementation\n- Python-based backend with Flask framework\n- GeoPandas for spatial data processing\n- Leaflet.js for interactive mapping interface\n- Scrapy for automated data collection from official sources\n\n## Installation\n\n```bash\n# Clone repository\ngit clone https://github.com/HWAI-collab/kidmaps.git\ncd kidmaps\n\n# Install dependencies\npip install -r requirements.txt\n\n# Run application\npython app.py\n```\n\n## Contributing\n\nKidMaps welcomes community contributions to help families discover safe, accessible, and engaging locations for children across Australia.\n\n## License\n\nMIT License - Supporting families and communities through open-source technology."
+    },
+    {
+      "name": "kidmaps-dashboard",
+      "title": "KidMaps Dashboard: Family Activity Coordination",
+      "category": "infrastructure",
+      "description": "An enterprise-grade platform for community-based family activity coordination and management. Features Vue.js 3, Supabase backend, geospatial analytics, and comprehensive event management.",
+      "topics": ["family-coordination", "vue-js", "supabase", "geospatial", "event-management"],
+      "url": "https://github.com/HWAI-collab/kidmaps-dashboard",
+      "stars": 80,
+      "forks": 12,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Supabase", "Tailwind", "Geospatial APIs", "PWA"],
+      "sections": [
+        "Activity Coordination Platform",
+        "Geospatial Event Mapping",
+        "Family Communication Tools",
+        "Resource Scheduling System",
+        "Community Engagement Analytics"
+      ],
+      "abstract": "KidMaps Dashboard provides comprehensive family activity coordination through intelligent event management, geospatial mapping, and community engagement tools. Built with Vue.js 3 and Supabase for real-time collaboration and scalable family service coordination.",
+      "highlights": [
+        "Real-time family activity coordination",
+        "Geospatial event mapping and discovery",
+        "Community engagement analytics",
+        "Resource scheduling and management",
+        "Mobile-responsive dashboard interface"
+      ]
     },
     {
       "name": "brachiosaurus",
