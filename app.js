@@ -71,6 +71,9 @@ async function loadLocalRepositories() {
             };
         }
         
+        // Sort repositories by stars (descending)
+        allRepos.sort((a, b) => b.stars - a.stars);
+        
         // Display repositories
         displayRepos(allRepos);
         loading.style.display = 'none';
@@ -184,6 +187,9 @@ function filterRepos() {
         
         return matchesSearch && matchesCategory;
     });
+    
+    // Sort filtered results by stars (descending)
+    filtered.sort((a, b) => b.stars - a.stars);
     
     displayRepos(filtered);
 }
