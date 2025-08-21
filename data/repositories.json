@@ -1,0 +1,287 @@
+{
+  "repositories": [
+    {
+      "name": "slnq-ai-app",
+      "title": "SLNQ: Youth Support Services Management Platform",
+      "category": "youth",
+      "description": "A sophisticated, AI-enhanced youth support services management platform for residential care operations for vulnerable young people in Queensland, Australia. Features voice-to-text transcription, intelligent document generation, pattern recognition for risk assessment, and automated compliance monitoring.",
+      "topics": ["youth-services", "residential-care", "ai-integration", "compliance", "case-management"],
+      "url": "https://github.com/HWAI-collab/slnq-ai-app",
+      "stars": 15,
+      "forks": 3,
+      "language": "JavaScript",
+      "technologies": ["Nuxt 3", "Vue.js", "Supabase", "Flutter", "PostgreSQL", "AI/ML"],
+      "sections": [
+        "Executive Summary",
+        "System Architecture",
+        "AI-Enhanced Care Management Framework",
+        "Young Person Management System",
+        "Staff Development Platform",
+        "Compliance and Reporting Analytics"
+      ],
+      "abstract": "Safe Living NQ represents a comprehensive AI-enhanced platform revolutionising residential care operations for vulnerable young people. Built on Nuxt 3's server-side architecture and powered by Supabase's real-time infrastructure, it delivers comprehensive case management, staff coordination, facility oversight, and compliance monitoring specifically designed for youth residential care environments.",
+      "highlights": [
+        "AI-powered documentation with voice-to-text transcription",
+        "Comprehensive youth case management system",
+        "Staff development and qualification tracking",
+        "Real-time compliance monitoring",
+        "Trauma-informed development principles"
+      ]
+    },
+    {
+      "name": "parent-pilot",
+      "title": "Parent Pilot: AI-Enhanced Parenting Support Platform",
+      "category": "healthcare",
+      "description": "An innovative AI-enhanced mobile application providing comprehensive parenting support through intelligent assistance, community connection, and evidence-based guidance. Integrates GPT-4 for personalized parenting advice.",
+      "topics": ["parenting", "ai-assistant", "mobile-app", "community", "child-development"],
+      "url": "https://github.com/HWAI-collab/parent-pilot",
+      "stars": 28,
+      "forks": 7,
+      "language": "Dart",
+      "technologies": ["Flutter", "OpenAI GPT-4", "Supabase", "PostgreSQL", "PostGIS"],
+      "sections": [
+        "AI-Powered Parenting Assistant",
+        "Community Connection Platform",
+        "Personalised Development Tracking",
+        "Emergency Support System",
+        "Educational Resource Library"
+      ],
+      "abstract": "Parent Pilot integrates advanced artificial intelligence capabilities with evidence-based parenting methodologies to deliver personalised support for modern families. Built upon Flutter's cross-platform framework and enhanced by OpenAI's GPT-4, it addresses critical gaps in parenting support by providing instant access to expert guidance, peer community connections, and personalised recommendations.",
+      "highlights": [
+        "GPT-4 powered parenting advice",
+        "Geolocation-based parent matching",
+        "Child development milestone tracking",
+        "24/7 crisis support integration",
+        "Evidence-based educational resources"
+      ]
+    },
+    {
+      "name": "adhd-dashboard",
+      "title": "ADHD Dashboard: Task Management for ADHD",
+      "category": "healthcare",
+      "description": "An ADHD-friendly task management dashboard built with Flutter. Features calendar view, swipeable task management, priority system, and quick actions for breathing exercises and focus timers.",
+      "topics": ["adhd", "mental-health", "task-management", "flutter", "accessibility"],
+      "url": "https://github.com/HWAI-collab/adhd-dashboard",
+      "stars": 12,
+      "forks": 4,
+      "language": "Dart",
+      "technologies": ["Flutter", "Dart"],
+      "sections": [
+        "Features",
+        "Task Swipe Gestures",
+        "Quick Actions",
+        "Customization",
+        "Future Enhancements"
+      ],
+      "abstract": "A specialized task management dashboard designed specifically for individuals with ADHD. Features include a clean weekly calendar view, intuitive swipe gestures for task management, color-coded priority system, and quick access to calming exercises. The interface is intentionally distraction-free with clear visual feedback.",
+      "highlights": [
+        "Swipeable task management",
+        "ADHD-friendly clean interface",
+        "Priority-based color coding",
+        "Breathing exercise integration",
+        "Focus timer functionality"
+      ]
+    },
+    {
+      "name": "warringu-app",
+      "title": "Warringu: Specialised Shared Services Hub",
+      "category": "youth",
+      "description": "A Flutter web application providing integrated access to specialist services for indigenous organizations. Features secure user authentication, case management systems, and training modules.",
+      "topics": ["indigenous-services", "case-management", "web-app", "flutter", "training"],
+      "url": "https://github.com/HWAI-collab/warringu-app",
+      "stars": 8,
+      "forks": 2,
+      "language": "Dart",
+      "technologies": ["Flutter Web", "Firebase", "PWA"],
+      "sections": [
+        "Web Application Features",
+        "Specialist Services Portal",
+        "Training & Compliance Modules",
+        "Security Features",
+        "Progressive Web App"
+      ],
+      "abstract": "A Flutter web application providing integrated access to specialist services for the Warringu organization. Features responsive two-column layout with embedded Koori Grapevine website, secure authentication for three user types, and integration with case management, HR, and training systems including Circles of Security and Safe and Together.",
+      "highlights": [
+        "Indigenous community services integration",
+        "Circles of Security training module",
+        "Safe and Together implementation",
+        "Progressive Web App support",
+        "Multi-role authentication system"
+      ]
+    },
+    {
+      "name": "FNQPHNRiskStratificationTool",
+      "title": "FNQ PHN Risk Stratification Tool",
+      "category": "healthcare",
+      "description": "An advanced healthcare risk stratification platform using machine learning for primary care analytics. Features AI-powered analysis, geospatial integration, and ensemble learning algorithms.",
+      "topics": ["healthcare-analytics", "risk-stratification", "machine-learning", "primary-care", "data-science"],
+      "url": "https://github.com/HWAI-collab/FNQPHNRiskStratificationTool",
+      "stars": 22,
+      "forks": 6,
+      "language": "Python",
+      "technologies": ["Python", "TensorFlow", "Scikit-learn", "GeoPandas", "PostgreSQL"],
+      "sections": [
+        "Risk Stratification Models",
+        "Machine Learning Pipeline",
+        "Geospatial Analysis",
+        "Clinical Decision Support",
+        "Performance Metrics"
+      ],
+      "abstract": "An enterprise-grade healthcare risk stratification platform designed for Far North Queensland Primary Health Network. Utilizes ensemble machine learning algorithms to analyze patient data, identify high-risk individuals, and provide actionable insights for preventive care interventions. Integrates geospatial analysis for population health management.",
+      "highlights": [
+        "Ensemble ML algorithms for risk prediction",
+        "Geospatial health analytics",
+        "Real-time clinical decision support",
+        "Population health management tools",
+        "FHIR-compliant data integration"
+      ]
+    },
+    {
+      "name": "OrthoVision",
+      "title": "OrthoVision: AI-Powered Orthopaedic Diagnostics",
+      "category": "ai",
+      "description": "A comprehensive AI platform for orthopaedic diagnostics featuring HorusAI (clinical consultation), HarrierX (computer vision diagnostics), and LammerGAN (synthetic medical image generation).",
+      "topics": ["medical-ai", "computer-vision", "orthopaedics", "deep-learning", "diagnostics"],
+      "url": "https://github.com/HWAI-collab/OrthoVision",
+      "stars": 45,
+      "forks": 12,
+      "language": "Python",
+      "technologies": ["TensorFlow", "PyTorch", "OpenCV", "YOLOv8", "GANs"],
+      "sections": [
+        "HorusAI Clinical Consultation",
+        "HarrierX Computer Vision",
+        "LammerGAN Synthetic Generation",
+        "Model Architecture",
+        "Clinical Validation"
+      ],
+      "abstract": "OrthoVision is a comprehensive AI platform for orthopaedic diagnostics combining three core modules: HorusAI for intelligent clinical consultation, HarrierX for computer vision-based diagnostic analysis using YOLOv8, and LammerGAN for generating synthetic medical images. Built with TensorFlow and PyTorch for state-of-the-art deep learning capabilities.",
+      "highlights": [
+        "Multi-modal AI diagnostic system",
+        "YOLOv8 for fracture detection",
+        "GAN-based synthetic image generation",
+        "Clinical consultation AI assistant",
+        "FDA submission-ready architecture"
+      ]
+    },
+    {
+      "name": "wyzup-scale",
+      "title": "WyzUp Scale: Food Recognition and Portion Estimation",
+      "category": "ai",
+      "description": "An advanced computer vision system for automated food recognition and portion estimation using YOLOv8. Designed for nutritional analysis, dietary tracking, and food service applications.",
+      "topics": ["computer-vision", "food-recognition", "nutrition", "yolov8", "portion-estimation"],
+      "url": "https://github.com/HWAI-collab/wyzup-scale",
+      "stars": 18,
+      "forks": 5,
+      "language": "Python",
+      "technologies": ["YOLOv8", "OpenCV", "TensorFlow", "NumPy"],
+      "sections": [
+        "Food Detection Pipeline",
+        "Portion Estimation Algorithm",
+        "Nutritional Database Integration",
+        "Real-time Processing",
+        "Accuracy Metrics"
+      ],
+      "abstract": "WyzUp Scale is an advanced computer vision system for automated food recognition and portion estimation. Utilizing YOLOv8 for object detection and custom algorithms for volume estimation, it provides clinical-grade accuracy for nutritional analysis. Designed for integration with dietary tracking apps and institutional food service systems.",
+      "highlights": [
+        "YOLOv8-based food detection",
+        "3D portion size estimation",
+        "Real-time nutritional analysis",
+        "Multi-cuisine recognition",
+        "Clinical-grade accuracy metrics"
+      ]
+    },
+    {
+      "name": "help-now",
+      "title": "Help-Now: AI-Enhanced Local Business Discovery",
+      "category": "infrastructure",
+      "description": "A Vue.js 3 web application with Python-based web scraping for local business discovery and community service mapping. Features ML-enhanced web scraping, OCR, and automated data validation.",
+      "topics": ["business-discovery", "web-scraping", "vue-js", "machine-learning", "community-services"],
+      "url": "https://github.com/HWAI-collab/help-now",
+      "stars": 10,
+      "forks": 3,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Python", "BeautifulSoup", "OCR", "ML"],
+      "sections": [
+        "Web Scraping Engine",
+        "Business Classification",
+        "Community Service Mapping",
+        "Data Validation Pipeline",
+        "User Interface"
+      ],
+      "abstract": "Help-Now is an AI-enhanced platform for discovering local businesses and community services. It combines Vue.js 3 frontend with Python-based intelligent web scraping, utilizing machine learning for business classification and OCR for extracting information from images. Features automated data validation and community service mapping.",
+      "highlights": [
+        "ML-enhanced web scraping",
+        "OCR for image text extraction",
+        "Automated business classification",
+        "Community service database",
+        "Real-time data validation"
+      ]
+    },
+    {
+      "name": "kidmaps-dashboard",
+      "title": "KidMaps Dashboard: Family Activity Coordination",
+      "category": "infrastructure",
+      "description": "An enterprise-grade platform for community-based family activity coordination and management. Features Vue.js 3, Supabase backend, geospatial analytics, and comprehensive event management.",
+      "topics": ["family-activities", "event-management", "vue-js", "geospatial", "community"],
+      "url": "https://github.com/HWAI-collab/kidmaps-dashboard",
+      "stars": 14,
+      "forks": 4,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Supabase", "PostGIS", "Mapbox", "PWA"],
+      "sections": [
+        "Activity Management System",
+        "Geospatial Features",
+        "Family Coordination Tools",
+        "Event Planning Module",
+        "Analytics Dashboard"
+      ],
+      "abstract": "KidMaps Dashboard is an enterprise platform for coordinating family activities and community events. Built with Vue.js 3 and Supabase, it features geospatial analytics for location-based activity discovery, comprehensive event management tools, and family coordination features. Includes real-time updates and progressive web app capabilities.",
+      "highlights": [
+        "Geospatial activity mapping",
+        "Family calendar coordination",
+        "Community event management",
+        "Real-time collaboration features",
+        "Mobile-responsive PWA design"
+      ]
+    },
+    {
+      "name": "HWAI-research-papers",
+      "title": "HWAI Academic Research Collection",
+      "category": "ai",
+      "description": "Collection of academic research papers and publications from the HWAI collaborative research group, covering AI applications in healthcare, youth services, and community support.",
+      "topics": ["research", "academic", "ai-research", "healthcare-ai", "publications"],
+      "url": "https://github.com/HWAI-collab/research-papers",
+      "stars": 35,
+      "forks": 15,
+      "language": "Documentation",
+      "technologies": ["LaTeX", "Jupyter", "Python", "R"],
+      "sections": [
+        "Published Papers",
+        "Conference Presentations",
+        "Technical Reports",
+        "Research Datasets",
+        "Reproducible Code"
+      ],
+      "abstract": "This repository contains the academic research output from the HWAI collaborative, including peer-reviewed publications, conference presentations, and technical reports. Research focuses on practical AI applications in healthcare, youth services, and community support systems, with emphasis on ethical AI development and real-world impact assessment.",
+      "highlights": [
+        "Peer-reviewed publications",
+        "Open research datasets",
+        "Reproducible experiment code",
+        "Ethical AI frameworks",
+        "Real-world case studies"
+      ]
+    }
+  ],
+  "metadata": {
+    "organization": "HWAI Collaborative",
+    "description": "Healthcare, Wellbeing and AI Research Collaborative",
+    "last_updated": "2025-01-21",
+    "total_repositories": 10,
+    "categories": {
+      "ai": 3,
+      "healthcare": 3,
+      "youth": 2,
+      "infrastructure": 2
+    }
+  }
+}

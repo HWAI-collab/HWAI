@@ -1,8 +1,4 @@
-// HWAI Academic Portfolio - Repository Fetcher
-const GITHUB_ORG = 'HWAI-collab';
-const GITHUB_API_BASE = 'https://api.github.com';
-
-// Cache for repositories and READMEs
+// HWAI Academic Portfolio - Repository Display with Local Data
 let allRepos = [];
 let readmeCache = {};
 
@@ -10,8 +6,9 @@ let readmeCache = {};
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
-    await loadRepositories();
+    await loadLocalRepositories();
     setupEventListeners();
+    setupAccessRequestModal();
 }
 
 // Setup event listeners for search and filter
@@ -23,40 +20,52 @@ function setupEventListeners() {
     filterCategory.addEventListener('change', filterRepos);
 }
 
-// Load all repositories from HWAI-collab
-async function loadRepositories() {
+// Load repositories from local JSON file
+async function loadLocalRepositories() {
     const loading = document.getElementById('loading');
     const errorMessage = document.getElementById('errorMessage');
     const repoGrid = document.getElementById('repoGrid');
     
     try {
-        // Fetch organization repositories
-        const response = await fetch(`${GITHUB_API_BASE}/orgs/${GITHUB_ORG}/repos?per_page=100&sort=updated`);
+        // Fetch local repository data
+        const response = await fetch('data/repositories.json');
         
         if (!response.ok) {
-            throw new Error('Failed to fetch repositories');
+            throw new Error('Failed to load repository data');
         }
         
-        const repos = await response.json();
+        const data = await response.json();
+        const repos = data.repositories;
         
         // Process each repository
         for (const repo of repos) {
             const repoData = {
                 name: repo.name,
-                description: repo.description || 'No description available',
-                url: repo.html_url,
-                stars: repo.stargazers_count,
-                forks: repo.forks_count,
+                title: repo.title,
+                description: repo.description,
+                url: repo.url,
+                stars: repo.stars,
+                forks: repo.forks,
                 language: repo.language,
-                updated: new Date(repo.updated_at),
+                updated: new Date(),
                 topics: repo.topics || [],
-                category: categorizeRepo(repo)
+                category: repo.category,
+                abstract: repo.abstract,
+                sections: repo.sections,
+                highlights: repo.highlights,
+                technologies: repo.technologies
             };
             
             allRepos.push(repoData);
             
-            // Fetch README content
-            await fetchReadme(repoData);
+            // Store README content in cache
+            readmeCache[repo.name] = {
+                title: repo.title,
+                abstract: repo.abstract,
+                sections: repo.sections,
+                highlights: repo.highlights,
+                technologies: repo.technologies
+            };
         }
         
         // Display repositories
@@ -67,104 +76,8 @@ async function loadRepositories() {
         console.error('Error loading repositories:', error);
         loading.style.display = 'none';
         errorMessage.style.display = 'block';
+        errorMessage.innerHTML = '<p>Unable to load repository data. Please refresh the page to try again.</p>';
     }
-}
-
-// Categorize repository based on name and topics
-function categorizeRepo(repo) {
-    const name = repo.name.toLowerCase();
-    const topics = repo.topics || [];
-    const allText = name + ' ' + topics.join(' ');
-    
-    if (allText.includes('ai') || allText.includes('ml') || allText.includes('neural')) {
-        return 'ai';
-    } else if (allText.includes('health') || allText.includes('medical') || allText.includes('care')) {
-        return 'healthcare';
-    } else if (allText.includes('youth') || allText.includes('slnq') || allText.includes('young')) {
-        return 'youth';
-    } else if (allText.includes('infra') || allText.includes('platform') || allText.includes('system')) {
-        return 'infrastructure';
-    }
-    return 'other';
-}
-
-// Fetch README content for a repository
-async function fetchReadme(repo) {
-    try {
-        // Try multiple README formats
-        const readmeFormats = ['README.md', 'readme.md', 'README.MD'];
-        
-        for (const format of readmeFormats) {
-            const response = await fetch(`https://raw.githubusercontent.com/${GITHUB_ORG}/${repo.name}/main/${format}`);
-            
-            if (response.ok) {
-                const content = await response.text();
-                readmeCache[repo.name] = parseReadme(content);
-                return;
-            }
-        }
-        
-        // If no README found in main, try master branch
-        for (const format of readmeFormats) {
-            const response = await fetch(`https://raw.githubusercontent.com/${GITHUB_ORG}/${repo.name}/master/${format}`);
-            
-            if (response.ok) {
-                const content = await response.text();
-                readmeCache[repo.name] = parseReadme(content);
-                return;
-            }
-        }
-        
-        readmeCache[repo.name] = {
-            title: repo.name,
-            abstract: repo.description || 'No README available',
-            sections: []
-        };
-        
-    } catch (error) {
-        console.error(`Error fetching README for ${repo.name}:`, error);
-        readmeCache[repo.name] = {
-            title: repo.name,
-            abstract: repo.description || 'Error loading README',
-            sections: []
-        };
-    }
-}
-
-// Parse README content to extract key information
-function parseReadme(content) {
-    const lines = content.split('\\n');
-    const result = {
-        title: '',
-        abstract: '',
-        sections: []
-    };
-    
-    // Extract title (first # heading)
-    const titleMatch = content.match(/^#\\s+(.+)$/m);
-    if (titleMatch) {
-        result.title = titleMatch[1];
-    }
-    
-    // Extract abstract (first paragraph after title)
-    const abstractMatch = content.match(/^#[^\\n]+\\n\\n([^#\\n]+)/);
-    if (abstractMatch) {
-        result.abstract = abstractMatch[1].trim();
-    } else {
-        // Fallback: get first non-empty paragraph
-        const paragraphs = content.split('\\n\\n').filter(p => p.trim() && !p.startsWith('#'));
-        if (paragraphs.length > 0) {
-            result.abstract = paragraphs[0].substring(0, 300) + '...';
-        }
-    }
-    
-    // Extract main sections
-    const sectionMatches = content.matchAll(/^##\\s+(.+)$/gm);
-    for (const match of sectionMatches) {
-        result.sections.push(match[1]);
-    }
-    
-    return result;
 }
 
 // Display repositories in the grid
@@ -203,12 +116,20 @@ function createRepoCard(repo, readme) {
             <p>${readme.abstract || repo.description}</p>
         </div>
         
-        ${readme.sections && readme.sections.length > 0 ? `
+        ${readme.highlights && readme.highlights.length > 0 ? `
         <div class="card-sections">
-            <h3>Key Sections</h3>
+            <h3>Key Features</h3>
             <ul>
-                ${readme.sections.slice(0, 5).map(section => `<li>${section}</li>`).join('')}
+                ${readme.highlights.slice(0, 5).map(highlight => `<li>${highlight}</li>`).join('')}
             </ul>
+        </div>
+        ` : ''}
+        
+        ${readme.technologies && readme.technologies.length > 0 ? `
+        <div class="technologies">
+            ${readme.technologies.slice(0, 5).map(tech => 
+                `<span class="tech-badge">${tech}</span>`
+            ).join('')}
         </div>
         ` : ''}
         
@@ -229,8 +150,8 @@ function createRepoCard(repo, readme) {
         </div>
         
         <div class="card-footer">
-            <a href="${repo.url}" target="_blank" class="btn-primary">View Repository</a>
-            <button class="btn-secondary" onclick="expandReadme('${repo.name}')">Full README</button>
+            <button class="btn-primary" onclick="requestAccess('${repo.name}')">Request Source Code</button>
+            <button class="btn-secondary" onclick="expandReadme('${repo.name}')">View Details</button>
         </div>
     `;
     
@@ -246,10 +167,11 @@ function filterRepos() {
         const readme = readmeCache[repo.name] || {};
         const searchText = (
             repo.name + ' ' + 
+            repo.title + ' ' +
             repo.description + ' ' + 
-            (readme.title || '') + ' ' + 
-            (readme.abstract || '') + ' ' +
-            (readme.sections || []).join(' ')
+            (readme.abstract || '') + ' ' + 
+            (readme.highlights || []).join(' ') + ' ' +
+            (readme.technologies || []).join(' ')
         ).toLowerCase();
         
         const matchesSearch = searchTerm === '' || searchText.includes(searchTerm);
@@ -261,10 +183,12 @@ function filterRepos() {
     displayRepos(filtered);
 }
 
-// Expand README in modal (for future enhancement)
+// Expand README in modal
 function expandReadme(repoName) {
     const readme = readmeCache[repoName];
-    if (!readme) {
+    const repo = allRepos.find(r => r.name === repoName);
+    
+    if (!readme || !repo) {
         alert('README not available');
         return;
     }
@@ -277,20 +201,203 @@ function expandReadme(repoName) {
             <span class="modal-close" onclick="this.parentElement.parentElement.remove()">&times;</span>
             <h2>${readme.title || repoName}</h2>
             <div class="modal-body">
-                <p>${readme.abstract}</p>
-                ${readme.sections ? `
-                <h3>Contents</h3>
-                <ul>
-                    ${readme.sections.map(section => `<li>${section}</li>`).join('')}
-                </ul>
+                <div class="modal-abstract">
+                    <h3>Abstract</h3>
+                    <p>${readme.abstract}</p>
+                </div>
+                
+                ${readme.highlights ? `
+                <div class="modal-highlights">
+                    <h3>Key Features</h3>
+                    <ul>
+                        ${readme.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+                    </ul>
+                </div>
                 ` : ''}
-                <p class="modal-note">Visit the repository for the complete documentation.</p>
+                
+                ${readme.sections ? `
+                <div class="modal-sections">
+                    <h3>Documentation Sections</h3>
+                    <ul>
+                        ${readme.sections.map(section => `<li>${section}</li>`).join('')}
+                    </ul>
+                </div>
+                ` : ''}
+                
+                ${readme.technologies ? `
+                <div class="modal-technologies">
+                    <h3>Technologies Used</h3>
+                    <div class="tech-list">
+                        ${readme.technologies.map(tech => `<span class="tech-badge-large">${tech}</span>`).join('')}
+                    </div>
+                </div>
+                ` : ''}
+                
+                <p class="modal-note">To access the complete source code and documentation, please request access using the button below.</p>
             </div>
             <div class="modal-footer">
-                <a href="https://github.com/${GITHUB_ORG}/${repoName}" target="_blank" class="btn-primary">Open Repository</a>
+                <button class="btn-primary" onclick="requestAccess('${repoName}')">Request Source Code Access</button>
             </div>
         </div>
     `;
     
     document.body.appendChild(modal);
+}
+
+// Setup access request modal
+function setupAccessRequestModal() {
+    // Create modal HTML if it doesn't exist
+    if (!document.getElementById('accessModal')) {
+        const accessModal = document.createElement('div');
+        accessModal.id = 'accessModal';
+        accessModal.className = 'modal';
+        accessModal.style.display = 'none';
+        accessModal.innerHTML = `
+            <div class="modal-content access-modal">
+                <span class="modal-close" onclick="closeAccessModal()">&times;</span>
+                <h2>Request Source Code Access</h2>
+                <div class="modal-body">
+                    <p>Please provide your details to request access to the source code for <strong id="requestedRepo"></strong>.</p>
+                    
+                    <form id="accessRequestForm" onsubmit="submitAccessRequest(event)">
+                        <div class="form-group">
+                            <label for="requesterName">Name *</label>
+                            <input type="text" id="requesterName" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requesterEmail">Email *</label>
+                            <input type="email" id="requesterEmail" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requesterOrganization">Organization</label>
+                            <input type="text" id="requesterOrganization" name="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requesterPurpose">Purpose of Access *</label>
+                            <textarea id="requesterPurpose" name="purpose" rows="4" required 
+                                placeholder="Please describe how you intend to use this source code..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="requesterRole">Your Role</label>
+                            <select id="requesterRole" name="role">
+                                <option value="">Select...</option>
+                                <option value="researcher">Researcher</option>
+                                <option value="developer">Developer</option>
+                                <option value="student">Student</option>
+                                <option value="healthcare">Healthcare Professional</option>
+                                <option value="government">Government Official</option>
+                                <option value="nonprofit">Non-Profit Organization</option>
+                                <option value="commercial">Commercial Entity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Submit Request</button>
+                            <button type="button" class="btn-secondary" onclick="closeAccessModal()">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(accessModal);
+    }
+}
+
+// Request access to source code
+function requestAccess(repoName) {
+    const modal = document.getElementById('accessModal');
+    const repoNameElement = document.getElementById('requestedRepo');
+    const repo = allRepos.find(r => r.name === repoName);
+    
+    if (repo) {
+        repoNameElement.textContent = repo.title || repo.name;
+        repoNameElement.dataset.repoName = repoName;
+        modal.style.display = 'flex';
+        
+        // Close any other open modals
+        document.querySelectorAll('.modal').forEach(m => {
+            if (m.id !== 'accessModal') {
+                m.remove();
+            }
+        });
+    }
+}
+
+// Close access modal
+function closeAccessModal() {
+    const modal = document.getElementById('accessModal');
+    modal.style.display = 'none';
+    
+    // Reset form
+    document.getElementById('accessRequestForm').reset();
+}
+
+// Submit access request
+async function submitAccessRequest(event) {
+    event.preventDefault();
+    
+    const form = document.getElementById('accessRequestForm');
+    const formData = new FormData(form);
+    const repoName = document.getElementById('requestedRepo').dataset.repoName;
+    const repo = allRepos.find(r => r.name === repoName);
+    
+    // Prepare email data
+    const requestData = {
+        repository: repo.title || repo.name,
+        name: formData.get('name'),
+        email: formData.get('email'),
+        organization: formData.get('organization') || 'Not specified',
+        purpose: formData.get('purpose'),
+        role: formData.get('role') || 'Not specified',
+        timestamp: new Date().toISOString()
+    };
+    
+    // Send email using EmailJS or similar service
+    // For now, we'll use a mailto link as a fallback
+    const subject = `Source Code Access Request: ${requestData.repository}`;
+    const body = `
+New source code access request received:
+
+Repository: ${requestData.repository}
+Name: ${requestData.name}
+Email: ${requestData.email}
+Organization: ${requestData.organization}
+Role: ${requestData.role}
+
+Purpose of Access:
+${requestData.purpose}
+
+Timestamp: ${requestData.timestamp}
+    `.trim();
+    
+    // Create mailto link
+    const mailtoLink = `mailto:info@helloworldai.com.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Try to send via API if available, otherwise use mailto
+    try {
+        // If you have a backend API endpoint, use it here
+        // const response = await fetch('/api/access-request', {
+        //     method: 'POST',
+        //     headers: {'Content-Type': 'application/json'},
+        //     body: JSON.stringify(requestData)
+        // });
+        
+        // For now, open mailto link
+        window.location.href = mailtoLink;
+        
+        // Show success message
+        alert(`Thank you for your request. We will review it and contact you at ${requestData.email} within 2-3 business days.`);
+        
+        // Close modal and reset form
+        closeAccessModal();
+        
+    } catch (error) {
+        console.error('Error submitting request:', error);
+        alert('There was an error submitting your request. Please try again or contact us directly at info@helloworldai.com.au');
+    }
 }
