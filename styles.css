@@ -168,7 +168,7 @@ nav .container {
 }
 
 #filterCategory {
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
     border: 2px solid var(--border-color);
     border-radius: 4px;
     font-size: 1rem;
@@ -283,8 +283,8 @@ main {
 }
 
 .category-badge {
-    background: #9CCC65;
-    color: #000000;
+    background: #9CCC65 !important;
+    color: #000000 !important;
     padding: 0.25rem 0.75rem;
     border-radius: 3px;
     font-size: 0.7rem;
@@ -299,8 +299,8 @@ main {
 .repo-card.category-healthcare .category-badge,
 .repo-card.category-youth .category-badge,
 .repo-card.category-infrastructure .category-badge {
-    background: #9CCC65;
-    color: #000000;
+    background: #9CCC65 !important;
+    color: #000000 !important;
 }
 
 .card-abstract {
