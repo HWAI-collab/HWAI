@@ -116,8 +116,8 @@ header h1 {
     font-weight: 400;
     letter-spacing: 2px;
     margin-bottom: 0.5rem;
-    color: var(--accent-color);
-    text-shadow: 0 0 10px var(--accent-color);
+    color: #9CCC65;
+    text-shadow: 0 0 10px #9CCC65;
 }
 
 .subtitle {
@@ -283,7 +283,7 @@ main {
 
 .category-badge {
     background: var(--card-hover);
-    color: var(--accent-color);
+    color: #9CCC65;
     padding: 0.25rem 0.75rem;
     border-radius: 3px;
     font-size: 0.7rem;
@@ -412,12 +412,12 @@ main {
 
 .btn-primary {
     background: var(--secondary-color);
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: #9CCC65;
+    border: 2px solid #9CCC65;
 }
 
 .btn-primary:hover {
-    background: var(--accent-color);
+    background: #9CCC65;
     color: var(--background);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(156, 204, 101, 0.1);
     transform: translateY(-1px);
@@ -425,12 +425,12 @@ main {
 
 .btn-secondary {
     background: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
+    color: #9CCC65;
+    border: 2px solid #9CCC65;
 }
 
 .btn-secondary:hover {
-    background: var(--accent-color);
+    background: #9CCC65;
     color: var(--background);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(156, 204, 101, 0.1);
 }
@@ -579,7 +579,7 @@ footer p {
 
 .tech-badge {
     background: var(--card-hover);
-    color: var(--accent-color);
+    color: #9CCC65;
     padding: 0.25rem 0.75rem;
     border-radius: 3px;
     font-size: 0.75rem;
@@ -672,9 +672,9 @@ footer p {
 /* Download All button */
 .btn-download-all {
     background: var(--secondary-color);
-    color: var(--accent-color);
+    color: #9CCC65;
     padding: 0.75rem 1.5rem;
-    border: 2px solid var(--accent-color);
+    border: 2px solid #9CCC65;
     border-radius: 4px;
     font-size: 0.9rem;
     font-weight: 600;
@@ -690,7 +690,7 @@ footer p {
 }
 
 .btn-download-all:hover {
-    background: var(--accent-color);
+    background: #9CCC65;
     color: var(--background);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(156, 204, 101, 0.1);
     transform: translateY(-1px);
