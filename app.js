@@ -152,6 +152,7 @@ function createRepoCard(repo, readme) {
         <div class="card-footer">
             <button class="btn-primary" onclick="requestAccess('${repo.name}')">Request Source Code</button>
             <button class="btn-secondary" onclick="expandReadme('${repo.name}')">View Details</button>
+            <button class="btn-secondary" onclick="downloadReadme('${repo.name}')">Download README</button>
         </div>
     `;
     
@@ -237,6 +238,7 @@ function expandReadme(repoName) {
             </div>
             <div class="modal-footer">
                 <button class="btn-primary" onclick="requestAccess('${repoName}')">Request Source Code Access</button>
+                <button class="btn-secondary" onclick="downloadReadme('${repoName}')">Download README</button>
             </div>
         </div>
     `;
@@ -400,4 +402,205 @@ Timestamp: ${requestData.timestamp}
         console.error('Error submitting request:', error);
         alert('There was an error submitting your request. Please try again or contact us directly at info@helloworldai.com.au');
     }
+}
+
+// Download README as markdown file
+function downloadReadme(repoName) {
+    const repo = allRepos.find(r => r.name === repoName);
+    const readme = readmeCache[repoName];
+    
+    if (!repo || !readme) {
+        alert('README not available for download');
+        return;
+    }
+    
+    // Generate markdown content
+    let markdownContent = `# ${readme.title || repo.name}\n\n`;
+    
+    // Add metadata
+    markdownContent += `**Category:** ${repo.category}\n`;
+    markdownContent += `**Language:** ${repo.language || 'Multiple'}\n`;
+    markdownContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
+    
+    // Add abstract
+    markdownContent += `## Abstract\n\n${readme.abstract || repo.description}\n\n`;
+    
+    // Add technologies
+    if (readme.technologies && readme.technologies.length > 0) {
+        markdownContent += `## Technologies\n\n`;
+        readme.technologies.forEach(tech => {
+            markdownContent += `- ${tech}\n`;
+        });
+        markdownContent += '\n';
+    }
+    
+    // Add key features/highlights
+    if (readme.highlights && readme.highlights.length > 0) {
+        markdownContent += `## Key Features\n\n`;
+        readme.highlights.forEach(highlight => {
+            markdownContent += `- ${highlight}\n`;
+        });
+        markdownContent += '\n';
+    }
+    
+    // Add documentation sections
+    if (readme.sections && readme.sections.length > 0) {
+        markdownContent += `## Documentation Sections\n\n`;
+        readme.sections.forEach(section => {
+            markdownContent += `- ${section}\n`;
+        });
+        markdownContent += '\n';
+    }
+    
+    // Add topics
+    if (repo.topics && repo.topics.length > 0) {
+        markdownContent += `## Topics\n\n`;
+        markdownContent += repo.topics.map(topic => `\`${topic}\``).join(' ');
+        markdownContent += '\n\n';
+    }
+    
+    // Add footer
+    markdownContent += `---\n\n`;
+    markdownContent += `## Access Information\n\n`;
+    markdownContent += `This is a summary of the ${readme.title || repo.name} project from the HWAI Collaborative.\n\n`;
+    markdownContent += `For complete source code access, please contact: info@helloworldai.com.au\n\n`;
+    markdownContent += `**Organization:** HWAI Collaborative - Healthcare, Wellbeing and AI Research\n`;
+    markdownContent += `**Downloaded:** ${new Date().toLocaleDateString()}\n`;
+    
+    // Create blob and download
+    const blob = new Blob([markdownContent], { type: 'text/markdown;charset=utf-8' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${repo.name}-README.md`;
+    
+    // Trigger download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Clean up
+    window.URL.revokeObjectURL(url);
+}
+
+// Download all READMEs as a single zip file (requires JSZip library)
+function downloadAllReadmes() {
+    // Check if JSZip is available
+    if (typeof JSZip === 'undefined') {
+        // Fall back to downloading a combined markdown file
+        downloadCombinedReadme();
+        return;
+    }
+    
+    const zip = new JSZip();
+    
+    allRepos.forEach(repo => {
+        const readme = readmeCache[repo.name];
+        if (readme) {
+            let content = generateReadmeContent(repo, readme);
+            zip.file(`${repo.name}-README.md`, content);
+        }
+    });
+    
+    zip.generateAsync({ type: 'blob' }).then(function(content) {
+        const url = window.URL.createObjectURL(content);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'HWAI-Collaborative-READMEs.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+    });
+}
+
+// Download combined README file
+function downloadCombinedReadme() {
+    let combinedContent = `# HWAI Collaborative - Academic Research Portfolio\n\n`;
+    combinedContent += `Healthcare, Wellbeing and AI Research Collaborative\n\n`;
+    combinedContent += `**Total Projects:** ${allRepos.length}\n`;
+    combinedContent += `**Downloaded:** ${new Date().toLocaleDateString()}\n\n`;
+    combinedContent += `---\n\n`;
+    combinedContent += `## Table of Contents\n\n`;
+    
+    // Add table of contents
+    allRepos.forEach((repo, index) => {
+        const readme = readmeCache[repo.name];
+        combinedContent += `${index + 1}. [${readme.title || repo.name}](#${repo.name.toLowerCase().replace(/[^a-z0-9]/g, '-')})\n`;
+    });
+    
+    combinedContent += `\n---\n\n`;
+    
+    // Add each project
+    allRepos.forEach(repo => {
+        const readme = readmeCache[repo.name];
+        if (readme) {
+            combinedContent += `## ${readme.title || repo.name}\n\n`;
+            combinedContent += `**Category:** ${repo.category} | `;
+            combinedContent += `**Language:** ${repo.language || 'Multiple'} | `;
+            combinedContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
+            
+            combinedContent += `### Abstract\n${readme.abstract || repo.description}\n\n`;
+            
+            if (readme.technologies && readme.technologies.length > 0) {
+                combinedContent += `### Technologies\n`;
+                combinedContent += readme.technologies.join(', ') + '\n\n';
+            }
+            
+            if (readme.highlights && readme.highlights.length > 0) {
+                combinedContent += `### Key Features\n`;
+                readme.highlights.forEach(highlight => {
+                    combinedContent += `- ${highlight}\n`;
+                });
+                combinedContent += '\n';
+            }
+            
+            combinedContent += `---\n\n`;
+        }
+    });
+    
+    // Add footer
+    combinedContent += `## Contact Information\n\n`;
+    combinedContent += `For source code access and collaboration inquiries:\n\n`;
+    combinedContent += `- **Email:** info@helloworldai.com.au\n`;
+    combinedContent += `- **Organization:** HWAI Collaborative\n`;
+    combinedContent += `- **Website:** https://hwai-collab.github.io/HWAI/\n`;
+    
+    // Create and download
+    const blob = new Blob([combinedContent], { type: 'text/markdown;charset=utf-8' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'HWAI-Collaborative-Complete-Portfolio.md';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    window.URL.revokeObjectURL(url);
+}
+
+// Helper function to generate README content
+function generateReadmeContent(repo, readme) {
+    let content = `# ${readme.title || repo.name}\n\n`;
+    content += `**Category:** ${repo.category}\n`;
+    content += `**Language:** ${repo.language || 'Multiple'}\n`;
+    content += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
+    content += `## Abstract\n\n${readme.abstract || repo.description}\n\n`;
+    
+    if (readme.technologies && readme.technologies.length > 0) {
+        content += `## Technologies\n\n`;
+        readme.technologies.forEach(tech => {
+            content += `- ${tech}\n`;
+        });
+        content += '\n';
+    }
+    
+    if (readme.highlights && readme.highlights.length > 0) {
+        content += `## Key Features\n\n`;
+        readme.highlights.forEach(highlight => {
+            content += `- ${highlight}\n`;
+        });
+        content += '\n';
+    }
+    
+    return content;
 }
