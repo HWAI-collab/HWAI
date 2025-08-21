@@ -3,7 +3,7 @@
     {
       "name": "slnq-ai-app",
       "title": "SLNQ: Youth Support Services Management Platform",
-      "category": "youth",
+      "category": "web-applications",
       "description": "A sophisticated, AI-enhanced youth support services management platform for residential care operations for vulnerable young people in Queensland, Australia. Features voice-to-text transcription, intelligent document generation, pattern recognition for risk assessment, and automated compliance monitoring.",
       "topics": [
         "youth-services",
@@ -45,7 +45,7 @@
     {
       "name": "warringu-app",
       "title": "Warringu: Specialised Shared Services Hub",
-      "category": "youth",
+      "category": "mobile-applications",
       "description": "A Flutter web application providing integrated access to specialist services for indigenous organizations. Features secure user authentication, case management systems, and training modules.",
       "topics": [
         "indigenous-services",
@@ -83,7 +83,7 @@
     {
       "name": "FNQPHNRiskStratificationTool",
       "title": "FNQ PHN Risk Stratification Tool",
-      "category": "healthcare",
+      "category": "data-analytics",
       "description": "An advanced healthcare risk stratification platform using machine learning for primary care analytics. Features AI-powered analysis, geospatial integration, and ensemble learning algorithms.",
       "topics": [
         "healthcare-analytics",
@@ -122,7 +122,7 @@
     {
       "name": "OrthoVision",
       "title": "OrthoVision: AI-Powered Orthopaedic Diagnostics",
-      "category": "ai",
+      "category": "ai-platforms",
       "description": "A comprehensive AI platform for orthopaedic diagnostics featuring HorusAI (clinical consultation), HarrierX (computer vision diagnostics), and LammerGAN (synthetic medical image generation).",
       "topics": [
         "medical-ai",
@@ -162,7 +162,7 @@
     {
       "name": "wyzup-scale",
       "title": "WyzUp Scale: Food Recognition and Portion Estimation",
-      "category": "ai",
+      "category": "ai-platforms",
       "description": "An advanced computer vision system for automated food recognition and portion estimation using YOLOv8. Designed for nutritional analysis, dietary tracking, and food service applications.",
       "topics": [
         "computer-vision",
@@ -200,7 +200,7 @@
     {
       "name": "help-now",
       "title": "Help-Now: AI-Enhanced Local Business Discovery",
-      "category": "infrastructure",
+      "category": "web-applications",
       "description": "A Vue.js 3 web application with Python-based web scraping for local business discovery and community service mapping. Features ML-enhanced web scraping, OCR, and automated data validation.",
       "topics": [
         "business-discovery",
@@ -239,7 +239,7 @@
     {
       "name": "evolutionary-biology-analysis",
       "title": "Evolutionary Biology Analysis Suite",
-      "category": "infrastructure",
+      "category": "data-analytics",
       "description": "Comprehensive R-based toolkit for evolutionary biology research including genetic drift simulation, phylogenetic analysis, population genetics modeling, and molecular evolution studies.",
       "topics": [
         "evolutionary-biology",
@@ -278,7 +278,7 @@
     {
       "name": "mwd-weekly-dashboard",
       "title": "MWD: Advanced Personal Productivity Platform",
-      "category": "infrastructure",
+      "category": "business-systems",
       "description": "A comprehensive weekly dashboard system for personal productivity management featuring task automation, goal tracking, and advanced analytics. Built with modern web technologies and deployment automation.",
       "topics": [
         "productivity",
@@ -317,7 +317,7 @@
     {
       "name": "kait-conversational-ai",
       "title": "KaiT: Advanced Conversational AI Platform",
-      "category": "ai",
+      "category": "web-applications",
       "description": "A sophisticated conversational AI platform built with Vue.js 3 featuring natural language processing, context-aware responses, and advanced chatbot capabilities for various applications.",
       "topics": [
         "conversational-ai",
@@ -356,7 +356,7 @@
     {
       "name": "plaict-community-dashboard",
       "title": "PLAICT: Community Engagement Analytics Platform",
-      "category": "infrastructure",
+      "category": "web-applications",
       "description": "A comprehensive community engagement analytics platform featuring data visualization, user interaction tracking, and community health metrics. Built for supporting community organizations and engagement initiatives.",
       "topics": [
         "community-analytics",
@@ -395,7 +395,7 @@
     {
       "name": "kidmaps-dashboard",
       "title": "KidMaps Dashboard: Business Event & Location Management",
-      "category": "infrastructure",
+      "category": "web-applications",
       "description": "A comprehensive business management platform enabling local businesses to manage their events, locations, and customer engagement. Features event scheduling, location management, customer communications, and analytics dashboard for business optimization.",
       "topics": [
         "family-activities",
@@ -434,7 +434,7 @@
     {
       "name": "kidmaps-app",
       "title": "KidMaps: Geospatial Mobile Application for Family Services",
-      "category": "youth",
+      "category": "mobile-applications",
       "description": "A sophisticated cross-platform mobile application that addresses the fragmentation of family activity information systems. KidMaps provides unified mobile experience for families seeking activities and organizations managing events.",
       "topics": [
         "flutter",
@@ -476,7 +476,7 @@
     {
       "name": "WAIVI",
       "title": "WAIVI (OrthoVision): AI-Powered Orthopaedic Diagnostic Platform",
-      "category": "healthcare",
+      "category": "ai-platforms",
       "description": "A pioneering artificial intelligence platform revolutionizing orthopaedic diagnostic workflows through advanced computer vision, NLP, and generative ML. Features HorusAI consultation, HarrierX diagnostic analysis, and LammerGAN synthetic image generation.",
       "topics": [
         "ai",
@@ -519,7 +519,7 @@
     {
       "name": "play_leaf_green",
       "title": "Play Leaf Green: AI-Powered Pokemon Game Agent",
-      "category": "ai",
+      "category": "ai-platforms",
       "description": "A Django-based web application using DeepSeek AI to automatically play Pokemon games through emulation. Features intelligent gameplay decisions, real-time action logging, and comprehensive game state analysis.",
       "topics": [
         "ai",
@@ -565,10 +565,11 @@
     "last_updated": "2025-01-21",
     "total_repositories": 21,
     "categories": {
-      "ai": 6,
-      "healthcare": 4,
-      "youth": 4,
-      "infrastructure": 7
+      "web-applications": "Web-based platforms and applications",
+      "mobile-applications": "Cross-platform mobile applications",
+      "ai-platforms": "AI/ML systems and platforms",
+      "data-analytics": "Analytics and research tools",
+      "business-systems": "Business management tools"
     }
   }
 }
