@@ -353,45 +353,6 @@
       ]
     },
     {
-      "name": "subject-web-scraper",
-      "title": "Subject Web Scraper: Academic Course Data Harvesting",
-      "category": "infrastructure",
-      "description": "A specialized web scraping tool for extracting university course and subject information from academic websites. Features intelligent parsing, data validation, and structured output for educational analytics.",
-      "topics": [
-        "web-scraping",
-        "education",
-        "data-harvesting",
-        "academic-data",
-        "automation"
-      ],
-      "url": "https://github.com/HWAI-collab/subject-web-scraper",
-      "stars": 12,
-      "forks": 4,
-      "language": "Python",
-      "technologies": [
-        "Python",
-        "BeautifulSoup",
-        "Selenium",
-        "Scrapy",
-        "Pandas"
-      ],
-      "sections": [
-        "Web Scraping Engine",
-        "Data Validation Framework",
-        "Academic Data Models",
-        "Export and Analysis Tools",
-        "Configuration Management"
-      ],
-      "abstract": "Automated tool for harvesting academic course information from university websites, enabling researchers and students to analyze curriculum trends, course availability, and educational program structures across institutions.",
-      "highlights": [
-        "Intelligent HTML parsing and extraction",
-        "Configurable scraping parameters",
-        "Data validation and cleansing",
-        "Structured JSON and CSV output",
-        "Support for multiple university systems"
-      ]
-    },
-    {
       "name": "evolutionary-biology-analysis",
       "title": "Evolutionary Biology Analysis Suite",
       "category": "infrastructure",
