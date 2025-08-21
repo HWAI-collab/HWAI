@@ -282,8 +282,8 @@ main {
 }
 
 .category-badge {
-    background: var(--accent-color);
-    color: var(--background);
+    background: var(--card-hover);
+    color: var(--accent-color);
     padding: 0.25rem 0.75rem;
     border-radius: 3px;
     font-size: 0.7rem;
@@ -291,7 +291,6 @@ main {
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: 1px;
-    border: 1px solid var(--accent-color);
 }
 
 .repo-card.category-ai .category-badge {
@@ -412,12 +411,14 @@ main {
 }
 
 .btn-primary {
-    background: var(--accent-color);
-    color: var(--background);
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .btn-primary:hover {
-    background: var(--accent-secondary);
+    background: var(--accent-color);
+    color: var(--background);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(164, 198, 57, 0.1);
     transform: translateY(-1px);
 }
@@ -577,11 +578,10 @@ footer p {
 }
 
 .tech-badge {
-    background: transparent;
+    background: var(--card-hover);
     color: var(--accent-color);
     padding: 0.25rem 0.75rem;
     border-radius: 3px;
-    border: 1px solid var(--accent-color);
     font-size: 0.75rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -671,8 +671,8 @@ footer p {
 
 /* Download All button */
 .btn-download-all {
-    background: var(--accent-color);
-    color: var(--background);
+    background: var(--secondary-color);
+    color: var(--accent-color);
     padding: 0.75rem 1.5rem;
     border: 2px solid var(--accent-color);
     border-radius: 4px;
@@ -690,7 +690,8 @@ footer p {
 }
 
 .btn-download-all:hover {
-    background: var(--accent-secondary);
+    background: var(--accent-color);
+    color: var(--background);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(164, 198, 57, 0.1);
     transform: translateY(-1px);
 }
