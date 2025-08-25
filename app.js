@@ -180,7 +180,7 @@ function filterRepos() {
 }
 
 // Expand README in modal
-function expandReadme(repoName) {
+async function expandReadme(repoName) {
     const readme = readmeCache[repoName];
     const repo = allRepos.find(r => r.name === repoName);
     
@@ -189,7 +189,7 @@ function expandReadme(repoName) {
         return;
     }
     
-    // Create modal with full README content
+    // Create modal with loading state initially
     const modal = document.createElement('div');
     modal.className = 'modal';
     modal.innerHTML = `
@@ -197,48 +197,114 @@ function expandReadme(repoName) {
             <span class="modal-close" onclick="this.parentElement.parentElement.remove()">&times;</span>
             <h2>${readme.title || repoName}</h2>
             <div class="modal-body">
-                <div class="modal-abstract">
-                    <h3>Abstract</h3>
-                    <p>${readme.abstract}</p>
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading README content...</p>
                 </div>
-                
-                ${readme.highlights ? `
-                <div class="modal-highlights">
-                    <h3>Key Features</h3>
-                    <ul>
-                        ${readme.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-                
-                ${readme.sections ? `
-                <div class="modal-sections">
-                    <h3>Documentation Sections</h3>
-                    <ul>
-                        ${readme.sections.map(section => `<li>${section}</li>`).join('')}
-                    </ul>
-                </div>
-                ` : ''}
-                
-                ${readme.technologies ? `
-                <div class="modal-technologies">
-                    <h3>Technologies Used</h3>
-                    <div class="tech-list">
-                        ${readme.technologies.map(tech => `<span class="tech-badge-large">${tech}</span>`).join('')}
-                    </div>
-                </div>
-                ` : ''}
-                
-                <p class="modal-note">To access the complete source code and documentation, please request access using the button below.</p>
-            </div>
-            <div class="modal-footer">
-                <button class="btn-primary" onclick="requestAccess('${repoName}')">Request Source Code Access</button>
-                <button class="btn-secondary" onclick="downloadReadme('${repoName}')">Download README</button>
             </div>
         </div>
     `;
     
     document.body.appendChild(modal);
+    
+    // Try to fetch real README content
+    let readmeContent = '';
+    if (repo.readme_file) {
+        try {
+            const response = await fetch(repo.readme_file);
+            if (response.ok) {
+                const fullContent = await response.text();
+                // Extract first few sections for preview (up to 2000 characters)
+                const lines = fullContent.split('\n');
+                const previewLines = [];
+                let charCount = 0;
+                
+                for (let line of lines) {
+                    if (charCount + line.length > 2000) {
+                        previewLines.push('...\n\n*[Content truncated - Download full README for complete documentation]*');
+                        break;
+                    }
+                    previewLines.push(line);
+                    charCount += line.length + 1; // +1 for newline
+                }
+                
+                readmeContent = previewLines.join('\n');
+            }
+        } catch (error) {
+            console.warn('Failed to fetch real README:', error);
+        }
+    }
+    
+    // Update modal with content
+    const modalBody = modal.querySelector('.modal-body');
+    if (readmeContent) {
+        // Convert markdown to HTML for basic display
+        const htmlContent = readmeContent
+            .replace(/^### (.*$)/gm, '<h4>$1</h4>')
+            .replace(/^## (.*$)/gm, '<h3>$1</h3>')
+            .replace(/^# (.*$)/gm, '<h2>$1</h2>')
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.*?)\*/g, '<em>$1</em>')
+            .replace(/`(.*?)`/g, '<code>$1</code>')
+            .replace(/^\- (.*$)/gm, '<li>$1</li>')
+            .replace(/\n\n/g, '</p><p>')
+            .replace(/^(?!<[h|l|p])/gm, '<p>')
+            .replace(/(?<!>)$/gm, '</p>');
+        
+        modalBody.innerHTML = `
+            <div class="readme-preview" style="max-height: 60vh; overflow-y: auto; line-height: 1.6;">
+                ${htmlContent}
+            </div>
+            <p class="modal-note" style="margin-top: 2rem; padding: 1rem; background: var(--background); border-left: 4px solid var(--accent-color);">
+                This is a preview of the actual README file. Download the complete README for full documentation.
+            </p>
+            <div class="modal-footer" style="margin-top: 2rem;">
+                <button class="btn-primary" onclick="requestAccess('${repoName}')">Request Source Code Access</button>
+                <button class="btn-secondary" onclick="downloadReadme('${repoName}')">Download Complete README</button>
+            </div>
+        `;
+    } else {
+        // Fallback to metadata display
+        modalBody.innerHTML = `
+            <div class="modal-abstract">
+                <h3>Abstract</h3>
+                <p>${readme.abstract}</p>
+            </div>
+            
+            ${readme.highlights ? `
+            <div class="modal-highlights">
+                <h3>Key Features</h3>
+                <ul>
+                    ${readme.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+            
+            ${readme.sections ? `
+            <div class="modal-sections">
+                <h3>Documentation Sections</h3>
+                <ul>
+                    ${readme.sections.map(section => `<li>${section}</li>`).join('')}
+                </ul>
+            </div>
+            ` : ''}
+            
+            ${readme.technologies ? `
+            <div class="modal-technologies">
+                <h3>Technologies Used</h3>
+                <div class="tech-list">
+                    ${readme.technologies.map(tech => `<span class="tech-badge-large">${tech}</span>`).join('')}
+                </div>
+            </div>
+            ` : ''}
+            
+            <p class="modal-note">To access the complete source code and documentation, please request access using the button below.</p>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="requestAccess('${repoName}')">Request Source Code Access</button>
+                <button class="btn-secondary" onclick="downloadReadme('${repoName}')">Download README</button>
+            </div>
+        `;
+    }
 }
 
 // Setup access request modal
@@ -400,7 +466,7 @@ Timestamp: ${requestData.timestamp}
 }
 
 // Download README as markdown file
-function downloadReadme(repoName) {
+async function downloadReadme(repoName) {
     const repo = allRepos.find(r => r.name === repoName);
     
     if (!repo) {
@@ -408,41 +474,24 @@ function downloadReadme(repoName) {
         return;
     }
     
-    // Use actual README content if available, otherwise generate from metadata
     let markdownContent;
     
-    if (repo.readme_content) {
-        // Use the actual README content
-        markdownContent = repo.readme_content;
+    // Try to fetch the real README file first
+    if (repo.readme_file) {
+        try {
+            const response = await fetch(repo.readme_file);
+            if (response.ok) {
+                markdownContent = await response.text();
+            } else {
+                throw new Error('Failed to fetch README');
+            }
+        } catch (error) {
+            console.warn('Failed to fetch real README, falling back to generated content:', error);
+            markdownContent = generateFallbackReadme(repo);
+        }
     } else {
         // Fallback to generated content from metadata
-        const readme = readmeCache[repoName];
-        if (!readme) {
-            alert('README not available for download');
-            return;
-        }
-        
-        markdownContent = `# ${readme.title || repo.name}\n\n`;
-        markdownContent += `**Category:** ${repo.category}\n`;
-        markdownContent += `**Language:** ${repo.language || 'Multiple'}\n`;
-        markdownContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
-        markdownContent += `## Abstract\n\n${readme.abstract || repo.description}\n\n`;
-        
-        if (readme.technologies && readme.technologies.length > 0) {
-            markdownContent += `## Technologies\n\n`;
-            readme.technologies.forEach(tech => {
-                markdownContent += `- ${tech}\n`;
-            });
-            markdownContent += '\n';
-        }
-        
-        if (readme.highlights && readme.highlights.length > 0) {
-            markdownContent += `## Key Features\n\n`;
-            readme.highlights.forEach(highlight => {
-                markdownContent += `- ${highlight}\n`;
-            });
-            markdownContent += '\n';
-        }
+        markdownContent = generateFallbackReadme(repo);
     }
     
     // Create blob and download
@@ -459,6 +508,38 @@ function downloadReadme(repoName) {
     
     // Clean up
     window.URL.revokeObjectURL(url);
+}
+
+// Generate fallback README content from metadata
+function generateFallbackReadme(repo) {
+    const readme = readmeCache[repo.name];
+    if (!readme) {
+        return `# ${repo.name}\n\n${repo.description}\n\nREADME content not available.`;
+    }
+    
+    let markdownContent = `# ${readme.title || repo.name}\n\n`;
+    markdownContent += `**Category:** ${repo.category}\n`;
+    markdownContent += `**Language:** ${repo.language || 'Multiple'}\n`;
+    markdownContent += `**Stars:** ${repo.stars} | **Forks:** ${repo.forks}\n\n`;
+    markdownContent += `## Abstract\n\n${readme.abstract || repo.description}\n\n`;
+    
+    if (readme.technologies && readme.technologies.length > 0) {
+        markdownContent += `## Technologies\n\n`;
+        readme.technologies.forEach(tech => {
+            markdownContent += `- ${tech}\n`;
+        });
+        markdownContent += '\n';
+    }
+    
+    if (readme.highlights && readme.highlights.length > 0) {
+        markdownContent += `## Key Features\n\n`;
+        readme.highlights.forEach(highlight => {
+            markdownContent += `- ${highlight}\n`;
+        });
+        markdownContent += '\n';
+    }
+    
+    return markdownContent;
 }
 
 // Download all READMEs as a single zip file (requires JSZip library)

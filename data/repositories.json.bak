@@ -1,0 +1,590 @@
+{
+  "repositories": [
+    {
+      "name": "slnq-ai-app",
+      "title": "SLNQ: Youth Support Services Management Platform",
+      "category": "youth",
+      "description": "A sophisticated, AI-enhanced youth support services management platform for residential care operations for vulnerable young people in Queensland, Australia. Features voice-to-text transcription, intelligent document generation, pattern recognition for risk assessment, and automated compliance monitoring.",
+      "topics": ["youth-services", "residential-care", "ai-integration", "compliance", "case-management"],
+      "url": "https://github.com/HWAI-collab/slnq-ai-app",
+      "stars": 15,
+      "forks": 3,
+      "language": "JavaScript",
+      "technologies": ["Nuxt 3", "Vue.js", "Supabase", "Flutter", "PostgreSQL", "AI/ML"],
+      "sections": [
+        "Executive Summary",
+        "System Architecture",
+        "AI-Enhanced Care Management Framework",
+        "Young Person Management System",
+        "Staff Development Platform",
+        "Compliance and Reporting Analytics"
+      ],
+      "abstract": "Safe Living NQ represents a comprehensive AI-enhanced platform revolutionising residential care operations for vulnerable young people. Built on Nuxt 3's server-side architecture and powered by Supabase's real-time infrastructure, it delivers comprehensive case management, staff coordination, facility oversight, and compliance monitoring specifically designed for youth residential care environments.",
+      "highlights": [
+        "AI-powered documentation with voice-to-text transcription",
+        "Comprehensive youth case management system",
+        "Staff development and qualification tracking",
+        "Real-time compliance monitoring",
+        "Trauma-informed development principles"
+      ],
+      "readme_content": "# SLNQ: Comprehensive Youth Support Services Management Platform\n\n[![Nuxt](https://img.shields.io/badge/Nuxt-3.11%2B-00DC82.svg)](https://nuxt.com/)\n[![Vue.js](https://img.shields.io/badge/Vue.js-3.4%2B-4FC08D.svg)](https://vuejs.org/)\n[![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E.svg)](https://supabase.com/)\n[![Flutter](https://img.shields.io/badge/Flutter-3.10%2B-02569B.svg)](https://flutter.dev/)\n[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license--legal)\n\n## Abstract\n\nSafe Living NQ (SLNQ) represents a sophisticated, AI-enhanced youth support services management platform engineered to revolutionise residential care operations for vulnerable young people in Queensland, Australia. Built upon Nuxt 3's server-side architecture and powered by Supabase's real-time infrastructure, the platform delivers comprehensive case management, staff coordination, facility oversight, and compliance monitoring capabilities specifically designed for youth residential care environments.\n\nThe system integrates advanced artificial intelligence capabilities including voice-to-text transcription, intelligent document generation, pattern recognition for risk assessment, and automated compliance monitoring. Through its modular architecture combining comprehensive client management, staff development frameworks, facility management systems, and real-time communication platforms, SLNQ establishes itself as an essential solution for youth support organisations seeking to enhance care quality, operational efficiency, and regulatory compliance whilst maintaining the highest standards of privacy and security for vulnerable populations.\n\n## Table of Contents\n\n- [Abstract](#abstract)\n- [Executive Summary](#executive-summary)\n  - [Strategic Vision and Care Objectives](#strategic-vision-and-care-objectives)\n  - [Key Stakeholders](#key-stakeholders)\n  - [Value Proposition and Care Impact](#value-proposition-and-care-impact)\n- [System Architecture](#system-architecture)\n  - [Comprehensive Platform Architecture](#comprehensive-platform-architecture)\n  - [AI-Enhanced Care Management Framework](#ai-enhanced-care-management-framework)\n  - [Multi-Platform Integration Design](#multi-platform-integration-design)\n- [Core Technologies](#core-technologies)\n- [Care Management Modules](#care-management-modules)\n  - [Young Person Management System](#young-person-management-system)\n  - [Staff Development and Management Platform](#staff-development-and-management-platform)\n  - [Facility and Asset Management Framework](#facility-and-asset-management-framework)\n  - [Documentation and Communication Hub](#documentation-and-communication-hub)\n  - [Compliance and Reporting Analytics](#compliance-and-reporting-analytics)\n- [Installation & Deployment](#installation--deployment)\n- [API Documentation](#api-documentation)\n- [Database Architecture](#database-architecture)\n- [AI Integration Framework](#ai-integration-framework)\n- [Security & Compliance](#security--compliance)\n- [Performance Optimisation](#performance-optimisation)\n- [Testing & Quality Assurance](#testing--quality-assurance)\n- [Development Guidelines](#development-guidelines)\n- [Contributing Guidelines](#contributing-guidelines)\n- [License & Legal](#license--legal)\n\n## Executive Summary\n\n### Strategic Vision and Care Objectives\n\nSLNQ addresses critical challenges in youth residential care delivery through comprehensive digital transformation and intelligent automation. The platform's strategic care objectives encompass:\n\n- **Holistic Client Care**: Enhancement of support planning, risk assessment, and progress monitoring for young people in residential care environments\n- **Staff Excellence**: Development of comprehensive training, qualification tracking, and performance optimisation systems for youth support workers\n- **Operational Excellence**: Streamlined facility management, asset tracking, and maintenance workflows ensuring safe, compliant residential environments\n- **Evidence-Based Practice**: AI-powered analytics enabling data-driven decision making and continuous improvement in care delivery\n- **Regulatory Compliance**: Automated compliance monitoring and reporting systems ensuring adherence to Queensland care standards and federal regulations\n\n### Key Stakeholders\n\n**Primary Care Stakeholders:**\n- Young people receiving residential care services and their families\n- Youth Support Workers (YSW) providing direct care and supervision\n- Team Leaders coordinating care delivery and staff supervision\n- Case Managers developing and implementing individualised support plans\n- Clinical staff providing therapeutic and medical support\n\n**Secondary Stakeholders:**\n- Management teams overseeing operational performance and compliance\n- Regulatory bodies monitoring care standards and compliance outcomes\n- Government departments funding and overseeing youth residential care services\n- Community partners providing ancillary support services\n- Emergency services and crisis response teams\n\n### Value Proposition and Care Impact\n\nSLNQ delivers measurable care and operational value through:\n\n- **Care Quality Enhancement**: Systematic improvement in support planning accuracy, risk assessment effectiveness, and intervention outcomes through AI-assisted documentation and pattern recognition\n- **Operational Efficiency**: Reduction in administrative burden enabling increased focus on direct care delivery and client engagement\n- **Compliance Assurance**: Automated monitoring and reporting systems ensuring continuous adherence to regulatory requirements and care standards\n- **Staff Development**: Comprehensive training tracking and competency development frameworks supporting professional growth and care quality improvement\n- **Data-Driven Insights**: Advanced analytics enabling evidence-based care planning, resource allocation, and strategic planning decisions\n\n## System Architecture\n\n### Comprehensive Platform Architecture\n\nThe SLNQ platform implements a sophisticated multi-tier architecture optimised for youth residential care environments, combining web-based management systems with mobile companion applications.\n\n### AI-Enhanced Care Management Framework\n\n**Intelligent Care Support System:**\nThe platform employs advanced AI capabilities for:\n- Risk assessment and pattern recognition\n- Automated document generation\n- Voice-to-text transcription for reports\n- Compliance monitoring and alerting\n- Training needs identification\n\n### Multi-Platform Integration Design\n\n**Cross-Platform Service Integration:**\nSLNQ provides seamless integration across:\n- Web-based management dashboard\n- Mobile applications for field work\n- Real-time synchronisation services\n- External system integrations\n\n## Core Technologies\n\n| Technology | Version | Justification | License |\n|------------|---------|---------------|----------|\n| **Nuxt 3** | 3.11+ | Full-stack Vue framework optimised for server-side rendering and static generation | MIT License |\n| **Vue.js** | 3.4+ | Progressive JavaScript framework with composition API for reactive user interfaces | MIT License |\n| **Supabase** | 2.38+ | Backend-as-a-Service providing PostgreSQL database, authentication, and real-time features | Apache 2.0 |\n| **PostgreSQL** | 14+ | Advanced relational database with JSON support and real-time capabilities | PostgreSQL License |\n| **Tailwind CSS** | 3.4+ | Utility-first CSS framework optimised for responsive design and component development | MIT License |\n| **Pinia** | 2.1+ | Official Vue state management library with TypeScript support | MIT License |\n| **VueUse** | 10.9+ | Collection of essential Vue composition utilities | MIT License |\n| **Flutter** | 3.10+ | Cross-platform mobile framework for Warringu companion application | BSD 3-Clause |\n| **Dart** | 3.0+ | Programming language for Flutter mobile application development | BSD 3-Clause |\n| **TypeScript** | 5.0+ | Typed JavaScript providing enhanced development experience and code quality | Apache 2.0 |\n\n## Care Management Modules\n\n### Young Person Management System\n\n**Comprehensive Client Care Framework:**\nThe Young Person (YP) Management System provides holistic care coordination for young people in residential care environments:\n\n**Care Planning and Risk Assessment:**\n- **Comprehensive Assessment Tools**: Multi-dimensional assessment frameworks incorporating mental health, behavioral, educational, and social factors\n- **AI-Assisted Risk Analysis**: Pattern recognition algorithms identifying potential risk factors and protective factors\n- **Individualised Support Planning**: Tailored intervention strategies based on strengths-based approaches and evidence-based practices\n- **Crisis Management Protocols**: Automated crisis plan generation with therapeutic crisis intervention (TCI) integration\n- **Progress Monitoring**: Real-time tracking of goal achievement and intervention effectiveness\n\n### Staff Development and Management Platform\n\n**Comprehensive Workforce Management Framework:**\n\n**Staff Development Features:**\n- **Qualification Management**: Automated tracking of Certificate IV in Youth Work, First Aid, and specialised qualifications with expiry alerts\n- **Competency Assessment**: AI-powered analysis of staff performance and identification of professional development opportunities\n- **Training Coordination**: Integrated training scheduling and progress tracking aligned with organisational and regulatory requirements\n- **Performance Monitoring**: Comprehensive performance analytics supporting supervision and professional development planning\n- **Wellness Support**: Early identification of staff requiring additional support through pattern analysis and workload monitoring\n\n### Facility and Asset Management Framework\n\n**Comprehensive Property and Asset Management:**\n\n**Facility Management Capabilities:**\n- **Location Management**: Comprehensive house profiles with capacity management, occupancy tracking, and environmental monitoring\n- **Asset Tracking**: Digital asset registers with maintenance schedules, warranty tracking, and replacement planning\n- **Maintenance Workflows**: Automated maintenance request processing, contractor management, and compliance monitoring\n- **Safety Compliance**: WHS documentation systems, safety inspection scheduling, and regulatory compliance tracking\n- **Cleaning Protocols**: Structured cleaning checklists and hygiene monitoring systems ensuring safe residential environments\n\n### Documentation and Communication Hub\n\n**Comprehensive Documentation and Communication Platform:**\n\n**Documentation Features:**\n- **Shift Reporting**: Multiple shift report types (daily, night, awake shifts) with AI-assisted generation and quality assessment\n- **Incident Documentation**: Comprehensive incident reporting with automated debriefing protocols and compliance validation\n- **Meeting Management**: Voice-to-text meeting transcription with action item extraction and follow-up scheduling\n- **Secure Messaging**: Role-based communication systems with audit trails and message encryption\n- **File Management**: Centralised document storage with version control and access permissions\n\n### Compliance and Reporting Analytics\n\n**Advanced Compliance Monitoring and Analytics Framework:**\n\n## Installation & Deployment\n\n### Prerequisites and Environment Setup\n\n**System Requirements:**\n```bash\n# Node.js and Package Manager Requirements\nnode --version    # Requires Node.js 20.18.0+\nnpm --version     # Requires npm 8+\n\n# Platform-specific Requirements\n# Web Application: Modern browser with ES2020+ support\n# Mobile Application: Flutter 3.10+ with Dart 3.0+\n# Database: PostgreSQL 14+ with Supabase configuration\n```\n\n**Development Environment Configuration:**\n```bash\n# Clone repository and setup development environment\ngit clone https://github.com/safelivingnq/slnq-platform.git\ncd slnq-platform\n\n# Make installation scripts executable\nchmod +x install-fix.sh\nchmod +x complete-install.sh\n\n# Install dependencies and configure environment\n./install-fix.sh\n\n# Alternative manual installation\nnpm install\n\n# Install Flutter dependencies for mobile companion app\ncd warringu-app\nflutter pub get\ncd ..\n```\n\n**Environment Configuration:**\n```bash\n# Create environment configuration file\ncp .env.example .env\n\n# Configure Supabase connection\necho \"NUXT_PUBLIC_SUPABASE_URL=your_supabase_project_url\" >> .env\necho \"NUXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key\" >> .env\necho \"SUPABASE_SERVICE_ROLE_KEY=your_service_role_key\" >> .env\n\n# Configure AI services integration\necho \"OPENAI_API_KEY=your_openai_api_key\" >> .env\necho \"ANTHROPIC_API_KEY=your_anthropic_api_key\" >> .env\n\n# Configure notification services\necho \"NOTIFICATION_SERVICE_URL=your_notification_service\" >> .env\necho \"SMS_SERVICE_API_KEY=your_sms_service_key\" >> .env\n```\n\n### Database Setup and Configuration\n\n**Supabase Database Initialisation:**\n```sql\n-- Execute complete database schema\n-- Run in Supabase SQL Editor\n\n-- Enable required extensions\nCREATE EXTENSION IF NOT EXISTS \"uuid-ossp\";\nCREATE EXTENSION IF NOT EXISTS \"pg_trgm\";\nCREATE EXTENSION IF NOT EXISTS \"unaccent\";\n\n-- Create enum types for data consistency\nCREATE TYPE user_role AS ENUM ('support_worker', 'team_leader', 'management', 'admin');\nCREATE TYPE young_person_status AS ENUM ('active', 'discharged', 'inactive');\nCREATE TYPE incident_severity AS ENUM ('low', 'medium', 'high', 'critical');\nCREATE TYPE task_priority AS ENUM ('low', 'medium', 'high', 'urgent');\n\n-- Execute complete schema from database/schema.sql\n\\i database/schema.sql\n\n-- Insert sample data for development\n\\i database/sample-data.sql\n\n-- Configure Row Level Security policies\n\\i database/rls-policies.sql\n```\n\n### Development Commands and Workflows\n\n**Development Server Management:**\n```bash\n# Start development server\nnpm run dev              # Web application on http://localhost:3000\n\n# Database management\nnode scripts/setup-database.js     # Initialize database schema\nnode scripts/check-env.js          # Validate environment configuration\n\n# Flutter mobile app development\ncd warringu-app\nflutter run -d chrome              # Web version of mobile app\nflutter run -d ios                 # iOS simulator\nflutter run -d android             # Android emulator\n\n# Troubleshooting and diagnostics\n./diagnostic-fix.sh                # Comprehensive system diagnostics\n./fix-auth-completely.sh           # Authentication system reset\n./minimal-fix.sh                   # Minimal working configuration\n```\n\n**Production Deployment:**\n```bash\n# Web application production build\nnpm run build                      # Generate production build\nnpm run generate                   # Static site generation\nnpm run preview                    # Preview production build\n\n# Mobile application deployment\ncd warringu-app\nflutter build web --release        # Web deployment\nflutter build ios --release        # iOS App Store\nflutter build apk --release        # Android APK\nflutter build appbundle --release  # Google Play Store\n\n# Database migration and backup\nnode scripts/export-production-data.js    # Export production data\nnode scripts/backup-database.js           # Automated backup\n```\n\n## Security & Compliance\n\n### Multi-Layered Security Architecture\n\nSLNQ implements comprehensive security measures specifically designed for youth services environments:\n\n**Youth Data Protection:**\n- Enhanced consent processes for different age groups\n- Granular control over information sharing\n- Regular review and update of privacy preferences\n- Role-based access to youth information\n- Comprehensive audit logging\n\n**Australian Care Standards Compliance:**\nSLNQ is designed to support compliance with:\n- Australian Aged Care Quality Standards (adapted for youth residential care)\n- Queensland Community Services Industry Standards\n- National Disability Insurance Scheme (NDIS) requirements where applicable\n- Australian Privacy Principles (Privacy Act 1988)\n- Children and Young Persons (Care and Protection) Act frameworks\n\n## Development Guidelines\n\n### Youth Services Development Standards\n\n**Trauma-Informed Development Principles:**\nDevelopment guidelines specific to youth residential care environments following core principles:\n1. Safety First - All features must prioritize physical and emotional safety\n2. Trustworthiness - Transparent processes and clear communication\n3. Peer Support - Facilitate positive peer relationships and support\n4. Collaboration - Involve young people in decisions affecting them\n5. Empowerment - Build on strengths and resilience\n6. Cultural Responsiveness - Respect cultural backgrounds and needs\n\n## License & Legal\n\n### Proprietary Software License\n\n**Copyright Notice:**\n```\nCopyright (c) 2024 Safe Living NQ PTY LTD\nAll rights reserved.\n\nSLNQ Youth Support Services Management Platform and associated components \nare proprietary software developed for youth residential care services. \nUnauthorised reproduction, distribution, or modification is strictly prohibited.\n```\n\n**Commercial Licensing:**\nSLNQ is available under commercial licensing terms specifically designed for youth support services organisations, government agencies, and approved technology partners.\n\n### Youth Protection and Safety\n\n**Child Protection Compliance:**\nThis software is designed to support child protection requirements and includes:\n- Mandatory reporting integration and workflow systems\n- Working with Children Check validation and monitoring\n- Incident reporting aligned with child protection protocols\n- Information sharing frameworks compliant with child protection legislation\n\n**Safety and Wellbeing Priority:**\nAll development, implementation, and use of SLNQ prioritises the safety, wellbeing, and rights of young people in care. The system includes safeguards, monitoring, and reporting features designed to protect vulnerable young people and support their development and transition to independence.\n\n---\n\n**Document Control:**\n- Version: 1.0.0\n- Last Updated: 2024-08-19\n- Authors: SLNQ Development Team\n- Review Status: Approved for Youth Services Implementation\n\n**Important Notice:** This platform handles sensitive information about vulnerable young people. All users, developers, and stakeholders must prioritise the safety, privacy, and wellbeing of young people in all interactions with this system."
+    },
+    {
+      "name": "parent-pilot",
+      "title": "Parent Pilot: AI-Enhanced Parenting Support Platform",
+      "category": "healthcare",
+      "description": "An innovative AI-enhanced mobile application providing comprehensive parenting support through intelligent assistance, community connection, and evidence-based guidance. Integrates GPT-4 for personalized parenting advice.",
+      "topics": ["parenting", "ai-assistant", "mobile-app", "community", "child-development"],
+      "url": "https://github.com/HWAI-collab/parent-pilot",
+      "stars": 28,
+      "forks": 7,
+      "language": "Dart",
+      "technologies": ["Flutter", "OpenAI GPT-4", "Supabase", "PostgreSQL", "PostGIS"],
+      "sections": [
+        "AI-Powered Parenting Assistant",
+        "Community Connection Platform",
+        "Personalised Development Tracking",
+        "Emergency Support System",
+        "Educational Resource Library"
+      ],
+      "abstract": "Parent Pilot integrates advanced artificial intelligence capabilities with evidence-based parenting methodologies to deliver personalised support for modern families. Built upon Flutter's cross-platform framework and enhanced by OpenAI's GPT-4, it addresses critical gaps in parenting support by providing instant access to expert guidance, peer community connections, and personalised recommendations.",
+      "highlights": [
+        "GPT-4 powered parenting advice",
+        "Geolocation-based parent matching",
+        "Child development milestone tracking",
+        "24/7 crisis support integration",
+        "Evidence-based educational resources"
+      ],
+      "readme_content": "# Parent Pilot: AI-Enhanced Parenting Support and Community Platform\n\n[![Flutter](https://img.shields.io/badge/Flutter-3.0%2B-02569B.svg)](https://flutter.dev/)\n[![Supabase](https://img.shields.io/badge/Supabase-Backend-3ECF8E.svg)](https://supabase.com/)\n[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-412991.svg)](https://openai.com/)\n[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license--legal)\n\n## Abstract\n\nParent Pilot represents an innovative AI-enhanced mobile application designed to provide comprehensive parenting support through intelligent assistance, community connection, and evidence-based guidance. The platform integrates advanced artificial intelligence capabilities with evidence-based parenting methodologies to deliver personalised support for modern families navigating the complexities of child-rearing in the digital age.\n\nBuilt upon Flutter's cross-platform framework and enhanced by OpenAI's GPT-4 natural language processing capabilities, Parent Pilot addresses critical gaps in parenting support by providing instant access to expert guidance, peer community connections, and personalised recommendations tailored to individual family circumstances. The platform's innovative approach combines developmental psychology, behavioural science, and machine learning to create a comprehensive ecosystem supporting parental confidence and child development outcomes.\n\nThrough its integration of real-time AI assistance, geolocation-based community features, and comprehensive tracking capabilities, Parent Pilot represents a paradigm shift in digital parenting support, moving beyond generic advice to provide contextualised, actionable guidance that adapts to each family's unique needs and circumstances.\n\n## Table of Contents\n\n- [Abstract](#abstract)\n- [Executive Summary](#executive-summary)\n  - [Strategic Vision and Objectives](#strategic-vision-and-objectives)\n  - [Key Stakeholders](#key-stakeholders)\n  - [Value Proposition](#value-proposition)\n- [System Architecture](#system-architecture)\n  - [Mobile Application Framework](#mobile-application-framework)\n  - [AI Integration Architecture](#ai-integration-architecture)\n  - [Community Platform Architecture](#community-platform-architecture)\n- [Core Technologies](#core-technologies)\n- [Feature Specifications](#feature-specifications)\n  - [AI-Powered Parenting Assistant](#ai-powered-parenting-assistant)\n  - [Community Connection Platform](#community-connection-platform)\n  - [Personalised Development Tracking](#personalised-development-tracking)\n  - [Emergency Support System](#emergency-support-system)\n  - [Educational Resource Library](#educational-resource-library)\n- [Installation & Deployment](#installation--deployment)\n  - [Development Environment Setup](#development-environment-setup)\n  - [Production Deployment](#production-deployment)\n- [API Documentation](#api-documentation)\n- [Database Schema](#database-schema)\n- [AI Integration Framework](#ai-integration-framework)\n- [User Experience Design](#user-experience-design)\n- [Security & Privacy](#security--privacy)\n- [Performance Optimisation](#performance-optimisation)\n- [Testing Strategy](#testing-strategy)\n- [Development Guidelines](#development-guidelines)\n- [Contributing Guidelines](#contributing-guidelines)\n- [License & Legal](#license--legal)\n\n## Executive Summary\n\n### Strategic Vision and Objectives\n\nParent Pilot addresses fundamental challenges in modern parenting through technology-enhanced support systems and community engagement. The platform's strategic objectives encompass:\n\n- **Intelligent Parenting Assistance**: Implementation of AI-powered guidance systems providing evidence-based parenting recommendations and instant support\n- **Community Building**: Creation of geographically-aware community platforms connecting parents with similar circumstances and challenges\n- **Developmental Tracking**: Comprehensive monitoring and analysis of child development milestones with personalised intervention recommendations\n- **Crisis Support**: Emergency response systems connecting parents with professional support during critical situations\n\n### Key Stakeholders\n\n**Primary Stakeholders:**\n- New parents seeking expert guidance and peer support\n- Experienced parents looking to connect with local communities\n- Single parents requiring additional support networks\n- Parents of children with special needs or developmental concerns\n\n**Secondary Stakeholders:**\n- Child development professionals seeking digital engagement tools\n- Paediatricians and healthcare providers supporting family wellness\n- Educational professionals working with parents and families\n- Community organisations focused on family support services\n\n**Tertiary Stakeholders:**\n- Researchers studying parenting behaviours and child development\n- Policy makers developing family support initiatives\n- Technology companies developing family-focused applications\n- Healthcare systems implementing preventive family wellness programs\n\n### Value Proposition\n\nParent Pilot delivers transformative value through:\n\n1. **Instant Expert Access**: AI-powered assistant providing 24/7 access to evidence-based parenting guidance and support\n2. **Community Connection**: Location-based matching connecting parents with local support networks and resources\n3. **Personalised Development**: Tailored tracking and recommendations based on individual child development patterns\n4. **Professional Integration**: Seamless connection with healthcare providers and child development professionals\n\n## System Architecture\n\n### Mobile Application Framework\n\n```mermaid\ngraph TB\n    subgraph \"Presentation Layer\"\n        A[Flutter UI Components]\n        B[Material Design 3]\n        C[Custom Widgets]\n        D[State Management - Provider]\n    end\n    \n    subgraph \"Business Logic Layer\"\n        E[AI Assistant Service]\n        F[Community Service]\n        G[Development Tracking Service]\n        H[Location Service]\n        I[Authentication Service]\n    end\n    \n    subgraph \"Data Layer\"\n        J[Supabase Client]\n        K[Local Storage]\n        L[Image Picker]\n        M[Geolocation Service]\n    end\n    \n    subgraph \"External Services\"\n        N[OpenAI GPT-4 API]\n        O[Supabase Backend]\n        P[Maps Integration]\n        Q[Push Notifications]\n    end\n    \n    A --> E\n    B --> F\n    C --> G\n    D --> H\n    E --> J\n    F --> K\n    G --> L\n    H --> M\n    J --> O\n    E --> N\n    F --> P\n    I --> Q\n```\n\n### AI Integration Architecture\n\nThe platform employs a sophisticated AI integration framework for intelligent parenting assistance:\n\n```python\nclass ParentingAssistant:\n    def __init__(self, api_key: str, model: str = \"gpt-4\"):\n        self.openai_client = OpenAI(api_key=api_key)\n        self.model = model\n        self.context_manager = ConversationContextManager()\n        self.safety_filter = SafetyContentFilter()\n        \n    async def get_parenting_advice(\n        self, \n        query: str, \n        child_profile: ChildProfile,\n        parent_context: ParentContext\n    ) -> ParentingResponse:\n        \n        # Build contextual prompt\n        system_prompt = self.build_system_prompt(child_profile, parent_context)\n        \n        # Apply safety filters\n        if not self.safety_filter.is_safe_query(query):\n            return self.generate_safety_response()\n        \n        # Generate AI response\n        response = await self.openai_client.chat.completions.create(\n            model=self.model,\n            messages=[\n                {\"role\": \"system\", \"content\": system_prompt},\n                {\"role\": \"user\", \"content\": query}\n            ],\n            temperature=0.7,\n            max_tokens=500\n        )\n        \n        # Process and validate response\n        processed_response = self.process_ai_response(response)\n        \n        return ParentingResponse(\n            advice=processed_response.content,\n            confidence=processed_response.confidence,\n            sources=processed_response.evidence_sources,\n            follow_up_questions=processed_response.follow_ups\n        )\n```\n\n### Community Platform Architecture\n\n```mermaid\nsequenceDiagram\n    participant Parent\n    participant App\n    participant Location Service\n    participant Community Service\n    participant Database\n    \n    Parent->>App: Open Community Tab\n    App->>Location Service: Get Current Location\n    Location Service-->>App: Return Coordinates\n    App->>Community Service: Find Nearby Parents\n    Community Service->>Database: Query Geospatial Data\n    Database-->>Community Service: Return Matches\n    Community Service-->>App: Community List\n    App-->>Parent: Display Local Community\n    \n    Parent->>App: Join Community Group\n    App->>Community Service: Join Request\n    Community Service->>Database: Update Membership\n    Database-->>Community Service: Confirmation\n    Community Service-->>App: Join Success\n    App-->>Parent: Welcome to Community\n```\n\n## Core Technologies\n\n### Mobile Framework\n\n| Technology | Version | Purpose | License |\n|------------|---------|---------|----------|\n| Flutter | 3.0+ | Cross-platform framework | BSD-3-Clause |\n| Dart | 2.17+ | Programming language | BSD-3-Clause |\n| Provider | 6.0+ | State management | MIT |\n| Material Design 3 | Latest | Design system | Apache 2.0 |\n\n### Backend & AI Services\n\n| Technology | Version | Purpose | License |\n|------------|---------|---------|----------|\n| Supabase | 0.2.8+ | Backend as a Service | Apache 2.0 |\n| OpenAI API | 1.0+ | AI language model | Proprietary |\n| PostgreSQL | 15+ | Relational database | PostgreSQL |\n| PostGIS | 3.0+ | Geospatial extensions | GPL-2.0 |\n\n### Supporting Libraries\n\n| Technology | Version | Purpose | License |\n|------------|---------|---------|----------|\n| Geolocator | 9.0+ | Location services | MIT |\n| FL Chart | 0.62+ | Data visualisation | MIT |\n| Syncfusion Charts | 21.2+ | Advanced charting | Commercial |\n| Image Picker | 0.8+ | Camera integration | Apache 2.0 |\n| URL Launcher | 6.0+ | External link handling | BSD-3-Clause |\n\n## Feature Specifications\n\n### AI-Powered Parenting Assistant\n\n**Core AI Capabilities:**\n- Natural language understanding for parenting queries\n- Evidence-based response generation with source attribution\n- Contextual advice based on child age, development stage, and family circumstances\n- Crisis detection and appropriate resource referral\n\n**Technical Implementation:**\n```dart\nclass AIAssistantService {\n  final OpenAI openAI;\n  final SafetyFilter safetyFilter;\n  final ConversationHistory history;\n  \n  AIAssistantService({\n    required this.openAI,\n    required this.safetyFilter,\n    required this.history,\n  });\n  \n  Future<AIResponse> getParentingAdvice({\n    required String question,\n    required ChildProfile childProfile,\n    required ParentContext parentContext,\n  }) async {\n    \n    // Validate input and apply safety filters\n    if (!safetyFilter.isAppropriateTopic(question)) {\n      return AIResponse.inappropriate();\n    }\n    \n    // Build context-aware prompt\n    final systemPrompt = _buildSystemPrompt(childProfile, parentContext);\n    final userPrompt = _enhanceUserPrompt(question, history.recent);\n    \n    try {\n      final completion = await openAI.createCompletion(\n        model: 'gpt-4',\n        prompt: userPrompt,\n        systemMessage: systemPrompt,\n        maxTokens: 500,\n        temperature: 0.7,\n      );\n      \n      // Process and validate response\n      final response = _processAIResponse(completion);\n      \n      // Store conversation for context\n      history.addInteraction(question, response);\n      \n      return AIResponse.success(\n        advice: response.content,\n        confidence: response.confidence,\n        sources: response.evidenceSources,\n        followUpQuestions: response.suggestedQuestions,\n      );\n      \n    } catch (e) {\n      return AIResponse.error('Unable to generate advice at this time');\n    }\n  }\n  \n  String _buildSystemPrompt(ChildProfile child, ParentContext parent) {\n    return '''\n    You are a knowledgeable parenting assistant providing evidence-based guidance.\n    \n    Child Information:\n    - Age: ${child.ageMonths} months\n    - Developmental stage: ${child.developmentalStage}\n    - Special considerations: ${child.specialNeeds.join(', ')}\n    \n    Parent Context:\n    - Experience level: ${parent.experienceLevel}\n    - Family structure: ${parent.familyStructure}\n    - Primary concerns: ${parent.primaryConcerns.join(', ')}\n    \n    Guidelines:\n    - Provide evidence-based advice citing credible sources\n    - Consider the child's age and developmental stage\n    - Be supportive and non-judgmental\n    - Suggest professional consultation for serious concerns\n    - Keep responses concise but comprehensive\n    ''';\n  }\n}\n```\n\n### Community Connection Platform\n\n**Community Features:**\n- Geolocation-based parent matching\n- Interest-based group formation\n- Local event creation and discovery\n- Secure messaging and group chat\n- Resource sharing and recommendations\n\n**Location-Based Matching Algorithm:**\n```dart\nclass CommunityMatchingService {\n  final GeolocatorService geolocator;\n  final SupabaseClient supabase;\n  \n  Future<List<ParentMatch>> findNearbyParents({\n    required double latitude,\n    required double longitude,\n    double radiusKm = 10.0,\n    List<String>? interests,\n    AgeRange? childAgeRange,\n  }) async {\n    \n    // Build geospatial query\n    final response = await supabase\n        .from('parent_profiles')\n        .select('''\n          id, name, bio, interests, children_ages,\n          location, profile_image_url, last_active\n        ''')\n        .within('location', latitude, longitude, radiusKm * 1000)\n        .gte('last_active', DateTime.now().subtract(Duration(days: 30)))\n        .order('location', ascending: true);\n    \n    List<ParentMatch> matches = [];\n    \n    for (final profile in response) {\n      final match = ParentMatch.fromJson(profile);\n      \n      // Calculate compatibility score\n      final compatibilityScore = _calculateCompatibility(\n        interests: interests,\n        childAgeRange: childAgeRange,\n        targetProfile: match,\n      );\n      \n      if (compatibilityScore > 0.3) {\n        match.compatibilityScore = compatibilityScore;\n        matches.add(match);\n      }\n    }\n    \n    // Sort by compatibility and distance\n    matches.sort((a, b) {\n      final compatibilityComparison = b.compatibilityScore.compareTo(a.compatibilityScore);\n      if (compatibilityComparison != 0) return compatibilityComparison;\n      return a.distanceKm.compareTo(b.distanceKm);\n    });\n    \n    return matches.take(20).toList();\n  }\n  \n  double _calculateCompatibility({\n    List<String>? interests,\n    AgeRange? childAgeRange,\n    required ParentMatch targetProfile,\n  }) {\n    double score = 0.0;\n    \n    // Interest overlap (40% weight)\n    if (interests != null && interests.isNotEmpty) {\n      final commonInterests = interests\n          .where((interest) => targetProfile.interests.contains(interest))\n          .length;\n      score += (commonInterests / interests.length) * 0.4;\n    }\n    \n    // Child age compatibility (35% weight)\n    if (childAgeRange != null) {\n      final ageCompatibility = _calculateAgeCompatibility(\n        childAgeRange, \n        targetProfile.childrenAges\n      );\n      score += ageCompatibility * 0.35;\n    }\n    \n    // Activity level (25% weight)\n    final activityScore = _calculateActivityScore(targetProfile.lastActive);\n    score += activityScore * 0.25;\n    \n    return score;\n  }\n}\n```\n\n### Personalised Development Tracking\n\n**Development Monitoring Features:**\n- Milestone tracking with age-appropriate assessments\n- Growth chart integration with paediatric standards\n- Behavioural pattern analysis\n- Educational activity recommendations\n- Progress sharing with healthcare providers\n\n**Milestone Tracking System:**\n```dart\nclass DevelopmentTracker {\n  final SupabaseClient supabase;\n  final ChartDataProcessor chartProcessor;\n  \n  Future<DevelopmentReport> generateDevelopmentReport(\n    String childId,\n    DateTime fromDate,\n    DateTime toDate,\n  ) async {\n    \n    // Retrieve milestone data\n    final milestones = await supabase\n        .from('child_milestones')\n        .select('*')\n        .eq('child_id', childId)\n        .gte('recorded_date', fromDate.toIso8601String())\n        .lte('recorded_date', toDate.toIso8601String())\n        .order('recorded_date');\n    \n    // Retrieve growth measurements\n    final growthData = await supabase\n        .from('growth_measurements')\n        .select('*')\n        .eq('child_id', childId)\n        .gte('measurement_date', fromDate.toIso8601String())\n        .lte('measurement_date', toDate.toIso8601String())\n        .order('measurement_date');\n    \n    // Analyse development patterns\n    final developmentAnalysis = _analyseDevelopmentPatterns(milestones);\n    final growthAnalysis = _analyseGrowthPatterns(growthData);\n    \n    // Generate recommendations\n    final recommendations = await _generateRecommendations(\n      developmentAnalysis,\n      growthAnalysis,\n    );\n    \n    return DevelopmentReport(\n      childId: childId,\n      reportPeriod: DateRange(fromDate, toDate),\n      milestonesSummary: developmentAnalysis.summary,\n      growthSummary: growthAnalysis.summary,\n      achievedMilestones: developmentAnalysis.achieved,\n      upcomingMilestones: developmentAnalysis.upcoming,\n      growthPercentiles: growthAnalysis.percentiles,\n      recommendations: recommendations,\n      alertFlags: developmentAnalysis.concerns,\n    );\n  }\n  \n  DevelopmentAnalysis _analyseDevelopmentPatterns(List<Milestone> milestones) {\n    // Categorise milestones by development domain\n    final motorMilestones = milestones\n        .where((m) => m.domain == DevelopmentDomain.motor)\n        .toList();\n    final cognitiveMilestones = milestones\n        .where((m) => m.domain == DevelopmentDomain.cognitive)\n        .toList();\n    final socialMilestones = milestones\n        .where((m) => m.domain == DevelopmentDomain.social)\n        .toList();\n    \n    // Analyse achievement patterns\n    final motorProgress = _calculateDomainProgress(motorMilestones);\n    final cognitiveProgress = _calculateDomainProgress(cognitiveMilestones);\n    final socialProgress = _calculateDomainProgress(socialMilestones);\n    \n    // Identify potential concerns\n    final concerns = <DevelopmentConcern>[];\n    if (motorProgress.percentile < 10) {\n      concerns.add(DevelopmentConcern.motorDelay);\n    }\n    if (cognitiveProgress.percentile < 10) {\n      concerns.add(DevelopmentConcern.cognitiveDelay);\n    }\n    if (socialProgress.percentile < 10) {\n      concerns.add(DevelopmentConcern.socialDelay);\n    }\n    \n    return DevelopmentAnalysis(\n      motorProgress: motorProgress,\n      cognitiveProgress: cognitiveProgress,\n      socialProgress: socialProgress,\n      concerns: concerns,\n    );\n  }\n}\n```\n\n### Emergency Support System\n\n**Crisis Response Features:**\n- 24/7 crisis hotline integration\n- Emergency contact automation\n- Professional referral network\n- Crisis intervention protocols\n- Safety planning tools\n\n**Emergency Response Implementation:**\n```dart\nclass EmergencyResponseService {\n  final LocationService locationService;\n  final ContactService contactService;\n  final ProfessionalNetworkService professionalNetwork;\n  \n  Future<EmergencyResponse> handleEmergencyRequest({\n    required EmergencyType emergencyType,\n    required String description,\n    String? childId,\n  }) async {\n    \n    // Get current location for local resource matching\n    final location = await locationService.getCurrentLocation();\n    \n    switch (emergencyType) {\n      case EmergencyType.medical:\n        return await _handleMedicalEmergency(description, location, childId);\n      \n      case EmergencyType.mentalHealth:\n        return await _handleMentalHealthCrisis(description, location);\n      \n      case EmergencyType.safety:\n        return await _handleSafetyConcern(description, location, childId);\n      \n      case EmergencyType.abuse:\n        return await _handleAbuseReport(description, location, childId);\n      \n      default:\n        return await _handleGeneralEmergency(description, location);\n    }\n  }\n  \n  Future<EmergencyResponse> _handleMedicalEmergency(\n    String description, \n    Location location,\n    String? childId,\n  ) async {\n    \n    // Find nearest emergency services\n    final nearestHospital = await professionalNetwork.findNearestHospital(location);\n    final pediatricianContact = childId != null \n        ? await professionalNetwork.getPediatrician(childId)\n        : null;\n    \n    // Generate emergency action plan\n    final actionPlan = EmergencyActionPlan(\n      immediateActions: [\n        'Call emergency services if life-threatening',\n        'Contact your pediatrician',\n        'Proceed to nearest emergency room if necessary',\n      ],\n      emergencyContacts: [\n        EmergencyContact.emergency911,\n        if (pediatricianContact != null) pediatricianContact,\n        nearestHospital.emergencyContact,\n      ],\n      location: nearestHospital,\n    );\n    \n    // Log emergency for follow-up\n    await _logEmergencyEvent(\n      type: EmergencyType.medical,\n      description: description,\n      actionTaken: actionPlan,\n      location: location,\n    );\n    \n    return EmergencyResponse.medical(actionPlan);\n  }\n}\n```\n\n### Educational Resource Library\n\n**Resource Management Features:**\n- Age-appropriate activity recommendations\n- Evidence-based parenting articles\n- Video tutorials and demonstrations\n- Interactive development assessments\n- Customised learning pathways\n\n**Resource Recommendation Engine:**\n```dart\nclass ResourceRecommendationEngine {\n  final SupabaseClient supabase;\n  final AIAssistantService aiAssistant;\n  \n  Future<List<EducationalResource>> getRecommendedResources({\n    required ChildProfile childProfile,\n    required ParentInterests interests,\n    required List<DevelopmentGoal> currentGoals,\n  }) async {\n    \n    // Get base recommendations by age and development stage\n    final ageAppropriateResources = await supabase\n        .from('educational_resources')\n        .select('*')\n        .gte('min_age_months', childProfile.ageMonths - 3)\n        .lte('max_age_months', childProfile.ageMonths + 6)\n        .contains('development_domains', childProfile.focusAreas)\n        .order('popularity_score', ascending: false);\n    \n    // Filter by parent interests and learning style\n    final filteredResources = ageAppropriateResources\n        .where((resource) => _matchesParentInterests(resource, interests))\n        .toList();\n    \n    // Use AI to personalise recommendations\n    final personalizedRecommendations = await aiAssistant.personalizeResourceList(\n      resources: filteredResources,\n      childProfile: childProfile,\n      parentGoals: currentGoals,\n    );\n    \n    // Score and rank recommendations\n    final scoredResources = personalizedRecommendations\n        .map((resource) => _scoreResource(resource, childProfile, interests))\n        .toList();\n    \n    scoredResources.sort((a, b) => b.relevanceScore.compareTo(a.relevanceScore));\n    \n    return scoredResources.take(10).toList();\n  }\n  \n  EducationalResource _scoreResource(\n    EducationalResource resource,\n    ChildProfile child,\n    ParentInterests interests,\n  ) {\n    double score = 0.0;\n    \n    // Age appropriateness (30% weight)\n    final ageScore = _calculateAgeAppropriatenessScore(resource, child.ageMonths);\n    score += ageScore * 0.3;\n    \n    // Development goal alignment (25% weight)\n    final goalAlignmentScore = _calculateGoalAlignmentScore(resource, child.currentGoals);\n    score += goalAlignmentScore * 0.25;\n    \n    // Interest matching (20% weight)\n    final interestScore = _calculateInterestMatchScore(resource, interests);\n    score += interestScore * 0.2;\n    \n    // Quality indicators (15% weight)\n    final qualityScore = resource.averageRating / 5.0;\n    score += qualityScore * 0.15;\n    \n    // Recency and relevance (10% weight)\n    final recencyScore = _calculateRecencyScore(resource.publishedDate);\n    score += recencyScore * 0.1;\n    \n    return resource.copyWith(relevanceScore: score);\n  }\n}\n```\n\n## Installation & Deployment\n\n### Development Environment Setup\n\n**Prerequisites:**\n```bash\n# Required tools\n- Flutter SDK: 3.0 or higher\n- Dart SDK: 2.17 or higher\n- Android Studio / Xcode for mobile development\n- Git: 2.30 or higher\n```\n\n**Installation Steps:**\n\n1. **Clone Repository:**\n```bash\ngit clone https://github.com/your-org/parent-pilot.git\ncd parent-pilot/parent_pilot_mvp\n```\n\n2. **Install Dependencies:**\n```bash\nflutter pub get\n```\n\n3. **Configure Environment:**\n```bash\ncp .env.example .env\n# Edit .env with your API keys and configuration\n```\n\n4. **Set Up Supabase:**\n```bash\n# Install Supabase CLI\nnpm install -g @supabase/cli\n\n# Initialize Supabase project\nsupabase init\nsupabase start\n```\n\n5. **Configure OpenAI API:**\n```bash\n# Add your OpenAI API key to .env file\nOPENAI_API_KEY=your_openai_api_key_here\n```\n\n6. **Run Application:**\n```bash\nflutter run\n```\n\n### Production Deployment\n\n**Android Deployment:**\n```bash\n# Build release APK\nflutter build apk --release\n\n# Or build App Bundle for Play Store\nflutter build appbundle --release\n```\n\n**iOS Deployment:**\n```bash\n# Build for iOS\nflutter build ios --release\n\n# Archive and upload to App Store Connect\n# Use Xcode for final distribution\n```\n\n**Environment Configuration:**\n```yaml\n# pubspec.yaml production configuration\nname: parent_pilot\ndescription: AI-Enhanced Parenting Support Platform\nversion: 1.0.0+1\n\nenvironment:\n  sdk: \">=2.17.0 <4.0.0\"\n  flutter: \">=3.0.0\"\n\ndependencies:\n  flutter:\n    sdk: flutter\n  \n  # Core dependencies\n  provider: ^6.0.0\n  supabase_flutter: ^1.0.0\n  http: ^0.13.3\n  \n  # AI integration\n  dart_openai: ^2.0.0\n  \n  # Location services\n  geolocator: ^9.0.2\n  \n  # UI components\n  fl_chart: ^0.62.0\n  syncfusion_flutter_charts: ^21.2.4\n  \n  # Media handling\n  image_picker: ^0.8.7\n  \n  # Utilities\n  flutter_dotenv: ^5.0.2\n  url_launcher: ^6.1.0\n  path_provider: ^2.0.11\n```\n\n## License & Legal\n\n### Proprietary License\n\nThis software is proprietary and confidential. All rights reserved.\n\n### Third-Party Licenses\n\n| Package | License | Usage |\n|---------|---------|-------|\n| Flutter | BSD-3-Clause | Mobile framework |\n| Supabase | Apache 2.0 | Backend services |\n| OpenAI | Proprietary | AI language model |\n| Provider | MIT | State management |\n\n### Compliance\n\n- Child Online Privacy Protection Act (COPPA)\n- General Data Protection Regulation (GDPR)\n- Australian Privacy Act 1988\n- Health Insurance Portability and Accountability Act (HIPAA) - where applicable\n\n---\n\n**Contact Information:**\n- Technical Support: support@parentpilot.com\n- Privacy Concerns: privacy@parentpilot.com\n- Business Inquiries: business@parentpilot.com\n\n**Version:** 1.0.0  \n**Last Updated:** August 2025  \n**Copyright © 2025 Parent Pilot Technologies. All rights reserved.**"
+    },
+    {
+      "name": "adhd-dashboard",
+      "title": "ADHD Dashboard: Task Management for ADHD",
+      "category": "healthcare",
+      "description": "An ADHD-friendly task management dashboard built with Flutter. Features calendar view, swipeable task management, priority system, and quick actions for breathing exercises and focus timers.",
+      "topics": ["adhd", "mental-health", "task-management", "flutter", "accessibility"],
+      "url": "https://github.com/HWAI-collab/adhd-dashboard",
+      "stars": 12,
+      "forks": 4,
+      "language": "Dart",
+      "technologies": ["Flutter", "Dart"],
+      "sections": [
+        "Features",
+        "Task Swipe Gestures",
+        "Quick Actions",
+        "Customization",
+        "Future Enhancements"
+      ],
+      "abstract": "A specialized task management dashboard designed specifically for individuals with ADHD. Features include a clean weekly calendar view, intuitive swipe gestures for task management, color-coded priority system, and quick access to calming exercises. The interface is intentionally distraction-free with clear visual feedback.",
+      "highlights": [
+        "Swipeable task management",
+        "ADHD-friendly clean interface",
+        "Priority-based color coding",
+        "Breathing exercise integration",
+        "Focus timer functionality"
+      ],
+      "readme_content": "# ADHD Dashboard\n\nAn ADHD-friendly task management dashboard built with Flutter.\n\n## Features\n\n- **📅 Calendar View**: Clean weekly calendar view to see tasks across days\n- **🔄 Swipeable Tasks**: Intuitive gesture controls for task management\n  - Swipe right: Mark as complete\n  - Swipe left: Reschedule for tomorrow  \n  - Swipe up: Cancel/delete task\n- **⚡ Quick Actions**: Bottom row with instant access to common actions\n  - Add new tasks\n  - Breathing exercises\n  - Focus timer\n  - Quick notes\n- **🎯 Priority System**: Color-coded task priorities (Low, Medium, High, Urgent)\n- **📱 ADHD-Friendly Design**: Clean, distraction-free interface with clear visual feedback\n\n## Getting Started\n\n### Prerequisites\n- Flutter SDK (3.10.0 or higher)\n- Dart SDK (3.0.0 or higher)\n\n### Installation\n\n1. Navigate to the project directory:\n   ```bash\n   cd adhd_dashboard\n   ```\n\n2. Install dependencies:\n   ```bash\n   flutter pub get\n   ```\n\n3. Run the app:\n   ```bash\n   flutter run\n   ```\n\n## Task Swipe Gestures\n\n- **➡️ Swipe Right**: Complete the task (green background)\n- **⬅️ Swipe Left**: Reschedule task for tomorrow (blue background)  \n- **⬆️ Swipe Up**: Cancel/delete the task\n\n## Quick Actions\n\n- **➕ Add Task**: Create new tasks (coming soon)\n- **🫁 Breathe**: Quick breathing exercise dialog\n- **⏱️ Timer**: Focus timer for task work (coming soon)\n- **📝 Notes**: Quick notes and thoughts (coming soon)\n\n## Customization\n\nThe app includes sample tasks to demonstrate functionality. To customize:\n\n1. Edit the `_initializeSampleTasks()` method in `lib/main.dart`\n2. Modify task priorities, descriptions, and due dates\n3. Add your own quick action buttons in the bottom section\n\n## Project Structure\n\n```\nlib/\n├── main.dart                 # Main app and dashboard screen\n├── models/\n│   └── task.dart            # Task data model and priority enum\n└── widgets/\n    ├── swipeable_task_card.dart  # Swipeable task card widget\n    └── quick_action_button.dart  # Quick action button widget\n```\n\n## Dependencies\n\n- `flutter`: Core Flutter framework\n- `table_calendar`: Calendar widget with event support\n- `intl`: Date formatting utilities\n\n## Future Enhancements\n\n- [ ] Persistent data storage\n- [ ] Task creation and editing\n- [ ] Focus timer implementation\n- [ ] Quick notes functionality\n- [ ] Reminder notifications\n- [ ] Task categories and tags\n- [ ] Progress tracking and analytics\n- [ ] Custom themes and accessibility options\n\n## Contributing\n\nThis is a personal ADHD management tool. Feel free to fork and customize for your own needs!\n\n## License\n\nThis project is for personal use and learning purposes."
+    },
+    {
+      "name": "warringu-app",
+      "title": "Warringu: Specialised Shared Services Hub",
+      "category": "youth",
+      "description": "A Flutter web application providing integrated access to specialist services for indigenous organizations. Features secure user authentication, case management systems, and training modules.",
+      "topics": ["indigenous-services", "case-management", "web-app", "flutter", "training"],
+      "url": "https://github.com/HWAI-collab/warringu-app",
+      "stars": 8,
+      "forks": 2,
+      "language": "Dart",
+      "technologies": ["Flutter Web", "Firebase", "PWA"],
+      "sections": [
+        "Web Application Features",
+        "Specialist Services Portal",
+        "Training & Compliance Modules",
+        "Security Features",
+        "Progressive Web App"
+      ],
+      "abstract": "A Flutter web application providing integrated access to specialist services for the Warringu organization. Features responsive two-column layout with embedded Koori Grapevine website, secure authentication for three user types, and integration with case management, HR, and training systems including Circles of Security and Safe and Together.",
+      "highlights": [
+        "Indigenous community services integration",
+        "Circles of Security training module",
+        "Safe and Together implementation",
+        "Progressive Web App support",
+        "Multi-role authentication system"
+      ],
+      "readme_content": "# Warringu App - Specialised Shared Services Hub (Web Application)\n\nA Flutter web application providing integrated access to specialist services for the Warringu organization.\n\n## 🌐 Web Application Features\n\n### Landing Page\n- **Responsive two-column layout** (automatically adapts to mobile and desktop)\n- **Left Column**: Embedded Koori Grapevine website (https://koorigrapevine.org.au/)\n- **Right Column**: Access to Specialist Services Portal\n- **Progressive Web App (PWA)** support for offline functionality\n\n### Specialist Services Portal\n- **Secure user authentication** with three user types:\n  - Team Leaders / Organizational Managers\n  - Client-Facing Case Managers\n  - Residents (Current, Potential & Transitioned)\n\n### Integrated Services\n- **Wominjeka**: Case Management System\n- **HR & Payroll**: Staff Management\n- **P2i System**: Program Integration\n- **SHiPP**: Support Services\n\n### Database Integration\n- **Local Storage**: Browser-based storage for session data\n- **Cloud Integration**: API connections to Firebase and existing systems\n- **Legacy Systems**: RESTful API integration with existing databases\n\n### Training & Compliance Modules\n- GEMS Training & Measures\n- Circles of Security (CoC)\n- Safe and Together\n- Narrative Practice\n\n## 🚀 Quick Start (Web Deployment)\n\n### Prerequisites\n- Flutter SDK (>=3.10.0) with web support enabled\n- Modern web browser (Chrome, Firefox, Safari, Edge)\n- Web server for hosting (Apache, Nginx, or hosting service)\n\n### One-Click Deployment\n\n**For Linux/macOS:**\n```bash\nchmod +x deploy-web.sh\n./deploy-web.sh\n```\n\n**For Windows:**\n```powershell\n.\\deploy-web.ps1\n```\n\n### Manual Build Process\n\n1. **Navigate to project directory**:\n   ```bash\n   cd /path/to/warringu-app\n   ```\n\n2. **Install dependencies**:\n   ```bash\n   flutter pub get\n   ```\n\n3. **Build for web**:\n   ```bash\n   flutter build web --web-renderer html --release\n   ```\n\n4. **Deploy to web server**:\n   ```bash\n   # Copy contents of build/web/ to your web server\n   cp -r build/web/* /path/to/your/webserver/\n   ```\n\n### Local Testing\n\n1. **Build the app**:\n   ```bash\n   flutter build web\n   ```\n\n2. **Serve locally**:\n   ```bash\n   cd build/web\n   python -m http.server 8000\n   ```\n\n3. **Open in browser**: http://localhost:8000\n\n## 📁 Project Structure\n\n```\nwarringu-app/\n├── lib/\n│   ├── main.dart                     # Web-optimized app entry point\n│   ├── screens/\n│   │   ├── landing_page.dart         # Responsive landing page with iframe\n│   │   └── specialist_portal.dart     # Specialist services portal\n│   └── widgets/\n│       ├── user_type_selector.dart           # User authentication widget\n│       └── service_integration_panel.dart    # Service integration display\n├── web/                              # Web-specific files\n│   ├── index.html                    # Main HTML template\n│   ├── manifest.json                 # PWA configuration\n│   └── icons/                        # Web app icons\n├── assets/\n│   └── images/                       # App images and assets\n├── deploy-web.sh                     # Linux/macOS deployment script\n├── deploy-web.ps1                    # Windows deployment script\n└── pubspec.yaml                      # Web-optimized dependencies\n```\n\n## 🔧 Web-Specific Configuration\n\n### iframe Integration\n- **Koori Grapevine**: Embedded using secure iframe with CORS handling\n- **Cross-origin support**: Configured for external website embedding\n- **Responsive design**: Iframe scales with container\n\n### Progressive Web App (PWA)\n- **Offline support**: Service worker for caching\n- **Add to home screen**: Mobile device installation\n- **App manifest**: Native app-like experience\n\n### Browser Compatibility\n- **Chrome**: Full support (recommended)\n- **Firefox**: Full support\n- **Safari**: Full support with minor limitations\n- **Edge**: Full support\n- **Mobile browsers**: Responsive design optimized\n\n## 🛡️ Security Features\n\n### Web Security\n- **Content Security Policy**: Configured for iframe embedding\n- **HTTPS required**: Secure transmission for production\n- **Session management**: Browser-based secure storage\n- **CORS handling**: Proper cross-origin resource sharing\n\n### User Authentication\n- **Role-based access control**\n- **Secure session handling**\n- **Activity logging**\n- **Multi-factor authentication ready**\n\n## 🎯 User Types & Web Access\n\n### 1. Team Leaders / Organizational Managers\n- **Full dashboard access** via web browser\n- **Administrative controls** optimized for desktop\n- **Reporting tools** with export capabilities\n- **System management** through web interface\n\n### 2. Client-Facing Case Managers\n- **Case management tools** accessible on any device\n- **Mobile-responsive** interface for field work\n- **Quick access** to client information\n- **Offline capability** for essential functions\n\n### 3. Residents\n- **Simplified interface** for easy navigation\n- **Mobile-friendly** design for smartphone access\n- **Resource access** through web portal\n- **Communication tools** integrated\n\n## 🌍 Deployment Options\n\n### 1. Static Web Hosting\n- **GitHub Pages**: Free hosting for public repositories\n- **Netlify**: Drag-and-drop deployment with CI/CD\n- **Vercel**: Automatic deployments from Git\n- **Firebase Hosting**: Google's web hosting solution\n\n### 2. Traditional Web Servers\n- **Apache**: Standard web server deployment\n- **Nginx**: High-performance web server\n- **IIS**: Windows-based web server\n- **Cloud providers**: AWS, Azure, Google Cloud\n\n### 3. Content Delivery Network (CDN)\n- **Global distribution** for faster loading\n- **Caching strategy** for better performance\n- **SSL termination** for security\n\n## 📊 Performance Optimizations\n\n### Web-Specific Optimizations\n- **HTML renderer**: Optimized for web browsers\n- **Code splitting**: Lazy loading for better performance\n- **Asset optimization**: Compressed images and resources\n- **Caching strategy**: Browser and service worker caching\n\n### Responsive Design\n- **Mobile-first approach**: Optimized for smallest screens first\n- **Breakpoint management**: Smooth transitions between device sizes\n- **Touch-friendly interface**: Appropriate touch targets\n- **Fast loading**: Optimized for various connection speeds\n\n## 🔗 Integration Capabilities\n\n### API Connections\n- **RESTful APIs**: Standard HTTP API integration\n- **WebSocket support**: Real-time data updates\n- **OAuth integration**: Third-party authentication\n- **CORS configuration**: Cross-origin resource sharing\n\n### External Services\n- **Wominjeka API**: Case management system integration\n- **HR systems**: Staff and payroll management\n- **P2i integration**: Program data synchronization\n- **SHiPP services**: Support service connections\n\n## 📱 Mobile Web Features\n\n### Progressive Web App\n- **Add to home screen**: Native app-like installation\n- **Offline functionality**: Essential features work offline\n- **Push notifications**: Web-based notification system\n- **Background sync**: Data synchronization when online\n\n### Mobile Optimization\n- **Touch gestures**: Swipe, tap, and pinch support\n- **Viewport optimization**: Proper scaling on all devices\n- **Performance**: Optimized for mobile networks\n- **Battery efficiency**: Minimal resource usage\n\n## 🛠️ Development\n\n### Hot Reload for Web\n```bash\nflutter run -d chrome --web-port=8080\n```\n\n### Debug Mode\n```bash\nflutter run -d web-server --web-port=8080 --debug\n```\n\n### Production Build\n```bash\nflutter build web --release --web-renderer html\n```\n\n## 📈 Analytics & Monitoring\n\n### Web Analytics Integration Ready\n- **Google Analytics**: User behavior tracking\n- **Performance monitoring**: Core web vitals\n- **Error tracking**: Crash and error reporting\n- **User engagement**: Session and interaction metrics\n\n## 🆘 Troubleshooting\n\n### Common Issues\n\n**1. iframe not loading:**\n- Check CORS policy on target website\n- Verify internet connection\n- Ensure HTTPS in production\n\n**2. Slow loading:**\n- Check network connection\n- Clear browser cache\n- Verify CDN configuration\n\n**3. Mobile display issues:**\n- Test on actual devices\n- Check viewport meta tags\n- Verify responsive breakpoints\n\n### Support Resources\n- **Flutter Web Documentation**: https://flutter.dev/web\n- **Deployment Guides**: Available for all major platforms\n- **Community Support**: Flutter web community forums\n\n## 📄 License\n\nThis project is proprietary software developed for Warringu organization.\n\n---\n\n**🌐 Ready for web deployment!** Use the deployment scripts for quick setup or follow the manual process for custom configurations."
+    },
+    {
+      "name": "FNQPHNRiskStratificationTool",
+      "title": "FNQ PHN Risk Stratification Tool",
+      "category": "healthcare",
+      "description": "An advanced healthcare risk stratification platform using machine learning for primary care analytics. Features AI-powered analysis, geospatial integration, and ensemble learning algorithms.",
+      "topics": ["healthcare-analytics", "risk-stratification", "machine-learning", "primary-care", "data-science"],
+      "url": "https://github.com/HWAI-collab/FNQPHNRiskStratificationTool",
+      "stars": 22,
+      "forks": 6,
+      "language": "Python",
+      "technologies": ["Python", "TensorFlow", "Scikit-learn", "GeoPandas", "PostgreSQL"],
+      "sections": [
+        "Risk Stratification Models",
+        "Machine Learning Pipeline",
+        "Geospatial Analysis",
+        "Clinical Decision Support",
+        "Performance Metrics"
+      ],
+      "abstract": "An enterprise-grade healthcare risk stratification platform designed for Far North Queensland Primary Health Network. Utilizes ensemble machine learning algorithms to analyze patient data, identify high-risk individuals, and provide actionable insights for preventive care interventions. Integrates geospatial analysis for population health management.",
+      "highlights": [
+        "Ensemble ML algorithms for risk prediction",
+        "Geospatial health analytics",
+        "Real-time clinical decision support",
+        "Population health management tools",
+        "FHIR-compliant data integration"
+      ]
+    },
+    {
+      "name": "OrthoVision",
+      "title": "OrthoVision: AI-Powered Orthopaedic Diagnostics",
+      "category": "ai",
+      "description": "A comprehensive AI platform for orthopaedic diagnostics featuring HorusAI (clinical consultation), HarrierX (computer vision diagnostics), and LammerGAN (synthetic medical image generation).",
+      "topics": ["medical-ai", "computer-vision", "orthopaedics", "deep-learning", "diagnostics"],
+      "url": "https://github.com/HWAI-collab/OrthoVision",
+      "stars": 45,
+      "forks": 12,
+      "language": "Python",
+      "technologies": ["TensorFlow", "PyTorch", "OpenCV", "YOLOv8", "GANs"],
+      "sections": [
+        "HorusAI Clinical Consultation",
+        "HarrierX Computer Vision",
+        "LammerGAN Synthetic Generation",
+        "Model Architecture",
+        "Clinical Validation"
+      ],
+      "abstract": "OrthoVision is a comprehensive AI platform for orthopaedic diagnostics combining three core modules: HorusAI for intelligent clinical consultation, HarrierX for computer vision-based diagnostic analysis using YOLOv8, and LammerGAN for generating synthetic medical images. Built with TensorFlow and PyTorch for state-of-the-art deep learning capabilities.",
+      "highlights": [
+        "Multi-modal AI diagnostic system",
+        "YOLOv8 for fracture detection",
+        "GAN-based synthetic image generation",
+        "Clinical consultation AI assistant",
+        "FDA submission-ready architecture"
+      ],
+      "readme_content": "# OrthoVision: Comprehensive AI-Powered Orthopaedic Diagnostic Platform\n\n[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)\n[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0%2B-orange.svg)](https://tensorflow.org/)\n[![Flask](https://img.shields.io/badge/Flask-2.0%2B-green.svg)](https://flask.palletsprojects.com/)\n[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license--legal)\n[![Code Quality](https://img.shields.io/badge/code%20quality-enterprise%20grade-green.svg)](#recent-improvements)\n[![Security](https://img.shields.io/badge/security-enhanced-brightgreen.svg)](#security--compliance)\n\n## Abstract\n\nOrthoVision represents a pioneering artificial intelligence platform designed to revolutionise orthopaedic diagnostic workflows through the integration of advanced computer vision, natural language processing, and generative machine learning technologies. The system comprises three distinct AI-powered modules: HorusAI for intelligent clinical consultation, HarrierX for automated diagnostic measurement and analysis, and LammerGAN for synthetic medical image generation. This comprehensive suite addresses critical challenges in orthopaedic practice, including diagnostic accuracy, educational resource availability, and clinical decision support, whilst positioning itself as an essential tool for reducing physician cognitive load and enhancing patient outcomes.\n\nThe platform leverages state-of-the-art deep learning architectures, including transformer-based language models for medical consultation, object detection networks for anatomical feature identification, and generative adversarial networks for synthetic radiographic image creation. Through its modular design and robust API infrastructure, OrthoVision provides scalable solutions for both clinical deployment and medical education environments.\n\n## Recent Improvements (August 2024)\n\n🚀 **Major Codebase Enhancement**: The OrthoVision platform has undergone comprehensive improvements to transform it from a research prototype into a production-ready medical AI system:\n\n### Security Enhancements\n- ✅ **Secure Configuration Management**: Implemented environment-based API key management\n- ✅ **Path Security**: Removed hardcoded paths and personal information exposure\n- ✅ **Input Validation**: Added comprehensive file and data validation\n- ✅ **Error Handling**: Enhanced security through proper error responses\n\n### Code Quality Improvements\n- ✅ **Complete Implementations**: Finished incomplete GAN and object detection models\n- ✅ **Type Safety**: Added comprehensive type hints throughout codebase\n- ✅ **Error Handling**: Implemented robust error recovery mechanisms\n- ✅ **Documentation**: Added comprehensive docstrings and API documentation\n\n### Architecture Enhancements\n- ✅ **Modular Design**: Improved separation of concerns and component isolation\n- ✅ **Configuration System**: Centralized configuration with environment support\n- ✅ **API Improvements**: Enhanced Flask services with proper HTTP responses\n- ✅ **Performance**: Optimized model loading and resource management\n\n### Production Readiness\n- ✅ **Deployment Ready**: Docker-compatible configuration structure\n- ✅ **Monitoring**: Comprehensive logging and health check endpoints\n- ✅ **Dependencies**: Structured requirements and environment management\n- ✅ **Testing**: Syntax validation and import verification\n\n> **Development Attribution**: Major codebase improvements developed with assistance from Claude AI (Anthropic) - August 2024\n\nFor detailed information about the improvements, see [IMPROVEMENTS.md](IMPROVEMENTS.md).\n\n## Executive Summary\n\n### Strategic Vision and Objectives\n\nOrthoVision emerges from the critical need to enhance diagnostic accuracy and efficiency within orthopaedic medical practice. The platform's strategic objectives encompass:\n\n- **Diagnostic Enhancement**: Reduction of diagnostic errors through AI-assisted analysis and measurement automation\n- **Educational Advancement**: Provision of comprehensive training resources through synthetic image generation and interactive consultation systems\n- **Clinical Efficiency**: Minimisation of physician cognitive load through intelligent automation of routine diagnostic tasks\n- **Scalable Healthcare**: Development of accessible AI tools suitable for deployment across diverse healthcare environments\n\n### Key Stakeholders\n\n**Primary Stakeholders:**\n- Orthopaedic surgeons and residents requiring diagnostic support and educational resources\n- Medical imaging technicians utilising automated measurement and analysis tools\n- Healthcare institutions seeking to improve diagnostic workflows and patient outcomes\n\n**Secondary Stakeholders:**\n- Medical education institutions requiring synthetic training datasets\n- Healthcare technology administrators managing clinical AI deployments\n- Regulatory bodies overseeing medical AI implementation and compliance\n\n### Value Proposition and Design Goals\n\nOrthoVision delivers measurable value through:\n\n- **Accuracy Improvement**: Enhanced diagnostic precision through computer vision analysis\n- **Time Efficiency**: Reduction in diagnostic processing time through automated measurements\n- **Educational Value**: Provision of unlimited synthetic training images for medical education\n- **Cost Effectiveness**: Decreased diagnostic errors leading to improved patient outcomes and reduced liability\n\n## System Architecture\n\n### Comprehensive Architectural Framework\n\nThe OrthoVision platform implements a microservices architecture pattern, enabling modular deployment and scalable component management.\n\n### Component Architecture and Design Patterns\n\n**Flask Microservices Pattern:**\nEach AI module operates as an independent Flask-based microservice, ensuring:\n- Service isolation and fault tolerance\n- Independent scaling capabilities\n- Technology stack flexibility\n- Simplified maintenance and deployment\n\n**Repository Pattern Implementation:**\nModel management and data access utilise repository pattern abstractions:\n- Centralised model versioning and deployment\n- Consistent data access interfaces\n- Simplified testing through dependency injection\n- Enhanced codebase maintainability\n\n### Advanced Design Patterns and Principles\n\n**SOLID Principles Implementation:**\n\n- **Single Responsibility**: Each module addresses distinct functional requirements\n- **Open/Closed**: Extensible architecture supporting additional AI models\n- **Liskov Substitution**: Interchangeable model implementations\n- **Interface Segregation**: Module-specific API endpoints and contracts\n- **Dependency Inversion**: Abstracted dependencies enabling flexible deployment\n\n## Core Technologies\n\n| Technology | Version | Justification | License |\n|------------|---------|---------------|----------|\n| **Python** | 3.8+ | Primary development language for AI/ML ecosystem compatibility | PSF License |\n| **Flask** | 2.0+ | Lightweight web framework optimised for microservices architecture | BSD License |\n| **TensorFlow** | 2.0+ | Deep learning framework supporting model deployment and inference | Apache 2.0 |\n| **OpenCV** | 4.5+ | Computer vision library for image preprocessing and analysis | BSD License |\n| **Transformers** | 4.20+ | Hugging Face library for language model integration | Apache 2.0 |\n| **YOLOv8** | Latest | State-of-the-art object detection for medical imaging | AGPL-3.0 |\n| **Roboflow** | API v1 | Computer vision model deployment and management platform | Commercial |\n| **NumPy** | 1.21+ | Numerical computing library for array operations | BSD License |\n| **Pillow** | 8.0+ | Image processing library for format handling | PIL License |\n| **CORS** | 3.0+ | Cross-origin resource sharing for web application integration | MIT License |\n\n## Module Specifications\n\n### HorusAI - Intelligent Clinical Consultation System\n\n**Technical Architecture:**\nHorusAI implements a transformer-based conversational AI system utilising the AdaptLLM medicine-chat model, specifically fine-tuned for medical consultation scenarios.\n\n**Core Components:**\n- **Model Interface**: `HorusLLM.py` - Primary model interaction and response generation\n- **Prompt Engineering**: Sophisticated prompt templates ensuring medically appropriate responses\n- **Safety Mechanisms**: Built-in content filtering and medical ethics compliance\n\n**Key Features:**\n- Real-time medical consultation with evidence-based responses\n- Comprehensive safety protocols preventing harmful advice\n- Contextual understanding of orthopaedic terminology and procedures\n- Integration-ready API for healthcare information systems\n\n### HarrierX - Computer Vision Diagnostic Platform\n\n**Technical Architecture:**\nHarrierX operates as a Flask-based computer vision service, leveraging YOLOv8 and Roboflow for automated medical image analysis and diagnostic measurement.\n\n**Core Components:**\n- **Image Processing Engine**: `ov_mvp_cv.py` - Primary computer vision application\n- **Analysis Functions**: `harrierx_beta.py` - Diagnostic measurement algorithms\n- **Object Detection**: Roboflow integration for anatomical feature identification\n\n**Diagnostic Capabilities:**\n- Automated measurement of bone dimensions and angles\n- Fracture detection and classification\n- Joint space analysis and degeneration assessment\n- Anatomical landmark identification and annotation\n\n**API Endpoints:**\n- `POST /image` - Image upload and analysis\n- `GET /results` - Processed analysis retrieval\n- `POST /calibrate` - Measurement calibration utilities\n\n### LammerGAN - Synthetic Medical Image Generator\n\n**Technical Architecture:**\nLammerGAN implements a Generative Adversarial Network specifically designed for orthopaedic radiographic image synthesis, enabling unlimited training dataset generation.\n\n**Core Components:**\n- **Generator Network**: `GAN_model.py` - Primary image generation architecture\n- **Discriminator Network**: Adversarial training component for realistic image production\n- **Training Pipeline**: Comprehensive model training and validation workflows\n\n**Applications:**\n- Medical education resource generation\n- Training dataset augmentation for AI model development\n- Research publication imagery with privacy compliance\n- Anonymised case study generation\n\n## Installation & Deployment\n\n### Prerequisites\n\n**System Requirements:**\n- Python 3.8 or higher\n- CUDA-compatible GPU (recommended for optimal performance)\n- Minimum 16GB RAM for model inference\n- 50GB storage for model weights and datasets\n\n**Dependency Installation:**\n\n```bash\n# Create virtual environment\npython -m venv orthovision_env\nsource orthovision_env/bin/activate  # Linux/macOS\n# orthovision_env\\Scripts\\activate  # Windows\n\n# Install all dependencies from requirements file\npip install -r requirements.txt\n\n# Alternative: Install core dependencies manually\npip install flask>=2.0.0\npip install tensorflow>=2.8.0\npip install opencv-python>=4.5.0\npip install transformers>=4.20.0\npip install ultralytics>=8.0.0\npip install roboflow>=0.2.0\npip install flask-cors>=3.0.0\npip install pillow>=8.0.0\npip install numpy>=1.21.0\n```\n\n### Configuration Setup\n\n**Environment Configuration (Recommended):**\n```bash\n# Copy environment template\ncp .env.example .env\n\n# Edit .env file with your configuration\n# Set API keys, paths, and other settings\n```\n\n**Environment Variables:**\n```bash\n# Production deployment\nexport FLASK_ENV=production\nexport ROBOFLOW_API_KEY=your_roboflow_api_key_here\nexport OPENAI_API_KEY=your_openai_api_key_here\nexport SECRET_KEY=your_secure_secret_key\n```\n\n### Deployment Instructions\n\n**Development Deployment:**\n```bash\n# HorusAI Service\npython HorusLLM.py\n\n# HarrierX Service\ncd MVP/\npython ov_mvp_cv.py\n\n# LammerGAN Service\npython GAN_model.py\n```\n\n**Production Deployment:**\n```bash\n# Using Gunicorn for production deployment\npip install gunicorn\ngunicorn --workers 4 --bind 0.0.0.0:5000 ov_mvp_cv:app\n```\n\n## API Documentation\n\n### HarrierX Computer Vision API\n\n**Image Analysis Endpoint**\n\n```http\nPOST /image\nContent-Type: multipart/form-data\n```\n\n**Request Parameters:**\n- `file`: Medical image file (JPEG, PNG, DICOM)\n- `analysis_type`: Diagnostic analysis mode (`measurement`, `detection`, `classification`)\n- `calibration`: Measurement calibration parameters (optional)\n\n**Response Format:**\n```json\n{\n  \"status\": \"success\",\n  \"analysis_id\": \"uuid-string\",\n  \"measurements\": {\n    \"bone_length\": 156.2,\n    \"joint_angle\": 23.5,\n    \"fracture_detected\": false\n  },\n  \"annotations\": [\n    {\n      \"type\": \"measurement_line\",\n      \"coordinates\": [[x1, y1], [x2, y2]],\n      \"value\": 156.2,\n      \"unit\": \"mm\"\n    }\n  ],\n  \"confidence_scores\": {\n    \"overall\": 0.94,\n    \"measurement_accuracy\": 0.97\n  }\n}\n```\n\n### HorusAI Consultation API\n\n**Medical Query Endpoint**\n\n```http\nPOST /consult\nContent-Type: application/json\n```\n\n**Request Format:**\n```json\n{\n  \"query\": \"Patient presents with knee pain following sports injury...\",\n  \"context\": {\n    \"patient_age\": 25,\n    \"symptoms\": [\"pain\", \"swelling\", \"limited_mobility\"],\n    \"imaging_available\": true\n  }\n}\n```\n\n**Response Format:**\n```json\n{\n  \"response\": \"Based on the symptoms described, differential diagnoses include...\",\n  \"confidence\": 0.89,\n  \"recommendations\": [\n    \"Obtain MRI imaging to rule out ligament injury\",\n    \"Consider physical examination for joint stability\"\n  ],\n  \"disclaimers\": [\n    \"This response is for educational purposes only\",\n    \"Always consult qualified medical professionals\"\n  ]\n}\n```\n\n## Features & Capabilities\n\n### Advanced Diagnostic Measurements\n\n**Bone Morphometry Analysis:**\n- Automated measurement of cortical thickness\n- Trabecular bone density assessment\n- Joint space width quantification\n- Angular deformity calculation\n\n**Fracture Detection and Classification:**\n- Multi-class fracture identification\n- Displacement measurement\n- Healing progress assessment\n- Surgical hardware detection\n\n**Biomechanical Analysis:**\n- Joint alignment assessment\n- Load distribution analysis\n- Stability evaluation metrics\n- Range of motion calculations\n\n### Educational and Training Features\n\n**Synthetic Dataset Generation:**\n- Anatomically accurate radiographic synthesis\n- Pathology simulation for training purposes\n- Demographic variation in bone structure\n- Anonymised case study generation\n\n**Interactive Learning Platform:**\n- Case-based learning scenarios\n- Progressive difficulty assessment\n- Performance tracking and analytics\n- Collaborative learning environments\n\n## Security & Compliance\n\n### Medical Data Protection\n\n**HIPAA Compliance Measures:**\n- End-to-end encryption for all medical data transmissions\n- Audit logging for all system interactions\n- Access control mechanisms with role-based permissions\n- Secure data disposal protocols\n\n**Privacy-Preserving Techniques:**\n- On-device processing capabilities minimising data transmission\n- Differential privacy implementation for model training\n- Federated learning support for distributed training scenarios\n- Anonymisation protocols for synthetic data generation\n\n### Infrastructure Security\n\n**Network Security:**\n- TLS 1.3 encryption for all communications\n- VPN-based access for administrative functions\n- Intrusion detection and prevention systems\n- Regular security auditing and penetration testing\n\n**Authentication and Authorisation:**\n- Multi-factor authentication requirements\n- OAuth 2.0 integration for third-party services\n- JWT-based session management\n- Granular permission systems\n\n## Performance Optimisation\n\n### Model Inference Optimisation\n\n**GPU Acceleration:**\n- CUDA optimisation for TensorFlow operations\n- Mixed precision training and inference\n- Model quantisation for reduced memory footprint\n- Batch processing for improved throughput\n\n**Caching Strategies:**\n- Redis-based result caching for common queries\n- Model weight caching to reduce load times\n- Image preprocessing result caching\n- CDN integration for static asset delivery\n\n### Scalability Architecture\n\n**Horizontal Scaling:**\n- Kubernetes-based container orchestration\n- Load balancing across multiple service instances\n- Auto-scaling based on demand metrics\n- Microservices isolation for independent scaling\n\n**Database Optimisation:**\n- Optimised indexing strategies for medical data queries\n- Read replica configuration for improved performance\n- Connection pooling for database efficiency\n- Automated backup and recovery procedures\n\n## Testing Strategy\n\n### Comprehensive Testing Pyramid\n\n**Unit Testing:**\n```bash\n# Run unit tests for individual components\npython -m pytest tests/unit/ -v\n```\n\n**Integration Testing:**\n```bash\n# Test API endpoints and service integration\npython -m pytest tests/integration/ -v\n```\n\n**Performance Testing:**\n```bash\n# Load testing for API endpoints\nlocust -f tests/load/locustfile.py --host=http://localhost:5000\n```\n\n### Medical Validation Testing\n\n**Clinical Accuracy Assessment:**\n- Validation against ground truth measurements by qualified radiologists\n- Inter-observer reliability studies\n- Sensitivity and specificity analysis for diagnostic classifications\n- Comparison with existing clinical tools and methodologies\n\n**Safety and Reliability Testing:**\n- Fail-safe mechanism validation\n- Edge case handling verification\n- Error propagation analysis\n- System recovery testing\n\n## Development Guidelines\n\n### Code Quality Standards\n\n**Python Style Guide:**\n- PEP 8 compliance for all Python code\n- Type hints implementation for enhanced code clarity\n- Comprehensive docstring documentation following NumPy conventions\n- Automated code formatting using Black and isort\n\n**Documentation Requirements:**\n- Comprehensive inline code documentation\n- API documentation using OpenAPI specifications\n- Architecture decision records (ADRs) for major design choices\n- User guide and developer onboarding documentation\n\n### Version Control and CI/CD\n\n**Git Workflow:**\n- Feature branch development with pull request reviews\n- Semantic versioning for release management\n- Automated testing in CI/CD pipeline\n- Code coverage reporting and quality gates\n\n## Contributing Guidelines\n\n### Development Workflow\n\n**Setting Up Development Environment:**\n1. Fork the repository and clone locally\n2. Create a virtual environment and install dependencies\n3. Configure pre-commit hooks for code quality\n4. Set up development database and test data\n\n**Pull Request Process:**\n1. Create feature branch from main branch\n2. Implement changes with comprehensive testing\n3. Update documentation for new features\n4. Submit pull request with detailed description\n5. Address review feedback and ensure CI passes\n\n### Code Review Standards\n\n**Review Criteria:**\n- Code quality and adherence to style guidelines\n- Test coverage and quality of test implementations\n- Documentation completeness and accuracy\n- Security considerations and best practices\n- Performance implications and optimisation opportunities\n\n## License & Legal\n\n### Proprietary Software License\n\n**Copyright Notice:**\n```\nCopyright (c) 2024 OrthoVision Development Team\nAll rights reserved.\n\nOrthoVision and associated components are proprietary software \ndeveloped for medical diagnostic applications. Unauthorised \nreproduction, distribution, or modification is strictly prohibited.\n```\n\n**Commercial Licensing:**\nOrthoVision is available under commercial licensing terms for healthcare institutions and medical technology companies. For licensing enquiries and enterprise deployment options, please contact:\n\n**License Contact:**\n- Email: licensing@orthovision.com.au\n- Business Development: jarred@orthovision.com.au\n\n### Third-Party Acknowledgments\n\n**Open Source Dependencies:**\n- TensorFlow (Apache 2.0) - Machine learning framework\n- Flask (BSD) - Web application framework\n- OpenCV (BSD) - Computer vision library\n- NumPy (BSD) - Numerical computing library\n\n**Commercial Services:**\n- Roboflow - Computer vision model deployment platform\n- Hugging Face Transformers - Pre-trained language models\n\n### Regulatory Compliance\n\n**Medical Device Considerations:**\nThis software is intended for research and educational purposes. For clinical deployment, additional regulatory approvals may be required in accordance with local medical device regulations (FDA, TGA, CE marking).\n\n**Professional Disclaimer:**\nOrthoVision provides AI-assisted diagnostic tools intended to support, not replace, professional medical judgment. All diagnostic decisions should be made by qualified healthcare professionals in accordance with established clinical protocols.\n\n---\n\n**Document Control:**\n- Version: 1.0.0\n- Last Updated: 2024-08-19\n- Authors: OrthoVision Development Team\n- Review Status: Approved for Public Release\n\n**Development Team Attribution:**\n- Lead Developer: Jarred Muller, James Cook University\n- Medical Advisor: [Consulting Orthopaedic Surgeon]\n- AI/ML Specialist: [Machine Learning Engineer]\n- Quality Assurance: [QA Engineer]\n\n---\n\n*This documentation represents the comprehensive technical and operational specification for the OrthoVision AI-powered orthopaedic diagnostic platform. For additional information, support, or licensing enquiries, please refer to the contact information provided above.*"
+    },
+    {
+      "name": "wyzup-scale",
+      "title": "WyzUp Scale: Food Recognition and Portion Estimation",
+      "category": "ai",
+      "description": "An advanced computer vision system for automated food recognition and portion estimation using YOLOv8. Designed for nutritional analysis, dietary tracking, and food service applications.",
+      "topics": ["computer-vision", "food-recognition", "nutrition", "yolov8", "portion-estimation"],
+      "url": "https://github.com/HWAI-collab/wyzup-scale",
+      "stars": 18,
+      "forks": 5,
+      "language": "Python",
+      "technologies": ["YOLOv8", "OpenCV", "TensorFlow", "NumPy"],
+      "sections": [
+        "Food Detection Pipeline",
+        "Portion Estimation Algorithm",
+        "Nutritional Database Integration",
+        "Real-time Processing",
+        "Accuracy Metrics"
+      ],
+      "abstract": "WyzUp Scale is an advanced computer vision system for automated food recognition and portion estimation. Utilizing YOLOv8 for object detection and custom algorithms for volume estimation, it provides clinical-grade accuracy for nutritional analysis. Designed for integration with dietary tracking apps and institutional food service systems.",
+      "highlights": [
+        "YOLOv8-based food detection",
+        "3D portion size estimation",
+        "Real-time nutritional analysis",
+        "Multi-cuisine recognition",
+        "Clinical-grade accuracy metrics"
+      ]
+    },
+    {
+      "name": "help-now",
+      "title": "Help-Now: AI-Enhanced Local Business Discovery",
+      "category": "infrastructure",
+      "description": "A Vue.js 3 web application with Python-based web scraping for local business discovery and community service mapping. Features ML-enhanced web scraping, OCR, and automated data validation.",
+      "topics": ["business-discovery", "web-scraping", "vue-js", "machine-learning", "community-services"],
+      "url": "https://github.com/HWAI-collab/help-now",
+      "stars": 10,
+      "forks": 3,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Python", "BeautifulSoup", "OCR", "ML"],
+      "sections": [
+        "Web Scraping Engine",
+        "Business Classification",
+        "Community Service Mapping",
+        "Data Validation Pipeline",
+        "User Interface"
+      ],
+      "abstract": "Help-Now is an AI-enhanced platform for discovering local businesses and community services. It combines Vue.js 3 frontend with Python-based intelligent web scraping, utilizing machine learning for business classification and OCR for extracting information from images. Features automated data validation and community service mapping.",
+      "highlights": [
+        "ML-enhanced web scraping",
+        "OCR for image text extraction",
+        "Automated business classification",
+        "Community service database",
+        "Real-time data validation"
+      ]
+    },
+    {
+      "name": "kidmaps-dashboard",
+      "title": "KidMaps Dashboard: Family Activity Coordination",
+      "category": "infrastructure",
+      "description": "An enterprise-grade platform for community-based family activity coordination and management. Features Vue.js 3, Supabase backend, geospatial analytics, and comprehensive event management.",
+      "topics": ["family-activities", "event-management", "vue-js", "geospatial", "community"],
+      "url": "https://github.com/HWAI-collab/kidmaps-dashboard",
+      "stars": 14,
+      "forks": 4,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Supabase", "PostGIS", "Mapbox", "PWA"],
+      "sections": [
+        "Activity Management System",
+        "Geospatial Features",
+        "Family Coordination Tools",
+        "Event Planning Module",
+        "Analytics Dashboard"
+      ],
+      "abstract": "KidMaps Dashboard is an enterprise platform for coordinating family activities and community events. Built with Vue.js 3 and Supabase, it features geospatial analytics for location-based activity discovery, comprehensive event management tools, and family coordination features. Includes real-time updates and progressive web app capabilities.",
+      "highlights": [
+        "Geospatial activity mapping",
+        "Family calendar coordination",
+        "Community event management",
+        "Real-time collaboration features",
+        "Mobile-responsive PWA design"
+      ]
+    },
+    {
+      "name": "kidmaps",
+      "title": "KidMaps: Child-Friendly Location Discovery Platform",
+      "category": "youth",
+      "description": "A comprehensive geospatial platform for discovering child-friendly locations and family services across Australia. Features advanced mapping, location filtering, and community-driven content for parents and caregivers.",
+      "topics": ["child-services", "geospatial", "family-resources", "mapping", "community"],
+      "url": "https://github.com/HWAI-collab/kidmaps",
+      "stars": 85,
+      "forks": 8,
+      "language": "Python",
+      "technologies": ["Python", "Flask", "GeoPandas", "Leaflet", "Scrapy"],
+      "sections": [
+        "Geospatial Mapping Interface",
+        "Location Data Processing",
+        "Community Content Management",
+        "Mobile-Responsive Design",
+        "Accessibility Features"
+      ],
+      "abstract": "KidMaps provides comprehensive location discovery for child-friendly venues including parks, playgrounds, educational facilities, and family services. Built with advanced geospatial technologies and community-driven content validation to support families in finding appropriate services and recreational opportunities.",
+      "highlights": [
+        "Interactive mapping with location filtering",
+        "Community-driven content validation",
+        "Accessibility-focused design principles",
+        "Mobile-optimized responsive interface",
+        "Integration with Australian service directories"
+      ],
+      "readme_content": "# KidMaps: Child-Friendly Location Discovery Platform\n\n## Abstract\n\nKidMaps is a comprehensive geospatial platform designed to help families discover child-friendly locations and services across Australia. The platform integrates advanced mapping technologies with community-driven content to provide accurate, up-to-date information about parks, playgrounds, educational facilities, healthcare services, and family-oriented businesses.\n\n## Features\n\n### Interactive Mapping\n- Advanced filtering by age group, accessibility, and service type\n- Real-time location data with community verification\n- Mobile-responsive design for on-the-go discovery\n- Integration with Australian government service directories\n\n### Community Features\n- User-generated reviews and ratings\n- Photo sharing and location verification\n- Accessibility information and special needs support\n- Safety ratings and community moderation\n\n### Technical Implementation\n- Python-based backend with Flask framework\n- GeoPandas for spatial data processing\n- Leaflet.js for interactive mapping interface\n- Scrapy for automated data collection from official sources\n\n## Installation\n\n```bash\n# Clone repository\ngit clone https://github.com/HWAI-collab/kidmaps.git\ncd kidmaps\n\n# Install dependencies\npip install -r requirements.txt\n\n# Run application\npython app.py\n```\n\n## Contributing\n\nKidMaps welcomes community contributions to help families discover safe, accessible, and engaging locations for children across Australia.\n\n## License\n\nMIT License - Supporting families and communities through open-source technology."
+    },
+    {
+      "name": "kidmaps-dashboard",
+      "title": "KidMaps Dashboard: Family Activity Coordination",
+      "category": "infrastructure",
+      "description": "An enterprise-grade platform for community-based family activity coordination and management. Features Vue.js 3, Supabase backend, geospatial analytics, and comprehensive event management.",
+      "topics": ["family-coordination", "vue-js", "supabase", "geospatial", "event-management"],
+      "url": "https://github.com/HWAI-collab/kidmaps-dashboard",
+      "stars": 80,
+      "forks": 12,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Supabase", "Tailwind", "Geospatial APIs", "PWA"],
+      "sections": [
+        "Activity Coordination Platform",
+        "Geospatial Event Mapping",
+        "Family Communication Tools",
+        "Resource Scheduling System",
+        "Community Engagement Analytics"
+      ],
+      "abstract": "KidMaps Dashboard provides comprehensive family activity coordination through intelligent event management, geospatial mapping, and community engagement tools. Built with Vue.js 3 and Supabase for real-time collaboration and scalable family service coordination.",
+      "highlights": [
+        "Real-time family activity coordination",
+        "Geospatial event mapping and discovery",
+        "Community engagement analytics",
+        "Resource scheduling and management",
+        "Mobile-responsive dashboard interface"
+      ]
+    },
+    {
+      "name": "brachiosaurus",
+      "title": "Brachiosaurus: Educational Dinosaur Discovery App",
+      "category": "youth",
+      "description": "An interactive Flutter mobile application designed for children to learn about dinosaurs through AR visualization, games, and educational content. Features augmented reality models and gamified learning experiences.",
+      "topics": ["education", "children", "augmented-reality", "mobile-app", "dinosaurs"],
+      "url": "https://github.com/HWAI-collab/brachiosaurus",
+      "stars": 18,
+      "forks": 5,
+      "language": "Dart",
+      "technologies": ["Flutter", "ARCore", "ARKit", "3D Modeling", "Firebase"],
+      "sections": [
+        "Augmented Reality Features",
+        "Educational Content Framework",
+        "Gamification System",
+        "Child-Safe Design",
+        "Cross-Platform Compatibility"
+      ],
+      "abstract": "Brachiosaurus creates an immersive educational experience for children to explore dinosaurs through augmented reality technology. The app combines scientifically accurate content with engaging gameplay mechanics to foster learning about paleontology, natural history, and scientific discovery.",
+      "highlights": [
+        "AR visualization of dinosaur models",
+        "Age-appropriate educational content",
+        "Gamified learning progression system",
+        "Child-safe interface design",
+        "Cross-platform mobile compatibility"
+      ]
+    },
+    {
+      "name": "subject-web-scraper",
+      "title": "Subject Web Scraper: Academic Course Data Harvesting",
+      "category": "infrastructure",
+      "description": "A specialized web scraping tool for extracting university course and subject information from academic websites. Features intelligent parsing, data validation, and structured output for educational analytics.",
+      "topics": ["web-scraping", "education", "data-harvesting", "academic-data", "automation"],
+      "url": "https://github.com/HWAI-collab/subject-web-scraper",
+      "stars": 12,
+      "forks": 4,
+      "language": "Python",
+      "technologies": ["Python", "BeautifulSoup", "Selenium", "Scrapy", "Pandas"],
+      "sections": [
+        "Web Scraping Engine",
+        "Data Validation Framework",
+        "Academic Data Models",
+        "Export and Analysis Tools",
+        "Configuration Management"
+      ],
+      "abstract": "Automated tool for harvesting academic course information from university websites, enabling researchers and students to analyze curriculum trends, course availability, and educational program structures across institutions.",
+      "highlights": [
+        "Intelligent HTML parsing and extraction",
+        "Configurable scraping parameters",
+        "Data validation and cleansing",
+        "Structured JSON and CSV output",
+        "Support for multiple university systems"
+      ]
+    },
+    {
+      "name": "evolutionary-biology-analysis",
+      "title": "Evolutionary Biology Analysis Suite",
+      "category": "infrastructure",
+      "description": "Comprehensive R-based toolkit for evolutionary biology research including genetic drift simulation, phylogenetic analysis, population genetics modeling, and molecular evolution studies.",
+      "topics": ["evolutionary-biology", "genetics", "phylogenetics", "r-analysis", "bioinformatics"],
+      "url": "https://github.com/HWAI-collab/evolutionary-biology-analysis",
+      "stars": 15,
+      "forks": 6,
+      "language": "R",
+      "technologies": ["R", "Bioconductor", "ggplot2", "phyloseq", "ape"],
+      "sections": [
+        "Genetic Drift Simulation",
+        "Phylogenetic Tree Construction",
+        "Population Genetics Models",
+        "Molecular Evolution Analysis",
+        "Statistical Visualization"
+      ],
+      "abstract": "Advanced computational toolkit for evolutionary biology research providing simulation capabilities, statistical analysis, and visualization tools for genetic studies, population dynamics, and phylogenetic reconstruction.",
+      "highlights": [
+        "Hardy-Weinberg equilibrium modeling",
+        "Genetic drift simulation algorithms",
+        "Phylogenetic tree reconstruction",
+        "Molecular diversity analysis",
+        "Publication-ready statistical graphics"
+      ]
+    },
+    {
+      "name": "pacific-investigations",
+      "title": "Pacific Investigations: Forensic Analysis Platform",
+      "category": "ai",
+      "description": "Advanced forensic investigation platform combining machine learning crime prediction, facial recognition systems, and evidence analysis tools for law enforcement and security applications.",
+      "topics": ["forensics", "crime-prediction", "facial-recognition", "law-enforcement", "machine-learning"],
+      "url": "https://github.com/HWAI-collab/pacific-investigations",
+      "stars": 20,
+      "forks": 7,
+      "language": "Python",
+      "technologies": ["Python", "TensorFlow", "OpenCV", "scikit-learn", "Django"],
+      "sections": [
+        "Crime Prediction Models",
+        "Facial Recognition System",
+        "Evidence Analysis Tools",
+        "Case Management Interface",
+        "Security and Privacy Framework"
+      ],
+      "abstract": "Comprehensive forensic investigation platform utilizing machine learning algorithms for crime pattern analysis, facial recognition for suspect identification, and automated evidence processing to support law enforcement investigations.",
+      "highlights": [
+        "Machine learning crime prediction models",
+        "Advanced facial recognition capabilities",
+        "Automated evidence cataloging",
+        "Secure case management system",
+        "Privacy-preserving investigation tools"
+      ]
+    },
+    {
+      "name": "adhd-dashboard-web",
+      "title": "ADHD Dashboard Web: Neuroadaptive Task Management",
+      "category": "healthcare",
+      "description": "A comprehensive web-based ADHD task management system built with Flutter Web and Supabase. Features neuroadaptive interfaces, cognitive load optimization, and evidence-based ADHD support strategies.",
+      "topics": ["adhd", "neurodiversity", "task-management", "cognitive-science", "accessibility"],
+      "url": "https://github.com/HWAI-collab/adhd-dashboard-web",
+      "stars": 16,
+      "forks": 4,
+      "language": "Dart",
+      "technologies": ["Flutter Web", "Supabase", "PostgreSQL", "PWA"],
+      "sections": [
+        "Neuroadaptive Interface Design",
+        "Cognitive Load Management",
+        "Evidence-Based ADHD Strategies",
+        "Progressive Web App Features",
+        "Accessibility Optimization"
+      ],
+      "abstract": "Web-based task management platform specifically designed for individuals with ADHD, incorporating neuroadaptive interface principles, cognitive load theory, and evidence-based ADHD management strategies to improve focus, organization, and task completion.",
+      "highlights": [
+        "Neuroadaptive interface elements",
+        "Cognitive load optimization algorithms",
+        "Evidence-based ADHD management strategies",
+        "Progressive Web App functionality",
+        "Comprehensive accessibility features"
+      ]
+    },
+    {
+      "name": "mwd-weekly-dashboard",
+      "title": "MWD: Advanced Personal Productivity Platform",
+      "category": "infrastructure",
+      "description": "A comprehensive weekly dashboard system for personal productivity management featuring task automation, goal tracking, and advanced analytics. Built with modern web technologies and deployment automation.",
+      "topics": ["productivity", "dashboard", "task-management", "analytics", "automation"],
+      "url": "https://github.com/HWAI-collab/mwd-weekly-dashboard",
+      "stars": 14,
+      "forks": 3,
+      "language": "Python",
+      "technologies": ["Django", "PostgreSQL", "Heroku", "Python", "Bootstrap"],
+      "sections": [
+        "Weekly Planning Interface",
+        "Task Automation System",
+        "Goal Tracking Analytics",
+        "Progress Visualization",
+        "Deployment Pipeline"
+      ],
+      "abstract": "MWD provides comprehensive weekly productivity management through intelligent task organization, automated progress tracking, and advanced analytics. Features deployment-ready architecture with Heroku integration and comprehensive user management systems.",
+      "highlights": [
+        "Intelligent weekly planning algorithms",
+        "Automated task progression tracking",
+        "Advanced productivity analytics",
+        "Heroku deployment pipeline",
+        "Comprehensive user management"
+      ]
+    },
+    {
+      "name": "fire-red-agent",
+      "title": "Fire Red Agent: AI Gaming and Entertainment Platform",
+      "category": "ai",
+      "description": "An advanced AI gaming platform featuring automated gameplay agents, strategy optimization, and interactive entertainment systems. Built with Ruby on Rails and modern deployment technologies.",
+      "topics": ["ai-gaming", "automation", "entertainment", "strategy-ai", "ruby-rails"],
+      "url": "https://github.com/HWAI-collab/fire-red-agent",
+      "stars": 22,
+      "forks": 8,
+      "language": "Ruby",
+      "technologies": ["Ruby on Rails", "Docker", "AI Agents", "Game Automation"],
+      "sections": [
+        "AI Agent Framework",
+        "Strategy Optimization Engine",
+        "Game State Analysis",
+        "Automated Decision Making",
+        "Performance Analytics"
+      ],
+      "abstract": "Fire Red Agent implements sophisticated AI agents for gaming environments, featuring automated gameplay, strategy optimization, and real-time decision making. Demonstrates advanced AI applications in interactive entertainment systems.",
+      "highlights": [
+        "Intelligent game-playing AI agents",
+        "Real-time strategy optimization",
+        "Automated gameplay mechanics",
+        "Performance analytics and optimization",
+        "Containerized deployment architecture"
+      ]
+    },
+    {
+      "name": "kait-conversational-ai",
+      "title": "KaiT: Advanced Conversational AI Platform",
+      "category": "ai",
+      "description": "A sophisticated conversational AI platform built with Vue.js 3 featuring natural language processing, context-aware responses, and advanced chatbot capabilities for various applications.",
+      "topics": ["conversational-ai", "nlp", "chatbot", "vue-js", "ai-assistant"],
+      "url": "https://github.com/HWAI-collab/kait-conversational-ai",
+      "stars": 30,
+      "forks": 12,
+      "language": "JavaScript",
+      "technologies": ["Vue.js 3", "Node.js", "NLP", "WebRTC", "AI APIs"],
+      "sections": [
+        "Natural Language Processing",
+        "Context-Aware Responses",
+        "Multi-Modal Interactions",
+        "Real-Time Communication",
+        "AI Integration Framework"
+      ],
+      "abstract": "KaiT provides advanced conversational AI capabilities through sophisticated natural language processing, context awareness, and multi-modal interaction support. Features real-time communication and extensible AI integration frameworks.",
+      "highlights": [
+        "Advanced natural language understanding",
+        "Context-aware conversation management",
+        "Multi-modal interaction support",
+        "Real-time communication capabilities",
+        "Extensible AI integration architecture"
+      ]
+    },
+    {
+      "name": "plaict-community-dashboard",
+      "title": "PLAICT: Community Engagement Analytics Platform",
+      "category": "infrastructure",
+      "description": "A comprehensive community engagement analytics platform featuring data visualization, user interaction tracking, and community health metrics. Built for supporting community organizations and engagement initiatives.",
+      "topics": ["community-analytics", "data-visualization", "engagement-metrics", "dashboard", "community-health"],
+      "url": "https://github.com/HWAI-collab/plaict-community-dashboard",
+      "stars": 11,
+      "forks": 4,
+      "language": "JavaScript",
+      "technologies": ["Vue.js", "Chart.js", "Node.js", "Analytics APIs", "Dashboard"],
+      "sections": [
+        "Community Engagement Metrics",
+        "Data Visualization Framework",
+        "User Interaction Analytics",
+        "Community Health Indicators",
+        "Reporting and Insights"
+      ],
+      "abstract": "PLAICT provides comprehensive analytics for community engagement initiatives, featuring advanced data visualization, user interaction tracking, and community health metrics to support organizational decision-making and community development.",
+      "highlights": [
+        "Comprehensive engagement analytics",
+        "Advanced data visualization tools",
+        "Community health metric tracking",
+        "User interaction pattern analysis",
+        "Actionable insights and reporting"
+      ]
+    },
+    {
+      "name": "analysis-outputs",
+      "title": "Analysis Outputs: Data Science Visualization Suite",
+      "category": "infrastructure",
+      "description": "A comprehensive collection of data science analysis outputs including statistical visualizations, correlation matrices, feature importance plots, and research documentation for various HWAI projects.",
+      "topics": ["data-science", "visualization", "statistical-analysis", "research-outputs", "analytics"],
+      "url": "https://github.com/HWAI-collab/analysis-outputs",
+      "stars": 8,
+      "forks": 3,
+      "language": "Python",
+      "technologies": ["Python", "Matplotlib", "Seaborn", "Pandas", "scikit-learn"],
+      "sections": [
+        "Statistical Visualizations",
+        "Correlation Analysis",
+        "Feature Importance Plots",
+        "Research Documentation",
+        "Reproducible Analytics"
+      ],
+      "abstract": "Comprehensive repository of data science analysis outputs supporting HWAI research projects including statistical visualizations, machine learning model outputs, and reproducible analytical frameworks for research validation.",
+      "highlights": [
+        "Publication-ready statistical visualizations",
+        "Comprehensive correlation analysis outputs",
+        "Machine learning feature importance plots",
+        "Reproducible analytical workflows",
+        "Research documentation and validation"
+      ]
+    }
+  ],
+  "metadata": {
+    "organization": "HWAI Collaborative",
+    "description": "Healthcare, Wellbeing and AI Research Collaborative",
+    "last_updated": "2025-01-21",
+    "total_repositories": 21,
+    "categories": {
+      "ai": 6,
+      "healthcare": 4,
+      "youth": 4,
+      "infrastructure": 7
+    }
+  }
+}
