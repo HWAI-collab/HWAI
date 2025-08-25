@@ -211,6 +211,7 @@ async function expandReadme(repoName) {
     let readmeContent = '';
     if (repo.readme_file) {
         try {
+            // Use relative path that works both locally and on GitHub Pages
             const response = await fetch(repo.readme_file);
             if (response.ok) {
                 const fullContent = await response.text();
@@ -231,7 +232,31 @@ async function expandReadme(repoName) {
                 readmeContent = previewLines.join('\n');
             }
         } catch (error) {
-            console.warn('Failed to fetch real README:', error);
+            console.error('Failed to fetch README from', repo.readme_file, ':', error);
+            // Try without leading slash as fallback
+            try {
+                const fallbackPath = repo.readme_file.replace(/^\//, '');
+                const response2 = await fetch(fallbackPath);
+                if (response2.ok) {
+                    const fullContent = await response2.text();
+                    const lines = fullContent.split('\n');
+                    const previewLines = [];
+                    let charCount = 0;
+                    
+                    for (let line of lines) {
+                        if (charCount + line.length > 2000) {
+                            previewLines.push('...\n\n*[Content truncated - Download full README for complete documentation]*');
+                            break;
+                        }
+                        previewLines.push(line);
+                        charCount += line.length + 1;
+                    }
+                    
+                    readmeContent = previewLines.join('\n');
+                }
+            } catch (fallbackError) {
+                console.warn('Fallback fetch also failed:', fallbackError);
+            }
         }
     }
     
@@ -479,6 +504,7 @@ async function downloadReadme(repoName) {
     // Try to fetch the real README file first
     if (repo.readme_file) {
         try {
+            // Use relative path that works both locally and on GitHub Pages
             const response = await fetch(repo.readme_file);
             if (response.ok) {
                 markdownContent = await response.text();
@@ -486,8 +512,20 @@ async function downloadReadme(repoName) {
                 throw new Error('Failed to fetch README');
             }
         } catch (error) {
-            console.warn('Failed to fetch real README, falling back to generated content:', error);
-            markdownContent = generateFallbackReadme(repo);
+            console.error('Failed to fetch README from', repo.readme_file, ':', error);
+            // Try without leading slash as fallback
+            try {
+                const fallbackPath = repo.readme_file.replace(/^\//, '');
+                const response2 = await fetch(fallbackPath);
+                if (response2.ok) {
+                    markdownContent = await response2.text();
+                } else {
+                    throw new Error('Fallback fetch also failed');
+                }
+            } catch (fallbackError) {
+                console.warn('All fetch attempts failed, using generated content:', fallbackError);
+                markdownContent = generateFallbackReadme(repo);
+            }
         }
     } else {
         // Fallback to generated content from metadata
