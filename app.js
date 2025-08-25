@@ -210,16 +210,21 @@ async function expandReadme(repoName) {
     // Try to fetch real README content
     let readmeContent = '';
     if (repo.readme_file) {
-        // Build the correct URL for GitHub Pages or local development
-        let readmeUrl = repo.readme_file;
+        // Build the absolute URL based on the current location
+        let readmeUrl;
         
-        // Check if we're on GitHub Pages
         if (window.location.hostname === 'hwai-collab.github.io') {
-            // On GitHub Pages, ensure we have the full path
-            readmeUrl = `/HWAI/${repo.readme_file}`;
+            // On GitHub Pages, use absolute URL
+            readmeUrl = `https://hwai-collab.github.io/HWAI/${repo.readme_file}`;
+        } else if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            // Local development
+            readmeUrl = `/${repo.readme_file}`;
+        } else {
+            // Fallback to relative path
+            readmeUrl = repo.readme_file;
         }
         
-        console.log('Attempting to fetch README from:', readmeUrl);
+        console.log('Fetching README preview from:', readmeUrl);
         
         try {
             const response = await fetch(readmeUrl);
@@ -492,28 +497,35 @@ async function downloadReadme(repoName) {
     
     // Try to fetch the real README file first
     if (repo.readme_file) {
-        // Build the correct URL for GitHub Pages or local development
-        let readmeUrl = repo.readme_file;
+        // Build the absolute URL based on the current location
+        let readmeUrl;
         
-        // Check if we're on GitHub Pages
         if (window.location.hostname === 'hwai-collab.github.io') {
-            // On GitHub Pages, ensure we have the full path
-            readmeUrl = `/HWAI/${repo.readme_file}`;
+            // On GitHub Pages, use absolute URL
+            readmeUrl = `https://hwai-collab.github.io/HWAI/${repo.readme_file}`;
+        } else if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            // Local development
+            readmeUrl = `/${repo.readme_file}`;
+        } else {
+            // Fallback to relative path
+            readmeUrl = repo.readme_file;
         }
         
-        console.log('Attempting to download README from:', readmeUrl);
+        console.log('Downloading README from:', readmeUrl);
         
         try {
             const response = await fetch(readmeUrl);
             if (response.ok) {
                 markdownContent = await response.text();
-                console.log('Successfully fetched README for download');
+                console.log('Successfully fetched real README for download');
             } else {
-                console.error('Failed to fetch README - status:', response.status);
+                console.error('Failed to fetch README - HTTP status:', response.status);
+                console.error('URL was:', readmeUrl);
                 markdownContent = generateFallbackReadme(repo);
             }
         } catch (error) {
-            console.error('Error fetching README for download:', error);
+            console.error('Error fetching README:', error);
+            console.error('URL was:', readmeUrl);
             markdownContent = generateFallbackReadme(repo);
         }
     } else {
