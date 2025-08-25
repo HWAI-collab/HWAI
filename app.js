@@ -210,9 +210,19 @@ async function expandReadme(repoName) {
     // Try to fetch real README content
     let readmeContent = '';
     if (repo.readme_file) {
+        // Build the correct URL for GitHub Pages or local development
+        let readmeUrl = repo.readme_file;
+        
+        // Check if we're on GitHub Pages
+        if (window.location.hostname === 'hwai-collab.github.io') {
+            // On GitHub Pages, ensure we have the full path
+            readmeUrl = `/HWAI/${repo.readme_file}`;
+        }
+        
+        console.log('Attempting to fetch README from:', readmeUrl);
+        
         try {
-            // Use relative path that works both locally and on GitHub Pages
-            const response = await fetch(repo.readme_file);
+            const response = await fetch(readmeUrl);
             if (response.ok) {
                 const fullContent = await response.text();
                 // Extract first few sections for preview (up to 2000 characters)
@@ -226,37 +236,16 @@ async function expandReadme(repoName) {
                         break;
                     }
                     previewLines.push(line);
-                    charCount += line.length + 1; // +1 for newline
+                    charCount += line.length + 1;
                 }
                 
                 readmeContent = previewLines.join('\n');
+                console.log('Successfully loaded README preview');
+            } else {
+                console.error('Failed to fetch README - status:', response.status);
             }
         } catch (error) {
-            console.error('Failed to fetch README from', repo.readme_file, ':', error);
-            // Try without leading slash as fallback
-            try {
-                const fallbackPath = repo.readme_file.replace(/^\//, '');
-                const response2 = await fetch(fallbackPath);
-                if (response2.ok) {
-                    const fullContent = await response2.text();
-                    const lines = fullContent.split('\n');
-                    const previewLines = [];
-                    let charCount = 0;
-                    
-                    for (let line of lines) {
-                        if (charCount + line.length > 2000) {
-                            previewLines.push('...\n\n*[Content truncated - Download full README for complete documentation]*');
-                            break;
-                        }
-                        previewLines.push(line);
-                        charCount += line.length + 1;
-                    }
-                    
-                    readmeContent = previewLines.join('\n');
-                }
-            } catch (fallbackError) {
-                console.warn('Fallback fetch also failed:', fallbackError);
-            }
+            console.error('Error fetching README:', error);
         }
     }
     
@@ -503,29 +492,29 @@ async function downloadReadme(repoName) {
     
     // Try to fetch the real README file first
     if (repo.readme_file) {
+        // Build the correct URL for GitHub Pages or local development
+        let readmeUrl = repo.readme_file;
+        
+        // Check if we're on GitHub Pages
+        if (window.location.hostname === 'hwai-collab.github.io') {
+            // On GitHub Pages, ensure we have the full path
+            readmeUrl = `/HWAI/${repo.readme_file}`;
+        }
+        
+        console.log('Attempting to download README from:', readmeUrl);
+        
         try {
-            // Use relative path that works both locally and on GitHub Pages
-            const response = await fetch(repo.readme_file);
+            const response = await fetch(readmeUrl);
             if (response.ok) {
                 markdownContent = await response.text();
+                console.log('Successfully fetched README for download');
             } else {
-                throw new Error('Failed to fetch README');
-            }
-        } catch (error) {
-            console.error('Failed to fetch README from', repo.readme_file, ':', error);
-            // Try without leading slash as fallback
-            try {
-                const fallbackPath = repo.readme_file.replace(/^\//, '');
-                const response2 = await fetch(fallbackPath);
-                if (response2.ok) {
-                    markdownContent = await response2.text();
-                } else {
-                    throw new Error('Fallback fetch also failed');
-                }
-            } catch (fallbackError) {
-                console.warn('All fetch attempts failed, using generated content:', fallbackError);
+                console.error('Failed to fetch README - status:', response.status);
                 markdownContent = generateFallbackReadme(repo);
             }
+        } catch (error) {
+            console.error('Error fetching README for download:', error);
+            markdownContent = generateFallbackReadme(repo);
         }
     } else {
         // Fallback to generated content from metadata
