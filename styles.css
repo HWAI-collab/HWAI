@@ -104,7 +104,7 @@ header::after {
 .header-content {
     display: flex;
     align-items: stretch;
-    gap: var(--spacing-md);
+    gap: calc(var(--spacing-md) / 3);
 }
 
 .circle-logo {
@@ -117,7 +117,7 @@ header::after {
 .header-text {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
+    gap: calc(var(--spacing-sm) / 3);
 }
 
 .brand-title {
