@@ -794,21 +794,23 @@ function generateReadmeContent(repo, readme) {
 
 // View README popup with formatted content and download option
 async function viewReadmePopup(repoName) {
-    const repo = allRepos.find(r => r.name === repoName);
+    console.log('viewReadmePopup called with:', repoName);
+    console.log('allRepos length:', allRepos.length);
+    
+    const repo = allRepos.find(r => r && r.name === repoName);
     if (!repo) {
         console.error('Repository not found:', repoName);
+        alert('Repository not found');
         return;
     }
     
-    // Handle missing readme_file property
-    let readmeFileName;
-    if (repo.readme_file && typeof repo.readme_file === 'string') {
-        readmeFileName = repo.readme_file.replace('ReadMe/', '');
-    } else {
-        readmeFileName = `${repo.name}.md`;
-    }
+    console.log('Found repo:', repo);
+    console.log('repo.readme_file:', repo.readme_file);
     
-    console.log('Loading README for:', repoName, 'File:', readmeFileName);
+    // Simple filename construction
+    let readmeFileName = `${repoName}.md`;
+    
+    console.log('Using filename:', readmeFileName);
     
     const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${readmeFileName}`;
     
