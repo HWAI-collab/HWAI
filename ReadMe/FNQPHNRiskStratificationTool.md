@@ -632,9 +632,9 @@ strictly prohibited.
 ### Healthcare Compliance
 
 **Regulatory Approvals:**
-- Australian Privacy Principles (APP) compliance
+- Australian Privacy Principles (APP) compliance ready
 - RACGP Standards for General Practices alignment
-- TGA Software as Medical Device (Class I) pathway
+- TGA Software as Medical Device (Class I) pathway ready
 - Medicare Benefits Schedule (MBS) integration ready
 
 **Clinical Disclaimer:**
@@ -645,10 +645,10 @@ This software provides clinical decision support tools intended to supplement, n
 **Document Control:**
 - Version: 2.1.0
 - Last Updated: 2024-01-21
-- Authors: Jarred Muller
+- Lead Developer: Jarred Muller
 - Health Advisor: Bianca Cross
-- Technical Review: Jarred Muller
-- Regulatory Status: TGA Class I Approved
+- Technical Review: Clive Payton
+
 
 **Contact Information:**
 - Contact: info@helloworldai.com.au
