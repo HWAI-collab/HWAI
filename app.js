@@ -791,36 +791,9 @@ function generateReadmeContent(repo, readme) {
     return content;
 }
 
-// GitHub-flavored markdown parser
+// Simple markdown parser
 function parseMarkdownToHTML(markdown) {
-    // Pre-process mermaid diagrams before marked.js processes them
-    let processedMarkdown = markdown.replace(/```mermaid\s*([\s\S]*?)```/g, function(match, diagram) {
-        const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
-        return `<div class="mermaid-diagram" id="${id}">${diagram.trim()}</div>`;
-    });
-    
-    // Configure marked for GitHub-flavored markdown
-    marked.setOptions({
-        breaks: true,
-        gfm: true,
-        tables: true,
-        sanitize: false,
-        highlight: function(code, language) {
-            if (language === 'mermaid') {
-                const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
-                return `</code></pre><div class="mermaid-diagram" id="${id}">${code}</div><pre><code>`;
-            }
-            return `<code class="language-${language || 'text'}">${code}</code>`;
-        }
-    });
-    
-    let html = marked.parse(processedMarkdown);
-    
-    // Clean up any broken pre/code tags from mermaid processing
-    html = html.replace(/<\/code><\/pre><div class="mermaid-diagram"(.*?)<\/div><pre><code>/g, 
-        '<div class="mermaid-diagram"$1</div>');
-    
-    return html;
+    return marked.parse(markdown);
 }
 
 // View README popup with formatted content and download option
@@ -874,35 +847,29 @@ async function viewReadmePopup(repoName) {
         
         document.body.appendChild(modal);
         
-        // Render mermaid diagrams if present
-        const mermaidDiagrams = modal.querySelectorAll('.mermaid-diagram');
-        if (mermaidDiagrams.length > 0) {
-            // Initialize mermaid with GitHub-like settings
+        // Initialize mermaid and render any diagrams
+        if (typeof mermaid !== 'undefined') {
             mermaid.initialize({ 
-                startOnLoad: false, 
-                theme: 'default',
-                themeVariables: {
-                    primaryColor: '#86c403',
-                    primaryTextColor: '#073c49',
-                    primaryBorderColor: '#073c49',
-                    lineColor: '#616161'
-                }
+                startOnLoad: true, 
+                theme: 'default'
             });
             
-            // Process each diagram
-            for (let i = 0; i < mermaidDiagrams.length; i++) {
-                const diagram = mermaidDiagrams[i];
+            // Find and render mermaid code blocks
+            const codeBlocks = modal.querySelectorAll('pre code.language-mermaid');
+            codeBlocks.forEach(async (block, index) => {
+                const diagramText = block.textContent;
+                const id = 'mermaid-' + Date.now() + '-' + index;
+                
                 try {
-                    const diagramText = diagram.textContent.trim();
-                    const { svg } = await mermaid.render(diagram.id + '-svg', diagramText);
-                    diagram.innerHTML = svg;
-                    diagram.classList.add('mermaid-rendered');
-                    console.log('Mermaid diagram rendered successfully');
+                    const { svg } = await mermaid.render(id, diagramText);
+                    const wrapper = document.createElement('div');
+                    wrapper.className = 'mermaid-diagram';
+                    wrapper.innerHTML = svg;
+                    block.parentElement.replaceWith(wrapper);
                 } catch (error) {
-                    console.error('Mermaid rendering error:', error);
-                    diagram.innerHTML = `<pre><code class="language-mermaid">${diagram.textContent}</code></pre>`;
+                    console.error('Mermaid error:', error);
                 }
-            }
+            });
         }
         
         // Close modal functionality
