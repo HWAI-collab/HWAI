@@ -198,10 +198,7 @@ function createRepoCard(repo, readme) {
         ` : ''}
         
         ${readme.technologies && readme.technologies.length > 0 ? `
-        <div class="technologies">
-            ${readme.technologies.slice(0, 5).map(tech => 
-                `<span class="tech-badge" title="${tech}">${getTechIcon(tech)} ${tech}</span>`
-            ).join('')}
+        <div class="technologies" id="tech-container-${repo.name}">
         </div>
         ` : ''}
         
@@ -211,6 +208,20 @@ function createRepoCard(repo, readme) {
             <button class="btn-primary" onclick="downloadReadme('${repo.name}')">Download README</button>
         </div>
     `;
+    
+    // Add technology badges with proper HTML rendering
+    if (readme.technologies && readme.technologies.length > 0) {
+        const techContainer = card.querySelector(`#tech-container-${repo.name}`);
+        if (techContainer) {
+            readme.technologies.slice(0, 5).forEach(tech => {
+                const techBadge = document.createElement('span');
+                techBadge.className = 'tech-badge';
+                techBadge.title = tech;
+                techBadge.innerHTML = `${getTechIcon(tech)} ${tech}`;
+                techContainer.appendChild(techBadge);
+            });
+        }
+    }
     
     return card;
 }
