@@ -791,6 +791,49 @@ function generateReadmeContent(repo, readme) {
     return content;
 }
 
+// Simple markdown to HTML parser
+function parseMarkdownToHTML(markdown) {
+    return markdown
+        // Headers
+        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+        
+        // Bold and Italic
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        
+        // Code blocks
+        .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
+        .replace(/`(.*?)`/g, '<code>$1</code>')
+        
+        // Links
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
+        
+        // Lists
+        .replace(/^\* (.+)$/gim, '<li>$1</li>')
+        .replace(/^- (.+)$/gim, '<li>$1</li>')
+        .replace(/^(\d+)\. (.+)$/gim, '<li>$2</li>')
+        
+        // Wrap consecutive list items in ul tags
+        .replace(/(<li>.*<\/li>)/gs, function(match) {
+            return '<ul>' + match + '</ul>';
+        })
+        
+        // Line breaks
+        .replace(/\n\n/g, '</p><p>')
+        .replace(/^(.+)$/gim, '<p>$1</p>')
+        
+        // Clean up empty paragraphs and fix nested lists
+        .replace(/<p><\/p>/g, '')
+        .replace(/<p>(<h[1-6]>)/g, '$1')
+        .replace(/(<\/h[1-6]>)<\/p>/g, '$1')
+        .replace(/<p>(<ul>)/g, '$1')
+        .replace(/(<\/ul>)<\/p>/g, '$1')
+        .replace(/<p>(<pre>)/g, '$1')
+        .replace(/(<\/pre>)<\/p>/g, '$1');
+}
+
 // View README popup with formatted content and download option
 async function viewReadmePopup(repoName) {
     console.log('viewReadmePopup called with:', repoName);
@@ -835,7 +878,7 @@ async function viewReadmePopup(repoName) {
                     </button>
                 </div>
                 <div class="readme-content">
-                    <pre>${readmeContent}</pre>
+                    ${parseMarkdownToHTML(readmeContent)}
                 </div>
             </div>
         `;
