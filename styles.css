@@ -66,7 +66,7 @@ body {
 
 /* Professional Header */
 header {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: #000000;
     color: white;
     padding: var(--spacing-3xl) 0;
     position: relative;
@@ -101,11 +101,11 @@ header::after {
     position: relative;
 }
 
-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
+.logo {
+    height: 75px;
+    width: auto;
     margin-bottom: var(--spacing-md);
-    letter-spacing: -0.025em;
+    filter: brightness(1.1);
 }
 
 .subtitle {
@@ -550,7 +550,7 @@ main {
 
 /* Professional Footer */
 footer {
-    background: var(--accent-color);
+    background: #000000;
     color: white;
     text-align: center;
     padding: var(--spacing-xl) 0;
