@@ -791,47 +791,28 @@ function generateReadmeContent(repo, readme) {
     return content;
 }
 
-// Simple markdown to HTML parser
+// GitHub-flavored markdown parser
 function parseMarkdownToHTML(markdown) {
-    return markdown
-        // Headers
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-        .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-        
-        // Bold and Italic
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-        
-        // Code blocks
-        .replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>')
-        .replace(/`(.*?)`/g, '<code>$1</code>')
-        
-        // Links
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')
-        
-        // Lists
-        .replace(/^\* (.+)$/gim, '<li>$1</li>')
-        .replace(/^- (.+)$/gim, '<li>$1</li>')
-        .replace(/^(\d+)\. (.+)$/gim, '<li>$2</li>')
-        
-        // Wrap consecutive list items in ul tags
-        .replace(/(<li>.*<\/li>)/gs, function(match) {
-            return '<ul>' + match + '</ul>';
-        })
-        
-        // Line breaks
-        .replace(/\n\n/g, '</p><p>')
-        .replace(/^(.+)$/gim, '<p>$1</p>')
-        
-        // Clean up empty paragraphs and fix nested lists
-        .replace(/<p><\/p>/g, '')
-        .replace(/<p>(<h[1-6]>)/g, '$1')
-        .replace(/(<\/h[1-6]>)<\/p>/g, '$1')
-        .replace(/<p>(<ul>)/g, '$1')
-        .replace(/(<\/ul>)<\/p>/g, '$1')
-        .replace(/<p>(<pre>)/g, '$1')
-        .replace(/(<\/pre>)<\/p>/g, '$1');
+    // Configure marked for GitHub-flavored markdown
+    marked.setOptions({
+        breaks: true,
+        gfm: true,
+        tables: true,
+        sanitize: false,
+        highlight: function(code, language) {
+            return `<code class="language-${language || 'text'}">${code}</code>`;
+        }
+    });
+    
+    let html = marked.parse(markdown);
+    
+    // Process mermaid diagrams
+    html = html.replace(/```mermaid\s*([\s\S]*?)```/g, function(match, diagram) {
+        const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
+        return `<div class="mermaid-diagram" id="${id}">${diagram.trim()}</div>`;
+    });
+    
+    return html;
 }
 
 // View README popup with formatted content and download option
@@ -884,6 +865,22 @@ async function viewReadmePopup(repoName) {
         `;
         
         document.body.appendChild(modal);
+        
+        // Render mermaid diagrams if present
+        const mermaidDiagrams = modal.querySelectorAll('.mermaid-diagram');
+        if (mermaidDiagrams.length > 0) {
+            mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+            mermaidDiagrams.forEach(async (diagram) => {
+                try {
+                    const { svg } = await mermaid.render(diagram.id, diagram.textContent);
+                    diagram.innerHTML = svg;
+                    diagram.classList.add('mermaid-rendered');
+                } catch (error) {
+                    console.error('Mermaid rendering error:', error);
+                    diagram.innerHTML = `<pre><code>${diagram.textContent}</code></pre>`;
+                }
+            });
+        }
         
         // Close modal functionality
         modal.querySelector('.modal-close').onclick = () => {

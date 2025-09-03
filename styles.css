@@ -814,12 +814,23 @@ textarea:focus-visible {
 }
 
 .readme-content pre {
-    background: var(--card-background);
+    background: #f8f9fa;
     border: 1px solid var(--border-color);
     padding: var(--spacing-md);
     border-radius: var(--radius-md);
     overflow-x: auto;
     margin: var(--spacing-md) 0;
+    font-family: var(--font-family-mono);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.readme-content pre code {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: #333;
 }
 
 .readme-content blockquote {
@@ -853,6 +864,22 @@ textarea:focus-visible {
 .readme-content th {
     background: var(--card-hover);
     font-weight: 600;
+}
+
+/* Mermaid Diagram Styling */
+.mermaid-diagram {
+    text-align: center;
+    margin: var(--spacing-xl) 0;
+    padding: var(--spacing-md);
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+}
+
+.mermaid-rendered svg {
+    max-width: 100%;
+    height: auto;
 }
 
 /* High Contrast Mode Support */
