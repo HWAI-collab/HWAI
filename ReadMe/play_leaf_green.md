@@ -8,7 +8,7 @@
 
 ## Abstract
 
-The Pokemon AI Agent represents an advanced autonomous game-playing system that combines high-performance Rust for emulator interaction and memory management with Python's rich AI ecosystem for decision-making. Building upon the foundational work from the Fire Red Agent project, this system demonstrates sophisticated memory-driven intelligence where game state is persistently tracked in a database, creating a contextual "diary" of the AI's experiences. The agent employs DeepSeek's advanced language models for strategic decision-making while maintaining the 250 most recent memories to inform future actions.
+The Pokemon AI Agent represents an advanced autonomous game-playing system that combines high-performance Rust for emulator interaction and memory management with Python's rich AI ecosystem for decision-making. This system demonstrates sophisticated memory-driven intelligence where game state is persistently tracked in a database, creating a contextual "diary" of the AI's experiences. The agent employs DeepSeek's advanced language models for strategic decision-making while maintaining the 250 most recent memories to inform future actions.
 
 The architecture features a dual-language approach: Rust handles low-level memory reading, emulator control, and real-time input injection through RetroArch, while Python orchestrates the AI decision pipeline, database management, and LLM integration. This hybrid design achieves sub-100ms response times for game actions while maintaining sophisticated contextual understanding through screenshot-based OCR, pathfinding algorithms, and adaptive learning from action success/failure patterns. The system advances the field of AI game agents by demonstrating that modern LLMs can effectively play complex RPGs when provided with structured memory and context management.
 
@@ -310,9 +310,7 @@ GET /api/state/inventory
 
 ## References
 
-1. Muller, J. (2024). "Fire Red Agent: Memory-Driven AI for Pokemon." GitHub Repository. https://github.com/JarredMuller/fire_red_agent
-
-2. Brown, T., et al. (2020). "Language Models are Few-Shot Learners." *Advances in Neural Information Processing Systems*, 33.
+1. Brown, T., et al. (2020). "Language Models are Few-Shot Learners." *Advances in Neural Information Processing Systems*, 33.
 
 3. Vaswani, A., et al. (2017). "Attention is All You Need." *Advances in Neural Information Processing Systems*, 30.
 
@@ -322,27 +320,21 @@ GET /api/state/inventory
 
 ## License
 
-MIT License
+**Proprietary License**
 
-Copyright (c) 2024 Jarred Muller, Clive Payton
+Copyright (c) 2024 Jarred Muller, Clive Payton. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and associated documentation files are proprietary and confidential. 
+No part of this software may be reproduced, distributed, or transmitted in any form 
+or by any means, including photocopying, recording, or other electronic or mechanical 
+methods, without the prior written permission of the copyright holders.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Unauthorised copying, modification, distribution, or use of this software, 
+via any medium, is strictly prohibited and will be prosecuted to the fullest 
+extent of the law.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+**Commercial Licensing:**
+For licensing enquiries, please contact: info@helloworldai.com.au
 
 ---
 
@@ -354,7 +346,5 @@ SOFTWARE.
 - Rust Systems Engineer: Jarred Muller
 - Python Integration: Clive Payton
 - Frontend Interface: Clive Payton
-
-**Based on:** Fire Red Agent by Jarred Muller (https://github.com/JarredMuller/fire_red_agent)
 
 **Contact:** info@helloworldai.com.au

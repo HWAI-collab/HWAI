@@ -550,7 +550,7 @@
         "Experience Database Management",
         "Multimodal Game Understanding"
       ],
-      "abstract": "The Pokemon AI Agent represents an advanced autonomous game-playing system combining Rust's performance for emulator interaction with Python's AI capabilities. Building on the Fire Red Agent project, it implements memory-driven intelligence where game state is tracked as a contextual diary, enabling adaptive learning from past experiences. The system achieves sub-100ms response times while maintaining sophisticated understanding through OCR, pathfinding, and success/failure tracking.",
+      "abstract": "The Pokemon AI Agent represents an advanced autonomous game-playing system combining Rust's performance for emulator interaction with Python's AI capabilities. It implements memory-driven intelligence where game state is tracked as a contextual diary, enabling adaptive learning from past experiences. The system achieves sub-100ms response times while maintaining sophisticated understanding through OCR, pathfinding, and success/failure tracking.",
       "highlights": [
         "Memory-as-diary system with 250 recent experiences",
         "Rust for high-performance memory reading and emulator control",
@@ -558,8 +558,7 @@
         "OCR-based text extraction for dialogue understanding",
         "A* pathfinding with adjacent movement fallback",
         "Success/failure tracking for adaptive learning",
-        "92% navigation success rate with fallback strategies",
-        "Based on Fire Red Agent by Jarred Muller"
+        "92% navigation success rate with fallback strategies"
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Games-Entertainment/play_leaf_green/README.md",
