@@ -309,8 +309,8 @@ main {
 }
 
 .tech-badge {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background: white;
+    color: var(--text-primary);
     padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-lg);
     font-size: 0.875rem;
@@ -321,7 +321,7 @@ main {
     gap: var(--spacing-xs);
     transition: all 0.2s ease;
     white-space: nowrap;
-    border: none;
+    border: 1px solid var(--border-color);
 }
 
 .tech-badge:hover {
@@ -333,7 +333,6 @@ main {
 .tech-icon {
     width: 16px;
     height: 16px;
-    filter: brightness(0) invert(1);
 }
 
 .tech-badge-large {
