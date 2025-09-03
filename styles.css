@@ -194,7 +194,7 @@ main {
 }
 
 /* Corporate Repository Grid */
-.repositories-grid {
+.repo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: var(--spacing-xl);
@@ -202,7 +202,7 @@ main {
 }
 
 /* Professional Repository Cards */
-.repository-card {
+.repo-card {
     background: var(--card-background);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
@@ -213,7 +213,7 @@ main {
     overflow: hidden;
 }
 
-.repository-card::before {
+.repo-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -225,13 +225,13 @@ main {
     transition: transform 0.3s ease;
 }
 
-.repository-card:hover {
+.repo-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-xl);
     border-color: var(--accent-color);
 }
 
-.repository-card:hover::before {
+.repo-card:hover::before {
     transform: scaleX(1);
 }
 
@@ -608,7 +608,7 @@ footer p {
         min-width: auto;
     }
     
-    .repositories-grid {
+    .repo-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
@@ -629,7 +629,7 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    .repository-card {
+    .repo-card {
         padding: var(--spacing-lg);
     }
     
