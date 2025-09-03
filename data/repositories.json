@@ -187,11 +187,9 @@
       "language": "JavaScript",
       "technologies": [
         "React",
-        "Node.js",
+        "Node.js", 
         "Express",
         "MongoDB",
-        "Flutter",
-        "Socket.io",
         "Mistral 7B"
       ],
       "sections": [
