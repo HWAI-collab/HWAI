@@ -2,68 +2,69 @@
 let allRepos = [];
 let readmeCache = {};
 
-// Technology icon mapping using Devicon
+// Technology icon mapping with nice emojis
 function getTechIcon(tech) {
     const techIcons = {
-        'Vue.js': '<i class="devicon-vuejs-plain colored"></i>',
-        'Vue': '<i class="devicon-vuejs-plain colored"></i>',
-        'React': '<i class="devicon-react-original colored"></i>',
-        'Angular': '<i class="devicon-angularjs-plain colored"></i>',
-        'JavaScript': '<i class="devicon-javascript-plain colored"></i>',
-        'TypeScript': '<i class="devicon-typescript-plain colored"></i>',
-        'Python': '<i class="devicon-python-plain colored"></i>',
-        'Java': '<i class="devicon-java-plain colored"></i>',
-        'C#': '<i class="devicon-csharp-plain colored"></i>',
-        'PHP': '<i class="devicon-php-plain colored"></i>',
-        'Ruby': '<i class="devicon-ruby-plain colored"></i>',
-        'Go': '<i class="devicon-go-plain colored"></i>',
-        'Rust': '<i class="devicon-rust-plain colored"></i>',
-        'Swift': '<i class="devicon-swift-plain colored"></i>',
-        'Kotlin': '<i class="devicon-kotlin-plain colored"></i>',
-        'Flutter': '<i class="devicon-flutter-plain colored"></i>',
-        'React Native': '<i class="devicon-react-original colored"></i>',
-        'Node.js': '<i class="devicon-nodejs-plain colored"></i>',
-        'Express': '<i class="devicon-express-original"></i>',
-        'Django': '<i class="devicon-django-plain colored"></i>',
-        'Flask': '<i class="devicon-flask-original"></i>',
-        'FastAPI': '<i class="devicon-fastapi-plain colored"></i>',
-        'Spring': '<i class="devicon-spring-plain colored"></i>',
-        'Laravel': '<i class="devicon-laravel-plain colored"></i>',
-        'Rails': '<i class="devicon-rails-plain colored"></i>',
-        'MongoDB': '<i class="devicon-mongodb-plain colored"></i>',
-        'PostgreSQL': '<i class="devicon-postgresql-plain colored"></i>',
-        'MySQL': '<i class="devicon-mysql-plain colored"></i>',
-        'Redis': '<i class="devicon-redis-plain colored"></i>',
-        'Docker': '<i class="devicon-docker-plain colored"></i>',
-        'Kubernetes': '<i class="devicon-kubernetes-plain colored"></i>',
-        'AWS': '<i class="devicon-amazonwebservices-original colored"></i>',
-        'Azure': '<i class="devicon-azure-plain colored"></i>',
-        'GCP': '<i class="devicon-googlecloud-plain colored"></i>',
-        'Firebase': '<i class="devicon-firebase-plain colored"></i>',
-        'Supabase': '<i class="devicon-supabase-plain colored"></i>',
-        'Git': '<i class="devicon-git-plain colored"></i>',
-        'GitHub': '<i class="devicon-github-original"></i>',
-        'Tailwind': '<i class="devicon-tailwindcss-plain colored"></i>',
-        'CSS': '<i class="devicon-css3-plain colored"></i>',
-        'HTML': '<i class="devicon-html5-plain colored"></i>',
-        'Vite': '<i class="devicon-vitejs-plain colored"></i>',
-        'Webpack': '<i class="devicon-webpack-plain colored"></i>',
-        'Nuxt': '<i class="devicon-nuxtjs-plain colored"></i>',
-        'Next.js': '<i class="devicon-nextjs-original"></i>',
-        'TensorFlow': '<i class="devicon-tensorflow-original colored"></i>',
-        'PyTorch': '<i class="devicon-pytorch-original colored"></i>',
-        'OpenCV': '<i class="devicon-opencv-plain colored"></i>',
-        'Scikit-learn': '<i class="devicon-scikitlearn-plain colored"></i>',
-        'Pandas': '<i class="devicon-pandas-original colored"></i>',
-        'NumPy': '<i class="devicon-numpy-original colored"></i>',
-        'Matplotlib': '<i class="devicon-matplotlib-plain colored"></i>',
-        'Jupyter': '<i class="devicon-jupyter-plain colored"></i>',
-        'Selenium': '<i class="devicon-selenium-original colored"></i>',
-        'Jest': '<i class="devicon-jest-plain colored"></i>',
-        'ESLint': '<i class="devicon-eslint-plain colored"></i>'
+        'Vue.js': '💚',
+        'Vue': '💚',
+        'React': '⚛️',
+        'Angular': '🔺',
+        'JavaScript': '🟡',
+        'TypeScript': '🔷',
+        'Python': '🐍',
+        'Java': '☕',
+        'C#': '💙',
+        'PHP': '🐘',
+        'Ruby': '💎',
+        'Go': '🔷',
+        'Rust': '🦀',
+        'Swift': '🧡',
+        'Kotlin': '💜',
+        'Flutter': '💙',
+        'React Native': '📱',
+        'Node.js': '🟢',
+        'Express': '⚡',
+        'Django': '🎸',
+        'Flask': '🌶️',
+        'FastAPI': '⚡',
+        'Spring': '🍃',
+        'Laravel': '🎨',
+        'Rails': '🛤️',
+        'MongoDB': '🍃',
+        'PostgreSQL': '🐘',
+        'MySQL': '🐬',
+        'Redis': '🔴',
+        'Docker': '🐳',
+        'Kubernetes': '⚙️',
+        'AWS': '☁️',
+        'Azure': '☁️',
+        'GCP': '☁️',
+        'Firebase': '🔥',
+        'Supabase': '⚡',
+        'Git': '📦',
+        'GitHub': '🐙',
+        'Tailwind': '💨',
+        'CSS': '🎨',
+        'HTML': '🌐',
+        'Vite': '⚡',
+        'Webpack': '📦',
+        'Nuxt': '💚',
+        'Next.js': '▲',
+        'TensorFlow': '🧠',
+        'PyTorch': '🔥',
+        'OpenCV': '👁️',
+        'Scikit-learn': '🤖',
+        'Pandas': '🐼',
+        'NumPy': '🔢',
+        'Matplotlib': '📊',
+        'Jupyter': '📓',
+        'Selenium': '🤖',
+        'Jest': '🃏',
+        'ESLint': '🔧',
+        'Prettier': '✨'
     };
     
-    return techIcons[tech] || '<i class="devicon-devicon-plain"></i>';
+    return techIcons[tech] || '🔧';
 }
 
 // Initialize the application
@@ -198,7 +199,10 @@ function createRepoCard(repo, readme) {
         ` : ''}
         
         ${readme.technologies && readme.technologies.length > 0 ? `
-        <div class="technologies" id="tech-container-${repo.name}">
+        <div class="technologies">
+            ${readme.technologies.slice(0, 5).map(tech => 
+                `<span class="tech-badge">${getTechIcon(tech)} ${tech}</span>`
+            ).join('')}
         </div>
         ` : ''}
         
@@ -209,19 +213,6 @@ function createRepoCard(repo, readme) {
         </div>
     `;
     
-    // Add technology badges with proper HTML rendering
-    if (readme.technologies && readme.technologies.length > 0) {
-        const techContainer = card.querySelector(`#tech-container-${repo.name}`);
-        if (techContainer) {
-            readme.technologies.slice(0, 5).forEach(tech => {
-                const techBadge = document.createElement('span');
-                techBadge.className = 'tech-badge';
-                techBadge.title = tech;
-                techBadge.innerHTML = `${getTechIcon(tech)} ${tech}`;
-                techContainer.appendChild(techBadge);
-            });
-        }
-    }
     
     return card;
 }

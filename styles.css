@@ -109,7 +109,7 @@ header::after {
 
 .circle-logo {
     height: auto;
-    width: 100px;
+    width: 300px;
     flex-shrink: 0;
     align-self: center;
 }
@@ -277,36 +277,34 @@ main {
 }
 
 /* Professional Technology Tags */
-.tech-tags {
+.tech-tags,
+.technologies {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-sm);
+    gap: 2px;
     margin-bottom: var(--spacing-xl);
 }
 
 .tech-badge {
-    background: var(--card-background);
-    border: 1px solid var(--border-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
     padding: var(--spacing-xs) var(--spacing-sm);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
     box-shadow: var(--shadow-sm);
     display: inline-flex;
     align-items: center;
     gap: var(--spacing-xs);
     transition: all 0.2s ease;
     white-space: nowrap;
+    border: none;
 }
 
 .tech-badge:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     box-shadow: var(--shadow-md);
-    border-color: var(--accent-color);
-}
-
-.tech-badge i {
-    font-size: 1rem;
+    filter: brightness(110%);
 }
 
 .tech-badge-large {
@@ -633,7 +631,7 @@ footer p {
     }
     
     .circle-logo {
-        width: 80px;
+        width: 200px;
         height: auto;
     }
     
