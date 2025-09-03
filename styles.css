@@ -91,7 +91,7 @@ header::after {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-color), var(--accent-secondary), var(--primary-color));
+    background: var(--primary-color);
 }
 
 .container {
