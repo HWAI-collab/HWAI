@@ -289,6 +289,15 @@ main {
     margin-bottom: var(--spacing-md);
 }
 
+.card-sections ul {
+    margin-left: var(--spacing-md);
+    padding-left: var(--spacing-sm);
+}
+
+.card-sections li {
+    margin-bottom: var(--spacing-xs);
+}
+
 /* Professional Technology Tags */
 .tech-tags,
 .technologies {
