@@ -804,7 +804,7 @@ This project incorporates open-source software. See [THIRD_PARTY_LICENSES.md](TH
 
 **Registered Office**: 13 Beaver St, Clifton Beach, QLD 4879, Australia  
 **Phone**: +61 402 700 999  
-**Email**: hello@kidmaps.com.au  
+**Email**: info@helloworldai.com.au  
 **Website**: https://www.kidmaps.com.au  
 **Technical Documentation**: https://docs.kidmaps.com.au  
 
@@ -812,17 +812,12 @@ This project incorporates open-source software. See [THIRD_PARTY_LICENSES.md](TH
 
 **Technical Leadership:**
 - **Hello World AI** (owned and operated by Jarred Muller and Clive Payton): Platform architecture and technical consulting
-- **Clive Payton** (Co-founder, Hello World AI): Lead Software Engineer - Dashboard development, Vue.js implementation, and system integration
+- **Clive Payton** (Co-founder, Hello World AI): Lead Developer - Dashboard development, Vue.js implementation, and system integration
 - **Jarred Muller** (Co-founder, Hello World AI): Data Scientist - Analytics implementation, machine learning models, and geospatial algorithms
 
 ### Departmental Contacts
 
-**Technical Inquiries**: engineering@kidmaps.com.au  
-**API Support**: api-support@kidmaps.com.au  
-**Business and Legal**: legal@kidmaps.com.au  
-**Partnership Opportunities**: partnerships@kidmaps.com.au  
-**Customer Support**: support@kidmaps.com.au  
-**Security Disclosures**: security@kidmaps.com.au  
+**Contact**: info@helloworldai.com.au  
 
 ### Indigenous Acknowledgment
 

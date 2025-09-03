@@ -9,7 +9,7 @@
 
 ## Abstract
 
-This repository presents WAIVI (Weighted Adaptive Intelligence for Vegetable and Fruit Identification), a comprehensive computer vision framework for real-time produce classification and detection. The system employs state-of-the-art YOLO (You Only Look Once) architectures, specifically YOLOv8 variants, optimized for multi-class fruit and vegetable recognition across 32 distinct categories. Our approach demonstrates superior performance in challenging conditions including variable lighting, occlusion, and scale variations commonly encountered in agricultural and retail environments.
+This repository presents WAIVI (Weighted Adaptive Intelligence for Vegetable and Fruit Identification), a comprehensive computer vision framework for real-time produce classification and detection. The system employs state-of-the-art YOLO (You Only Look Once) architectures, specifically YOLOv8 variants, optimised for multi-class fruit and vegetable recognition across 32 distinct categories. Our approach demonstrates superior performance in challenging conditions including variable lighting, occlusion, and scale variations commonly encountered in agricultural and retail environments.
 
 **Keywords:** Computer Vision, Object Detection, Agricultural Technology, Deep Learning, YOLO, Food Recognition, Edge Computing
 
@@ -57,7 +57,7 @@ This work presents the following novel contributions:
 
 ### Research Context
 
-Building upon recent advances in transformer-based vision models and one-stage detectors [1,2], our approach leverages the inherent efficiency of YOLO architectures while introducing domain-specific optimizations for agricultural applications. The framework addresses limitations identified in previous works on food recognition [3,4] through improved data augmentation and multi-scale training strategies.
+Building upon recent advances in transformer-based vision models and one-stage detectors [1,2], our approach leverages the inherent efficiency of YOLO architectures while introducing domain-specific optimisations for agricultural applications. The framework addresses limitations identified in previous works on food recognition [3,4] through improved data augmentation and multi-scale training strategies.
 
 ---
 
@@ -97,12 +97,12 @@ The YOLOv8 architecture employs a CSPNet-inspired backbone with the following ke
 #### 2.3.1 Multi-Scale Training Protocol
 
 ```python
-# Training configuration optimized for produce detection
+# Training configuration optimised for produce detection
 training_config = {
     'epochs': 150,
     'batch_size': 32,
     'image_size': 768,
-    'optimizer': 'SGD',
+    'optimiser': 'SGD',
     'learning_rate': 0.01,
     'momentum': 0.937,
     'weight_decay': 0.0005,
@@ -121,7 +121,7 @@ training_config = {
 Progressive training strategy implementing:
 1. **Phase I**: Low-resolution training (416×416) for robust feature learning
 2. **Phase II**: High-resolution fine-tuning (768×768) for precision enhancement
-3. **Phase III**: Test-time augmentation optimization
+3. **Phase III**: Test-time augmentation optimisation
 
 ---
 
@@ -170,8 +170,8 @@ graph TB
 - **Visualization**: Bounding box rendering with confidence scores
 
 #### 3.2.4 Model Compilation (`ONNX_COMPILE.PY`, `hef_compile.py`)
-- **ONNX Export**: Cross-platform deployment optimization
-- **Hailo Compilation**: Edge device optimization for neural processing units
+- **ONNX Export**: Cross-platform deployment optimisation
+- **Hailo Compilation**: Edge device optimisation for neural processing units
 
 ---
 
@@ -472,7 +472,7 @@ model.train(
     batch=32,
     device=0,  # GPU device
     workers=16,
-    optimizer='SGD',
+    optimiser='SGD',
     lr0=0.01,
     momentum=0.937,
     weight_decay=0.0005,
@@ -549,14 +549,14 @@ def compile_to_hef(onnx_path, output_path):
     """
     runner = hailo_sdk_client.ClientRunner(hw_arch="hailo8")
     
-    # Model optimization for Hailo-8
+    # Model optimisation for Hailo-8
     hn = runner.translate_onnx_model(
         onnx_path,
         "waivi_model"
     )
     
-    # Quantization and optimization
-    runner.optimize(hn)
+    # Quantization and optimisation
+    runner.optimise(hn)
     
     # Compile to HEF
     hef = runner.compile(hn)
@@ -810,7 +810,7 @@ import numpy as np
 class WAIVIEdgeInference:
     def __init__(self, model_path, device='cpu'):
         """
-        Edge-optimized inference engine
+        Edge-optimised inference engine
         
         Args:
             model_path: Path to ONNX model
@@ -844,7 +844,7 @@ class WAIVIEdgeInference:
         return np.expand_dims(image, axis=0)
     
     def predict(self, image):
-        """Edge-optimized prediction"""
+        """Edge-optimised prediction"""
         input_tensor = self.preprocess(image)
         
         if hasattr(self, 'session'):
@@ -1277,7 +1277,7 @@ def track_training_experiment(config):
                     'train_loss': trainer.loss.item(),
                     'val_map50': trainer.metrics['map50'],
                     'val_map50_95': trainer.metrics['map50_95'],
-                    'learning_rate': trainer.optimizer.param_groups[0]['lr']
+                    'learning_rate': trainer.optimiser.param_groups[0]['lr']
                 }, step=trainer.epoch)
         
         # Train with tracking
@@ -1312,7 +1312,7 @@ training_config = {
     'imgsz': 768,
     'batch': 32,
     'lr0': 0.01,
-    'optimizer': 'SGD'
+    'optimiser': 'SGD'
 }
 
 track_training_experiment(training_config)
@@ -1508,7 +1508,7 @@ All contributions undergo rigorous review:
 
 We welcome collaborations with academic institutions:
 
-- **Joint Research Projects**: Algorithm development and optimization
+- **Joint Research Projects**: Algorithm development and optimisation
 - **Student Internships**: Supervised research opportunities
 - **Publication Opportunities**: Co-authored papers and conference presentations
 - **Dataset Contributions**: Expansion of training data diversity
@@ -1551,7 +1551,7 @@ If you use WAIVI in your research, please cite our work:
 ```bibtex
 @article{waivi2024,
     title={WAIVI: Weighted Adaptive Intelligence for Vegetable and Fruit Identification},
-    author={HWAI Collaboration},
+    author={Clive Payton (Lead), Jarred Muller},
     journal={Computer Vision and Image Understanding},
     year={2024},
     volume={XXX},
@@ -1561,7 +1561,7 @@ If you use WAIVI in your research, please cite our work:
 }
 
 @software{waivi_software2024,
-    author={HWAI Collaboration},
+    author={Clive Payton (Lead), Jarred Muller},
     title={WAIVI: Computer Vision Framework for Produce Detection},
     url={https://github.com/HWAI-collab/WAIVI},
     version={1.0.0},
@@ -1601,7 +1601,7 @@ If you use WAIVI in your research, please cite our work:
 ```
 MIT License
 
-Copyright (c) 2024 HWAI Collaboration
+Copyright (c) 2024 Clive Payton (Lead), Jarred Muller
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -1698,7 +1698,7 @@ training:
   project: waivi_training
   name: yolov8l_waivi_final
 
-optimizer:
+optimiser:
   type: SGD
   lr0: 0.01
   lrf: 0.01

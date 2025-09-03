@@ -9,9 +9,9 @@
 
 ## Abstract
 
-The Far North Queensland Primary Health Network (FNQ PHN) Risk Stratification Tool represents a comprehensive healthcare analytics platform engineered to transform primary care delivery through advanced machine learning algorithms and geospatial intelligence. This enterprise-grade system implements ensemble learning methodologies to analyze patient data, identify high-risk individuals, and provide actionable clinical decision support for preventive care interventions across the diverse geographic and demographic landscape of Far North Queensland.
+The Far North Queensland Primary Health Network (FNQ PHN) Risk Stratification Tool represents a comprehensive healthcare analytics platform engineered to transform primary care delivery through advanced machine learning algorithms and geospatial intelligence. This enterprise-grade system implements ensemble learning methodologies to analyse patient data, identify high-risk individuals, and provide actionable clinical decision support for preventive care interventions across the diverse geographic and demographic landscape of Far North Queensland.
 
-The platform leverages state-of-the-art machine learning frameworks including TensorFlow, scikit-learn, and GeoPandas to deliver real-time risk assessment capabilities, population health analytics, and clinical workflow optimization. Through its integration with Electronic Health Records (EHR) systems and adherence to Fast Healthcare Interoperability Resources (FHIR) standards, the tool provides healthcare practitioners with evidence-based insights for improved patient outcomes and resource allocation efficiency.
+The platform leverages state-of-the-art machine learning frameworks including TensorFlow, scikit-learn, and GeoPandas to deliver real-time risk assessment capabilities, population health analytics, and clinical workflow optimisation. Through its integration with Electronic Health Records (EHR) systems and adherence to Fast Healthcare Interoperability Resources (FHIR) standards, the tool provides healthcare practitioners with evidence-based insights for improved patient outcomes and resource allocation efficiency.
 
 ## Table of Contents
 
@@ -39,7 +39,7 @@ The platform leverages state-of-the-art machine learning frameworks including Te
 
 ### Healthcare Context and Objectives
 
-The Far North Queensland region presents unique healthcare challenges due to its vast geographic expanse (380,000 km²), dispersed population centers, and significant socioeconomic disparities. The FNQ PHN Risk Stratification Tool addresses these challenges through:
+The Far North Queensland region presents unique healthcare challenges due to its vast geographic expanse (380,000 km²), dispersed population centres, and significant socioeconomic disparities. The FNQ PHN Risk Stratification Tool addresses these challenges through:
 
 - **Predictive Analytics**: Early identification of patients at risk for chronic disease progression and acute care episodes
 - **Resource Optimization**: Strategic allocation of healthcare resources based on population risk profiles
@@ -137,8 +137,8 @@ class RiskStratificationPipeline:
         return {
             'risk_score': risk_score,
             'confidence_interval': confidence_interval,
-            'risk_category': self._categorize_risk(risk_score),
-            'contributing_factors': self._analyze_features(patient_data)
+            'risk_category': self._categorise_risk(risk_score),
+            'contributing_factors': self._analyse_features(patient_data)
         }
 ```
 
@@ -150,7 +150,7 @@ class GeospatialRiskAnalyzer:
     Incorporates geographic and social determinants into risk assessment
     
     References:
-    - Diez Roux, A. V. (2001). Investigating neighborhood and area effects 
+    - Diez Roux, A. V. (2001). Investigating neighbourhood and area effects 
       on health. American journal of public health, 91(11), 1783-1789.
     """
     
@@ -606,7 +606,7 @@ class HealthcareDataProtection:
 
 2. Chen, T., & Guestrin, C. (2016). "XGBoost: A scalable tree boosting system." *Proceedings of the 22nd ACM SIGKDD*, 785-794.
 
-3. Diez Roux, A. V. (2001). "Investigating neighborhood and area effects on health." *American Journal of Public Health*, 91(11), 1783-1789.
+3. Diez Roux, A. V. (2001). "Investigating neighbourhood and area effects on health." *American Journal of Public Health*, 91(11), 1783-1789.
 
 4. Liu, X., Faes, L., Kale, A. U., et al. (2019). "A comparison of deep learning performance against health-care professionals in detecting diseases from medical imaging." *Nature Medicine*, 25(8), 1252-1258.
 
@@ -645,13 +645,10 @@ This software provides clinical decision support tools intended to supplement, n
 **Document Control:**
 - Version: 2.1.0
 - Last Updated: 2024-01-21
-- Authors: FNQ PHN Analytics Team
-- Clinical Review: Dr. Sarah Mitchell, FRACGP
-- Technical Review: Prof. David Chen, PhD (Health Informatics)
+- Authors: Jarred Muller
+- Health Advisor: Bianca Cross
+- Technical Review: Jarred Muller
 - Regulatory Status: TGA Class I Approved
 
 **Contact Information:**
-- Clinical Support: clinical@fnqphn.com.au
-- Technical Support: tech@fnqphn.com.au
-- Research Inquiries: research@fnqphn.com.au
-- Regulatory Affairs: compliance@fnqphn.com.au
+- Contact: info@helloworldai.com.au

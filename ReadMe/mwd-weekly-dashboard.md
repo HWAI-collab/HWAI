@@ -358,7 +358,7 @@ POST /auth/signup
 Content-Type: application/json
 
 {
-  "email": "user@example.com",
+  "email": "info@helloworldai.com.au",
   "password": "securePassword123",
   "metadata": {
     "full_name": "John Doe",
@@ -642,10 +642,8 @@ This software is proprietary and confidential. All rights reserved.
 ---
 
 **Contact Information:**
-- Technical Support: support@myweeklydash.com
-- Security Issues: security@myweeklydash.com
-- Business Inquiries: business@myweeklydash.com
+- Contact: info@helloworldai.com.au
 
 **Version:** 0.1.0  
 **Last Updated:** August 2025  
-**Copyright © 2025 My Weekly Dash. All rights reserved.**
+**Copyright © 2025 Clive Payton (Lead), Jarred Muller. All rights reserved.**

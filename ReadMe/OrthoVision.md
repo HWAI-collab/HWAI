@@ -626,7 +626,7 @@ jobs:
 
 **Copyright Notice:**
 ```
-Copyright (c) 2024 OrthoVision Development Team
+Copyright (c) 2024 Jarred Muller, Clive Payton
 All rights reserved.
 
 OrthoVision and associated components are proprietary software 
@@ -638,8 +638,7 @@ reproduction, distribution, or modification is strictly prohibited.
 OrthoVision is available under commercial licensing terms for healthcare institutions and medical technology companies. For licensing enquiries and enterprise deployment options, please contact:
 
 **License Contact:**
-- Email: licensing@orthovision.com.au
-- Business Development: jarred@orthovision.com.au
+- Contact: info@helloworldai.com.au
 
 ### Third-Party Acknowledgments
 
@@ -656,7 +655,7 @@ OrthoVision is available under commercial licensing terms for healthcare institu
 ### Regulatory Compliance
 
 **Medical Device Considerations:**
-This software is intended for research and educational purposes. For clinical deployment, additional regulatory approvals may be required in accordance with local medical device regulations (FDA, TGA, CE marking).
+This software is intended for research and educational purposes. For clinical deployment, additional regulatory approvals may be required in accordance with Australian medical device regulations (TGA - Therapeutic Goods Administration, with international equivalents FDA, CE marking).
 
 **Professional Disclaimer:**
 OrthoVision provides AI-assisted diagnostic tools intended to support, not replace, professional medical judgment. All diagnostic decisions should be made by qualified healthcare professionals in accordance with established clinical protocols.
@@ -666,14 +665,14 @@ OrthoVision provides AI-assisted diagnostic tools intended to support, not repla
 **Document Control:**
 - Version: 1.0.0
 - Last Updated: 2024-08-19
-- Authors: OrthoVision Development Team
+- Authors: Jarred Muller, Clive Payton
 - Review Status: Approved for Public Release
 
 **Development Team Attribution:**
-- Lead Developer: Jarred Muller, James Cook University
-- Medical Advisor: [Consulting Orthopaedic Surgeon]
-- AI/ML Specialist: [Machine Learning Engineer]
-- Quality Assurance: [QA Engineer]
+- Lead Developer: Jarred Muller
+- Medical Advisor: Dr Jonathon Brook
+- AI/ML Specialist: Jarred Muller
+- Quality Assurance: Clive Payton
 
 ---
 

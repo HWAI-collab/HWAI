@@ -32,7 +32,7 @@ The platform implements a sophisticated multi-tier architecture combining client
 - [Installation & Deployment](#installation--deployment)
 - [API Documentation](#api-documentation)
 - [Security & Privacy](#security--privacy)
-- [Performance Optimization](#performance-optimization)
+- [Performance Optimization](#performance-optimisation)
 - [Market Research & Validation](#market-research--validation)
 - [Business Model](#business-model)
 - [Future Roadmap](#future-roadmap)
@@ -149,7 +149,7 @@ Multi-layered caching strategy for offline-first functionality:
 - Seasonal and weather-based suggestions
 
 **Interactive Map Interface:**
-- Clustered markers for performance optimization
+- Clustered markers for performance optimisation
 - Real-time traffic integration
 - Indoor mapping for large venues
 - Augmented reality preview (beta)
@@ -170,12 +170,12 @@ class EventManagement {
     // Validate business credentials
     final business = await _validateBusinessAccount();
     
-    // Create event with automatic SEO optimization
+    // Create event with automatic SEO optimisation
     final event = Event(
       id: _generateEventId(),
       businessId: business.id,
       title: title,
-      searchableTitle: _optimizeForSearch(title),
+      searchableTitle: _optimiseForSearch(title),
       venue: venue,
       schedule: EventSchedule(startTime),
       capacity: CapacityManager(capacity),
@@ -218,7 +218,7 @@ class EventManagement {
 
 | Metric | Target | Actual | Method |
 |--------|--------|--------|--------|
-| App Launch Time | <2s | 1.3s | Cold start optimization |
+| App Launch Time | <2s | 1.3s | Cold start optimisation |
 | Map Load Time | <1s | 0.7s | Tile caching |
 | Search Response | <500ms | 340ms | Algolia integration |
 | Offline Capability | 100% core | 100% | Hive + sync queue |
@@ -375,7 +375,7 @@ Multi-tier caching implementation:
 1. **CDN Layer**: Static assets cached globally
 2. **Application Cache**: Frequently accessed data
 3. **Database Cache**: Query result caching
-4. **Client Cache**: Local storage optimization
+4. **Client Cache**: Local storage optimisation
 
 ### Code Optimization
 
@@ -457,7 +457,7 @@ Based on surveys of 2,500 families:
 
 ### Q4 2024
 - Predictive analytics for businesses
-- Dynamic pricing optimization
+- Dynamic pricing optimisation
 - Virtual event support
 
 ## References
@@ -501,10 +501,9 @@ Comprehensive privacy policy: https://kidmaps.app/privacy
 **Document Control:**
 - Version: 2.0.0
 - Last Updated: 2024-01-21
-- Authors: KidMaps Development Team
+- Authors: Clive Payton, Jarred Muller
 - Review Status: Production Release
 
 **Contact Information:**
-- Technical Support: support@kidmaps.app
-- Business Inquiries: business@kidmaps.app
+- Contact: info@helloworldai.com.au
 - Developer Portal: https://developers.kidmaps.app

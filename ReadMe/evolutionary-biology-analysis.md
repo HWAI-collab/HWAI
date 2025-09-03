@@ -2438,10 +2438,8 @@ This software is provided for educational purposes. While mathematically rigorou
 ---
 
 **Contact Information:**
-- Academic Inquiries: research@evolutionary-framework.org
-- Technical Support: support@evolutionary-framework.org
-- Educational Resources: education@evolutionary-framework.org
+- Contact: info@helloworldai.com.au
 
 **Version:** 1.0.0  
 **Last Updated:** August 2025  
-**Copyright © 2025 Evolutionary Biology Research Group. All rights reserved.**
+**Copyright © 2025 Jarred Muller (Lead), Clive Payton. All rights reserved.**

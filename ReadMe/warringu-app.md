@@ -547,13 +547,10 @@ cultural protocols and community consent mechanisms.
 **Document Control:**
 - Version: 2.0.0
 - Last Updated: 2024-01-21
-- Authors: Warringu Development Team & Community Elders
+- Authors: Jarred Muller (Lead), Clive Payton & Community Elders
 - Cultural Review: Elder Council (approved)
 - Community Consultation: Ongoing
 - Status: Community-Controlled Implementation
 
 **Contact Information:**
-- Cultural Leadership: elders@warringu.org.au
-- Technical Support: tech@warringu.org.au
-- Community Engagement: community@warringu.org.au
-- Research Partnerships: research@warringu.org.au
+- Contact: info@helloworldai.com.au

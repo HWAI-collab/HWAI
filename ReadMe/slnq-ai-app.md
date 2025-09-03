@@ -884,7 +884,7 @@ INSERT INTO staff (
   'SLNQ001',
   'Your',
   'Name',
-  'your.email@safelivingnq.com.au',
+  'info@helloworldai.com.au',
   'admin',
   '["Certificate IV in Youth Work", "First Aid", "Mental Health First Aid"]'::jsonb
 );
@@ -1988,9 +1988,7 @@ SLNQ is available under commercial licensing terms specifically designed for you
 - **Research and Development License**: For academic institutions conducting youth services research
 
 **License Contact:**
-- Youth Services Partnerships: partnerships@safelivingnq.com.au
-- Government Relations: government@safelivingnq.com.au
-- Technology Integration: technology@safelivingnq.com.au
+- Contact: info@helloworldai.com.au
 
 ### Regulatory Compliance and Standards
 
@@ -2025,16 +2023,17 @@ All development, implementation, and use of SLNQ prioritises the safety, wellbei
 **Document Control:**
 - Version: 1.0.0
 - Last Updated: 2024-08-19
-- Authors: SLNQ Development Team
+- Authors: Jarred Muller (Lead), Clive Payton
 - Review Status: Approved for Youth Services Implementation
 
 **Development Team Attribution:**
-- Lead Developer: Jarred Muller, James Cook University
-- Youth Services Consultant: [Youth Care Specialist]
-- Clinical Advisor: [Therapeutic Services Expert]
-- Cultural Advisor: [Indigenous Community Representative]
-- Privacy and Compliance Officer: [Legal and Compliance Specialist]
-- User Experience Designer: [Youth-Centred Design Specialist]
+- Lead Developer: Jarred Muller
+- Frontend Developer: Clive Payton
+- Youth Services Consultant: Jarred Muller
+- Clinical Advisor: Jarred Muller
+- Cultural Advisor: Jarred Muller
+- Privacy and Compliance Officer: Clive Payton
+- User Experience Designer: Clive Payton
 
 ---
 

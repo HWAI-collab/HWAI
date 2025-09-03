@@ -1,4 +1,4 @@
-# KaiT: Intelligent Customer Service and Business Intelligence Platform
+# KAITY: Intelligent Customer Service and Business Intelligence Platform
 
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.5%2B-4FC08D.svg)](https://vuejs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.2%2B-646CFF.svg)](https://vitejs.dev/)
@@ -7,9 +7,9 @@
 
 ## Abstract
 
-KaiT represents a cutting-edge customer service and business intelligence platform engineered to revolutionise customer communication management through intelligent automation, real-time analytics, and comprehensive business workflow optimisation. Built upon Vue.js 3's composition API and powered by Supabase's real-time infrastructure, the platform delivers sophisticated customer service tools designed to enhance business-customer interactions whilst providing comprehensive business intelligence capabilities for data-driven decision making.
+KAITY represents a cutting-edge customer service and business intelligence platform engineered to revolutionise customer communication management through intelligent automation, real-time analytics, and comprehensive business workflow optimisation. Built upon Vue.js 3's composition API and powered by Supabase's real-time infrastructure, the platform delivers sophisticated customer service tools designed to enhance business-customer interactions whilst providing comprehensive business intelligence capabilities for data-driven decision making.
 
-The system integrates advanced business analysis algorithms with automated customer service workflows, intelligent call centre management, and comprehensive FAQ generation systems. Through its modular architecture combining progressive web application capabilities, real-time data synchronisation, and intelligent business process automation, KaiT establishes itself as an essential platform for businesses seeking to optimise customer service delivery and enhance operational efficiency through technology-driven solutions.
+The system integrates advanced business analysis algorithms with automated customer service workflows, intelligent call centre management, and comprehensive FAQ generation systems. Through its modular architecture combining progressive web application capabilities, real-time data synchronisation, and intelligent business process automation, KAITY establishes itself as an essential platform for businesses seeking to optimise customer service delivery and enhance operational efficiency through technology-driven solutions.
 
 ## Table of Contents
 
@@ -44,7 +44,7 @@ The system integrates advanced business analysis algorithms with automated custo
 
 ### Strategic Vision and Business Objectives
 
-KaiT addresses fundamental challenges in customer service delivery and business intelligence through intelligent automation and comprehensive data-driven insights. The platform's strategic business objectives encompass:
+KAITY addresses fundamental challenges in customer service delivery and business intelligence through intelligent automation and comprehensive data-driven insights. The platform's strategic business objectives encompass:
 
 - **Customer Service Excellence**: Enhancement of customer communication quality through intelligent automation and streamlined service delivery workflows
 - **Business Process Optimisation**: Comprehensive analysis and optimisation of business operations through data-driven insights and automated workflow management
@@ -67,7 +67,7 @@ KaiT addresses fundamental challenges in customer service delivery and business 
 
 ### Value Proposition and Operational Impact
 
-KaiT delivers measurable business value through:
+KAITY delivers measurable business value through:
 
 - **Service Quality Enhancement**: Improvement in customer satisfaction through intelligent automation and response optimisation
 - **Operational Cost Reduction**: Reduction of customer service costs through automated FAQ generation and intelligent call routing
@@ -78,7 +78,7 @@ KaiT delivers measurable business value through:
 
 ### Frontend Architecture and Component Framework
 
-The KaiT platform implements a modern, scalable Vue.js architecture optimised for progressive web application delivery and real-time user interaction:
+The KAITY platform implements a modern, scalable Vue.js architecture optimised for progressive web application delivery and real-time user interaction:
 
 ```mermaid
 graph TB
@@ -643,7 +643,7 @@ echo "VITE_COMMUNICATION_API_KEY=your_communication_api_key" >> .env.local
 
 **Supabase Backend Configuration:**
 ```sql
--- Database schema for KaiT platform
+-- Database schema for KAITY platform
 CREATE TABLE businesses (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   business_name VARCHAR(255) NOT NULL,
@@ -1625,27 +1625,25 @@ class PrivacyComplianceManager {
 
 **Copyright Notice:**
 ```
-Copyright (c) 2024 KaiT Development Team
+Copyright (c) 2024 Clive Payton, Jarred Muller
 All rights reserved.
 
-KaiT Customer Service and Business Intelligence Platform and associated 
+KAITY Customer Service and Business Intelligence Platform and associated 
 components are proprietary software developed for customer service 
 automation and business intelligence. Unauthorised reproduction, 
 distribution, or modification is strictly prohibited.
 ```
 
 **Commercial Licensing:**
-KaiT is available under commercial licensing terms for businesses, customer service providers, and technology consultants. The platform offers flexible licensing models including:
+KAITY is available under commercial licensing terms for businesses, customer service providers, and technology consultants. The platform offers flexible licensing models including:
 
 - **Small Business License**: For businesses with up to 50 customer service interactions per month
 - **Enterprise License**: For large-scale customer service operations with unlimited interactions
-- **White Label License**: For technology providers offering KaiT as part of their service portfolio
+- **White Label License**: For technology providers offering KAITY as part of their service portfolio
 - **Custom Integration License**: For businesses requiring custom integrations and modifications
 
 **License Contact:**
-- Business Development: hello@kait-platform.com
-- Enterprise Solutions: enterprise@kait-platform.com
-- Technology Partnerships: partners@kait-platform.com
+- Contact: info@helloworldai.com.au
 
 ### Third-Party Dependencies and Acknowledgments
 
@@ -1663,7 +1661,7 @@ KaiT is available under commercial licensing terms for businesses, customer serv
 ### Privacy Policy and Business Data Handling
 
 **Business Data Collection and Usage:**
-KaiT collects and processes business and customer data in accordance with applicable privacy laws including GDPR, CCPA, and regional privacy regulations. Data collection is limited to functionality essential for customer service automation, business intelligence generation, and platform operation.
+KAITY collects and processes business and customer data in accordance with applicable privacy laws including GDPR, CCPA, and regional privacy regulations. Data collection is limited to functionality essential for customer service automation, business intelligence generation, and platform operation.
 
 **Data Security Measures:**
 - End-to-end encryption for all business and customer communications
@@ -1682,16 +1680,16 @@ KaiT collects and processes business and customer data in accordance with applic
 **Document Control:**
 - Version: 1.0.0
 - Last Updated: 2024-08-19
-- Authors: KaiT Development Team
+- Authors: Clive Payton, Jarred Muller
 - Review Status: Approved for Commercial Release
 
 **Development Team Attribution:**
-- Lead Developer: Jarred Muller, James Cook University
-- Frontend Architect: [Vue.js Specialist]
-- Business Intelligence Engineer: [Analytics Expert]
-- UX/UI Designer: [Design Team Lead]
-- Quality Assurance: [QA Engineering Team]
+- Lead Developer: Clive Payton
+- Backend Systems: Jarred Muller
+- Frontend Architect: Clive Payton
+- Business Intelligence Engineer: Jarred Muller
+- UX/UI Designer: Clive Payton
 
 ---
 
-*This documentation represents the comprehensive technical and operational specification for the KaiT Customer Service and Business Intelligence Platform. For additional information, licensing enquiries, or partnership opportunities, please refer to the contact information provided above.*
+*This documentation represents the comprehensive technical and operational specification for the KAITY Customer Service and Business Intelligence Platform. For additional information, licensing enquiries, or partnership opportunities, please refer to the contact information provided above.*

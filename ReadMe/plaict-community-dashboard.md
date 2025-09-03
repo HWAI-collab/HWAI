@@ -8,9 +8,9 @@
 
 ## Abstract
 
-PLAICT (Platform for Local AI and Community Technology) represents a comprehensive community engagement analytics platform designed to support community organizations, local governments, and engagement initiatives through advanced data visualization, user interaction tracking, and community health metrics. Built upon Vue.js 3 architecture with Vite's optimized build system, the platform provides real-time insights into community participation patterns, demographic engagement trends, and organizational effectiveness metrics.
+PLAICT (Platform for Local AI and Community Technology) represents a comprehensive community engagement analytics platform designed to support community organizations, local governments, and engagement initiatives through advanced data visualization, user interaction tracking, and community health metrics. Built upon Vue.js 3 architecture with Vite's optimised build system, the platform provides real-time insights into community participation patterns, demographic engagement trends, and organizational effectiveness metrics.
 
-The system implements sophisticated analytics frameworks combining quantitative metrics with qualitative feedback mechanisms, enabling evidence-based decision making for community leaders. Through its modular dashboard design and customizable reporting capabilities, PLAICT addresses critical challenges in community development including resource allocation optimization, engagement measurement, and impact assessment, while maintaining adherence to privacy regulations and community data protection standards.
+The system implements sophisticated analytics frameworks combining quantitative metrics with qualitative feedback mechanisms, enabling evidence-based decision making for community leaders. Through its modular dashboard design and customizable reporting capabilities, PLAICT addresses critical challenges in community development including resource allocation optimisation, engagement measurement, and impact assessment, while maintaining adherence to privacy regulations and community data protection standards.
 
 ## Table of Contents
 
@@ -367,7 +367,7 @@ Organizations using PLAICT report:
 
 MIT License
 
-Copyright (c) 2024 PLAICT Development Team
+Copyright (c) 2024 Clive Payton, Jarred Muller
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -378,5 +378,5 @@ The above copyright notice and this permission notice shall be included in all c
 **Document Control:**
 - Version: 1.0.0
 - Last Updated: 2024-01-21
-- Authors: PLAICT Development Team
+- Authors: Clive Payton (Lead), Jarred Muller
 - Status: Production Ready
