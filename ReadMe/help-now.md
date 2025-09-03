@@ -1,5 +1,14 @@
 # Help-Now: AI-Enhanced Local Business Discovery Platform
 
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.4%2B-4FC08D.svg)](https://vuejs.org/)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-3178C6.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.1%2B-646CFF.svg)](https://vitejs.dev/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14%2B-orange.svg)](https://tensorflow.org/)
+[![Selenium](https://img.shields.io/badge/Selenium-4.15%2B-43B02A.svg)](https://selenium.dev/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
+[![AI](https://img.shields.io/badge/AI-Enhanced-purple.svg)](#machine-learning-framework)
+
 ## Abstract
 
 Help-Now is a comprehensive Vue.js 3 web application coupled with advanced Python-based web scraping infrastructure designed to revolutionise local business discovery and community service mapping. This platform integrates modern frontend technologies with sophisticated data harvesting capabilities to create an intelligent business directory that serves both consumers seeking services and businesses requiring digital visibility. The system employs machine learning-enhanced web scraping, optical character recognition (OCR), and automated data validation to maintain accurate, up-to-date business information across Australian localities.
