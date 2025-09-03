@@ -51,7 +51,7 @@ function getTechIcon(tech) {
         'FL Chart': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
         
         // Payment/APIs
-        'Stripe': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stripe/stripe-original.svg',
+        'Stripe': 'https://images.stripeassets.com/fzn2n1nzq965/HTTOloNPhisV9P4hlMPNA/cacf1bb88b9fc492dfad34378d844280/Stripe_icon_-_square.svg?q=80&w=1082',
         'Google APIs': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg',
         
         // Generic categories
