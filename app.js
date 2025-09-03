@@ -200,7 +200,7 @@ function createRepoCard(repo, readme) {
         ${readme.technologies && readme.technologies.length > 0 ? `
         <div class="technologies">
             ${readme.technologies.slice(0, 5).map(tech => 
-                `<span class="tech-badge" title="${tech}">${getTechIcon(tech)}</span>`
+                `<span class="tech-badge" title="${tech}">${getTechIcon(tech)} ${tech}</span>`
             ).join('')}
         </div>
         ` : ''}

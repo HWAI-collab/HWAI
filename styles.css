@@ -103,14 +103,15 @@ header::after {
 
 .header-content {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: var(--spacing-md);
 }
 
 .circle-logo {
-    height: 120px;
-    width: 120px;
+    height: auto;
+    width: 100px;
     flex-shrink: 0;
+    align-self: center;
 }
 
 .header-text {
@@ -286,22 +287,26 @@ main {
 .tech-badge {
     background: var(--card-background);
     border: 1px solid var(--border-color);
-    padding: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
     border-radius: var(--radius-md);
-    font-size: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
     box-shadow: var(--shadow-sm);
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
+    gap: var(--spacing-xs);
     transition: all 0.2s ease;
+    white-space: nowrap;
 }
 
 .tech-badge:hover {
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
     border-color: var(--accent-color);
+}
+
+.tech-badge i {
+    font-size: 1rem;
 }
 
 .tech-badge-large {
@@ -628,8 +633,8 @@ footer p {
     }
     
     .circle-logo {
-        height: 90px;
-        width: 90px;
+        width: 80px;
+        height: auto;
     }
     
     .brand-title {
