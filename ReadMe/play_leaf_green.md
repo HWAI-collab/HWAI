@@ -2,13 +2,13 @@
 
 [![Rust](https://img.shields.io/badge/rust-1.75%2B-orange.svg)](https://www.rust-lang.org/)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-purple.svg)](https://openai.com/)
+[![DeepSeek](https://img.shields.io/badge/DeepSeek-AI-purple.svg)](https://www.deepseek.com/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
 [![Research](https://img.shields.io/badge/research-AI%20Gaming-orange.svg)](#research-contributions)
 
 ## Abstract
 
-The Pokemon AI Agent represents an advanced autonomous game-playing system that combines high-performance Rust for emulator interaction and memory management with Python's rich AI ecosystem for decision-making. Building upon the foundational work from the Fire Red Agent project, this system demonstrates sophisticated memory-driven intelligence where game state is persistently tracked in a database, creating a contextual "diary" of the AI's experiences. The agent employs GPT-4 for strategic decision-making while maintaining the 250 most recent memories to inform future actions.
+The Pokemon AI Agent represents an advanced autonomous game-playing system that combines high-performance Rust for emulator interaction and memory management with Python's rich AI ecosystem for decision-making. Building upon the foundational work from the Fire Red Agent project, this system demonstrates sophisticated memory-driven intelligence where game state is persistently tracked in a database, creating a contextual "diary" of the AI's experiences. The agent employs DeepSeek's advanced language models for strategic decision-making while maintaining the 250 most recent memories to inform future actions.
 
 The architecture features a dual-language approach: Rust handles low-level memory reading, emulator control, and real-time input injection through RetroArch, while Python orchestrates the AI decision pipeline, database management, and LLM integration. This hybrid design achieves sub-100ms response times for game actions while maintaining sophisticated contextual understanding through screenshot-based OCR, pathfinding algorithms, and adaptive learning from action success/failure patterns. The system advances the field of AI game agents by demonstrating that modern LLMs can effectively play complex RPGs when provided with structured memory and context management.
 
@@ -75,7 +75,7 @@ pokemon_ai_agent/
    python_ai/
       agent.py             # Main AI orchestrator
       memory_db.py         # Experience database manager
-      llm_client.py        # OpenAI GPT-4 integration
+      llm_client.py        # DeepSeek API integration
       ocr_processor.py     # Screenshot text extraction
       decision_engine.py   # Action selection logic
    shared/
@@ -90,7 +90,7 @@ The AI integration implements a sophisticated pipeline:
 1. **Memory Reading**: Rust component extracts game state from RetroArch memory
 2. **Context Assembly**: Combining current state with 250 recent memories from database
 3. **Multimodal Processing**: OCR for text, screenshots for visual context, memory for state
-4. **LLM Decision**: GPT-4 processes structured data with frequency/presence penalties
+4. **LLM Decision**: DeepSeek processes structured data with frequency/presence penalties
 5. **Adaptive Execution**: Action execution with success/failure tracking for learning
 
 ### Memory Management Pipeline
@@ -147,7 +147,7 @@ class ExperienceMemory:
 |-----------|------------|---------|---------|  
 | **Systems Language** | Rust | 1.75+ | High-performance emulator interaction |
 | **AI Orchestration** | Python | 3.9+ | LLM integration and decision pipeline |
-| **AI Model** | GPT-4 | Latest | Strategic decision making |
+| **AI Model** | DeepSeek | Latest | Strategic decision making |
 | **Emulator** | RetroArch | 1.16+ | Game Boy Advance emulation |
 | **Memory DB** | SQLite | 3.x | Experience diary storage |
 | **OCR Engine** | Tesseract | 5.0+ | In-game text extraction |
@@ -186,7 +186,7 @@ pip install -r requirements.txt
 
 # Configure API keys
 cp .env.example .env
-# Edit .env and add your OpenAI API key
+# Edit .env and add your DeepSeek API key
 
 # Initialize memory database
 python python_ai/init_db.py
@@ -202,9 +202,9 @@ python python_ai/agent.py
 
 ```yaml
 # config.yaml
-openai:
-  api_key: ${OPENAI_API_KEY}
-  model: gpt-4-turbo-preview
+deepseek:
+  api_key: ${DEEPSEEK_API_KEY}
+  model: deepseek-chat
   temperature: 0.7
   max_tokens: 200
   frequency_penalty: 0.5  # Prevent repetitive actions
@@ -290,7 +290,7 @@ GET /api/state/inventory
 - **CPU Usage**: 8% Rust core, 12% Python orchestrator
 - **Memory Usage**: 256MB Rust, 512MB Python
 - **Database Size**: ~50MB per 10,000 actions
-- **Network Bandwidth**: 2KB/s average to OpenAI API
+- **Network Bandwidth**: 2KB/s average to DeepSeek API
 
 ## Future Developments
 
