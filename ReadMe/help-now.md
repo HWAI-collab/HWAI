@@ -1,378 +1,223 @@
-# Help-Now: AI-Enhanced Local Business Discovery Platform
+# HelpNow: Comprehensive Emergency Response and Community Support Platform
 
-[![Vue.js](https://img.shields.io/badge/Vue.js-3.4%2B-4FC08D.svg)](https://vuejs.org/)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0%2B-3178C6.svg)](https://www.typescriptlang.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.1%2B-646CFF.svg)](https://vitejs.dev/)
-[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.14%2B-orange.svg)](https://tensorflow.org/)
-[![Selenium](https://img.shields.io/badge/Selenium-4.15%2B-43B02A.svg)](https://selenium.dev/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](#license)
-[![AI](https://img.shields.io/badge/AI-Enhanced-purple.svg)](#machine-learning-framework)
+[![React](https://img.shields.io/badge/React-18.2%2B-61DAFB.svg)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20.18%2B-339933.svg)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.18%2B-000000.svg)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-7.0%2B-47A248.svg)](https://mongodb.com/)
+[![Flutter](https://img.shields.io/badge/Flutter-3.10%2B-02569B.svg)](https://flutter.dev/)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](#license)
 
 ## Abstract
 
-Help-Now is a comprehensive Vue.js 3 web application coupled with advanced Python-based web scraping infrastructure designed to revolutionise local business discovery and community service mapping. This platform integrates modern frontend technologies with sophisticated data harvesting capabilities to create an intelligent business directory that serves both consumers seeking services and businesses requiring digital visibility. The system employs machine learning-enhanced web scraping, optical character recognition (OCR), and automated data validation to maintain accurate, up-to-date business information across Australian localities.
+HelpNow represents an innovative, AI-enhanced emergency response and community support platform engineered to revolutionise crisis management, resource coordination, and community assistance delivery. Built upon modern full-stack architecture combining React frontend, Node.js/Express backend, and MongoDB data persistence, the platform delivers comprehensive emergency response coordination, resource management, real-time communication, and community support capabilities designed for emergency services, community organisations, and crisis response teams.
+
+The system integrates advanced artificial intelligence capabilities including intelligent resource allocation, predictive crisis modelling, automated response coordination, and real-time situation assessment. Through its modular architecture combining emergency response management, community resource coordination, volunteer management systems, and real-time communication platforms, HelpNow establishes itself as an essential solution for emergency services and community organisations seeking to enhance response effectiveness, resource utilisation, and community resilience whilst maintaining the highest standards of security and reliability for critical emergency situations.
+
+## Table of Contents
+
+- [Abstract](#abstract)
+- [Executive Summary](#executive-summary)
+  - [Strategic Vision and Emergency Response Objectives](#strategic-vision-and-emergency-response-objectives)
+  - [Key Stakeholders](#key-stakeholders)
+  - [Value Proposition and Community Impact](#value-proposition-and-community-impact)
+- [System Architecture](#system-architecture)
+  - [Comprehensive Platform Architecture](#comprehensive-platform-architecture)
+  - [AI-Enhanced Emergency Response Framework](#ai-enhanced-emergency-response-framework)
+  - [Multi-Platform Integration Design](#multi-platform-integration-design)
+- [Core Technologies](#core-technologies)
+- [Emergency Response Modules](#emergency-response-modules)
+  - [Crisis Management System](#crisis-management-system)
+  - [Resource Coordination Platform](#resource-coordination-platform)
+  - [Volunteer Management Framework](#volunteer-management-framework)
+  - [Communication and Coordination Hub](#communication-and-coordination-hub)
+  - [Analytics and Reporting System](#analytics-and-reporting-system)
+- [Installation & Deployment](#installation--deployment)
+- [API Documentation](#api-documentation)
+- [Database Architecture](#database-architecture)
+- [AI Integration Framework](#ai-integration-framework)
+- [Security & Compliance](#security--compliance)
+- [Performance Optimisation](#performance-optimisation)
+- [Testing & Quality Assurance](#testing--quality-assurance)
+- [Development Guidelines](#development-guidelines)
+- [Contributing Guidelines](#contributing-guidelines)
+- [License](#license)
+
+## Executive Summary
+
+### Strategic Vision and Emergency Response Objectives
+
+HelpNow addresses critical challenges in emergency response and community support delivery through comprehensive digital transformation and intelligent automation. The platform's strategic emergency response objectives encompass:
+
+- **Rapid Crisis Response**: Enhancement of emergency detection, assessment, and response coordination through intelligent automation and real-time communication systems
+- **Resource Optimisation**: Development of comprehensive resource tracking, allocation, and utilisation systems ensuring efficient deployment during emergency situations
+- **Community Resilience**: Streamlined volunteer coordination, community engagement, and mutual aid networks fostering stronger community preparedness and response capabilities
+- **Data-Driven Decision Making**: AI-powered analytics enabling evidence-based resource allocation, response strategy optimisation, and continuous improvement in emergency management
+- **Interagency Coordination**: Automated coordination systems ensuring seamless collaboration between emergency services, community organisations, and government agencies
+
+### Key Stakeholders
+
+**Primary Emergency Response Stakeholders:**
+- Emergency services personnel (Police, Fire, Ambulance, SES) coordinating crisis response
+- Emergency management coordinators overseeing multi-agency response operations
+- Community support workers providing direct assistance to affected individuals and families
+- Volunteer coordinators managing volunteer deployment and resource allocation
+- Crisis counsellors and mental health professionals providing psychological support
+
+**Secondary Stakeholders:**
+- Government emergency management agencies overseeing regional response coordination
+- Community organisations providing specialised support services and resources
+- Healthcare facilities and medical professionals supporting emergency response efforts
+- Educational institutions serving as emergency shelters and community coordination centres
+- Local businesses and community groups contributing resources and volunteer support
+
+### Value Proposition and Community Impact
+
+HelpNow delivers measurable emergency response and community value through:
+
+- **Response Time Reduction**: Systematic improvement in emergency detection, assessment, and initial response times through automated coordination and intelligent resource allocation
+- **Resource Efficiency**: Optimisation of resource utilisation reducing waste and ensuring critical resources reach those most in need during emergency situations
+- **Community Preparedness**: Enhanced community resilience through volunteer training, resource pre-positioning, and coordinated preparedness planning
+- **Coordination Excellence**: Improved inter-agency communication and coordination reducing duplication of effort and ensuring comprehensive emergency coverage
+- **Evidence-Based Improvement**: Advanced analytics enabling data-driven emergency management planning, resource allocation, and strategic decision making
 
 ## System Architecture
 
-```mermaid
-graph TB
-    subgraph "Frontend Layer"
-        A[Vue.js 3 SPA] --> B[Pinia State Management]
-        A --> C[Vue Router]
-        A --> D[Tailwind CSS Styling]
-        A --> E[TypeScript Support]
-    end
+### Comprehensive Platform Architecture
+
+The HelpNow platform implements a sophisticated microservices architecture optimised for emergency response environments, combining web-based management systems with mobile field applications.
+
+### AI-Enhanced Emergency Response Framework
+
+```javascript
+// Core AI-enhanced emergency response service
+class IntelligentEmergencyManager {
+  constructor() {
+    this.crisisAssessmentEngine = new CrisisAssessmentAnalyzer()
+    this.resourceAllocationService = new AIResourceAllocator()
+    this.responseCoordinationService = new ResponseCoordinationEngine()
+    this.communicationAnalyzer = new CommunicationAnalysisEngine()
+  }
+  
+  async assessEmergencySituation(emergencyData, contextualInformation) {
+    const situationAnalysis = await this.crisisAssessmentEngine.analyzeSituation({
+      emergency_type: emergencyData.emergency_type,
+      affected_area: emergencyData.geographic_scope,
+      population_impact: emergencyData.population_affected,
+      infrastructure_damage: emergencyData.infrastructure_assessment,
+      environmental_factors: contextualInformation.environmental_conditions
+    })
     
-    subgraph "Data Processing Layer"
-        F[Enhanced Business Scraper] --> G[Selenium WebDriver]
-        F --> H[BeautifulSoup Parser]
-        F --> I[OCR Engine - Tesseract]
-        F --> J[Hugging Face Transformers]
-    end
-    
-    subgraph "Data Storage"
-        K[Business Database] --> L[Scraped Content]
-        K --> M[Image Assets]
-        K --> N[Metadata Store]
-    end
-    
-    subgraph "Quality Assurance"
-        O[Automated Testing] --> P[Cypress E2E]
-        O --> Q[Vitest Unit Tests]
-        O --> R[TypeScript Validation]
-    end
-    
-    A --> F
-    F --> K
-    O --> A
-    F --> O
+    return {
+      situation_assessment: situationAnalysis,
+      resource_requirements: await this.calculateResourceNeeds(situationAnalysis),
+      response_strategy: await this.generateResponseStrategy(situationAnalysis),
+      coordination_plan: await this.generateCoordinationPlan(situationAnalysis)
+    }
+  }
+}
 ```
 
 ## Core Technologies
 
-### Frontend Stack
-- **Vue.js 3.4**: Composition API with `<script setup>` syntax for reactive user interfaces
-- **TypeScript**: Full type safety across components and business logic
-- **Vite 6.1**: High-performance build tooling with hot module replacement
-- **Pinia 3.0**: Modern state management with TypeScript support
-- **Tailwind CSS 3.4**: Utility-first styling framework with responsive design
-- **Vue Router**: Client-side routing for single-page application navigation
+| Technology | Version | Justification | License |
+|------------|---------|---------------|---------|
+| **React** | 18.2+ | Modern frontend framework with hooks and context for state management | MIT License |
+| **Node.js** | 20.18+ | Server-side JavaScript runtime optimised for real-time applications | MIT License |
+| **Express** | 4.18+ | Minimal web framework for building robust APIs and web services | MIT License |
+| **MongoDB** | 7.0+ | Document database ideal for flexible emergency data structures | SSPL |
+| **Mongoose** | 8.0+ | Object Document Mapper for MongoDB with schema validation | MIT License |
+| **Socket.io** | 4.7+ | Real-time bidirectional communication for emergency coordination | MIT License |
+| **Flutter** | 3.10+ | Cross-platform mobile framework for field response applications | BSD 3-Clause |
+| **Material-UI** | 5.14+ | React component library for consistent emergency interface design | MIT License |
+| **Redux Toolkit** | 1.9+ | Predictable state container for complex emergency data management | MIT License |
+| **Axios** | 1.5+ | HTTP client for API communication with robust error handling | MIT License |
 
-### Data Harvesting Infrastructure
-- **Selenium WebDriver**: JavaScript-enabled web scraping with Chrome automation
-- **BeautifulSoup**: HTML/XML parsing and DOM manipulation
-- **Tesseract OCR**: Optical character recognition for image-based content extraction
-- **Hugging Face Transformers**: Natural language processing for content analysis
-- **PIL (Python Imaging Library)**: Image processing and optimisation
-- **Concurrent Futures**: Parallel processing for high-performance scraping
+## Emergency Response Modules
 
-### Testing & Quality Assurance
-- **Cypress**: End-to-end testing framework with visual debugging
-- **Vitest**: Unit testing with Vue.js component support
-- **TypeScript Compiler**: Static type checking and validation
-- **Vue Test Utils**: Component testing utilities
+### Crisis Management System
 
-## Feature Specifications
+The Crisis Management System provides end-to-end emergency response coordination for crisis situations with AI-assisted emergency situation assessment, intelligent resource allocation, predictive crisis modelling, and automated response coordination.
 
-### 1. Business Discovery Interface
+### Resource Coordination Platform
 
-**Primary Components:**
-- Responsive business listing interface with infinite scroll
-- Advanced filtering system (location, category, rating, hours)
-- Interactive map integration with geolocation services
-- Real-time search with fuzzy matching algorithms
-- Mobile-first responsive design with touch optimisation
+Comprehensive resource management framework featuring inventory management with real-time tracking, automated allocation through AI-driven resource matching, logistics coordination with transportation planning, cross-agency sharing protocols, and performance analytics for continuous improvement.
 
-**Implementation Details:**
-```typescript
-// Business search component with reactive filtering
-import { ref, computed, watch } from 'vue'
-import { useBusinessStore } from '@/stores/business'
+### Volunteer Management Framework
 
-export interface BusinessFilter {
-  location: string
-  category: string
-  radius: number
-  isOpen: boolean
-}
+AI-powered volunteer matching based on skills, availability, and location, comprehensive training coordination, deployment management with safety protocols, wellness monitoring for high-stress situations, and recognition systems for sustained community engagement.
 
-const businessStore = useBusinessStore()
-const filters = ref<BusinessFilter>({
-  location: '',
-  category: '',
-  radius: 5,
-  isOpen: false
-})
+## Installation & Deployment
 
-const filteredBusinesses = computed(() => 
-  businessStore.filterBusinesses(filters.value)
-)
+### Prerequisites and Environment Setup
+
+```bash
+# Node.js and Package Manager Requirements
+node --version    # Requires Node.js 20.18.0+
+npm --version     # Requires npm 10+
+
+# Database Requirements
+mongod --version  # MongoDB 7.0+ required
+
+# Clone repository and setup development environment
+git clone https://github.com/HWAI-collab/HelpNow.git
+cd HelpNow
+
+# Backend setup
+cd HelpNowBackEnd
+npm install
+
+# Frontend setup
+cd ../HelpNowFrontEnd
+npm install
+
+# Platform setup
+cd ../helpnow-platform
+npm install
+
+# Flutter mobile app setup
+cd ../mobile-app
+flutter pub get
 ```
-
-### 2. Enhanced Web Scraping Engine
-
-**Core Capabilities:**
-- Multi-threaded scraping with configurable concurrency limits
-- JavaScript-rendered content extraction using Selenium
-- Image-based content analysis through OCR processing
-- Intelligent retry mechanisms with exponential backoff
-- Data validation and cleansing pipelines
-
-**Scraper Architecture:**
-```python
-class EnhancedBusinessScraper:
-    def __init__(self, business_name=None, use_selenium=True, use_ocr=True):
-        self.business_name = business_name
-        self.use_selenium = use_selenium
-        self.use_ocr = use_ocr
-        self.setup_webdriver()
-        self.initialize_nlp_pipeline()
-    
-    async def scrape_business_data(self, url: str) -> BusinessData:
-        """
-        Comprehensive business data extraction with multiple fallback methods
-        """
-        content = await self.extract_html_content(url)
-        images = await self.extract_and_process_images(url)
-        ocr_text = await self.process_images_with_ocr(images)
-        
-        return self.merge_and_validate_data(content, ocr_text)
-```
-
-### 3. Machine Learning Integration
-
-**Natural Language Processing:**
-- Business description extraction using transformer models
-- Sentiment analysis for review processing
-- Named entity recognition for contact information
-- Classification of business categories and services
-
-**Computer Vision Applications:**
-- Logo detection and brand recognition
-- Menu/price list extraction from images
-- Opening hours extraction from signage
-- Quality assessment of business imagery
 
 ## API Documentation
 
-### Business Data Model
-```typescript
-interface BusinessEntity {
-  id: string
-  name: string
-  description: string
-  category: BusinessCategory
-  location: {
-    address: string
-    coordinates: {
-      latitude: number
-      longitude: number
-    }
-    suburb: string
-    state: string
-    postcode: string
-  }
-  contact: {
-    phone?: string
-    email?: string
-    website?: string
-    socialMedia: SocialMediaLinks
-  }
-  operatingHours: OperatingHours[]
-  rating: number
-  reviews: Review[]
-  imagery: BusinessImage[]
-  lastUpdated: Date
-  verificationStatus: VerificationLevel
-}
-```
+### Emergency Management API
 
-### Data Scraping Endpoints
-```python
-# Web scraping service API
-class ScrapingService:
-    @route('/api/scrape/business')
-    async def scrape_business(self, request: ScrapeRequest) -> ScrapeResponse:
-        """Extract comprehensive business data from provided URLs"""
-        
-    @route('/api/scrape/validate')
-    async def validate_business_data(self, data: BusinessData) -> ValidationResult:
-        """Validate and enrich scraped business information"""
-        
-    @route('/api/scrape/images')
-    async def process_business_images(self, image_urls: List[str]) -> ImageProcessingResult:
-        """Extract text and metadata from business imagery"""
-```
+Core emergency operations including emergency declaration with AI-powered situation analysis, resource allocation with intelligent matching and deployment, response coordination with multi-agency task assignment, communication management with centralised messaging hub, and situation monitoring with real-time assessment and automated alerts.
 
-## Development Workflow
+### Resource Coordination API
 
-### Local Development Setup
-```bash
-# Frontend development
-cd my-vue-app
-npm install
-npm run dev
+Resource management endpoints featuring AI-powered resource allocation, real-time deployment status tracking, logistics coordination planning, cross-agency resource sharing protocols, and performance analytics for utilisation optimisation.
 
-# Backend scraping service
-cd web_scrape
-python -m venv venv
-source venv/bin/activate  # Linux/macOS
-pip install -r requirements.txt
-python scraper.py
-```
+## Security & Compliance
 
-### Testing Strategy
-```bash
-# Unit testing
-npm run test:unit
+### Comprehensive Security Framework
 
-# End-to-end testing
-npm run test:e2e:dev
+Multi-layered emergency services security including enhanced authentication for emergency personnel, role-based access control with emergency override capabilities, emergency data protection with crisis-appropriate access controls, comprehensive audit logging for accountability, and security incident response for emergency environments.
 
-# Type checking
-npm run type-check
+## Development Guidelines
 
-# Production build validation
-npm run build
-npm run test:e2e
-```
+### Emergency Services Development Standards
 
-### Code Quality Standards
-- **TypeScript Strict Mode**: Enforced type safety across all components
-- **ESLint + Prettier**: Automated code formatting and style enforcement
-- **Cypress Testing**: Comprehensive E2E test coverage for user workflows
-- **Component Testing**: Unit tests for all Vue components and composables
+Crisis-responsive development principles prioritising reliability first, speed and efficiency for critical response times, scalability for surge capacity, interoperability with existing infrastructure, resilience with robust failover mechanisms, and accessibility for diverse users under stress.
 
-## Security & Privacy Framework
+## License
 
-### Data Protection Measures
-- **GDPR Compliance**: User consent management for data processing
-- **Rate Limiting**: API protection against excessive requests
-- **Input Sanitisation**: XSS and injection attack prevention
-- **Secure Headers**: CSP, HSTS, and security header implementation
+**Proprietary License**
 
-### Web Scraping Ethics
-- **Robots.txt Compliance**: Respectful scraping practices
-- **Request Throttling**: Configurable delays between requests
-- **User-Agent Identification**: Transparent bot identification
-- **Data Minimisation**: Collection of only necessary business information
+Copyright (c) 2024 Jarred Muller, Clive Payton. All rights reserved.
 
-## Performance Optimisation
+This software and associated documentation files are proprietary and confidential. 
+No part of this software may be reproduced, distributed, or transmitted in any form 
+or by any means, including photocopying, recording, or other electronic or mechanical 
+methods, without the prior written permission of the copyright holders.
 
-### Frontend Performance
-- **Code Splitting**: Dynamic imports for route-based chunking
-- **Image Optimisation**: WebP format with responsive sizing
-- **Caching Strategy**: Service worker implementation for offline capability
-- **Bundle Analysis**: Regular monitoring of build size and dependencies
+Unauthorised copying, modification, distribution, or use of this software, 
+via any medium, is strictly prohibited and will be prosecuted to the fullest 
+extent of the law.
 
-### Scraping Performance
-- **Concurrent Processing**: Parallel request handling with ThreadPoolExecutor
-- **Intelligent Caching**: Redis-based result caching for repeated requests
-- **Resource Monitoring**: Memory and CPU usage optimisation
-- **Error Recovery**: Robust retry mechanisms with circuit breaker patterns
-
-## Deployment Architecture
-
-### Production Environment
-```yaml
-# Docker containerisation
-services:
-  frontend:
-    build: ./my-vue-app
-    ports:
-      - "80:80"
-    environment:
-      - NODE_ENV=production
-      
-  scraper:
-    build: ./web_scrape
-    environment:
-      - PYTHON_ENV=production
-      - SELENIUM_GRID_URL=http://selenium:4444
-      
-  selenium:
-    image: selenium/standalone-chrome:latest
-    shm_size: 2gb
-```
-
-### Continuous Integration
-- **GitHub Actions**: Automated testing and deployment pipelines
-- **Quality Gates**: Test coverage requirements and performance benchmarks
-- **Environment Promotion**: Staging to production deployment validation
-- **Monitoring Integration**: Application performance monitoring setup
-
-## Research Applications
-
-### Community Service Mapping
-- **Local Business Ecosystem Analysis**: Understanding service distribution patterns
-- **Digital Divide Research**: Measuring business digital presence gaps
-- **Economic Development Insights**: Tracking business growth and decline trends
-- **Accessibility Mapping**: Identifying service accessibility for different demographics
-
-### Data Science Applications
-- **Business Intelligence**: Predictive analytics for market trends
-- **Recommendation Systems**: ML-powered business suggestions
-- **Sentiment Analysis**: Community satisfaction with local services
-- **Geospatial Analytics**: Location-based service optimisation
-
-## Educational Integration
-
-### Learning Outcomes
-- **Full-Stack Development**: Modern web application architecture
-- **Data Engineering**: ETL pipelines and data processing workflows
-- **Machine Learning**: Practical NLP and computer vision applications
-- **Software Engineering**: Testing, deployment, and maintenance practices
-
-### Research Extensions
-- **Advanced ML Models**: Custom business classification algorithms
-- **Real-Time Processing**: WebSocket-based live data updates
-- **Mobile Applications**: React Native or Flutter companion apps
-- **API Integration**: Third-party service provider connections
-
-## Contributing Guidelines
-
-### Development Standards
-- **Git Workflow**: Feature branch development with pull request reviews
-- **Documentation**: Comprehensive JSDoc comments for all public APIs
-- **Testing Requirements**: 80% minimum test coverage for new features
-- **Performance Benchmarks**: Response time and memory usage monitoring
-
-### Community Contributions
-- **Issue Templates**: Structured bug reports and feature requests
-- **Code Reviews**: Collaborative development practices
-- **Documentation Updates**: Community-driven knowledge base maintenance
-- **Extension Development**: Plugin architecture for custom features
-
-## License & Attribution
-
-**License**: MIT License - Open source software for community benefit
-
-**Third-Party Acknowledgements**:
-- Vue.js Team for reactive framework architecture
-- Selenium Contributors for web automation capabilities
-- Tesseract OCR Community for optical character recognition
-- Hugging Face for transformer model ecosystem
-
-## Project Roadmap
-
-### Phase 1: Foundation (Current)
-- ✅ Vue.js 3 application scaffolding
-- ✅ TypeScript integration and configuration
-- ✅ Advanced web scraping infrastructure
-- ✅ OCR and ML pipeline implementation
-
-### Phase 2: Enhancement
-- 🔄 Real-time data synchronisation
-- 🔄 Advanced search and filtering
-- 🔄 Mobile application development
-- 🔄 API marketplace integration
-
-### Phase 3: Intelligence
-- 📋 Machine learning recommendations
-- 📋 Predictive business analytics
-- 📋 Community feedback integration
-- 📋 Automated content moderation
+**Commercial Licensing:**
+For licensing enquiries, please contact: info@helloworldai.com.au
 
 ---
 
@@ -381,9 +226,13 @@ services:
 **Technical Attribution:**
 - Lead Developer: Jarred Muller
 - Frontend Developer: Clive Payton
-- Data Engineer: Jarred Muller
-- Web Scraping Specialist: Jarred Muller
+- Backend Engineer: Jarred Muller
+- AI/ML Engineer: Jarred Muller
+- Mobile App Developer: Clive Payton
+- Database Engineer: Jarred Muller
 
 **Contact:** info@helloworldai.com.au
 
-*© 2025 Help-Now Platform. Developed for community service discovery and local business support across Australian markets.*
+---
+
+**Important Notice:** This platform is designed to support emergency response operations that may involve life-critical decisions. All users, developers, and stakeholders must prioritise public safety, system reliability, and emergency response effectiveness in all interactions with this system. While this technology can enhance emergency response capabilities, it should complement, not replace, established emergency protocols and professional emergency management practices.

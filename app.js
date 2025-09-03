@@ -115,7 +115,7 @@ async function loadLocalRepositories() {
     
     try {
         // Fetch local repository data
-        const response = await fetch('data/repositories.json');
+        const response = await fetch('data/repositories.json?v=' + Date.now());
         
         if (!response.ok) {
             throw new Error('Failed to load repository data');

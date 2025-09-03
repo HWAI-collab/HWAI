@@ -170,41 +170,43 @@
     },
     {
       "name": "help-now",
-      "title": "Help-Now: AI-Enhanced Local Business Discovery",
-      "category": "web-applications",
-      "description": "A Vue.js 3 web application with Python-based web scraping for local business discovery and community service mapping. Features ML-enhanced web scraping, OCR, and automated data validation.",
+      "title": "HelpNow: Comprehensive Emergency Response and Community Support Platform",
+      "category": "emergency-systems",
+      "description": "An innovative, AI-enhanced emergency response and community support platform engineered to revolutionise crisis management, resource coordination, and community assistance delivery. Built with React, Node.js, Express, MongoDB, and Flutter for comprehensive emergency response coordination.",
       "topics": [
-        "business-discovery",
-        "web-scraping",
-        "vue-js",
-        "machine-learning",
-        "community-services"
+        "emergency-response",
+        "crisis-management",
+        "community-support",
+        "ai-coordination",
+        "resource-management",
+        "volunteer-management"
       ],
       "url": "https://github.com/HWAI-collab/help-now",
       "stars": 10,
       "forks": 3,
       "language": "JavaScript",
       "technologies": [
-        "Vue.js 3",
-        "Python",
-        "BeautifulSoup",
-        "OCR",
-        "ML"
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Flutter",
+        "Socket.io"
       ],
       "sections": [
-        "Web Scraping Engine",
-        "Business Classification",
-        "Community Service Mapping",
-        "Data Validation Pipeline",
-        "User Interface"
+        "Crisis Management System",
+        "Resource Coordination Platform", 
+        "Volunteer Management Framework",
+        "Communication and Coordination Hub",
+        "Analytics and Reporting System"
       ],
-      "abstract": "Help-Now is an AI-enhanced platform for discovering local businesses and community services. It combines Vue.js 3 frontend with Python-based intelligent web scraping, utilizing machine learning for business classification and OCR for extracting information from images. Features automated data validation and community service mapping.",
+      "abstract": "HelpNow represents an innovative, AI-enhanced emergency response and community support platform engineered to revolutionise crisis management, resource coordination, and community assistance delivery. Built upon modern full-stack architecture combining React frontend, Node.js/Express backend, and MongoDB data persistence, the platform delivers comprehensive emergency response coordination designed for emergency services, community organisations, and crisis response teams.",
       "highlights": [
-        "ML-enhanced web scraping",
-        "OCR for image text extraction",
-        "Automated business classification",
-        "Community service database",
-        "Real-time data validation"
+        "Rapid crisis response with intelligent automation",
+        "AI-powered resource allocation and optimisation",
+        "Real-time volunteer coordination and deployment",
+        "Interagency communication and coordination systems",
+        "Evidence-based analytics for emergency management"
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Web-Development/help-now/README.md",
