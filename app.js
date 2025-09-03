@@ -2,6 +2,79 @@
 let allRepos = [];
 let readmeCache = {};
 
+// Technology icon mapping
+function getTechIcon(tech) {
+    const techIcons = {
+        'Vue.js': '🔷',
+        'Vue': '🔷',
+        'React': '⚛️',
+        'Angular': '🔺',
+        'JavaScript': '🟨',
+        'TypeScript': '🔷',
+        'Python': '🐍',
+        'Java': '☕',
+        'C#': '🔷',
+        'PHP': '🐘',
+        'Ruby': '💎',
+        'Go': '🐹',
+        'Rust': '🦀',
+        'Swift': '🧡',
+        'Kotlin': '💜',
+        'Flutter': '💙',
+        'React Native': '📱',
+        'Node.js': '🟢',
+        'Express': '🚂',
+        'Django': '🎸',
+        'Flask': '🌶️',
+        'FastAPI': '⚡',
+        'Spring': '🍃',
+        'Laravel': '🎨',
+        'Rails': '🛤️',
+        'MongoDB': '🍃',
+        'PostgreSQL': '🐘',
+        'MySQL': '🐬',
+        'Redis': '🔴',
+        'Docker': '🐳',
+        'Kubernetes': '⚙️',
+        'AWS': '☁️',
+        'Azure': '☁️',
+        'GCP': '☁️',
+        'Firebase': '🔥',
+        'Supabase': '⚡',
+        'Git': '📦',
+        'GitHub': '🐙',
+        'Tailwind': '💨',
+        'CSS': '🎨',
+        'HTML': '🌐',
+        'Vite': '⚡',
+        'Webpack': '📦',
+        'Nuxt': '💚',
+        'Next.js': '▲',
+        'TensorFlow': '🧠',
+        'PyTorch': '🔥',
+        'OpenCV': '👁️',
+        'Scikit-learn': '🤖',
+        'Pandas': '🐼',
+        'NumPy': '🔢',
+        'Matplotlib': '📊',
+        'Jupyter': '📓',
+        'API': '🔌',
+        'REST': '🔗',
+        'GraphQL': '📊',
+        'WebSocket': '🔌',
+        'OAuth': '🔐',
+        'JWT': '🎫',
+        'Selenium': '🤖',
+        'Cypress': '🌲',
+        'Jest': '🃏',
+        'Vitest': '⚡',
+        'ESLint': '🔧',
+        'Prettier': '✨'
+    };
+    
+    return techIcons[tech] || '🔧';
+}
+
 // Initialize the application
 document.addEventListener('DOMContentLoaded', init);
 
@@ -136,7 +209,7 @@ function createRepoCard(repo, readme) {
         ${readme.technologies && readme.technologies.length > 0 ? `
         <div class="technologies">
             ${readme.technologies.slice(0, 5).map(tech => 
-                `<span class="tech-badge">${tech}</span>`
+                `<span class="tech-badge" title="${tech}">${getTechIcon(tech)}</span>`
             ).join('')}
         </div>
         ` : ''}

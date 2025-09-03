@@ -130,20 +130,6 @@ header h1 {
     margin: 0;
 }
 
-.terminal-cursor {
-    position: relative;
-}
-
-.terminal-cursor::after {
-    content: '_';
-    animation: blink 1s infinite;
-    color: var(--accent-color);
-}
-
-@keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
-}
 
 /* Professional Navigation */
 nav {
@@ -214,6 +200,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     gap: var(--spacing-2xl);
     margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-3xl);
     padding: 0;
 }
 
@@ -338,7 +325,7 @@ main {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: var(--accent-color);
     color: white;
     border: none;
     padding: var(--spacing-sm) var(--spacing-md);
