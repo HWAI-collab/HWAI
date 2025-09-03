@@ -2,69 +2,62 @@
 let allRepos = [];
 let readmeCache = {};
 
-// Technology icon mapping with nice emojis
+// Technology icon mapping using Devicon CDN
 function getTechIcon(tech) {
     const techIcons = {
-        'Vue.js': '💚',
-        'Vue': '💚',
-        'React': '⚛️',
-        'Angular': '🔺',
-        'JavaScript': '🟡',
-        'TypeScript': '🔷',
-        'Python': '🐍',
-        'Java': '☕',
-        'C#': '💙',
-        'PHP': '🐘',
-        'Ruby': '💎',
-        'Go': '🔷',
-        'Rust': '🦀',
-        'Swift': '🧡',
-        'Kotlin': '💜',
-        'Flutter': '💙',
-        'React Native': '📱',
-        'Node.js': '🟢',
-        'Express': '⚡',
-        'Django': '🎸',
-        'Flask': '🌶️',
-        'FastAPI': '⚡',
-        'Spring': '🍃',
-        'Laravel': '🎨',
-        'Rails': '🛤️',
-        'MongoDB': '🍃',
-        'PostgreSQL': '🐘',
-        'MySQL': '🐬',
-        'Redis': '🔴',
-        'Docker': '🐳',
-        'Kubernetes': '⚙️',
-        'AWS': '☁️',
-        'Azure': '☁️',
-        'GCP': '☁️',
-        'Firebase': '🔥',
-        'Supabase': '⚡',
-        'Git': '📦',
-        'GitHub': '🐙',
-        'Tailwind': '💨',
-        'CSS': '🎨',
-        'HTML': '🌐',
-        'Vite': '⚡',
-        'Webpack': '📦',
-        'Nuxt': '💚',
-        'Next.js': '▲',
-        'TensorFlow': '🧠',
-        'PyTorch': '🔥',
-        'OpenCV': '👁️',
-        'Scikit-learn': '🤖',
-        'Pandas': '🐼',
-        'NumPy': '🔢',
-        'Matplotlib': '📊',
-        'Jupyter': '📓',
-        'Selenium': '🤖',
-        'Jest': '🃏',
-        'ESLint': '🔧',
-        'Prettier': '✨'
+        'Vue.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+        'Vue': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
+        'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        'Angular': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
+        'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
+        'TypeScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+        'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
+        'Java': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
+        'C#': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+        'PHP': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+        'Ruby': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg',
+        'Go': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg',
+        'Rust': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
+        'Swift': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg',
+        'Kotlin': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
+        'Flutter': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
+        'React Native': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+        'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+        'Express': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
+        'Django': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg',
+        'Flask': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
+        'FastAPI': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg',
+        'Spring': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg',
+        'Laravel': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg',
+        'Rails': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg',
+        'MongoDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
+        'PostgreSQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+        'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+        'Redis': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg',
+        'Docker': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+        'Kubernetes': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg',
+        'AWS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg',
+        'Azure': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
+        'GCP': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
+        'Firebase': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+        'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
+        'GitHub': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg',
+        'Tailwind': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
+        'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
+        'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
+        'Vite': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg',
+        'Webpack': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg',
+        'Nuxt': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg',
+        'Next.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+        'TensorFlow': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+        'PyTorch': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
+        'Pandas': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg',
+        'NumPy': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg',
+        'Jupyter': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg',
+        'Jest': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg'
     };
     
-    return techIcons[tech] || '🔧';
+    return techIcons[tech] || 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg';
 }
 
 // Initialize the application
@@ -201,7 +194,7 @@ function createRepoCard(repo, readme) {
         ${readme.technologies && readme.technologies.length > 0 ? `
         <div class="technologies">
             ${readme.technologies.slice(0, 5).map(tech => 
-                `<span class="tech-badge">${getTechIcon(tech)} ${tech}</span>`
+                `<span class="tech-badge"><img src="${getTechIcon(tech)}" alt="${tech}" class="tech-icon"> ${tech}</span>`
             ).join('')}
         </div>
         ` : ''}

@@ -330,6 +330,12 @@ main {
     filter: brightness(110%);
 }
 
+.tech-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0) invert(1);
+}
+
 .tech-badge-large {
     background: var(--card-hover);
     color: var(--text-primary);
