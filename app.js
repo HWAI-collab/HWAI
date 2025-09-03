@@ -793,6 +793,12 @@ function generateReadmeContent(repo, readme) {
 
 // GitHub-flavored markdown parser
 function parseMarkdownToHTML(markdown) {
+    // Pre-process mermaid diagrams before marked.js processes them
+    let processedMarkdown = markdown.replace(/```mermaid\s*([\s\S]*?)```/g, function(match, diagram) {
+        const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
+        return `<div class="mermaid-diagram" id="${id}">${diagram.trim()}</div>`;
+    });
+    
     // Configure marked for GitHub-flavored markdown
     marked.setOptions({
         breaks: true,
@@ -800,17 +806,19 @@ function parseMarkdownToHTML(markdown) {
         tables: true,
         sanitize: false,
         highlight: function(code, language) {
+            if (language === 'mermaid') {
+                const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
+                return `</code></pre><div class="mermaid-diagram" id="${id}">${code}</div><pre><code>`;
+            }
             return `<code class="language-${language || 'text'}">${code}</code>`;
         }
     });
     
-    let html = marked.parse(markdown);
+    let html = marked.parse(processedMarkdown);
     
-    // Process mermaid diagrams
-    html = html.replace(/```mermaid\s*([\s\S]*?)```/g, function(match, diagram) {
-        const id = 'mermaid-' + Math.random().toString(36).substr(2, 9);
-        return `<div class="mermaid-diagram" id="${id}">${diagram.trim()}</div>`;
-    });
+    // Clean up any broken pre/code tags from mermaid processing
+    html = html.replace(/<\/code><\/pre><div class="mermaid-diagram"(.*?)<\/div><pre><code>/g, 
+        '<div class="mermaid-diagram"$1</div>');
     
     return html;
 }
@@ -869,17 +877,32 @@ async function viewReadmePopup(repoName) {
         // Render mermaid diagrams if present
         const mermaidDiagrams = modal.querySelectorAll('.mermaid-diagram');
         if (mermaidDiagrams.length > 0) {
-            mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
-            mermaidDiagrams.forEach(async (diagram) => {
-                try {
-                    const { svg } = await mermaid.render(diagram.id, diagram.textContent);
-                    diagram.innerHTML = svg;
-                    diagram.classList.add('mermaid-rendered');
-                } catch (error) {
-                    console.error('Mermaid rendering error:', error);
-                    diagram.innerHTML = `<pre><code>${diagram.textContent}</code></pre>`;
+            // Initialize mermaid with GitHub-like settings
+            mermaid.initialize({ 
+                startOnLoad: false, 
+                theme: 'default',
+                themeVariables: {
+                    primaryColor: '#86c403',
+                    primaryTextColor: '#073c49',
+                    primaryBorderColor: '#073c49',
+                    lineColor: '#616161'
                 }
             });
+            
+            // Process each diagram
+            for (let i = 0; i < mermaidDiagrams.length; i++) {
+                const diagram = mermaidDiagrams[i];
+                try {
+                    const diagramText = diagram.textContent.trim();
+                    const { svg } = await mermaid.render(diagram.id + '-svg', diagramText);
+                    diagram.innerHTML = svg;
+                    diagram.classList.add('mermaid-rendered');
+                    console.log('Mermaid diagram rendered successfully');
+                } catch (error) {
+                    console.error('Mermaid rendering error:', error);
+                    diagram.innerHTML = `<pre><code class="language-mermaid">${diagram.textContent}</code></pre>`;
+                }
+            }
         }
         
         // Close modal functionality
