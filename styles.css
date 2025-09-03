@@ -109,7 +109,7 @@ header::after {
 
 .circle-logo {
     height: auto;
-    width: 300px;
+    width: 200px;
     flex-shrink: 0;
     align-self: center;
 }
@@ -631,7 +631,7 @@ footer p {
     }
     
     .circle-logo {
-        width: 200px;
+        width: 150px;
         height: auto;
     }
     
