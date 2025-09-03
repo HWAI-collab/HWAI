@@ -306,11 +306,11 @@
       "category": "web-applications",
       "description": "A comprehensive customer service and business intelligence platform built with Vue.js 3 and Supabase, featuring automated customer communication management, intelligent business analysis, FAQ generation, and real-time analytics for operational optimisation.",
       "topics": [
-        "conversational-ai",
-        "nlp",
-        "chatbot",
+        "customer-service",
+        "business-intelligence",
+        "automation",
         "vue-js",
-        "ai-assistant"
+        "supabase"
       ],
       "url": "https://github.com/HWAI-collab/kait-conversational-ai",
       "stars": 30,
@@ -318,28 +318,30 @@
       "language": "JavaScript",
       "technologies": [
         "Vue.js 3",
+        "Supabase",
+        "PostgreSQL",
         "Node.js",
-        "NLP",
-        "WebRTC",
-        "AI APIs"
+        "Pinia"
       ],
       "sections": [
-        "Natural Language Processing",
-        "Context-Aware Responses",
-        "Multi-Modal Interactions",
-        "Real-Time Communication",
-        "AI Integration Framework"
+        "Customer Service Management",
+        "Business Intelligence Dashboard",
+        "Automated FAQ Generation",
+        "Communication Analytics",
+        "Real-Time Reporting",
+        "Integration Framework"
       ],
-      "abstract": "KaiT provides advanced conversational AI capabilities through sophisticated natural language processing, context awareness, and multi-modal interaction support. Features real-time communication and extensible AI integration frameworks.",
+      "abstract": "KAITY provides comprehensive customer service and business intelligence capabilities through automated communication management, intelligent business analysis, and real-time operational insights. Features sophisticated FAQ generation, customer interaction tracking, and data-driven business optimisation frameworks.",
       "highlights": [
-        "Advanced natural language understanding",
-        "Context-aware conversation management",
-        "Multi-modal interaction support",
-        "Real-time communication capabilities",
-        "Extensible AI integration architecture"
+        "Automated customer service workflows",
+        "Intelligent business analysis and insights",
+        "Real-time FAQ generation from interactions",
+        "Comprehensive communication tracking",
+        "Operational efficiency optimisation",
+        "Supabase real-time data synchronisation"
       ],
       "has_local_readme": true,
-      "local_readme_path": "/Users/jarredmuller/Projects/Web-Development/KaiT/README.md",
+      "local_readme_path": "/Users/jarredmuller/Projects/Web-Development/KAITY/README.md",
       "readme_file": "ReadMe/kait-conversational-ai.md"
     },
     {
