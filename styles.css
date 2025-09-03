@@ -889,16 +889,40 @@ textarea:focus-visible {
 .mermaid-diagram {
     text-align: center;
     margin: var(--spacing-xl) 0;
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     background: white;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     overflow-x: auto;
+    min-height: 400px;
 }
 
-.mermaid-rendered svg {
+.mermaid-rendered svg,
+.mermaid-diagram svg {
     max-width: 100%;
     height: auto;
+    min-height: 350px;
+    font-size: 14px;
+    font-family: var(--font-family-primary);
+}
+
+/* Make mermaid text more legible */
+.mermaid-diagram .node text,
+.mermaid-diagram .edgeLabel text,
+.mermaid-diagram .label text {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    fill: #073c49 !important;
+}
+
+.mermaid-diagram .node rect,
+.mermaid-diagram .node circle,
+.mermaid-diagram .node ellipse {
+    stroke-width: 2px !important;
+}
+
+.mermaid-diagram .edgePath path {
+    stroke-width: 2px !important;
 }
 
 /* High Contrast Mode Support */
