@@ -520,44 +520,47 @@
     },
     {
       "name": "play_leaf_green",
-      "title": "Play Leaf Green: AI-Powered Pokemon Game Agent",
+      "title": "Pokemon AI Agent: Memory-Driven Autonomous Game Playing",
       "category": "ai-platforms",
-      "description": "A Django-based web application using DeepSeek AI to automatically play Pokemon games through emulation. Features intelligent gameplay decisions, real-time action logging, and comprehensive game state analysis.",
+      "description": "A hybrid Rust-Python system for autonomous Pokemon gameplay using memory-driven intelligence. Features DeepSeek LLM integration, persistent experience database tracking 250 recent memories, OCR text extraction, pathfinding with fallback strategies, and adaptive learning from action outcomes.",
       "topics": [
         "ai",
         "gaming",
         "automation",
         "deepseek",
-        "pokemon"
+        "pokemon",
+        "rust",
+        "memory-driven-ai"
       ],
-      "url": "https://github.com/HWAI-collab/play_leaf_green",
+      "url": "https://github.com/HWAI-collab/pokemon-ai-agent",
       "stars": 0,
       "forks": 0,
-      "language": "Python",
+      "language": "Rust/Python",
       "technologies": [
+        "Rust",
         "Python",
-        "Django 4.2.5",
-        "DeepSeek AI",
-        "pymem",
-        "httpx"
+        "DeepSeek",
+        "RetroArch",
+        "SQLite",
+        "Tesseract OCR"
       ],
       "sections": [
-        "AI Agent Configuration System",
-        "Game Session Management",
-        "Real-Time Action Logging",
-        "DeepSeek AI Integration",
-        "Memory Reading Framework"
+        "Memory-Driven Intelligence System",
+        "Dual-Language Architecture",
+        "Adaptive Navigation Framework",
+        "Experience Database Management",
+        "Multimodal Game Understanding"
       ],
-      "abstract": "Play Leaf Green demonstrates innovative AI gaming automation using DeepSeek language models to make intelligent gameplay decisions in Pokemon games. The Django-based platform features sophisticated game state analysis, memory reading from DS emulators, and asynchronous AI query processing for real-time gameplay automation.",
+      "abstract": "The Pokemon AI Agent represents an advanced autonomous game-playing system combining Rust's performance for emulator interaction with Python's AI capabilities. Building on the Fire Red Agent project, it implements memory-driven intelligence where game state is tracked as a contextual diary, enabling adaptive learning from past experiences. The system achieves sub-100ms response times while maintaining sophisticated understanding through OCR, pathfinding, and success/failure tracking.",
       "highlights": [
-        "AI agent configuration with customizable prompts and parameters",
-        "Game session management with comprehensive status tracking",
-        "Real-time action logging and game state capture",
-        "DeepSeek AI integration for intelligent decision making",
-        "Memory reading from DS emulator using pymem",
-        "Asynchronous AI query processing with httpx",
-        "Action validation for Pokemon game controls",
-        "Temperature and token control for AI responses"
+        "Memory-as-diary system with 250 recent experiences",
+        "Rust for high-performance memory reading and emulator control",
+        "Python AI orchestration with DeepSeek integration",
+        "OCR-based text extraction for dialogue understanding",
+        "A* pathfinding with adjacent movement fallback",
+        "Success/failure tracking for adaptive learning",
+        "92% navigation success rate with fallback strategies",
+        "Based on Fire Red Agent by Jarred Muller"
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Games-Entertainment/play_leaf_green/README.md",

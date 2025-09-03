@@ -35,6 +35,9 @@ function getTechIcon(tech) {
         'Firebase': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
         'Hive': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg',
         
+        // Languages (continued)
+        'Rust': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
+        
         // ML/AI Libraries
         'TensorFlow': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
         'PyTorch': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
