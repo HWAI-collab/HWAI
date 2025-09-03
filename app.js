@@ -223,7 +223,6 @@ function createRepoCard(repo, readme) {
         ` : ''}
         
         <div class="card-footer">
-            <button class="btn-primary" onclick="expandReadme('${repo.name}')">View Details</button>
             <button class="btn-primary" onclick="requestAccess('${repo.name}')">Request Source Code</button>
             <button class="btn-primary" onclick="viewReadmePopup('${repo.name}')">View README</button>
         </div>
