@@ -101,10 +101,27 @@ header::after {
     position: relative;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.circle-logo {
+    height: 80px;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
 .logo {
     height: 75px;
     width: auto;
-    margin-bottom: var(--spacing-md);
     filter: brightness(1.1);
 }
 
@@ -602,8 +619,19 @@ footer p {
         padding: 0 var(--spacing-md);
     }
     
-    header h1 {
-        font-size: 2rem;
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-lg);
+    }
+    
+    .circle-logo {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .logo {
+        height: 60px;
     }
     
     .subtitle {
