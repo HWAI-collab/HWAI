@@ -1677,18 +1677,17 @@ KAITY collects and processes business and customer data in accordance with appli
 
 ---
 
-**Document Control:**
-- Version: 1.0.0
-- Last Updated: 2024-08-19
-- Authors: Clive Payton, Jarred Muller
-- Review Status: Approved for Commercial Release
+## Development Team
 
-**Development Team Attribution:**
+**Technical Attribution:**
 - Lead Developer: Clive Payton
 - Backend Systems: Jarred Muller
 - Frontend Architect: Clive Payton
 - Business Intelligence Engineer: Jarred Muller
+- Database Engineer: Jarred Muller
 - UX/UI Designer: Clive Payton
+
+**Contact:** info@helloworldai.com.au
 
 ---
 

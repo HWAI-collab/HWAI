@@ -2020,20 +2020,19 @@ All development, implementation, and use of SLNQ prioritises the safety, wellbei
 
 ---
 
-**Document Control:**
-- Version: 1.0.0
-- Last Updated: 2024-08-19
-- Authors: Jarred Muller (Lead), Clive Payton
-- Review Status: Approved for Youth Services Implementation
+## Development Team
 
-**Development Team Attribution:**
+**Technical Attribution:**
 - Lead Developer: Jarred Muller
 - Frontend Developer: Clive Payton
-- Youth Services Consultant: Jarred Muller
-- Clinical Advisor: Jarred Muller
-- Cultural Advisor: Jarred Muller
-- Privacy and Compliance Officer: Clive Payton
-- User Experience Designer: Clive Payton
+- Mobile App Developer: Clive Payton
+- AI/ML Engineer: Jarred Muller
+- Database Engineer: Jarred Muller
+- Youth Services Systems: Jarred Muller
+- Privacy and Security: Clive Payton
+- UX/UI Designer: Clive Payton
+
+**Contact:** info@helloworldai.com.au
 
 ---
 

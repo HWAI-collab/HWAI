@@ -376,4 +376,14 @@ services:
 
 ---
 
+## Development Team
+
+**Technical Attribution:**
+- Lead Developer: Jarred Muller
+- Frontend Developer: Clive Payton
+- Data Engineer: Jarred Muller
+- Web Scraping Specialist: Jarred Muller
+
+**Contact:** info@helloworldai.com.au
+
 *© 2025 Help-Now Platform. Developed for community service discovery and local business support across Australian markets.*

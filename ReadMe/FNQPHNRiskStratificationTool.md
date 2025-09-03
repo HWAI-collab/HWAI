@@ -642,13 +642,13 @@ This software provides clinical decision support tools intended to supplement, n
 
 ---
 
-**Document Control:**
-- Version: 2.1.0
-- Last Updated: 2024-01-21
+## Development Team
+
+**Technical Attribution:**
 - Lead Developer: Jarred Muller
+- Data Scientist: Jarred Muller
+- Machine Learning Engineer: Jarred Muller
 - Health Advisor: Bianca Cross
-- Technical Review: Clive Payton
+- Quality Assurance: Clive Payton
 
-
-**Contact Information:**
-- Contact: info@helloworldai.com.au
+**Contact:** info@helloworldai.com.au

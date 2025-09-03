@@ -1622,6 +1622,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+## Development Team
+
+**Technical Attribution:**
+- Lead Developer: Clive Payton
+- Computer Vision Engineer: Jarred Muller  
+- Machine Learning Specialist: Jarred Muller
+- Frontend Developer: Clive Payton
+
+**Contact:** info@helloworldai.com.au
+
 ### 14.2 Third-Party Licenses
 
 This project incorporates several open-source components:

@@ -544,13 +544,17 @@ cultural protocols and community consent mechanisms.
 
 ---
 
-**Document Control:**
-- Version: 2.0.0
-- Last Updated: 2024-01-21
-- Authors: Jarred Muller (Lead), Clive Payton & Community Elders
-- Cultural Review: Elder Council (approved)
-- Community Consultation: Ongoing
-- Status: Community-Controlled Implementation
+## Development Team
 
-**Contact Information:**
-- Contact: info@helloworldai.com.au
+**Technical Attribution:**
+- Lead Developer: Jarred Muller
+- Mobile App Developer: Clive Payton
+- Cultural Systems Engineer: Jarred Muller
+- Frontend Developer: Clive Payton
+- Community Data Specialist: Jarred Muller
+
+**Community Partners:**
+- Cultural Review: Elder Council
+- Community Consultation: Ongoing
+
+**Contact:** info@helloworldai.com.au

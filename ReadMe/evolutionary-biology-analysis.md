@@ -2437,9 +2437,15 @@ This software is provided for educational purposes. While mathematically rigorou
 
 ---
 
-**Contact Information:**
-- Contact: info@helloworldai.com.au
+## Development Team
 
-**Version:** 1.0.0  
-**Last Updated:** August 2025  
-**Copyright © 2025 Jarred Muller (Lead), Clive Payton. All rights reserved.**
+**Technical Attribution:**
+- Lead Developer: Jarred Muller
+- Bioinformatics Engineer: Jarred Muller
+- Statistical Modelling: Jarred Muller
+- Data Visualisation: Clive Payton
+- Frontend Developer: Clive Payton
+
+**Contact:** info@helloworldai.com.au
+
+**Copyright © 2025 Jarred Muller, Clive Payton. All rights reserved.**

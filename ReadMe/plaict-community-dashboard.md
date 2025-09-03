@@ -375,8 +375,13 @@ The above copyright notice and this permission notice shall be included in all c
 
 ---
 
-**Document Control:**
-- Version: 1.0.0
-- Last Updated: 2024-01-21
-- Authors: Clive Payton (Lead), Jarred Muller
-- Status: Production Ready
+## Development Team
+
+**Technical Attribution:**
+- Lead Developer: Clive Payton
+- Data Analytics Engineer: Jarred Muller
+- Frontend Architect: Clive Payton
+- Backend Developer: Jarred Muller
+- Community Engagement Specialist: Clive Payton
+
+**Contact:** info@helloworldai.com.au

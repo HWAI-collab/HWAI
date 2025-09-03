@@ -498,12 +498,14 @@ Comprehensive privacy policy: https://kidmaps.app/privacy
 
 ---
 
-**Document Control:**
-- Version: 2.0.0
-- Last Updated: 2024-01-21
-- Authors: Clive Payton, Jarred Muller
-- Review Status: Production Release
+## Development Team
 
-**Contact Information:**
-- Contact: info@helloworldai.com.au
+**Technical Attribution:**
+- Lead Developer: Clive Payton
+- Mobile App Developer: Clive Payton
+- Geospatial Engineer: Jarred Muller
+- Backend Developer: Jarred Muller
+- UX/UI Designer: Clive Payton
+
+**Contact:** info@helloworldai.com.au
 - Developer Portal: https://developers.kidmaps.app

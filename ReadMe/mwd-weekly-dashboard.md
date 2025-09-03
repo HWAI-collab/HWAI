@@ -641,9 +641,15 @@ This software is proprietary and confidential. All rights reserved.
 
 ---
 
-**Contact Information:**
-- Contact: info@helloworldai.com.au
+## Development Team
 
-**Version:** 0.1.0  
-**Last Updated:** August 2025  
-**Copyright © 2025 Clive Payton (Lead), Jarred Muller. All rights reserved.**
+**Technical Attribution:**
+- Lead Developer: Clive Payton
+- Mobile App Developer: Clive Payton
+- Backend Engineer: Jarred Muller
+- Data Analytics: Jarred Muller
+- UX/UI Designer: Clive Payton
+
+**Contact:** info@helloworldai.com.au
+
+**Copyright © 2025 Clive Payton, Jarred Muller. All rights reserved.**

@@ -662,17 +662,17 @@ OrthoVision provides AI-assisted diagnostic tools intended to support, not repla
 
 ---
 
-**Document Control:**
-- Version: 1.0.0
-- Last Updated: 2024-08-19
-- Authors: Jarred Muller, Clive Payton
-- Review Status: Approved for Public Release
+## Development Team
 
-**Development Team Attribution:**
+**Technical Attribution:**
 - Lead Developer: Jarred Muller
 - Medical Advisor: Dr Jonathon Brook
 - AI/ML Specialist: Jarred Muller
+- Computer Vision Engineer: Jarred Muller
+- Frontend Developer: Clive Payton
 - Quality Assurance: Clive Payton
+
+**Contact:** info@helloworldai.com.au
 
 ---
 
