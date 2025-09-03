@@ -302,9 +302,9 @@
     },
     {
       "name": "kait-conversational-ai",
-      "title": "KaiT: Advanced Conversational AI Platform",
+      "title": "KAITY: Advanced Customer Service & Business Intelligence Platform",
       "category": "web-applications",
-      "description": "A sophisticated conversational AI platform built with Vue.js 3 featuring natural language processing, context-aware responses, and advanced chatbot capabilities for various applications.",
+      "description": "A comprehensive customer service and business intelligence platform built with Vue.js 3 and Supabase, featuring automated customer communication management, intelligent business analysis, FAQ generation, and real-time analytics for operational optimisation.",
       "topics": [
         "conversational-ai",
         "nlp",
