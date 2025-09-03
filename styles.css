@@ -730,6 +730,46 @@ textarea:focus-visible {
     outline-offset: 2px;
 }
 
+/* README Modal Styling */
+.readme-modal {
+    max-width: 900px;
+    max-height: 85vh;
+}
+
+.readme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.readme-header h2 {
+    margin: 0;
+    padding-right: var(--spacing-md);
+    flex: 1;
+}
+
+.readme-content {
+    overflow-y: auto;
+    max-height: 60vh;
+    padding: var(--spacing-md);
+    background: var(--card-hover);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.readme-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: var(--font-family-primary);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0;
+}
+
 /* High Contrast Mode Support */
 @media (prefers-contrast: high) {
     :root {

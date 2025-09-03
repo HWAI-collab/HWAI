@@ -225,7 +225,7 @@ function createRepoCard(repo, readme) {
         <div class="card-footer">
             <button class="btn-primary" onclick="expandReadme('${repo.name}')">View Details</button>
             <button class="btn-primary" onclick="requestAccess('${repo.name}')">Request Source Code</button>
-            <button class="btn-primary" onclick="downloadReadme('${repo.name}')">Download README</button>
+            <button class="btn-primary" onclick="viewReadmePopup('${repo.name}')">View README</button>
         </div>
     `;
     
@@ -790,4 +790,83 @@ function generateReadmeContent(repo, readme) {
     }
     
     return content;
+}
+
+// View README popup with formatted content and download option
+async function viewReadmePopup(repoName) {
+    const repo = allRepos.find(r => r.name === repoName);
+    if (!repo) return;
+    
+    const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${repo.readme_file.replace('ReadMe/', '')}`;
+    
+    try {
+        const response = await fetch(readmeUrl);
+        if (!response.ok) throw new Error('README not found');
+        
+        const readmeContent = await response.text();
+        
+        // Create modal
+        const modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <div class="modal-content readme-modal">
+                <span class="modal-close">&times;</span>
+                <div class="readme-header">
+                    <h2>${repo.title || repo.name}</h2>
+                    <button class="btn-primary" onclick="downloadReadmeFile('${repo.name}')">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"/>
+                        </svg>
+                        Download README
+                    </button>
+                </div>
+                <div class="readme-content">
+                    <pre>${readmeContent}</pre>
+                </div>
+            </div>
+        `;
+        
+        document.body.appendChild(modal);
+        
+        // Close modal functionality
+        modal.querySelector('.modal-close').onclick = () => {
+            document.body.removeChild(modal);
+        };
+        
+        modal.onclick = (e) => {
+            if (e.target === modal) {
+                document.body.removeChild(modal);
+            }
+        };
+        
+    } catch (error) {
+        alert('Unable to load README content. Please try again.');
+    }
+}
+
+// Download README file (original function renamed)
+async function downloadReadmeFile(repoName) {
+    const repo = allRepos.find(r => r.name === repoName);
+    if (!repo) return;
+    
+    const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${repo.readme_file.replace('ReadMe/', '')}`;
+    
+    try {
+        const response = await fetch(readmeUrl);
+        if (!response.ok) throw new Error('README not found');
+        
+        const content = await response.text();
+        const blob = new Blob([content], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${repo.name}-README.md`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        alert('Unable to download README. Please try again.');
+    }
 }
