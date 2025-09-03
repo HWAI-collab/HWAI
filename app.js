@@ -797,7 +797,12 @@ async function viewReadmePopup(repoName) {
     const repo = allRepos.find(r => r.name === repoName);
     if (!repo) return;
     
-    const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${repo.readme_file.replace('ReadMe/', '')}`;
+    // Handle missing readme_file property
+    const readmeFileName = repo.readme_file ? 
+        repo.readme_file.replace('ReadMe/', '') : 
+        `${repo.name}.md`;
+    
+    const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${readmeFileName}`;
     
     try {
         const response = await fetch(readmeUrl);
@@ -849,7 +854,12 @@ async function downloadReadmeFile(repoName) {
     const repo = allRepos.find(r => r.name === repoName);
     if (!repo) return;
     
-    const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${repo.readme_file.replace('ReadMe/', '')}`;
+    // Handle missing readme_file property
+    const readmeFileName = repo.readme_file ? 
+        repo.readme_file.replace('ReadMe/', '') : 
+        `${repo.name}.md`;
+    
+    const readmeUrl = `https://hwai-collab.github.io/HWAI/ReadMe/${readmeFileName}`;
     
     try {
         const response = await fetch(readmeUrl);
