@@ -40,7 +40,7 @@
         "Real-time compliance monitoring",
         "Trauma-informed development principles"
       ],
-      "readme_file": "readmes/slnq-ai-app.md",
+      "readme_file": "ReadMe/slnq-ai-app.md",
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Production-Apps/slnq-ai-app/README.md"
     },
@@ -80,7 +80,7 @@
         "Progressive Web App support",
         "Multi-role authentication system"
       ],
-      "readme_file": "readmes/warringu-app.md",
+      "readme_file": "ReadMe/warringu-app.md",
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Mobile-Apps/warringu-app/README.md"
     },
@@ -124,7 +124,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Data-Science/FNQPHNRiskStratificationTool/README.md",
-      "readme_file": "readmes/FNQPHNRiskStratificationTool.md"
+      "readme_file": "ReadMe/FNQPHNRiskStratificationTool.md"
     },
     {
       "name": "OrthoVision",
@@ -166,7 +166,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/AI-ML-Projects/OrthoVision/README.md",
-      "readme_file": "readmes/OrthoVision.md"
+      "readme_file": "ReadMe/OrthoVision.md"
     },
     {
       "name": "help-now",
@@ -208,7 +208,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Web-Development/help-now/README.md",
-      "readme_file": "readmes/help-now.md"
+      "readme_file": "ReadMe/help-now.md"
     },
     {
       "name": "evolutionary-biology-analysis",
@@ -250,7 +250,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Academic-Research/EvolutionaryBiology/README.md",
-      "readme_file": "readmes/evolutionary-biology-analysis.md"
+      "readme_file": "ReadMe/evolutionary-biology-analysis.md"
     },
     {
       "name": "mwd-weekly-dashboard",
@@ -298,7 +298,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Production-Apps/MWD/README.md",
-      "readme_file": "readmes/mwd-weekly-dashboard.md"
+      "readme_file": "ReadMe/mwd-weekly-dashboard.md"
     },
     {
       "name": "kait-conversational-ai",
@@ -340,7 +340,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Web-Development/KaiT/README.md",
-      "readme_file": "readmes/kait-conversational-ai.md"
+      "readme_file": "ReadMe/kait-conversational-ai.md"
     },
     {
       "name": "plaict-community-dashboard",
@@ -382,7 +382,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/PLAICT_dash/dashboard-project/README.md",
-      "readme_file": "readmes/plaict-community-dashboard.md"
+      "readme_file": "ReadMe/plaict-community-dashboard.md"
     },
     {
       "name": "kidmaps-dashboard",
@@ -424,7 +424,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Production-Apps/kidmaps-dashboard/README.md",
-      "readme_file": "readmes/kidmaps-dashboard.md"
+      "readme_file": "ReadMe/kidmaps-dashboard.md"
     },
     {
       "name": "kidmaps-app",
@@ -469,7 +469,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Production-Apps/KidMaps/README.md",
-      "readme_file": "readmes/kidmaps-app.md"
+      "readme_file": "ReadMe/kidmaps-app.md"
     },
     {
       "name": "WAIVI",
@@ -516,7 +516,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/WAIVI/README.md",
-      "readme_file": "readmes/WAIVI.md"
+      "readme_file": "ReadMe/WAIVI.md"
     },
     {
       "name": "play_leaf_green",
@@ -561,7 +561,7 @@
       ],
       "has_local_readme": true,
       "local_readme_path": "/Users/jarredmuller/Projects/Games-Entertainment/play_leaf_green/README.md",
-      "readme_file": "readmes/play_leaf_green.md"
+      "readme_file": "ReadMe/play_leaf_green.md"
     }
   ],
   "metadata": {
