@@ -486,7 +486,7 @@ main {
     color: var(--text-primary);
     font-size: 1.25rem;
     font-weight: 600;
-    margin: var(--spacing-lg) 0 var(--spacing-md) 0;
+    margin: var(--spacing-xl) 0 var(--spacing-md) 0;
 }
 
 .modal-body h4 {
