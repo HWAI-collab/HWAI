@@ -11,7 +11,7 @@
 
 HelpNow represents an innovative, AI-enhanced emergency response and community support platform engineered to revolutionise crisis management, resource coordination, and community assistance delivery. Built upon modern full-stack architecture combining React frontend, Node.js/Express backend, and MongoDB data persistence, the platform delivers comprehensive emergency response coordination, resource management, real-time communication, and community support capabilities designed for emergency services, community organisations, and crisis response teams.
 
-The system integrates advanced artificial intelligence capabilities including intelligent resource allocation, predictive crisis modelling, automated response coordination, and real-time situation assessment. Through its modular architecture combining emergency response management, community resource coordination, volunteer management systems, and real-time communication platforms, HelpNow establishes itself as an essential solution for emergency services and community organisations seeking to enhance response effectiveness, resource utilisation, and community resilience whilst maintaining the highest standards of security and reliability for critical emergency situations.
+The system integrates advanced artificial intelligence capabilities powered by Mistral 7B LLM for intelligent resource allocation, predictive crisis modelling, automated response coordination, and real-time situation assessment. Through its modular architecture combining emergency response management, community resource coordination, volunteer management systems, and real-time communication platforms, HelpNow establishes itself as an essential solution for emergency services and community organisations seeking to enhance response effectiveness, resource utilisation, and community resilience whilst maintaining the highest standards of security and reliability for critical emergency situations.
 
 ## Table of Contents
 
@@ -89,17 +89,21 @@ The HelpNow platform implements a sophisticated microservices architecture optim
 ### AI-Enhanced Emergency Response Framework
 
 ```javascript
-// Core AI-enhanced emergency response service
+// Core AI-enhanced emergency response service powered by Mistral 7B
 class IntelligentEmergencyManager {
   constructor() {
     this.crisisAssessmentEngine = new CrisisAssessmentAnalyzer()
     this.resourceAllocationService = new AIResourceAllocator()
     this.responseCoordinationService = new ResponseCoordinationEngine()
     this.communicationAnalyzer = new CommunicationAnalysisEngine()
+    this.mistralClient = new MistralAIClient()
   }
   
   async assessEmergencySituation(emergencyData, contextualInformation) {
-    const situationAnalysis = await this.crisisAssessmentEngine.analyzeSituation({
+    const situationAnalysis = await this.mistralClient.generateCompletion({
+      model: "mistral-7b",
+      prompt: `Analyze emergency situation: ${JSON.stringify(emergencyData)}`,
+      context: contextualInformation,
       emergency_type: emergencyData.emergency_type,
       affected_area: emergencyData.geographic_scope,
       population_impact: emergencyData.population_affected,
@@ -120,7 +124,7 @@ class IntelligentEmergencyManager {
 ## Core Technologies
 
 | Technology | Version | Justification | License |
-|------------|---------|---------------|---------|
+|------------|---------|---------------|---------| 
 | **React** | 18.2+ | Modern frontend framework with hooks and context for state management | MIT License |
 | **Node.js** | 20.18+ | Server-side JavaScript runtime optimised for real-time applications | MIT License |
 | **Express** | 4.18+ | Minimal web framework for building robust APIs and web services | MIT License |
@@ -131,20 +135,21 @@ class IntelligentEmergencyManager {
 | **Material-UI** | 5.14+ | React component library for consistent emergency interface design | MIT License |
 | **Redux Toolkit** | 1.9+ | Predictable state container for complex emergency data management | MIT License |
 | **Axios** | 1.5+ | HTTP client for API communication with robust error handling | MIT License |
+| **Mistral 7B** | Latest | Advanced language model for intelligent emergency decision-making | Apache 2.0 |
 
 ## Emergency Response Modules
 
 ### Crisis Management System
 
-The Crisis Management System provides end-to-end emergency response coordination for crisis situations with AI-assisted emergency situation assessment, intelligent resource allocation, predictive crisis modelling, and automated response coordination.
+The Crisis Management System provides end-to-end emergency response coordination for crisis situations with AI-assisted emergency situation assessment powered by Mistral 7B, intelligent resource allocation, predictive crisis modelling, and automated response coordination.
 
 ### Resource Coordination Platform
 
-Comprehensive resource management framework featuring inventory management with real-time tracking, automated allocation through AI-driven resource matching, logistics coordination with transportation planning, cross-agency sharing protocols, and performance analytics for continuous improvement.
+Comprehensive resource management framework featuring inventory management with real-time tracking, automated allocation through AI-driven resource matching using Mistral 7B intelligence, logistics coordination with transportation planning, cross-agency sharing protocols, and performance analytics for continuous improvement.
 
 ### Volunteer Management Framework
 
-AI-powered volunteer matching based on skills, availability, and location, comprehensive training coordination, deployment management with safety protocols, wellness monitoring for high-stress situations, and recognition systems for sustained community engagement.
+AI-powered volunteer matching based on skills, availability, and location using Mistral 7B natural language processing, comprehensive training coordination, deployment management with safety protocols, wellness monitoring for high-stress situations, and recognition systems for sustained community engagement.
 
 ## Installation & Deployment
 
@@ -183,11 +188,20 @@ flutter pub get
 
 ### Emergency Management API
 
-Core emergency operations including emergency declaration with AI-powered situation analysis, resource allocation with intelligent matching and deployment, response coordination with multi-agency task assignment, communication management with centralised messaging hub, and situation monitoring with real-time assessment and automated alerts.
+Core emergency operations including emergency declaration with AI-powered situation analysis using Mistral 7B, resource allocation with intelligent matching and deployment, response coordination with multi-agency task assignment, communication management with centralised messaging hub, and situation monitoring with real-time assessment and automated alerts.
 
 ### Resource Coordination API
 
-Resource management endpoints featuring AI-powered resource allocation, real-time deployment status tracking, logistics coordination planning, cross-agency resource sharing protocols, and performance analytics for utilisation optimisation.
+Resource management endpoints featuring AI-powered resource allocation using Mistral 7B intelligence, real-time deployment status tracking, logistics coordination planning, cross-agency resource sharing protocols, and performance analytics for utilisation optimisation.
+
+## AI Integration Framework
+
+The platform integrates Mistral 7B large language model for:
+- **Intelligent Situation Assessment**: Natural language analysis of emergency reports and contextual information
+- **Resource Allocation Optimisation**: AI-driven matching of resources to emergency requirements
+- **Communication Processing**: Automated analysis and routing of emergency communications
+- **Predictive Analytics**: Forecasting emergency progression and resource needs
+- **Decision Support**: AI-assisted decision-making for emergency coordinators
 
 ## Security & Compliance
 

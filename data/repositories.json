@@ -172,7 +172,7 @@
       "name": "help-now",
       "title": "HelpNow: Comprehensive Emergency Response and Community Support Platform",
       "category": "emergency-systems",
-      "description": "An innovative, AI-enhanced emergency response and community support platform engineered to revolutionise crisis management, resource coordination, and community assistance delivery. Built with React, Node.js, Express, MongoDB, and Flutter for comprehensive emergency response coordination.",
+      "description": "An innovative, AI-enhanced emergency response and community support platform powered by Mistral 7B LLM for intelligent crisis management, resource coordination, and community assistance delivery. Built with React, Node.js, Express, MongoDB, and Flutter for comprehensive emergency response coordination.",
       "topics": [
         "emergency-response",
         "crisis-management",
@@ -191,7 +191,8 @@
         "Express",
         "MongoDB",
         "Flutter",
-        "Socket.io"
+        "Socket.io",
+        "Mistral 7B"
       ],
       "sections": [
         "Crisis Management System",
@@ -200,10 +201,10 @@
         "Communication and Coordination Hub",
         "Analytics and Reporting System"
       ],
-      "abstract": "HelpNow represents an innovative, AI-enhanced emergency response and community support platform engineered to revolutionise crisis management, resource coordination, and community assistance delivery. Built upon modern full-stack architecture combining React frontend, Node.js/Express backend, and MongoDB data persistence, the platform delivers comprehensive emergency response coordination designed for emergency services, community organisations, and crisis response teams.",
+      "abstract": "HelpNow represents an innovative, AI-enhanced emergency response and community support platform powered by Mistral 7B LLM for intelligent crisis management, resource coordination, and community assistance delivery. Built upon modern full-stack architecture combining React frontend, Node.js/Express backend, and MongoDB data persistence, the platform delivers comprehensive emergency response coordination designed for emergency services, community organisations, and crisis response teams.",
       "highlights": [
-        "Rapid crisis response with intelligent automation",
-        "AI-powered resource allocation and optimisation",
+        "Mistral 7B LLM-powered intelligent crisis assessment",
+        "AI-driven resource allocation and optimisation", 
         "Real-time volunteer coordination and deployment",
         "Interagency communication and coordination systems",
         "Evidence-based analytics for emergency management"
