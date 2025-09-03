@@ -40,6 +40,7 @@ function getTechIcon(tech) {
         'Rust': 'https://www.rust-lang.org/static/images/rust-logo-blk.svg',
         
         // ML/AI Libraries
+        'DeepSeek': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREA-Su0tPGqM1_i1LA2W2lUrP214eW3IA05A&s',
         'TensorFlow': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
         'PyTorch': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
         'PyTorch 2.0+': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg',
