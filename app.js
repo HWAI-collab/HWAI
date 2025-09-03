@@ -308,7 +308,7 @@ async function expandReadme(repoName) {
         console.log('Fetching README preview from:', readmeUrl);
         
         try {
-            const response = await fetch(readmeUrl);
+            const response = await fetch(readmeUrl + '?v=' + Date.now());
             if (response.ok) {
                 const fullContent = await response.text();
                 // Extract first few sections for preview (up to 2000 characters)
@@ -595,7 +595,7 @@ async function downloadReadme(repoName) {
         console.log('Downloading README from:', readmeUrl);
         
         try {
-            const response = await fetch(readmeUrl);
+            const response = await fetch(readmeUrl + '?v=' + Date.now());
             if (response.ok) {
                 markdownContent = await response.text();
                 console.log('Successfully fetched real README for download');
