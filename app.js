@@ -32,7 +32,8 @@ function getTechIcon(tech) {
         'Express': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg',
         'MongoDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg',
         'Socket.io': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg',
-        'Mistral 7B': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
+        'Mistral 7B': 'https://seeklogo.com/images/M/mistral-ai-2025-logo-F7C34FF3D8-seeklogo.com.png',
+        'Mistral': 'https://seeklogo.com/images/M/mistral-ai-2025-logo-F7C34FF3D8-seeklogo.com.png',
         
         // Databases
         'PostgreSQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
