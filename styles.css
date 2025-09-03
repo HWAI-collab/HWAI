@@ -732,8 +732,8 @@ textarea:focus-visible {
 
 /* README Modal Styling */
 .readme-modal {
-    max-width: 900px;
-    max-height: 85vh;
+    max-width: 1200px;
+    max-height: 90vh;
 }
 
 .readme-header {
@@ -846,6 +846,25 @@ textarea:focus-visible {
     height: auto;
     border-radius: var(--radius-md);
     margin: var(--spacing-md) 0;
+}
+
+/* Technology Badge Images (shields.io) */
+.readme-content img[src*="shields.io"],
+.readme-content img[src*="img.shields.io"] {
+    display: inline-block;
+    margin: 2px 4px 2px 0;
+    border-radius: var(--radius-sm);
+    vertical-align: middle;
+    height: 20px;
+}
+
+/* Badge container paragraph */
+.readme-content p:has(img[src*="shields.io"]) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    line-height: 1.4;
 }
 
 .readme-content table {
