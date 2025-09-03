@@ -108,8 +108,8 @@ header::after {
 }
 
 .circle-logo {
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
     flex-shrink: 0;
 }
 
@@ -119,10 +119,12 @@ header::after {
     gap: var(--spacing-sm);
 }
 
-.logo {
-    height: 75px;
-    width: auto;
-    filter: brightness(1.1);
+.brand-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    letter-spacing: -0.025em;
 }
 
 .subtitle {
@@ -626,12 +628,12 @@ footer p {
     }
     
     .circle-logo {
-        height: 60px;
-        width: 60px;
+        height: 90px;
+        width: 90px;
     }
     
-    .logo {
-        height: 60px;
+    .brand-title {
+        font-size: 2rem;
     }
     
     .subtitle {
